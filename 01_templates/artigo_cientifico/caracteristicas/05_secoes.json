@@ -1,0 +1,87 @@
+{
+  "id": "secoes",
+  "componente": "Seções de desenvolvimento (capítulos numerados + subseções)",
+  "descricao": "Corpo do artigo. Hierarquia de 2 níveis: seção primária (1, 2, 3...) e subseção (1.1, 1.2, 2.1...). Headings + parágrafos de corpo.",
+  "fonte_normativa": "ABNT NBR 6024:2012 + NBR 14724:2024 5.2 + RAG template_artigo/06_secoes.md",
+  "hierarquia": {
+    "primaria": {
+      "indicativo": "1, 2, 3 (arábico)",
+      "exemplo_indicativo": "1",
+      "separador_indicativo_titulo": "1 espaço (sem ponto)",
+      "exemplo_completo": "1 TRANSIÇÃO ENERGÉTICA E SEUS CRITÉRIOS DE RUPTURA"
+    },
+    "secundaria": {
+      "indicativo": "1.1, 1.2, 2.1 (arábico composto)",
+      "separador_indicativo_titulo": "1 espaço (sem ponto após último número)",
+      "exemplo_completo": "1.1 Racionalidade ambiental como critério epistêmico"
+    },
+    "terciaria_proibida": "Não usar 1.1.1 (terciária). Manter hierarquia em 2 níveis."
+  },
+  "formato_primaria_word": {
+    "fonte": "Times New Roman",
+    "tamanho_pt": 12,
+    "negrito": true,
+    "italico": false,
+    "alinhamento": "esquerda",
+    "case": "CAIXA ALTA (texto digitado em maiúsculas)",
+    "espacamento_linha": 1.5,
+    "recuo_primeira_linha_cm": 0,
+    "recuo_esquerdo_cm": 0,
+    "espaco_antes_pt": 18,
+    "espaco_depois_pt": 12,
+    "keep_with_next": true,
+    "keep_together": true
+  },
+  "formato_secundaria_word": {
+    "fonte": "Times New Roman",
+    "tamanho_pt": 12,
+    "negrito": true,
+    "italico": false,
+    "alinhamento": "esquerda",
+    "case": "case normal (apenas inicial maiúscula + nomes próprios)",
+    "espacamento_linha": 1.5,
+    "recuo_primeira_linha_cm": 0,
+    "espaco_antes_pt": 12,
+    "espaco_depois_pt": 6,
+    "keep_with_next": true,
+    "keep_together": true
+  },
+  "formato_corpo_word": {
+    "fonte": "Times New Roman",
+    "tamanho_pt": 12,
+    "negrito": false,
+    "alinhamento": "justificado",
+    "espacamento_linha": 1.5,
+    "recuo_primeira_linha_cm": 1.25,
+    "espaco_antes_pt": 0,
+    "espaco_depois_pt": 0
+  },
+  "regras_estruturais": [
+    "Estrutura ideal: 2 seções primárias (Cap 1 marco teórico + Cap 2 aplicação)",
+    "Cada seção primária deve ter pelo menos 2 subseções",
+    "Máximo 6-8 subseções por seção primária",
+    "Não pular níveis: para usar 1.1, deve existir seção 1",
+    "Parágrafo de abertura obrigatório em toda seção primária (antes da primeira subseção)",
+    "Parágrafo de transição obrigatório ao final de cada seção primária (anuncia próxima)",
+    "Headings herdam tudo do estilo (sem formatação inline em runs)",
+    "Body herda tudo do estilo Corpo (sem formatação inline)",
+    "Conjunção inicial obrigatória em parágrafos do corpo (exceto 1º após heading)",
+    "Profundidade doutrinária obrigatória: extrair descoberta específica, aplicar ao caso, articular autores por ângulos distintos"
+  ],
+  "regras_paginacao": [
+    "Headings primários (1, 2, 3) devem figurar na parte superior da mancha (NBR 14724 5.2.2)",
+    "Separados do texto por espaço de 1.5 entre linhas",
+    "Headings de mais de 1 linha: a partir da 2ª linha alinhar abaixo da 1ª letra da 1ª palavra",
+    "Evitar título órfão no fim de página (keep_with_next ATIVADO)"
+  ],
+  "render_latex": {
+    "primaria": "\\section{\\MakeUppercase{TITULO_DA_SECAO}}",
+    "secundaria": "\\subsection{Titulo da subsecao}",
+    "corpo": "Texto do paragrafo, justificado, com recuo de primeira linha 1.25cm via \\setlength{\\parindent}{1.25cm}"
+  },
+  "render_gdocs": {
+    "primaria": {"namedStyleType": "HEADING_1", "bold": true, "case": "UPPER", "alignment": "START"},
+    "secundaria": {"namedStyleType": "HEADING_2", "bold": true, "case": "NORMAL", "alignment": "START"},
+    "corpo": {"alignment": "JUSTIFIED", "indentFirstLine": "1.25cm"}
+  }
+}

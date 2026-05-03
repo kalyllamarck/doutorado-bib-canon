@@ -1,0 +1,25 @@
+{
+  "tipo": "colocacao_semantica",
+  "descricao": "Termos proibidos apenas em contexto semântico específico",
+  "entradas": [
+    {
+      "id": "col_001",
+      "forma_canonica": "papel",
+      "sentido_proibido": "papel como sinônimo de função ou atribuição",
+      "gatilhos_contextuais": ["desempenha", "exerce", "cumpre", "tem", "ocupa", "assume", "faz", "detém", "representa", "joga"],
+      "qualificadores_suspeitos": ["central", "fundamental", "decisivo", "crucial", "importante", "relevante", "essencial", "protagonista", "de destaque", "preponderante", "primordial"],
+      "regex_composto": "\\b(desempenha|exerce|cumpre|tem|ocupa|assume|faz|detém|representa|joga) (um |o )?papel\\b|\\bpapel (central|fundamental|decisivo|crucial|importante|relevante|essencial|protagonista|de destaque|preponderante|primordial)\\b",
+      "substitutos_sugeridos": ["função", "ofício", "encargo", "missão", "incumbência", "atribuição", "tarefa", "mister"],
+      "observacao": "Permitido em sentido literal (folha de papel) ou teatral explícito (papel de Hamlet)."
+    },
+    {
+      "id": "col_002",
+      "forma_canonica": "marco",
+      "sentido_proibido": "marco + qualificador abstrato ou marco de [substantivo abstrato]",
+      "gatilhos_contextuais": ["normativo", "legal", "regulatório", "institucional", "teórico", "conceitual", "jurídico", "de"],
+      "regex_composto": "\\bmarco (normativo|legal|regulatório|institucional|teórico|conceitual|jurídico|de [a-zç]+)\\b",
+      "substitutos_sugeridos": ["regime jurídico", "ordenamento", "regramento", "disciplina jurídica", "corpo normativo", "estatuto", "balizas normativas", "moldura legal", "plexo normativo"],
+      "observacao": "Permitido apenas em sentido literal (marco de fronteira geográfico, marco histórico datado)."
+    }
+  ]
+}

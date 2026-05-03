@@ -1,0 +1,285 @@
+{
+  "subtipo": "aditivas",
+  "categoria": "coordenativas",
+  "definicao": "Ligam elementos de mesma função sintática indicando soma ou acréscimo",
+  "total": 43,
+  "formais": 39,
+  "informais": 4,
+  "polissemicas": 2,
+  "itens": [
+    {
+      "forma": "e",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "nem",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "também",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ainda",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "além disso",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ademais",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "outrossim",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "bem como",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/comparativas"
+      ]
+    },
+    {
+      "forma": "como também",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "assim como",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/comparativas",
+        "subordinativas/conformativas",
+        "subordinativas/modais"
+      ]
+    },
+    {
+      "forma": "do mesmo modo",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "igualmente",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "inclusive",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "mais ainda",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "não só",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "mas também",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "não apenas",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "senão também",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "e ainda",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "e mesmo",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "junto com",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "a par disso",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "a somar",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "acrescente-se",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "soma-se a isso",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "junte-se a isso",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "paralelamente",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "concomitantemente",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "simultaneamente",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "de igual modo",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "por igual",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em adição",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em acréscimo",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "nesse diapasão",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "no mesmo passo",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "no mesmo compasso",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "na mesma esteira",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "de quebra",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "por cima",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "e mais",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "e tampouco",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "e por cima disso",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "sem contar que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    }
+  ]
+}

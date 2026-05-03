@@ -1,0 +1,298 @@
+{
+  "subtipo": "condicionais",
+  "categoria": "subordinativas",
+  "definicao": "Indicam condição ou hipótese",
+  "total": 44,
+  "formais": 44,
+  "informais": 0,
+  "polissemicas": 7,
+  "itens": [
+    {
+      "forma": "se",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/integrantes"
+      ]
+    },
+    {
+      "forma": "caso",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "contanto que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "desde que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "a menos que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "a não ser que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "salvo se",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "exceto se",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "sem que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/modais"
+      ]
+    },
+    {
+      "forma": "uma vez que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "coordenativas/explicativas",
+        "subordinativas/causais"
+      ]
+    },
+    {
+      "forma": "dado que (condicional)",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "suposto que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/concessivas"
+      ]
+    },
+    {
+      "forma": "posto que (condicional)",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "admitindo que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "imaginando que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "supondo que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "partindo de que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "na hipótese de que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "na eventualidade de que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "na condição de que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "no pressuposto de que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "desde o momento em que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "contanto",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "sob a condição de que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "sob o pressuposto de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "quando",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/temporais"
+      ]
+    },
+    {
+      "forma": "quando quer que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "sempre que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/temporais"
+      ]
+    },
+    {
+      "forma": "onde quer que (cond.)",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "a depender de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "a não ser se",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "se acaso",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "se por acaso",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "acaso",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "à condição de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "mediante que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "desde já que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "com a condição de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "na medida em que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/causais",
+        "subordinativas/conformativas"
+      ]
+    },
+    {
+      "forma": "respeitado que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "garantido que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "assegurado que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "verificado que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "preenchido que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    }
+  ]
+}

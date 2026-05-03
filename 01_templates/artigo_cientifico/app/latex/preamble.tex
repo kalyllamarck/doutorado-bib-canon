@@ -1,0 +1,112 @@
+% =====================================================================
+% preamble.tex — Configuração ABNT estrita para PPGD/Unifor
+% Doutorado em Direito Constitucional — Kalyl Lamarck
+% Compatível com xelatex (suporte UTF-8 + fontes nativas)
+% =====================================================================
+
+% --- Encoding e idioma ---------------------------------------------------
+% xelatex le UTF-8 nativo (inputenc nao necessario)
+% babel ja carregado pela classe abntex2 (option 'brazil')
+
+% --- Fonte Times New Roman (msttcorefonts) -------------------------------
+\usepackage{fontspec}
+\setmainfont{Times New Roman}       % corpo
+\setsansfont{Times New Roman}       % forca serifada tambem em sans
+\setmonofont{Liberation Mono}        % monoespacada (em codigo)
+
+% --- Tamanho 12pt em tudo (incluindo headings) ---------------------------
+% abntex2 usa, por default, \large/\Large nos headings. Forçamos \normalsize
+% para conformidade com NBR 14724 (corpo e títulos em 12pt).
+\renewcommand{\ABNTEXchapterfont}{\bfseries}
+\renewcommand{\ABNTEXchapterfontsize}{\normalsize}
+\renewcommand{\ABNTEXsectionfont}{\bfseries}
+\renewcommand{\ABNTEXsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsectionfont}{\bfseries}
+\renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsubsectionfont}{\bfseries}
+\renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
+
+% Forçar CAIXA ALTA em chapter (seção primária) — texto digitado ficará upper
+% via comando \MakeUppercase no título; abntex2 já força isso por default.
+
+% --- Espaçamento entre linhas: 1,5 (corpo); simples (notas/refs) ---------
+\OnehalfSpacing
+
+% --- Margens ABNT 3/2/3/2 cm ---------------------------------------------
+\usepackage[
+    a4paper,
+    top=3cm,
+    bottom=2cm,
+    left=3cm,
+    right=2cm,
+    bindingoffset=0pt
+]{geometry}
+
+% --- Recuo de primeira linha: 1,5 cm -------------------------------------
+\setlength{\parindent}{1.5cm}
+\setlength{\parskip}{0pt}
+
+% --- Citações: estilo autor-data ABNT (abntex2cite) ----------------------
+% [alf] = autor-data ('alfabético' no jargão ABNT)
+% [abnt-emphasize=bf] = título da obra em negrito
+% [abnt-etal-list=0] = sem 'et al.' (lista todos os autores)
+% [abnt-and-type=&] = separador entre autores no texto
+\usepackage[
+    alf,
+    abnt-emphasize=bf,
+    abnt-etal-list=0,
+    abnt-and-type=&,
+    abnt-thesis-year=both,
+    abnt-repeated-author-omit=yes
+]{abntex2cite}
+
+% --- Hyperref sem cores (impressão acadêmica preto-e-branco) -------------
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false,
+    pdfborder={0 0 0},
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=black,
+    pdftitle={\@title},
+    pdfauthor={\@author},
+    pdflang=pt-BR
+}
+
+% --- Tabelas e figuras ---------------------------------------------------
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{caption}
+
+% Legendas em TNR 12pt, alinhadas à esquerda
+\captionsetup{
+    font={normalsize},
+    labelfont={bf},
+    justification=raggedright,
+    singlelinecheck=false
+}
+
+% --- Notas de rodapé: TNR 10pt, espaçamento simples ----------------------
+\renewcommand{\footnotesize}{\fontsize{10pt}{12pt}\selectfont}
+\setlength{\footnotesep}{14pt}        % espaço entre notas
+\renewcommand{\footnoterule}{\rule{4cm}{0.4pt}}
+
+% --- Outras configurações estéticas --------------------------------------
+\setlength{\afterchapskip}{1.5\baselineskip}
+\setlength{\beforechapskip}{0pt}
+
+% --- Renomear titulo da bibliografia para REFERENCIAS (NBR 6023) ---------
+% Em modo 'article' nao ha \chapter, entao redefine \bibsection
+% para usar \section* em vez do \chapter* default do abntex2.
+\renewcommand{\bibname}{REFERÊNCIAS}
+\renewcommand{\bibsection}{%
+    \section*{\bibname}%
+    \addcontentsline{toc}{section}{\bibname}%
+}
+
+% --- Variáveis institucionais (usar nos textos) --------------------------
+\newcommand{\universidade}{Universidade de Fortaleza}
+\newcommand{\programa}{Programa de Pós-Graduação em Direito Constitucional}
+\newcommand{\nivel}{Doutorado em Direito Constitucional}
+\newcommand{\autorprincipal}{Kalyl Lamarck Filgueiras Estanislau Costa}

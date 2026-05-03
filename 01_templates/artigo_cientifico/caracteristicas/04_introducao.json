@@ -1,0 +1,57 @@
+{
+  "id": "introducao",
+  "componente": "Introdução do artigo",
+  "descricao": "Heading 'INTRODUÇÃO' (sem indicativo numérico) + corpo. Inicia pg 2 (após page-break do final pg 1). Apresenta tema, problema, objetivo geral, justificativa, metodologia e estrutura.",
+  "fonte_normativa": "ABNT NBR 14724:2024 + RAG template_artigo/05_introducao.md",
+  "rotulo": "INTRODUÇÃO",
+  "formato_rotulo_word": {
+    "fonte": "Times New Roman",
+    "tamanho_pt": 12,
+    "negrito": true,
+    "italico": false,
+    "alinhamento": "esquerda",
+    "case": "CAIXA ALTA (texto digitado em maiúsculas, não via property all_caps)",
+    "espacamento_linha": 1.5,
+    "recuo_primeira_linha_cm": 0,
+    "espaco_antes_pt": 18,
+    "espaco_depois_pt": 12,
+    "keep_with_next": true,
+    "page_break_antes": true
+  },
+  "formato_corpo_word": {
+    "fonte": "Times New Roman",
+    "tamanho_pt": 12,
+    "negrito": false,
+    "alinhamento": "justificado",
+    "espacamento_linha": 1.5,
+    "recuo_primeira_linha_cm": 1.25,
+    "espaco_antes_pt": 0,
+    "espaco_depois_pt": 0
+  },
+  "estrutura_obrigatoria": [
+    "Parágrafo 1 — Tema/contexto (2-4 frases)",
+    "Parágrafo 2 — Problema de pesquisa (formulado como pergunta)",
+    "Parágrafo 3 — Objetivo geral (verbo no infinitivo: demonstrar, analisar, investigar...)",
+    "Parágrafo 4 — Justificativa (relevância social + relevância acadêmica)",
+    "Parágrafo 5 — Metodologia (epistemologia, métodos, técnicas, fontes)",
+    "Parágrafo 6 — Estrutura do artigo (sinaliza divisão em capítulos)",
+    "Parágrafo 7 (opcional) — Achados antecipados ou hipótese"
+  ],
+  "regras": [
+    "PROIBIDO citações no formato (Autor, ano) ou Autor (ano) — NBR 14724 5.4 (introdução não recebe citações)",
+    "PROIBIDO mencionar resultados específicos ou dados — pertencem aos capítulos",
+    "PROIBIDO referência a tabelas, gráficos, figuras",
+    "Voz reflexiva obrigatória: 'investiga-se', 'demonstra-se' (1ª pessoa proibida)",
+    "Tempo verbal: presente do indicativo",
+    "Conjunção inicial obrigatória em todo parágrafo (exceto o 1º)",
+    "Não usar termos proibidos (ver escrita/termos_proibidos.json)",
+    "Não usar anglicismos (ver escrita/traducao_termos_estrangeiros.json)",
+    "Toda frase com sujeito verbal deve ter coesão lexical com a anterior"
+  ],
+  "render_latex": "\\section*{INTRODUÇÃO}\\addcontentsline{toc}{section}{INTRODUÇÃO}\\input{secoes/00_introducao.tex}",
+  "render_gdocs": {
+    "page_break_before": true,
+    "heading": {"text": "INTRODUÇÃO", "bold": true, "alignment": "START", "namedStyleType": "HEADING_1"},
+    "corpo": {"alignment": "JUSTIFIED", "indentFirstLine": "1.25cm"}
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "autores",
+  "componente": "Bloco de autores",
+  "descricao": "Nomes dos autores em ordem de autoria. Marcador 1, 2, 3... como footnote numérica que abre as notas de rodapé do artigo (são as primeiras notas, IDs 1 e 2). Nota contém qualificação completa.",
+  "fonte_normativa": "RAG template_artigo/02_autores.md + decisão do autor 2026-05-02 (uso footnote numérica)",
+  "ordem_autoria": [
+    "primeiro autor (orientador)",
+    "segundo autor (doutorando)",
+    "demais coautores se houver"
+  ],
+  "formato_nome_word": {
+    "fonte": "Times New Roman",
+    "tamanho_pt": 12,
+    "negrito": false,
+    "italico": false,
+    "alinhamento": "direita",
+    "espacamento_linha": 1.5,
+    "recuo_primeira_linha_cm": 0,
+    "espaco_antes_pt": 0,
+    "espaco_depois_pt": 0,
+    "case": "case normal (Maria Silva, não MARIA SILVA)"
+  },
+  "marcador": {
+    "tipo": "footnote_numerico",
+    "estilo": "superscript",
+    "primeira_nota_id": 1,
+    "regra": "Marcadores 1, 2, 3... aparecem como sobrescrito imediatamente após o nome. São as PRIMEIRAS footnotes do artigo. Demais footnotes do corpo seguem a partir do número (n_autores + 1)."
+  },
+  "conteudo_nota_rodape": {
+    "estrutura": [
+      "Titulação (Doutor[a] em..., Mestre em..., Bacharel em...)",
+      "Universidade(s) com sigla entre parênteses",
+      "Cidade/UF",
+      "País",
+      "E-mail (obrigatório)",
+      "ORCID (obrigatório, formato: https://orcid.org/0000-0000-0000-0000)",
+      "Lattes opcional"
+    ],
+    "ordem_logica": "Titulação mais alta primeiro → universidades em ordem cronológica (mais recente primeiro) → afiliação atual → contato → ORCID",
+    "exemplo": "Doutor em Direito Constitucional pela Universidade de Fortaleza (UNIFOR), Fortaleza/CE, Brasil. Pós-Doutor pela Université Paris-Descartes, Paris, França. Professor titular do Programa de Pós-Graduação em Direito Constitucional da UNIFOR. E-mail: nome@unifor.br. ORCID: https://orcid.org/0000-0000-0000-0000.",
+    "formato_word_nota": {
+      "fonte": "Times New Roman",
+      "tamanho_pt": 10,
+      "negrito": false,
+      "italico": false,
+      "alinhamento": "justificado",
+      "espacamento_linha": 1.0,
+      "recuo_primeira_linha_cm": 0.75,
+      "espaco_antes_pt": 0,
+      "espaco_depois_pt": 0
+    }
+  },
+  "separadores": {
+    "antes_bloco_autores": "1 parágrafo vazio (após título EN)",
+    "entre_autores": "0 parágrafos (1 autor por linha)",
+    "depois_bloco_autores": "1 parágrafo vazio (antes de RESUMO)"
+  },
+  "regras": [
+    "1 autor por parágrafo (não concatenar com 'e')",
+    "Nomes completos sem abreviar (exceto se autor publicar com nome abreviado)",
+    "ORCID obrigatório para todos os autores",
+    "E-mail institucional preferido",
+    "Marcadores 1, 2 são footnotes — Word renumera automaticamente",
+    "TODA primeira menção a um autor no corpo do texto deve ter o ano da obra (Pompeu, 2024) ou Pompeu (2024)"
+  ],
+  "exemplo": {
+    "autor_1": "Gina Vidal Marcílio Pompeu¹",
+    "autor_2": "Kalyl Lamarck Silvério Pereira²"
+  },
+  "render_latex": {
+    "padrao": "\\begin{flushright}NOME\\footnote{NOTA_AUTOR}\\\\NOME2\\footnote{NOTA_AUTOR_2}\\end{flushright}"
+  },
+  "render_gdocs": {
+    "insert_text": "NOME_AUTOR_1\\nNOME_AUTOR_2\\n",
+    "format_paragrafo": {"alignment": "END"},
+    "footnote_per_author": true
+  }
+}

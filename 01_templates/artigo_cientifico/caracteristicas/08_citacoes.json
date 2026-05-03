@@ -1,0 +1,101 @@
+{
+  "id": "citacoes",
+  "componente": "Citações no corpo do texto (autor-data)",
+  "descricao": "Sistema de citação autor-data ABNT. Aceita dois formatos: Autor (ano, p. X) inline OU (AUTOR, ano, p. X) entre parênteses. Citação direta longa PROIBIDA. Citação direta curta exige tradução obrigatória de termos estrangeiros + referência ao original entre parênteses.",
+  "fonte_normativa": "ABNT NBR 10520:2023 + Citação e Referência 2025 (RAG) + decisões do autor 2026-05-02",
+  "estilos_aceitos": {
+    "inline": {
+      "padrao": "Autor (ano, p. X)",
+      "exemplo": "Conforme Leff (2006, p. 22), a racionalidade ambiental constitui-se como contracorrente.",
+      "uso": "Quando o autor é sujeito da frase",
+      "regras": [
+        "Sobrenome em case normal (Leff, não LEFF)",
+        "Ano entre parênteses imediatamente após",
+        "Página obrigatória em citação direta; opcional em paráfrase mas RECOMENDADA"
+      ]
+    },
+    "parentetico": {
+      "padrao": "(AUTOR, ano, p. X)",
+      "exemplo": "A racionalidade ambiental constitui-se como contracorrente da racionalidade econômica (LEFF, 2006, p. 22).",
+      "uso": "Quando autor não é sujeito; ao fim da frase ou parágrafo",
+      "regras": [
+        "Sobrenome em CAIXA ALTA dentro do parênteses",
+        "Vírgula entre sobrenome e ano",
+        "Página obrigatória em citação direta"
+      ]
+    }
+  },
+  "tipos_de_citacao": {
+    "indireta_parafrase": {
+      "descricao": "Reescrita do conteúdo do autor com palavras próprias do citante. ESTILO PADRÃO do artigo.",
+      "exemplo": "Leff (2006, p. 22) sustenta que a racionalidade ambiental constitui contracorrente da racionalidade econômica dominante.",
+      "regra": "Toda citação no artigo deve ser preferencialmente paráfrase. Página obrigatória."
+    },
+    "direta_curta": {
+      "descricao": "Transcrição literal de até 3 linhas do original. Aspas duplas inline.",
+      "exemplo": "A teoria opera como \"contracorrente da racionalidade dominante\" (LEFF, 2006, p. 22).",
+      "regras": [
+        "Aspas duplas tipográficas \"...\" (não retas \"\")",
+        "Página obrigatória",
+        "Mantém o texto exato do original",
+        "Se o original tiver termo estrangeiro: TRADUZIR para PT-BR + referenciar termo original entre parênteses (ver tipos_de_citacao.com_termo_estrangeiro)"
+      ]
+    },
+    "direta_longa": {
+      "descricao": "PROIBIDA neste artigo. Decisão do autor 2026-05-02.",
+      "alternativa": "Sempre converter em paráfrase (citação indireta)."
+    },
+    "com_termo_estrangeiro": {
+      "descricao": "Quando o autor original cunha um termo técnico em outro idioma, TRADUZIR para PT-BR e referenciar o termo original entre parênteses + página.",
+      "exemplo_correto": "Constata-se a existência de um teto ambiental (headroom) que define o limite das pressões biofísicas (RAWORTH, 2017, p. 49).",
+      "exemplo_errado": "Constata-se a existência de um *headroom* que define o limite das pressões biofísicas (RAWORTH, 2017, p. 49).",
+      "regras": [
+        "Termo traduzido em PT-BR vai NO TEXTO sem itálico nem aspas",
+        "Termo original entre PARÊNTESES, em itálico se for em outro idioma latino moderno (ex.: alemão, francês, inglês acadêmico)",
+        "Tradução deve seguir a doutrina consolidada (consultar dicionários técnicos e literatura PT-BR sobre o autor)",
+        "Quando não houver tradução consolidada, escolher a mais utilizada e mencionar critério em nota de rodapé"
+      ],
+      "exemplos_traducoes_consolidadas": {
+        "headroom": "teto ambiental",
+        "rent-seeking": "busca de renda extrativa",
+        "state-sanctioned": "chancelado pelo Estado",
+        "Power Purchase Agreement (PPA)": "contrato de compra e venda de energia (PPA)",
+        "commons": "bens comuns",
+        "expulsions": "expulsões",
+        "sovereignty": "soberania",
+        "biocides": "biocidas",
+        "Imperiale Lebensweise": "modo de vida imperial"
+      }
+    },
+    "apud": {
+      "descricao": "Citação de fonte secundária (autor citando autor). EVITAR ao máximo. Permitido apenas quando obra original for inacessível.",
+      "exemplo": "Summers (1991 apud MARTÍNEZ-ALIER, 2007, p. 81) sustenta que...",
+      "regra": "Nas referências, listar APENAS a obra acessada (Martínez-Alier 2007), não Summers 1991"
+    }
+  },
+  "regras_gerais_obrigatorias": [
+    "TODA menção a um autor no corpo do texto DEVE incluir o ano da obra. JAMAIS citar 'segundo Leff' sem ano.",
+    "JAMAIS citar o título da obra no corpo do texto (apenas autor + ano).",
+    "Mais de 3 autores: usar 'et al.' a partir da 2ª menção; na 1ª listar todos OU usar 'et al.' desde o início conforme NBR 10520:2023 (escolher padrão e manter uniforme em todo artigo)",
+    "Padrão deste artigo: 'et al.' SEMPRE, mesmo na 1ª menção, para >3 autores",
+    "Mesmo autor citado várias vezes consecutivas: pode-se usar 'Idem' (mesmo autor, obra diferente) ou 'Ibid.' (mesmo autor, mesma obra) — RAG e ABNT permitem mas EVITAR para clareza",
+    "Citações com mais de uma obra do mesmo autor no mesmo ano: usar 'a', 'b', 'c' após o ano (ex.: Pompeu, 2024a; Pompeu, 2024b)",
+    "Quando o autor for instituição/coletivo: nome inteiro em CAIXA ALTA (ex.: BRASIL, 2007; OIT, 1989)",
+    "Citação de lei: ver formato em 07_referencias.json > tipos_de_fonte.lei_nacional"
+  ],
+  "regras_de_qualidade_textual": [
+    "Profundidade doutrinária (regra das entranhas): extrair descoberta específica do autor (mecanismo, tese precisa); demonstrar como se aplica ao caso concreto; articular autores por ângulos distintos, nunca sobrepostos",
+    "Teste: se remover a citação e o parágrafo perder só decoração (não substância), citação é superficial e deve ser reescrita",
+    "Não citar autores em sequência sem articular suas teses entre si"
+  ],
+  "render_latex": {
+    "inline_autor_data": "\\citeonline{key}",
+    "parentetico": "\\cite{key}",
+    "comparametros_pagina": "\\citeonline[p.~22]{leff2006}",
+    "apud": "\\apud{primario}{secundario}"
+  },
+  "render_gdocs": {
+    "tipo": "texto_inline_normal",
+    "obs": "Google Docs não tem comando nativo de citação. Auditoria pós-render valida regex (Autor, ano|Autor (ano)) + presença na lista de referências."
+  }
+}

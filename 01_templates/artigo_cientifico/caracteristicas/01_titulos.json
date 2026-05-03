@@ -1,0 +1,72 @@
+{
+  "id": "titulos",
+  "componente": "Título do artigo (PT + EN)",
+  "descricao": "Título em português brasileiro (linha 1) seguido por título em inglês (linha 2). Cabeçalho do artigo, antes do bloco de autores.",
+  "fonte_normativa": "RAG template_artigo/01_titulo.md",
+  "ordem": ["titulo_pt", "titulo_en"],
+  "titulo_pt": {
+    "formato_word": {
+      "fonte": "Times New Roman",
+      "tamanho_pt": 12,
+      "negrito": true,
+      "italico": false,
+      "alinhamento": "centralizado",
+      "espacamento_linha": 1.5,
+      "recuo_primeira_linha_cm": 0,
+      "espaco_antes_pt": 0,
+      "espaco_depois_pt": 0
+    },
+    "regras": [
+      "Sem caixa alta (exceto siglas e nomes próprios)",
+      "Sem ponto final",
+      "Máximo 20 palavras (incluindo subtítulo, artigos e preposições)",
+      "Não exceder 2 linhas",
+      "Aspas tipográficas curvas (“”), nunca retas (\")",
+      "Subtítulo separado por dois pontos é PROIBIDO em outros componentes; no título é permitido"
+    ]
+  },
+  "titulo_en": {
+    "formato_word": {
+      "fonte": "Times New Roman",
+      "tamanho_pt": 12,
+      "negrito": false,
+      "italico": true,
+      "alinhamento": "centralizado",
+      "espacamento_linha": 1.5,
+      "recuo_primeira_linha_cm": 0,
+      "espaco_antes_pt": 0,
+      "espaco_depois_pt": 0
+    },
+    "regras": [
+      "Tradução fiel do título PT, não adaptação livre",
+      "Apenas itálico (sem negrito) — confirmado pelo autor 2026-05-02",
+      "Sem caixa alta (exceto siglas e nomes próprios)",
+      "Sem ponto final",
+      "Máximo 20 palavras"
+    ]
+  },
+  "separador_blocos": {
+    "antes_titulo_pt": "nada",
+    "entre_pt_e_en": "1 parágrafo vazio (espaço entre linhas 1.5)",
+    "entre_en_e_autores": "1 parágrafo vazio"
+  },
+  "exemplo": {
+    "titulo_pt": "Correntes eólicas sobre a (ir)racionalidade ambiental, energia renovável sem transição energética no Nordeste brasileiro",
+    "titulo_en": "Wind currents over the (ir)rationality of the environment, renewable energy without energy transition in the Brazilian Northeast"
+  },
+  "render_latex": {
+    "titulo_pt": "\\begin{center}\\textbf{TITULO_PT}\\end{center}",
+    "titulo_en": "\\begin{center}\\textit{TITULO_EN}\\end{center}"
+  },
+  "render_gdocs": {
+    "insert_text": "TITULO_PT\\n\\nTITULO_EN\\n\\n",
+    "format_titulo_pt": {
+      "alignment": "CENTER",
+      "bold": true
+    },
+    "format_titulo_en": {
+      "alignment": "CENTER",
+      "italic": true
+    }
+  }
+}

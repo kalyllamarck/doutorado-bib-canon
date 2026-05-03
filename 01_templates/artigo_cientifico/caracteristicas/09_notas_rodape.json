@@ -1,0 +1,78 @@
+{
+  "id": "notas-rodape",
+  "componente": "Notas de rodapé",
+  "descricao": "Notas EXPLICATIVAS no rodapé da página. Usadas para aprofundar discussões, detalhar percursos metodológicos, explicar termos técnicos, referenciar doutrina paralela. ESSENCIAIS para enriquecer o artigo. Numeração sequencial automática iniciando em 1 (autores ocupam IDs 1 e 2; demais notas seguem a partir da 3).",
+  "fonte_normativa": "ABNT NBR 10520:2023 + decisão do autor 2026-05-02",
+  "formato_word": {
+    "fonte": "Times New Roman",
+    "tamanho_pt": 10,
+    "negrito": false,
+    "italico": false,
+    "alinhamento": "justificado",
+    "espacamento_linha": 1.0,
+    "recuo_primeira_linha_cm": 0.75,
+    "espaco_antes_pt": 0,
+    "espaco_depois_pt": 6,
+    "marcador_corpo_texto": "superscript (sobrescrito)",
+    "estilo_marcador": "Refdenotaderodap",
+    "separador_horizontal_acima": "linha de 4cm",
+    "regra_marcador_centralizado": "Marcador da nota no rodapé pode ser centralizado se o periódico exigir; padrão deste artigo é alinhado à esquerda em superscript"
+  },
+  "usos_obrigatorios": [
+    "Detalhar percurso metodológico (qual base de dados, qual recorte temporal, qual filtro de validação)",
+    "Explicar termo técnico que aparece no corpo (sem sobrecarregar o parágrafo principal)",
+    "Apresentar as várias correntes doutrinárias quando o corpo só cita a corrente adotada",
+    "Referenciar doutrina paralela ou contrária à tese do parágrafo",
+    "Trazer exemplos concretos quando o corpo opera em nível abstrato",
+    "Justificar a edição/tradução escolhida quando autor tem múltiplas edições",
+    "Mencionar autores secundários consultados em apoio à tese principal",
+    "Explicar siglas técnicas quando primeira aparição no corpo já carrega a sigla",
+    "Detalhar histórico legislativo de uma lei citada",
+    "Apresentar dados quantitativos de apoio (ex.: número exato de habilitações REIDI por município)",
+    "Acrescentar referências bibliográficas adicionais que estendem a discussão"
+  ],
+  "regras": [
+    "Marcador no corpo: SUPERSCRIPT pequeno imediatamente após a palavra/frase relevante (sem espaço)",
+    "Marcador no rodapé: número normal seguido de espaço + texto da nota",
+    "Numeração sequencial automática (Word renumera). Não inserir número manualmente.",
+    "Cada nota termina com PONTO FINAL.",
+    "Notas longas (mais de 5 linhas) são aceitas e RECOMENDADAS quando aprofundam doutrinariamente",
+    "Notas podem conter citações autor-data (mesmas regras do corpo)",
+    "Notas podem citar leis, jurisprudência, relatórios — todas as regras de citacoes.json se aplicam",
+    "Notas podem ter formatação inline (negrito, itálico) seguindo as regras do corpo",
+    "Não usar notas para mera referência bibliográfica solta (use citação inline no corpo)",
+    "Conjunção inicial RECOMENDADA quando a nota for argumentativa (não obrigatória)",
+    "Termos estrangeiros em itálico, traduzidos para PT-BR seguindo regras de citacoes.json"
+  ],
+  "exemplos_de_boas_notas": [
+    {
+      "tipo": "metodologica",
+      "exemplo": "Os dados quantitativos sobre potência em operação provêm do Sistema de Informações de Geração da Agência Nacional de Energia Elétrica (SIGA), com extração em 1º de abril de 2026, filtro de status operacional. Os totais municipais referem-se exclusivamente aos empreendimentos com status \"Em Operação\" (campo DscFaseUsina). Os dados de potência outorgada total são distintos e não são utilizados como denominador neste artigo."
+    },
+    {
+      "tipo": "doutrinaria_paralela",
+      "exemplo": "Em sentido convergente, Marques (2018, p. 137) e Holanda (2018, p. 137) confirmam a presença do autor mexicano no estado da arte do PPGD/Unifor."
+    },
+    {
+      "tipo": "explicacao_termo",
+      "exemplo": "O conceito de necropolítica de Mbembe (2003) refere-se à soberania (sovereignty) que se concentra no poder de ditar quem pode viver e quem deve morrer. Foi publicado originalmente em **Public Culture** (Durham, v. 15, n. 1, p. 11-40, Duke University Press, 2003)."
+    },
+    {
+      "tipo": "tradução_escolhida",
+      "exemplo": "A edição portuguesa consultada de Fanon (1961) é **Os condenados da terra**, Lisboa, Editora Ulisseia, com tradução de Serafim Ferreira do texto original *Les damnés de la terre* (Paris, François Maspero, 1961)."
+    }
+  ],
+  "render_latex": {
+    "inline": "\\footnote{Texto da nota com TNR 10pt automatico}",
+    "config_fonte": "\\renewcommand{\\footnotesize}{\\fontsize{10pt}{12pt}\\selectfont}"
+  },
+  "render_gdocs": {
+    "comando": "createFootnote",
+    "request_padrao": {
+      "createFootnote": {
+        "location": {"index": "INDEX_NO_CORPO"}
+      }
+    },
+    "obs": "Google Docs API limita formatação de notas; usar style padrão da plataforma e validar TNR 10pt manualmente"
+  }
+}

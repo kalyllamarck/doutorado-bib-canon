@@ -1,0 +1,33 @@
+{
+  "tipo": "sinal_grafico",
+  "descricao": "Caracteres de pontuação vetados no texto final",
+  "entradas": [
+    {
+      "id": "sig_001",
+      "nome": "travessao",
+      "caracter": "—",
+      "unicode": "U+2014",
+      "regex_deteccao": "—",
+      "alternativas": ["dividir em dois períodos com ponto final", "substituir por vírgulas quando apositivo", "substituir por parênteses quando incidental", "reescrever como subordinada"]
+    },
+    {
+      "id": "sig_002",
+      "nome": "travessao_curto",
+      "caracter": "–",
+      "unicode": "U+2013",
+      "regex_deteccao": "–",
+      "alternativas": ["substituir por hífen em intervalos numéricos", "reescrever com preposição 'a' ou 'entre'"],
+      "observacao": "Incluído por precaução, já que muitos editores convertem automaticamente entre — e –."
+    },
+    {
+      "id": "sig_003",
+      "nome": "dois_pontos",
+      "caracter": ":",
+      "unicode": "U+003A",
+      "regex_deteccao": ":(?!\\d)",
+      "alternativas": ["conjunção explicativa ('porque', 'porquanto')", "aposto com vírgula", "novo período iniciado por maiúscula"],
+      "excecoes": ["horários (14:30)", "razões numéricas (1:2)", "URLs (https://)"],
+      "observacao": "Regex exclui horários e proporções numéricas via lookahead negativo."
+    }
+  ]
+}

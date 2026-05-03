@@ -1,0 +1,69 @@
+{
+  "id": "pagina-global",
+  "componente": "Página global / formato base",
+  "descricao": "Configurações que valem para o documento inteiro: papel, margens, fonte default, espaçamento, paginação. Aplicam-se a toda página exceto onde substituídas por componente específico.",
+  "fonte_normativa": "ABNT NBR 14724:2024 seções 5.1 (formato), 5.3 (paginação)",
+  "formato_word": {
+    "papel": "A4",
+    "papel_largura_cm": 21.0,
+    "papel_altura_cm": 29.7,
+    "margens": {
+      "superior_cm": 3,
+      "inferior_cm": 2,
+      "esquerda_cm": 3,
+      "direita_cm": 2,
+      "anverso_unico": true
+    },
+    "fonte_default": "Times New Roman",
+    "tamanho_default_pt": 12,
+    "espacamento_linha_default": 1.5,
+    "alinhamento_default": "justificado",
+    "recuo_primeira_linha_cm": 1.25,
+    "espaco_antes_pt": 0,
+    "espaco_depois_pt": 0,
+    "cor_texto": "preto",
+    "frente_unica": true
+  },
+  "paginacao": {
+    "numero_em": "canto superior direito",
+    "distancia_borda_superior_cm": 2,
+    "distancia_borda_direita_cm": 2,
+    "fonte_pt": 10,
+    "comeca_a_partir_de": "primeira página da parte textual (página 2)",
+    "primeira_pagina_visivel": false,
+    "regra": "Página 1 (capa/identificação/resumo) é contada mas NÃO recebe número visível. Numeração visível inicia na página 2 (introdução)."
+  },
+  "regras_globais": [
+    "Cor preta para texto. Cores apenas em ilustrações.",
+    "Frente única (anverso) para artigos.",
+    "Quebra de página após KEYWORDS: INTRODUÇÃO sempre inicia em nova página.",
+    "Evitar linhas órfãs e viúvas: Word > Parágrafo > Quebras de linha > Controle de linhas órfãs/viúvas (ATIVADO).",
+    "Headings com Manter com o próximo (keep_next) ATIVADO para evitar título órfão no fim de página.",
+    "Idioma do documento: pt-BR. Hifenização ATIVADA com babel português.",
+    "Limite total: 9.000 palavras (sem contar referências, notas de rodapé, tabelas)."
+  ],
+  "render_latex": {
+    "documentclass": "\\documentclass[article,12pt,a4paper,oneside,brazil]{abntex2}",
+    "geometry": "\\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=2cm]{geometry}",
+    "fonte": "\\setmainfont{Times New Roman}",
+    "espacamento": "\\OnehalfSpacing",
+    "recuo": "\\setlength{\\parindent}{1.25cm}",
+    "paginacao": "\\pagestyle{plain} % numero canto superior direito automatico em abntex2"
+  },
+  "render_gdocs": {
+    "updateDocumentStyle": {
+      "documentStyle": {
+        "marginTop":    {"magnitude": 85.04, "unit": "PT"},
+        "marginBottom": {"magnitude": 56.69, "unit": "PT"},
+        "marginLeft":   {"magnitude": 85.04, "unit": "PT"},
+        "marginRight":  {"magnitude": 56.69, "unit": "PT"},
+        "pageSize": {
+          "width":  {"magnitude": 595.276, "unit": "PT"},
+          "height": {"magnitude": 841.890, "unit": "PT"}
+        },
+        "useFirstPageHeaderFooter": true
+      },
+      "fields": "marginTop,marginBottom,marginLeft,marginRight,pageSize,useFirstPageHeaderFooter"
+    }
+  }
+}

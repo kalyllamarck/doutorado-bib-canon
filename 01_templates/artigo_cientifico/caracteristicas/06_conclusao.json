@@ -1,0 +1,52 @@
+{
+  "id": "conclusao",
+  "componente": "Conclusão do artigo",
+  "descricao": "Heading 'CONCLUSÃO' (sem indicativo numérico) + corpo. Última seção do desenvolvimento, antes das REFERÊNCIAS. Sintetiza achados sem trazer informação nova.",
+  "fonte_normativa": "ABNT NBR 14724:2024 + RAG template_artigo/07_conclusoes.md",
+  "rotulo": "CONCLUSÃO",
+  "formato_rotulo_word": {
+    "fonte": "Times New Roman",
+    "tamanho_pt": 12,
+    "negrito": true,
+    "italico": false,
+    "alinhamento": "esquerda",
+    "case": "CAIXA ALTA",
+    "espacamento_linha": 1.5,
+    "recuo_primeira_linha_cm": 0,
+    "espaco_antes_pt": 18,
+    "espaco_depois_pt": 12,
+    "keep_with_next": true,
+    "page_break_antes": false
+  },
+  "formato_corpo_word": {
+    "fonte": "Times New Roman",
+    "tamanho_pt": 12,
+    "negrito": false,
+    "alinhamento": "justificado",
+    "espacamento_linha": 1.5,
+    "recuo_primeira_linha_cm": 1.25,
+    "espaco_antes_pt": 0,
+    "espaco_depois_pt": 0
+  },
+  "estrutura_obrigatoria": [
+    "Parágrafo 1 — Retomada do objetivo (ecoa a introdução)",
+    "Parágrafos 2 a N — Síntese dos achados (1 por achado significativo do desenvolvimento)",
+    "Parágrafo penúltimo — Limitações e agenda de pesquisa subsequente",
+    "Parágrafo final — Proposição/contribuição original do artigo"
+  ],
+  "regras": [
+    "PROIBIDO citações novas no formato (Autor, ano) — apenas reafirmação de autores já citados no corpo (NBR 14724)",
+    "PROIBIDO trazer dados ou achados que não tenham sido apresentados nos capítulos",
+    "PROIBIDO referência a tabelas, gráficos, figuras novas",
+    "Voz reflexiva: 'sustenta-se', 'demonstrou-se', 'propõe-se' (1ª pessoa proibida)",
+    "Tempo verbal: presente do indicativo + pretérito perfeito para resultados ('demonstrou-se', 'analisou-se')",
+    "Conjunção inicial obrigatória em todo parágrafo (exceto o 1º que ecoa a introdução)",
+    "Não introduzir conceito teórico novo",
+    "Ecoar léxico-chave da introdução (palavras como 'objetivo', 'demonstrar', 'investigar' devem reaparecer)"
+  ],
+  "render_latex": "\\section*{CONCLUSÃO}\\addcontentsline{toc}{section}{CONCLUSÃO}\\input{secoes/99_conclusao.tex}",
+  "render_gdocs": {
+    "heading": {"text": "CONCLUSÃO", "bold": true, "alignment": "START", "namedStyleType": "HEADING_1"},
+    "corpo": {"alignment": "JUSTIFIED", "indentFirstLine": "1.25cm"}
+  }
+}

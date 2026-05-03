@@ -1,0 +1,296 @@
+{
+  "subtipo": "consecutivas",
+  "categoria": "subordinativas",
+  "definicao": "Indicam consequência ou efeito",
+  "total": 44,
+  "formais": 44,
+  "informais": 0,
+  "polissemicas": 6,
+  "itens": [
+    {
+      "forma": "que (após tão/tanto)",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "de modo que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "coordenativas/conclusivas",
+        "subordinativas/modais"
+      ]
+    },
+    {
+      "forma": "de forma que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/modais"
+      ]
+    },
+    {
+      "forma": "de maneira que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "coordenativas/conclusivas",
+        "subordinativas/modais"
+      ]
+    },
+    {
+      "forma": "de sorte que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "coordenativas/conclusivas",
+        "subordinativas/modais"
+      ]
+    },
+    {
+      "forma": "de jeito que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/modais"
+      ]
+    },
+    {
+      "forma": "de tal modo que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "de tal forma que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "de tal maneira que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "de tal sorte que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "tanto que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "tão que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "tamanho que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "tal que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "a ponto de que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ao ponto de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em tal grau que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "a tal ponto que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "a esse ponto que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ao extremo de que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "com tal intensidade que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "a tal extremo que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "que por isso",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "e por isso",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "vindo a que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "resultando em que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "culminando em que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "desembocando em que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "redundando em que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "implicando que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "acarretando que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "gerando que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ensejando que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "provocando que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "fazendo com que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "levando a que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "conduzindo a que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "desaguando em que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "no limite de que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "à beira de que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/locativas"
+      ]
+    },
+    {
+      "forma": "ao cabo do que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "no efeito de que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "como corolário que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "na medida que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    }
+  ]
+}

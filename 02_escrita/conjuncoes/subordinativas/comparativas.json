@@ -1,0 +1,309 @@
+{
+  "subtipo": "comparativas",
+  "categoria": "subordinativas",
+  "definicao": "Indicam comparação",
+  "total": 44,
+  "formais": 44,
+  "informais": 0,
+  "polissemicas": 10,
+  "itens": [
+    {
+      "forma": "como",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/conformativas",
+        "subordinativas/modais"
+      ]
+    },
+    {
+      "forma": "tal qual",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/conformativas",
+        "subordinativas/modais"
+      ]
+    },
+    {
+      "forma": "qual",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/modais"
+      ]
+    },
+    {
+      "forma": "tal como",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/modais"
+      ]
+    },
+    {
+      "forma": "assim como",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "coordenativas/aditivas",
+        "subordinativas/conformativas",
+        "subordinativas/modais"
+      ]
+    },
+    {
+      "forma": "bem como",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "coordenativas/aditivas"
+      ]
+    },
+    {
+      "forma": "do mesmo modo que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "da mesma forma que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "tanto quanto",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "tão... quanto",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "tão... como",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "mais... do que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "menos... do que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "feito",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/modais"
+      ]
+    },
+    {
+      "forma": "igual a",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "à semelhança de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "à maneira de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ao modo de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ao jeito de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ao estilo de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "à feição de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "à guisa de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "nos moldes de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "no feitio de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "qual se",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/modo_comparativas_hibridas"
+      ]
+    },
+    {
+      "forma": "como se",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/modo_comparativas_hibridas"
+      ]
+    },
+    {
+      "forma": "tal e qual",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "à imagem de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "à altura de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em paralelo a",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em analogia a",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "analogamente a",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "similarmente a",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "equiparando-se a",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "espelhando",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ecoando",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "rivalizando com",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "emparelhando com",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "no mesmo nível de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "no pé de igualdade com",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "à par de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em compasso com",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em sintonia com",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/conformativas"
+      ]
+    },
+    {
+      "forma": "em ressonância com",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    }
+  ]
+}

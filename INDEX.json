@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "biblioteca": "Doutorado PPGD/Unifor — Kalyl Lamarck",
+  "criada_em": "2026-05-03",
+  "raiz": "/home/kalyllamarck/projetos/Doutorado/biblioteca_canonica",
+  "componentes": {
+    "01_templates": {
+      "descricao": "Templates de DOCUMENTOS por tipo",
+      "subitens": {
+        "artigo_cientifico": {
+          "status": "completo",
+          "caracteristicas_count": 11,
+          "app": ["latex", "gdocs"],
+          "renderizadores_funcionais": ["latex (compila zero erros)", "gdocs (cria doc + skeleton)"]
+        },
+        "tese_doutorado": {"status": "vazio"},
+        "relatorio_institucional": {"status": "vazio"},
+        "peticao_juridica": {"status": "vazio"}
+      }
+    },
+    "02_escrita": {
+      "descricao": "Regras transversais de escrita",
+      "subitens": {
+        "escrita_canonica.json": {
+          "status": "completo",
+          "principios": 16,
+          "perguntas_teste_estresse": 6,
+          "tensoes_resolvidas": 3
+        },
+        "termos_proibidos": {
+          "status": "completo",
+          "arquivos": 6,
+          "entradas_lexicais": 14,
+          "entradas_expressoes": 5,
+          "entradas_colocacoes": 2,
+          "entradas_construcoes": 12,
+          "entradas_sinais": 3,
+          "regras_coocorrencia": 9
+        },
+        "conjuncoes": {
+          "status": "completo",
+          "schema_version": "2.0",
+          "arquivos": 18,
+          "total_entradas": 802,
+          "categorias": ["coordenativas (5 subtipos)", "subordinativas (13 subtipos)"]
+        },
+        "traducao_estrangeirismos": {"status": "vazio"},
+        "voz_e_tempo_verbal": {"status": "pendente"},
+        "profundidade_doutrinaria": {"status": "pendente"},
+        "marcadores_discursivos": {"status": "pendente"}
+      }
+    },
+    "03_fontes": {
+      "descricao": "Conteúdo real de obras consultadas",
+      "status": "vazio",
+      "schema_planejado": ["ficha.json", "elementos_pretextuais.json", "elementos_textuais/cap_NN.json", "elementos_postextuais.json", "citacoes_uteis.json"],
+      "piloto_planejado": "leff_enrique/2006_ecologia_politica"
+    },
+    "04_normas": {
+      "descricao": "Normas técnicas referenciais em JSON",
+      "status": "vazio",
+      "normas_alvo": [
+        "ABNT NBR 6023:2018 (Referências)",
+        "ABNT NBR 6027:2012 (Sumário)",
+        "ABNT NBR 6028:2021 (Resumo)",
+        "ABNT NBR 10520:2023 (Citações)",
+        "ABNT NBR 14724:2024 (Trabalhos acadêmicos)",
+        "Citação e Referência 2025 (Guia prático)"
+      ]
+    },
+    "05_metadados": {
+      "descricao": "JSON Schema + glossário",
+      "subitens": {
+        "schemas": {"status": "vazio"},
+        "glossario.json": {"status": "pendente"}
+      }
+    }
+  },
+  "estatisticas_globais": {
+    "total_jsons_validos": 36,
+    "total_arquivos": 38,
+    "total_entradas_estruturadas": "11 caracteristicas + 16 principios + 41 termos_proibidos (incluindo coc) + 802 conjuncoes = 870+"
+  },
+  "renderizadores_funcionais": [
+    "01_templates/artigo_cientifico/app/latex/build.sh — compila .tex em ~3s",
+    "01_templates/artigo_cientifico/app/gdocs/criar_template.py — cria Google Doc via gws"
+  ],
+  "proximos_passos": [
+    "1. Bootstrap 03_fontes/ com Leff 2006 piloto",
+    "2. Extrair 04_normas/ NBR 6023 e 14724 para JSON",
+    "3. Criar 05_metadados/schemas/ JSON Schema v7 para cada componente",
+    "4. Estender 02_escrita/ com traducao_estrangeirismos por idioma",
+    "5. Criar template tese_doutorado em 01_templates/",
+    "6. Criar template peticao_juridica em 01_templates/",
+    "7. Construir validador autônomo que aplica termos_proibidos + escrita_canonica + conjuncoes em qualquer .md/.tex e gera relatório de violações"
+  ]
+}

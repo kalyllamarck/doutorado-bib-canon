@@ -1,0 +1,299 @@
+{
+  "subtipo": "modo_comparativas_hibridas",
+  "categoria": "subordinativas",
+  "definicao": "Híbridas modo+comparação (zona cinzenta gramatical)",
+  "total": 47,
+  "formais": 47,
+  "informais": 0,
+  "polissemicas": 2,
+  "itens": [
+    {
+      "forma": "como se",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/comparativas"
+      ]
+    },
+    {
+      "forma": "qual se",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/comparativas"
+      ]
+    },
+    {
+      "forma": "feito que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "tal qual se",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "como que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "assim como se",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "do mesmo jeito que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "à moda de que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ao modo como",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ao jeito como",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "à feição como",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "à maneira como",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "à guisa do que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "do modo como",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "da forma como",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "da maneira como",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "tal e qual se",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "como quem",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "qual quem",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "feito quem",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "à semelhança do que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "à imagem do que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em analogia ao que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em paralelo ao que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em espelho ao que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em eco ao que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em reflexo do que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "espelhando o que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ecoando o que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "imitando o que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "reproduzindo o que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "emulando o que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "rivalizando com o que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "emparelhando com o que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "à altura do que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "no patamar do que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "no nível do que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em pé de igualdade com o que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em compasso com o que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em sintonia com o que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em ressonância com o que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em consonância com o que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ao sabor como",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ao talante como",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "no diapasão como",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "no compasso como",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "na toada como",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    }
+  ]
+}

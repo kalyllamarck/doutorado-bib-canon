@@ -1,0 +1,283 @@
+{
+  "subtipo": "alternativas",
+  "categoria": "coordenativas",
+  "definicao": "Indicam alternância, escolha ou exclusão",
+  "total": 43,
+  "formais": 36,
+  "informais": 7,
+  "polissemicas": 0,
+  "itens": [
+    {
+      "forma": "ou",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ou... ou",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ora... ora",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "quer... quer",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "seja... seja",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "já... já",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "nem... nem",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ou então",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ou mesmo",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "alternativamente",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "opcionalmente",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em alternativa",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "de outro modo",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "por outra",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "caso contrário",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "do contrário",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "senão",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ou ainda",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ou talvez",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ou acaso",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "de uma forma ou de outra",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "de um modo ou outro",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "tanto faz",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "ao sabor de",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "à escolha",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "à vontade",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "por turnos",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "alternadamente",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em revezamento",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "a bel-prazer",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "ao talante",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "no compasso entre",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "no vaivém entre",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "num pêndulo entre",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "num ziguezague de",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "entre uma e outra",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "bifurcando-se",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "optativamente",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "facultativamente",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "discricionariamente",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em via dupla",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em dois caminhos",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "na encruzilhada de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    }
+  ]
+}

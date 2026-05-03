@@ -1,0 +1,286 @@
+{
+  "id": "escrita-canonica",
+  "componente": "Escrita canônica do artigo científico",
+  "descricao": "Princípios POSITIVOS da escrita acadêmica deste artigo. Define O QUE ESCREVER. Complementa termos_proibidos/* (que define o que NÃO escrever). Consultado pelo validador para sugerir reescritas; consultado pelo autor durante a redação.",
+  "principio_zero": {
+    "id": "p_00",
+    "nome": "economia_lexico_semantica",
+    "regra_mae": "Cada palavra deve carregar trabalho. Se removê-la não muda sentido, apague. Justifica todos os princípios subsequentes.",
+    "teste": "Para cada palavra: 'a frase fica pior sem ela?' Se NÃO, corte."
+  },
+  "principios": [
+    {
+      "id": "p_01",
+      "nome": "ordem_canonica_SVP",
+      "regra": "Sujeito → Verbo → Predicado em linha reta. Desvios apenas com ganho retórico ou semântico claro.",
+      "subregras": {
+        "sujeito": "Nomeado substantivamente. Não usar sintagmas vagos: 'a questão central', 'o ponto decisivo', 'a contribuição original'",
+        "verbo": "Específico e transitivo. Evitar genéricos-estativos: ser, estar, residir, consistir, tratar-se de, operar, situar-se",
+        "predicado": "Entrega conteúdo, não rótulo. Teste: se o predicado pudesse ser substituído por 'importa muito', está vazio"
+      },
+      "verbos_recomendados_juridicos_academicos": [
+        "imputar", "assentar", "vedar", "condicionar", "prescrever", "reger", "demarcar",
+        "abranger", "desautorizar", "contrastar", "refutar", "atestar", "comprovar",
+        "formalizar", "instituir", "consagrar", "conferir", "outorgar", "estatuir",
+        "delimitar", "reger", "submeter", "subordinar", "vincular", "obrigar",
+        "facultar", "autorizar", "vedar", "proibir", "tipificar", "subsumir",
+        "aplicar", "interpretar", "harmonizar", "compatibilizar", "modular",
+        "demonstrar", "evidenciar (com cautela)", "identificar", "caracterizar",
+        "distinguir", "separar", "discriminar", "diferenciar", "comparar",
+        "sustentar", "defender", "argumentar", "contrapor", "objetar"
+      ],
+      "exemplo_bom": "Summers (1991) sustenta que a transferência de poluição para países pobres é economicamente eficiente.",
+      "exemplo_ruim": "O argumento de Summers reside em sustentar que a transferência de poluição..."
+    },
+    {
+      "id": "p_02",
+      "nome": "um_periodo_uma_ideia",
+      "regra": "Cada período deve conter uma proposição substantiva. Quebrar em dois períodos quando precisar de 3+ vírgulas e 2+ subordinadas.",
+      "gatilhos_quantitativos": {
+        "max_palavras_por_periodo": 35,
+        "max_virgulas_por_periodo": 3,
+        "faixa_ideal_palavras": [15, 25],
+        "regra_validador": "Se >35 palavras OU >3 vírgulas → marca para revisão"
+      },
+      "subregras": [
+        "Evitar oração intercalada entre sujeito e verbo (ver cst_003)",
+        "Levar circunstância para antes do sujeito ou para depois do predicado",
+        "Períodos de 15-25 palavras cobrem 80% dos casos argumentativos"
+      ]
+    },
+    {
+      "id": "p_03",
+      "nome": "verbos_finitos_no_lugar_de_gerundios",
+      "regra": "Substituir gerúndios por orações coordenadas/subordinadas com verbo finito. Ver cst_004.",
+      "excecoes_legitimas": [
+        "Adjunto adverbial de simultaneidade real ('dormindo profundamente, não percebeu')",
+        "Adjetivos lexicalizados em -ante/-ente (não disparam regex)"
+      ],
+      "exemplo_bom": "Articula perspectivas que se complementam.",
+      "exemplo_ruim": "Articulando perspectivas complementares."
+    },
+    {
+      "id": "p_04",
+      "nome": "determinantes_e_preposicoes_obrigatorios",
+      "regra": "Todo substantivo comum singular modificado por oração adjetiva restritiva exige artigo. Verbos que regem preposição exigem a preposição explícita. Ver cst_011.",
+      "exemplo_bom": "Martínez-Alier (2007) nomeia o mecanismo descrito por Summers.",
+      "exemplo_ruim": "Martínez-Alier nomeia mecanismo descrito por Summers."
+    },
+    {
+      "id": "p_05",
+      "nome": "nomeie_nao_qualifique",
+      "regra": "Trocar qualificação genérica por predicação substantiva. Em vez de 'desempenha papel crucial', dizer o que o sujeito faz.",
+      "qualificadores_genericos_vetados": [
+        "importante", "fundamental", "central", "crucial", "decisivo",
+        "primordial", "essencial", "determinante", "preponderante", "de destaque",
+        "relevante (quando vazio)", "expressivo (quando vazio)"
+      ],
+      "exemplo_bom": "A norma determina a interpretação do art. X.",
+      "exemplo_ruim": "A norma tem importância fundamental.",
+      "ver_tambem": ["cst_005", "lex_001 a lex_014"]
+    },
+    {
+      "id": "p_06",
+      "nome": "contraste_substantivo",
+      "regra": "Se opor duas teses ou autores, NOMEAR a divergência. Se não consegue nomear em que divergem e em que convergem, a frase não deve ser escrita.",
+      "exemplo_bom": "Divergem quanto ao fundamento ético; convergem ao sustentar a primazia da consulta livre, prévia e informada.",
+      "exemplo_ruim": "Entram em ângulos distintos e complementares, sem que um se reduza ao outro.",
+      "ver_tambem": ["cst_008"]
+    },
+    {
+      "id": "p_07",
+      "nome": "argumentar_nao_encenar_logica",
+      "regra": "Aberturas 'Se X, então Y' simulam dedução. Preferir afirmação direta + fundamento OU subordinada causal explícita.",
+      "subregras": [
+        "Afirmação direta seguida de fundamento: 'A norma impõe ponderação. O fundamento está no art. X.'",
+        "Subordinada causal com 'porquanto', 'uma vez que', 'dado que'",
+        "Reservar 'se/então' para hipóteses genuínas, contrafactuais explícitos, cálculos"
+      ],
+      "ver_tambem": ["cst_009"]
+    },
+    {
+      "id": "p_08",
+      "nome": "nao_sinalize_o_esqueleto",
+      "regra": "Nunca deixar resíduos do esboço no texto: 'Ponto 1, premissa originária'.",
+      "subregras": [
+        "Divisão estrutural → subtítulos em nível de seção (### ####), fora do parágrafo",
+        "Continuidade argumentativa → progressão temática: retomar na primeira frase do novo parágrafo um termo da última do anterior"
+      ],
+      "ver_tambem": ["cst_010"]
+    },
+    {
+      "id": "p_09",
+      "nome": "conectivos_discretos_funcionais",
+      "regra": "Conectivos breves no MEIO do parágrafo. No INÍCIO do parágrafo, conjunção obrigatória (regra hard).",
+      "tensao_resolvida": "P9 (conectivos discretos) NÃO conflita com regra de conjunção obrigatória inicial. Hierarquia: ABERTURA = conjunção obrigatória; MEIO = discreto ou ausente",
+      "preferencias": {
+        "preferir": ["porque", "porquanto", "pois", "logo", "ademais", "outrossim"],
+        "evitar": ["à luz de", "além disso", "em suma", "em chave de"]
+      },
+      "regra_supressao": "Se a relação lógica está clara pelo conteúdo, suprima o conectivo. O leitor completa.",
+      "ver_tambem": ["con_001 a con_005", "escrita/conjuncoes/*"]
+    },
+    {
+      "id": "p_10",
+      "nome": "pontuacao_enxuta",
+      "regra": "Travessão (—) e dois-pontos (:) banidos. Reorganizar raciocínio.",
+      "transformacoes": {
+        "dois_pontos": "Vira novo período com maiúscula, OU aposto com vírgula, OU subordinada causal",
+        "travessao": "Vira parênteses (incidental) OU nova oração (substantivo)"
+      },
+      "permitidos_com_uso_correto": {
+        "virgula": "Separar elementos coordenados; isolar apostos curtos; antes de conectivos",
+        "ponto_e_virgula": "Separar orações coordenadas longas; separar itens em enumeração com vírgulas internas",
+        "parenteses": "Comentário incidental curto; referência (Autor, ano, p. X); siglas na primeira ocorrência"
+      },
+      "ver_tambem": ["sig_001 a sig_003"]
+    },
+    {
+      "id": "p_11",
+      "nome": "voz_reflexiva_presente_indicativo",
+      "regra": "Voz reflexiva ('investiga-se', 'sustenta-se', 'demonstra-se'). Tempo verbal presente do indicativo.",
+      "proibicoes": [
+        "1ª pessoa do singular ('eu sustento', 'meu argumento')",
+        "1ª pessoa do plural ('sustentamos', 'nosso argumento') — exceto em confronto doutrinário explícito",
+        "Pretérito perfeito narrativo (exceto fatos históricos datados)"
+      ],
+      "excecoes": [
+        "Conclusão pode usar pretérito perfeito para resultados ('demonstrou-se', 'analisou-se')",
+        "Citação direta curta preserva tempo do original"
+      ]
+    },
+    {
+      "id": "p_12",
+      "nome": "coesao_lexical_inter_paragrafo",
+      "regra": "Progressão temática entre parágrafos: retomar na primeira frase do novo parágrafo um termo-âncora da última frase do anterior.",
+      "operacao": "Identificar termo-âncora (substantivo ou sintagma nominal central) → reaparecer literalmente, por sinônimo, ou por anáfora pronominal no início do próximo parágrafo",
+      "exemplo_bom": "[...] o REIDI capitaliza essa renda fiscal.\n\nA capitalização da renda fiscal, descrita no parágrafo anterior, reaparece sob forma diferente em SUDENE...",
+      "exemplo_ruim": "[...] o REIDI capitaliza essa renda fiscal.\n\nMudando de assunto, Krenak (2019) discute a invisibilização cultural..."
+    },
+    {
+      "id": "p_13",
+      "nome": "densidade_de_citacao_substantiva",
+      "regra": "Regra das entranhas: para cada citação, executar 3 operações obrigatórias.",
+      "operacoes": [
+        "1. EXTRAIR a descoberta específica do autor (mecanismo, tese precisa)",
+        "2. APLICAR ao caso concreto do artigo",
+        "3. ARTICULAR autores entre si por ângulos distintos, nunca sobrepostos"
+      ],
+      "teste": "Se remover a citação e o parágrafo perder só decoração (não substância), a citação é superficial e deve ser reescrita ou removida.",
+      "ver_tambem": ["08_citacoes.json"]
+    },
+    {
+      "id": "p_14",
+      "nome": "paralelismo_sintatico_em_enumeracoes",
+      "regra": "Em enumerações de 3+ itens, manter mesma classe gramatical e estrutura.",
+      "exemplo_bom": "A norma vincula, condiciona e limita o exercício do direito.",
+      "exemplo_ruim": "A norma vincula, é condicionante, e impõe limites.",
+      "categorias_paralelas": [
+        "Todos infinitivos: investigar, analisar, demonstrar",
+        "Todos substantivos: investigação, análise, demonstração",
+        "Todos sintagmas verbais finitos: investiga, analisa, demonstra"
+      ]
+    },
+    {
+      "id": "p_15",
+      "nome": "traducao_obrigatoria_de_estrangeirismos",
+      "regra": "Termo estrangeiro técnico do autor: TRADUZIR para PT-BR + termo original entre parênteses + página da fonte.",
+      "exemplo_bom": "Constata-se um teto ambiental (headroom) que define o limite das pressões biofísicas (RAWORTH, 2017, p. 49).",
+      "exemplo_ruim": "Constata-se um *headroom* que define o limite das pressões biofísicas.",
+      "ver_tambem": ["08_citacoes.json > tipos_de_citacao.com_termo_estrangeiro"]
+    },
+    {
+      "id": "p_16",
+      "nome": "autor_como_interlocutor_nao_como_objeto",
+      "regra": "Tratar o autor citado como interlocutor já conhecido. Não anunciar o ato de citar.",
+      "proibicoes": [
+        "PROIBIDO: 'A descoberta específica de X (ano) reside em VERBAR Y'",
+        "PROIBIDO: 'A tese central de X (ano) consiste em mostrar Y'",
+        "PROIBIDO: 'O ponto decisivo de X (ano) está em sustentar Y'"
+      ],
+      "alternativa_canonica": "X (ano, p. Z) VERBA Y (verbo conjugado direto, sem rodeios)",
+      "exemplo_bom": "Raworth (2017, p. e48) traduz a sustentabilidade em geometria de fronteiras simultâneas.",
+      "exemplo_ruim": "A descoberta específica de Raworth (2017, p. e48) reside em traduzir a sustentabilidade em geometria de fronteiras simultâneas.",
+      "operacao_canonica": "Suprimir [Sintagma_metarretorico] de + [verbo_estativo] em → conjugar o verbo de conteúdo direto com o autor como sujeito",
+      "ver_tambem": ["cst_012", "cst_007"]
+    }
+  ],
+  "teste_de_estresse_paragrafo": {
+    "descricao": "Aplicar 6 perguntas antes de fechar cada parágrafo. Qualquer NÃO obriga reescrita.",
+    "perguntas": [
+      {
+        "id": "q1",
+        "pergunta": "Quem faz o quê?",
+        "criterio": "Sujeito nomeado em termos substantivos na primeira frase",
+        "se_falha": "Reescreva com sujeito substantivo claro"
+      },
+      {
+        "id": "q2",
+        "pergunta": "Os verbos dizem alguma coisa?",
+        "criterio": "Marcar cada verbo. Se metade for ser/estar/residir/tratar-se/operar, falha",
+        "se_falha": "Substituir por verbos específicos (ver p_01.verbos_recomendados)"
+      },
+      {
+        "id": "q3",
+        "pergunta": "O predicado seria o mesmo se eu trocasse o sujeito?",
+        "criterio": "Predicado deve ser específico ao sujeito",
+        "se_falha": "Predicado é genérico — reescreva"
+      },
+      {
+        "id": "q4",
+        "pergunta": "A última frase acrescentou algo que a primeira já não dizia?",
+        "criterio": "Cada frase deve agregar conteúdo novo",
+        "se_falha": "Apague a redundante"
+      },
+      {
+        "id": "q5",
+        "pergunta": "A primeira menção a cada autor tem o ano?",
+        "criterio": "TODA menção a autor no corpo deve incluir o ano da obra (Autor, ano) ou Autor (ano)",
+        "se_falha": "Adicionar o ano OU remover a menção"
+      },
+      {
+        "id": "q6",
+        "pergunta": "Há termo estrangeiro sem tradução?",
+        "criterio": "Termos estrangeiros devem estar traduzidos + original entre parênteses + página",
+        "se_falha": "Aplicar p_15"
+      }
+    ]
+  },
+  "tensoes_resolvidas": [
+    {
+      "tensao": "p_09 (conectivos discretos no meio) vs regra de conjunção obrigatória no início",
+      "resolucao": "Hierarquia: ABERTURA de parágrafo = conjunção obrigatória (não negociável); MEIO de parágrafo = conectivos discretos ou ausentes (suprimir quando relação lógica é clara)"
+    },
+    {
+      "tensao": "p_07 (não encenar lógica) vs uso legítimo de 'se/então'",
+      "resolucao": "Banido como abertura argumentativa; permitido em hipóteses, contrafactuais explícitos, cálculos"
+    },
+    {
+      "tensao": "p_03 (banir gerúndios) vs gerúndio de simultaneidade",
+      "resolucao": "Banido como conector argumentativo; permitido em adjunto adverbial de simultaneidade real"
+    }
+  ],
+  "interacao_com_validador": {
+    "modo_proativo": "Validador sugere reescritas baseadas em escrita_canonica.principios quando detecta violações em termos_proibidos/*",
+    "fluxo": [
+      "1. termos_proibidos/* detecta violação (regex match)",
+      "2. validador identifica princípio canônico violado (mapping cst_XXX → p_YY)",
+      "3. validador propõe reescrita baseada em p_YY.exemplo_bom",
+      "4. autor revisa e aceita/edita"
+    ],
+    "mapeamento_cst_to_principio": {
+      "cst_001": "p_10",
+      "cst_002": "p_02",
+      "cst_003": "p_02",
+      "cst_004": "p_03",
+      "cst_005": "p_05",
+      "cst_006": "p_06",
+      "cst_007": "p_01",
+      "cst_008": "p_06",
+      "cst_009": "p_07",
+      "cst_010": "p_08",
+      "cst_011": "p_04",
+      "cst_012": "p_16"
+    }
+  }
+}

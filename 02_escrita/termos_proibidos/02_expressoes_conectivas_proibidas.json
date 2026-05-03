@@ -1,0 +1,39 @@
+{
+  "tipo": "expressao_conectiva",
+  "descricao": "Locuções fixas e marcadores discursivos",
+  "entradas": [
+    {
+      "id": "con_001",
+      "forma": "além disso",
+      "regex": "\\balém disso\\b",
+      "substitutos_sugeridos": ["ademais", "outrossim", "a par disso", "soma-se a isso", "acrescente-se", "não bastasse", "por cima", "junte-se a isso"]
+    },
+    {
+      "id": "con_002",
+      "forma": "em suma",
+      "regex": "\\bem suma\\b",
+      "substitutos_sugeridos": ["em síntese", "em resumo", "em breve palavra", "numa palavra", "resumidamente", "em poucas linhas", "numa linha", "em apertada síntese"]
+    },
+    {
+      "id": "con_003",
+      "forma": "à luz de",
+      "variantes": ["à luz do", "à luz da", "à luz dos", "à luz das"],
+      "regex": "\\bà luz d[aeo]s?\\b",
+      "substitutos_sugeridos": ["sob a ótica de", "sob o prisma de", "segundo", "conforme", "nos termos de", "a partir de", "tendo por base", "com apoio em", "com esteio em"]
+    },
+    {
+      "id": "con_004",
+      "forma": "em chave",
+      "variantes": ["em chave de", "numa chave", "em uma chave", "em chave aprofundadora", "em chave crítica", "em chave analítica"],
+      "regex": "\\b(em|numa?|em uma) chave\\b",
+      "substitutos_sugeridos": ["sob o registro de", "no eixo de", "na perspectiva de", "no enquadramento de", "pelo viés de", "na vertente de"]
+    },
+    {
+      "id": "con_005",
+      "forma": "marco normativo",
+      "variantes": ["marco legal", "marco regulatório", "marco jurídico", "marco institucional", "marco teórico", "marco conceitual"],
+      "regex": "\\bmarco (normativo|legal|regulatório|jurídico|institucional|teórico|conceitual)\\b",
+      "substitutos_sugeridos": ["regime jurídico", "ordenamento", "disciplina jurídica", "corpo normativo", "estatuto", "plexo normativo", "moldura legal", "balizas normativas"]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "resumo-palavras-chave",
+  "componente": "Resumo + Palavras-chave + Abstract + Keywords",
+  "descricao": "Bloco bilíngue do resumo. Aparece após autores, antes do sumário. Página 1 termina com keywords (page-break antes da introdução).",
+  "fonte_normativa": "ABNT NBR 6028:2021 + RAG template_artigo/03_resumo_abstract.md",
+  "ordem": ["resumo", "palavras_chave", "abstract", "keywords"],
+  "rotulos": {
+    "resumo": "Resumo",
+    "palavras_chave": "Palavras-chave",
+    "abstract": "Abstract",
+    "keywords": "Keywords"
+  },
+  "formato_rotulo_word": {
+    "fonte": "Times New Roman",
+    "tamanho_pt": 12,
+    "negrito": true,
+    "italico": false,
+    "alinhamento": "esquerda",
+    "case": "primeira maiúscula apenas (Resumo, não RESUMO)",
+    "espacamento_linha": 1.5,
+    "recuo_primeira_linha_cm": 0,
+    "espaco_antes_pt": 0,
+    "espaco_depois_pt": 0
+  },
+  "formato_texto_resumo_word": {
+    "fonte": "Times New Roman",
+    "tamanho_pt": 12,
+    "negrito": false,
+    "italico": false,
+    "alinhamento": "justificado",
+    "espacamento_linha": 1.5,
+    "recuo_primeira_linha_cm": 0,
+    "espaco_antes_pt": 0,
+    "espaco_depois_pt": 0
+  },
+  "formato_palavras_chave_word": {
+    "rotulo_negrito": true,
+    "separador": "; ",
+    "ponto_final": true,
+    "exemplo": "Palavras-chave: termo1; termo2; termo3; termo4; termo5."
+  },
+  "regras": [
+    "Resumo: parágrafo único, sem divisão em parágrafos",
+    "Máximo 150 palavras (resumo) e 150 palavras (abstract)",
+    "5 palavras-chave (mínimo 3, máximo 5 conforme NBR 6028)",
+    "Sem recuo de primeira linha em todo o bloco (resumo + palavras-chave + abstract + keywords)",
+    "Sem citações explícitas (sem (Autor, ano)) no texto do resumo/abstract",
+    "Estrutura do resumo (NBR 6028): tema → objetivo → método → resultados → conclusão (1 ou 2 frases por parte)",
+    "Voz reflexiva: 'investiga-se', 'analisa-se', 'demonstra-se' (1ª pessoa proibida)",
+    "Tempo verbal: presente do indicativo",
+    "Abstract: tradução fiel do resumo, não adaptação",
+    "Keywords: tradução fiel das palavras-chave, mesma ordem e separação",
+    "Página 1 do artigo termina com 'Keywords: ...' — page-break OBRIGATÓRIO antes da INTRODUÇÃO"
+  ],
+  "estrutura_visual": [
+    "**Resumo**",
+    "(parágrafo vazio)",
+    "Texto do resumo em parágrafo único justificado, sem recuo, espaçamento 1.5...",
+    "(parágrafo vazio)",
+    "**Palavras-chave:** termo1; termo2; termo3; termo4; termo5.",
+    "(parágrafo vazio)",
+    "**Abstract**",
+    "(parágrafo vazio)",
+    "Abstract text in single paragraph...",
+    "(parágrafo vazio)",
+    "**Keywords:** term1; term2; term3; term4; term5."
+  ],
+  "render_latex": {
+    "rotulo": "\\noindent\\textbf{Resumo}\\par",
+    "texto": "\\noindent TEXTO\\par",
+    "palavras": "\\noindent\\textbf{Palavras-chave:} termo1; termo2; ...\\par"
+  },
+  "render_gdocs": {
+    "insert": "Resumo\\n\\nTEXTO_RESUMO\\n\\nPalavras-chave: ...\\n\\nAbstract\\n\\nTEXT_ABSTRACT\\n\\nKeywords: ...\\n\\n",
+    "format_rotulo": {"bold": true, "alignment": "START"},
+    "format_texto": {"alignment": "JUSTIFIED", "indentFirstLine": 0}
+  }
+}

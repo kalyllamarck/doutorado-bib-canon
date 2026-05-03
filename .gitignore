@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# LaTeX build
+**/build/
+*.aux
+*.log
+*.bbl
+*.blg
+*.toc
+*.lof
+*.lot
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.xdv
+*.tmp.*
+
+# Backups
+*.bak
+*.backup
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Tmp
+/tmp/
+*.tmp

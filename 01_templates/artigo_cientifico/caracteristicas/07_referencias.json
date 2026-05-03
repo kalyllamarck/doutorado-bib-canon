@@ -1,0 +1,140 @@
+{
+  "id": "referencias",
+  "componente": "Lista de Referências",
+  "descricao": "Última seção do artigo. Lista alfabética estrita de todas as fontes citadas no corpo. Sem indicativo numérico. Filtro de qualidade obrigatório (Qualis A1-A4 ou WoS/Scopus para artigos; livros isentos).",
+  "fonte_normativa": "ABNT NBR 6023:2018 + Citação e Referência 2025 (RAG normas_abnt/) + decisão do autor 2026-05-02",
+  "rotulo": "REFERÊNCIAS",
+  "formato_rotulo_word": {
+    "fonte": "Times New Roman",
+    "tamanho_pt": 12,
+    "negrito": true,
+    "alinhamento": "centralizado",
+    "case": "CAIXA ALTA",
+    "espaco_antes_pt": 18,
+    "espaco_depois_pt": 12,
+    "page_break_antes": true
+  },
+  "formato_entrada_word": {
+    "fonte": "Times New Roman",
+    "tamanho_pt": 12,
+    "negrito": false,
+    "alinhamento": "esquerda",
+    "espacamento_linha": 1.0,
+    "recuo_primeira_linha_cm": 0,
+    "recuo_esquerdo_cm": 0,
+    "espaco_antes_pt": 0,
+    "espaco_depois_pt": 0,
+    "linha_em_branco_entre_entradas": true
+  },
+  "ordenacao": "Alfabética estrita pelo sobrenome do primeiro autor (ou pelo título quando autoria coletiva/anônima)",
+  "destaque_titulo_obra": {
+    "tipo": "negrito",
+    "regra": "O elemento título da obra recebe negrito; subtítulo NÃO recebe negrito; uso uniforme em todas as referências (NBR 6023 6.7)"
+  },
+  "filtro_qualidade": {
+    "regras": [
+      "Artigos científicos: aceitar APENAS se publicados em periódico Qualis A1, A2, A3 ou A4 (CAPES) OU indexado em Web of Science (WoS) OU Scopus",
+      "Livros: ISENTOS do filtro (todos os livros são aceitos)",
+      "Capítulos de livro: ISENTOS (seguem o livro)",
+      "Teses e dissertações: aceitar de programas com Qualis A1-A4",
+      "Relatórios públicos institucionais: aceitar (governo, ONU, OIT, ANEEL, IBGE, etc.)",
+      "Jurisprudência e legislação: aceitar (não passam por Qualis)",
+      "Anais de evento: rejeitar como regra; aceitar excepcionalmente se evento for ranqueado A1-A4"
+    ],
+    "acao_quando_violado": [
+      "BLOQUEAR a citação automaticamente",
+      "AVISAR o autor no relatório de auditoria com: fonte ofensiva, tipo, motivo de bloqueio, sugestão de substituição"
+    ]
+  },
+  "tipos_de_fonte": {
+    "livro": {
+      "campos_obrigatorios": ["autor", "titulo", "subtitulo (se houver)", "edicao (se >1)", "local", "editora", "ano"],
+      "formato_padrao": "SOBRENOME, Nome. **Título da obra**: subtítulo. Edição. Local: Editora, ano.",
+      "exemplo": "ACOSTA, Alberto. **O bem viver**: uma oportunidade para imaginar outros mundos. São Paulo: Autonomia Literária; Elefante, 2016.",
+      "filtro_qualis": false
+    },
+    "capitulo_de_livro": {
+      "campos_obrigatorios": ["autor_capitulo", "titulo_capitulo", "in", "autor_livro_ed", "titulo_livro", "local", "editora", "ano", "paginas"],
+      "formato_padrao": "SOBRENOME, Nome. Título do capítulo. *In*: SOBRENOME, Nome (Ed.). **Título do livro**. Local: Editora, ano. p. X-Y.",
+      "exemplo": "LEFF, Enrique. La ecología política en América Latina, un campo en construcción. *In*: ALIMONDA, Héctor (Ed.). **Los tormentos de la materia**. Buenos Aires: CLACSO, 2006. p. 21-39.",
+      "filtro_qualis": false
+    },
+    "artigo_de_periodico": {
+      "campos_obrigatorios": ["autor", "titulo_artigo", "periodico", "local", "volume", "numero", "paginas", "ano"],
+      "formato_padrao": "SOBRENOME, Nome. Título do artigo. **Nome do Periódico**, Local, v. X, n. Y, p. A-B, ano.",
+      "exemplo": "MBEMBE, Achille. Necropolitics. **Public Culture**, Durham, v. 15, n. 1, p. 11-40, 2003.",
+      "filtro_qualis": true,
+      "exigir": ["DOI quando disponível", "ISSN quando disponível"]
+    },
+    "artigo_online": {
+      "campos_obrigatorios_extras": ["disponivel_em (link DIRETO ao PDF/artigo, NÃO homepage)", "data_acesso (Acesso em: DD mmm. AAAA)"],
+      "formato_padrao": "Igual ao artigo de periódico + ' Disponível em: <URL>. Acesso em: DD mmm. AAAA.'",
+      "exemplo": "RAWORTH, Kate. A doughnut for the Anthropocene. **The Lancet Planetary Health**, v. 1, n. 2, p. e48-e49, 2017. DOI 10.1016/S2542-5196(17)30028-1. Disponível em: https://www.thelancet.com/pdfs/journals/lanplh/PIIS2542-5196(17)30028-1.pdf. Acesso em: 03 mai. 2026.",
+      "filtro_qualis": true
+    },
+    "tese_dissertacao": {
+      "campos_obrigatorios": ["autor", "titulo", "tipo (Tese/Dissertação)", "programa", "instituicao", "local", "ano"],
+      "formato_padrao": "SOBRENOME, Nome. **Título**. Ano. Tese (Doutorado em X) — Programa, Instituição, Local, Ano.",
+      "exemplo": "ROCHA, Fabíola de Araújo. **Análise da instalação, manutenção e descomissionamento das energias limpas**. 2021. Dissertação (Mestrado em Direito Constitucional) — Universidade de Fortaleza, Fortaleza, 2021.",
+      "filtro_qualis": true
+    },
+    "relatorio_publico": {
+      "campos_obrigatorios": ["instituicao_autora", "titulo", "local", "editora_orgao", "ano", "disponivel_em (PDF direto)", "data_acesso"],
+      "formato_padrao": "INSTITUIÇÃO AUTORA. **Título do relatório**. Local: Órgão, ano. Disponível em: <URL>. Acesso em: DD mmm. AAAA.",
+      "exemplo": "AGÊNCIA NACIONAL DE ENERGIA ELÉTRICA. **Resultado dos leilões de energia elétrica: certames A-3 e A-4 de 2021 e A-5 de 2022**. Brasília: ANEEL, 2021. Disponível em: https://www.aneel.gov.br/documents/.../resultado-leiloes-2021.pdf. Acesso em: 03 mai. 2026.",
+      "filtro_qualis": false
+    },
+    "lei_nacional": {
+      "campos_obrigatorios": ["pais", "tipo (Lei, Decreto, MP)", "numero", "data", "ementa", "local", "veiculo_publicacao", "data_publicacao"],
+      "formato_padrao": "BRASIL. Lei nº X.XXX, de DD de mês de AAAA. Ementa. **Diário Oficial da União**, Brasília, DF, DD mês AAAA.",
+      "exemplo": "BRASIL. Lei nº 11.488, de 15 de junho de 2007. Cria o Regime Especial de Incentivos para o Desenvolvimento da Infraestrutura — REIDI. **Diário Oficial da União**, Brasília, DF, 15 jun. 2007.",
+      "filtro_qualis": false,
+      "regra_corpo_texto": "Primeira menção no corpo: 'Lei nº 11.488/2007 (BRASIL, 2007)'. Subsequentes: apenas 'Lei 11.488/2007'."
+    },
+    "lei_internacional": {
+      "campos_obrigatorios": ["pais_ou_organismo", "tipo", "numero", "data", "titulo", "local", "veiculo_publicacao", "data_publicacao"],
+      "formato_padrao": "PAÍS/ORGANISMO. Tipo. Título. Local, data.",
+      "exemplo": "ORGANIZAÇÃO INTERNACIONAL DO TRABALHO. **Convenção nº 169**: sobre povos indígenas e tribais. Genebra, 27 jun. 1989.",
+      "filtro_qualis": false,
+      "traducao": "Manter o título no idioma original; tradução em nota de rodapé se essencial"
+    },
+    "jurisprudencia_nacional": {
+      "campos_obrigatorios": ["tribunal", "tipo_decisao", "numero_processo", "relator", "orgao_julgador", "data_julgamento", "publicacao"],
+      "formato_padrao": "TRIBUNAL. Tipo de decisão nº X. Relator: Min. Nome. Data. Publicação.",
+      "exemplo": "BRASIL. Supremo Tribunal Federal. **Ação Direta de Inconstitucionalidade nº 6.150**. Relator: Min. Alexandre de Moraes. Brasília, 10 jul. 2020. **Diário da Justiça Eletrônico**, Brasília, DF, 12 jul. 2020.",
+      "filtro_qualis": false
+    },
+    "jurisprudencia_internacional": {
+      "campos_obrigatorios_extras": ["pais_ou_corte_internacional"],
+      "exemplo": "CORTE INTERAMERICANA DE DIREITOS HUMANOS. **Caso Pueblo Indígena Kichwa de Sarayaku vs. Equador**. Sentença de 27 jun. 2012. Série C, n. 245.",
+      "filtro_qualis": false,
+      "traducao_regra": "Citar nome no idioma original quando consagrado; explicar entre parênteses na primeira menção"
+    },
+    "anais_evento": {
+      "campos_obrigatorios": ["autor", "titulo", "in", "evento_nome", "ano_evento", "local_evento", "anais_local", "anais_editora", "ano_anais", "paginas"],
+      "formato_padrao": "SOBRENOME, Nome. Título. *In*: NOME DO EVENTO, X., ano, local. **Anais [...]**. Local: Editora, ano. p. X-Y.",
+      "filtro_qualis": "RESTRITIVO - aceitar APENAS se evento for ranqueado A1-A4 (raríssimo)"
+    }
+  },
+  "regras_gerais": [
+    "Ordem alfabética estrita pelo sobrenome do primeiro autor",
+    "Sobrenome em CAIXA ALTA seguido de vírgula e nome por extenso",
+    "Título da obra em **negrito**, subtítulo SEM negrito após dois pontos",
+    "Edição: indicar a partir da 2ª (ex.: 2. ed.)",
+    "Local: Editora, ano (separados por vírgula)",
+    "Para obras consultadas em meio eletrônico: SEMPRE incluir Disponível em: <URL DIRETA AO PDF/artigo> + Acesso em: DD mmm. AAAA",
+    "URL deve apontar para o repositório público do PDF/artigo, JAMAIS para homepage do periódico",
+    "DOI quando disponível, antes de 'Disponível em'",
+    "Idioma: idioma do artigo (PT-BR). Tradutor obrigatório quando obra for traduzida (NBR 6023 8.1.4)"
+  ],
+  "render_latex": {
+    "comando": "\\bibliography{referencias/referencias_doutorado}",
+    "estilo": "\\bibliographystyle{abntex2-alf}",
+    "config": "\\renewcommand{\\bibname}{REFERÊNCIAS}",
+    "override_modo_article": "\\renewcommand{\\bibsection}{\\section*{REFERÊNCIAS}\\addcontentsline{toc}{section}{REFERÊNCIAS}}"
+  },
+  "render_gdocs": {
+    "heading": {"text": "REFERÊNCIAS", "bold": true, "alignment": "CENTER", "case": "UPPER"},
+    "entradas": {"alignment": "START", "lineSpacing": 100, "indentFirstLine": 0, "spaceAfter_pt": 6}
+  }
+}

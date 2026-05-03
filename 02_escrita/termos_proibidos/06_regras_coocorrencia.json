@@ -1,0 +1,115 @@
+{
+  "tipo": "regra_coocorrencia",
+  "descricao": "Regras de penalização amplificada quando múltiplos itens proibidos aparecem no mesmo parágrafo. Coocorrências detectam prosa 'academiquês padrão' que exige reescrita integral, não substituição pontual.",
+  "escopo_padrao": "paragrafo",
+  "como_aplicar": [
+    "Validador roda regex de cada arquivo de termos_proibidos sobre cada parágrafo do .md/.tex",
+    "Para cada parágrafo, calcula penalidade base = soma dos hits individuais",
+    "Aplica multiplicador da regra de coocorrência quando ids combinados aparecem",
+    "Parágrafo com penalidade total >= threshold é marcado para REESCRITA INTEGRAL"
+  ],
+  "regras": [
+    {
+      "id": "coc_001",
+      "nome": "pseudossintese_amplificada",
+      "ids_disparadores": ["cst_008", "con_004", "cst_004", "lex_008"],
+      "logica": "cst_008 + ANY({con_004, cst_004, lex_008})",
+      "multiplicador": 3.0,
+      "acao": "REESCREVER_PARAGRAFO_INTEGRAL",
+      "motivo": "Pseudossíntese conciliatória combinada com 'em chave' (con_004), gerúndio (cst_004) ou 'articular' (lex_008) constitui assinatura de prosa academiquês vazia. Substituição pontual não resolve — exige reescrita do raciocínio"
+    },
+    {
+      "id": "coc_002",
+      "nome": "abertura_laconica_com_pseudossintese",
+      "ids_disparadores": ["cst_007", "cst_008"],
+      "logica": "cst_007 AND cst_008",
+      "multiplicador": 4.0,
+      "acao": "REESCREVER_BLOCO_DE_AUTORES",
+      "motivo": "Abertura lacônica (frase curta + reancoragem nominal) seguida de pseudossíntese conciliatória é o padrão exato de paragrafo conciliatorio que apara arestas sem substância"
+    },
+    {
+      "id": "coc_003",
+      "nome": "atribuicao_generica_com_marco",
+      "ids_disparadores": ["cst_005", "lex_014", "con_005"],
+      "logica": "cst_005 + (lex_014 OR con_005)",
+      "multiplicador": 3.5,
+      "acao": "REESCREVER_PARAGRAFO_INTEGRAL",
+      "motivo": "Atribuição genérica de relevância combinada com 'marco' lexical ou 'marco normativo' locucional indica ausência total de conteúdo substantivo"
+    },
+    {
+      "id": "coc_004",
+      "nome": "triade_contraste_com_construcao_relevancia",
+      "ids_disparadores": ["cst_006", "cst_005"],
+      "logica": "cst_006 AND cst_005",
+      "multiplicador": 3.0,
+      "acao": "REESCREVER_PARAGRAFO_INTEGRAL",
+      "motivo": "Tríade de refinamento por contraste seguida de atribuição genérica de relevância dobra o vazio retórico"
+    },
+    {
+      "id": "coc_005",
+      "nome": "metafora_articulacao_com_chave",
+      "ids_disparadores": ["lex_008", "lex_013", "con_004"],
+      "logica": "lex_008 + (lex_013 OR con_004)",
+      "multiplicador": 2.5,
+      "acao": "REESCREVER_FRASE",
+      "motivo": "'Articular' + 'chave' ou 'em chave' coocorrem em construções de simulacro analítico"
+    },
+    {
+      "id": "coc_006",
+      "nome": "saturacao_lexical",
+      "ids_disparadores": "QUALQUER 4+ ids distintos",
+      "logica": "count(distinct ids no paragrafo) >= 4",
+      "multiplicador": 2.0,
+      "acao": "FLAG_REVISAO_HUMANA",
+      "motivo": "Parágrafo com 4+ violações distintas indica que o trecho inteiro precisa ser reformulado, não corrigido pontualmente"
+    },
+    {
+      "id": "coc_007",
+      "nome": "topico_numerado_com_omissoes_estruturais_e_anuncio",
+      "ids_disparadores": ["cst_010", "cst_007", "cst_011", "cst_012", "lex_010", "lex_013"],
+      "logica": "count(distinct ids no paragrafo intersect {cst_010, cst_007, cst_011, cst_012, lex_010, lex_013}) >= 3",
+      "multiplicador": 5.0,
+      "acao": "VERMELHO_FORTE_REESCRITA_INTEGRAL",
+      "motivo": "Parágrafo com 3+ entre {tópico numerado (cst_010), abertura lacônica (cst_007), omissão de determinante (cst_011), anúncio metarretórico (cst_012), deslocamento (lex_010), chave (lex_013)} é assinatura de texto-esqueleto não revisado. Reescrita integral obrigatória, não substituição pontual",
+      "exemplo_paragrafo_vermelho": "Ponto 2, nome analítico. Martínez-Alier (2007) nomeia mecanismo descrito em 1991 como Princípio Lawrence Summers. A descoberta específica de Martínez-Alier reside em chave de leitura que desloca o eixo da análise."
+    },
+    {
+      "id": "coc_009",
+      "nome": "anuncio_metarretorico_repetido",
+      "ids_disparadores": ["cst_012"],
+      "logica": "count(cst_012 no documento inteiro) >= 3",
+      "multiplicador": 4.0,
+      "acao": "REESCREVER_TODAS_AS_OCORRENCIAS",
+      "motivo": "3+ ocorrências do anúncio metarretórico no mesmo artigo indica vício estilístico recorrente. Aplicar fix automatizado de cst_012.operacao_fix_automatizavel em todas as ocorrências",
+      "escopo": "documento_inteiro",
+      "obs": "Diferente das outras regras de coocorrência (escopo paragrafo), esta varre o artigo inteiro contando repetições do mesmo padrão"
+    },
+    {
+      "id": "coc_008",
+      "nome": "abertura_condicional_com_silogismo_encenado",
+      "ids_disparadores": ["cst_009", "cst_005", "cst_006"],
+      "logica": "cst_009 + (cst_005 OR cst_006)",
+      "multiplicador": 3.5,
+      "acao": "REESCREVER_PARAGRAFO_INTEGRAL",
+      "motivo": "Abertura condicional 'Se... então...' combinada com atribuição genérica de relevância ou tríade de contraste indica encenação lógica vazia"
+    }
+  ],
+  "thresholds": {
+    "ok": 0,
+    "alerta": 1,
+    "fix_pontual": 2,
+    "reescrever_paragrafo": 5,
+    "reescrever_secao": 10
+  },
+  "interacao_com_validador": {
+    "saida_esperada": [
+      "linha do parágrafo no .md/.tex",
+      "ids violados (lista)",
+      "regras de coocorrência ativadas (lista)",
+      "penalidade total",
+      "ação recomendada",
+      "trecho_original",
+      "trecho_sugerido (quando possível, gerado por LLM com regras carregadas)"
+    ]
+  }
+}

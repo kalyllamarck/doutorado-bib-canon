@@ -1,0 +1,106 @@
+% =====================================================================
+% artigo.tex — Template de artigo acadêmico ABNT/Unifor PPGD
+% Compilação: latexmk -pdf -xelatex artigo.tex
+%        ou: ./build.sh
+% =====================================================================
+\documentclass[
+    article,        % modo artigo (não livro/tese)
+    12pt,
+    a4paper,
+    oneside,        % anverso apenas
+    brazil,
+    sumario=tradicional
+]{abntex2}
+
+\input{preamble.tex}
+
+% --- Metadados do artigo -------------------------------------------------
+\title{Título do artigo em português}
+\author{
+    \textbf{Nome do Autor 1}\thanks{Filiação institucional do autor 1, e-mail.}
+    \and
+    \textbf{Nome do Autor 2}\thanks{Filiação institucional do autor 2, e-mail.}
+}
+\date{}    % suprimir data automática
+
+% =====================================================================
+\begin{document}
+\selectlanguage{brazilian}
+\frenchspacing
+
+% --- Título centralizado, TNR 12pt negrito ---
+\begin{center}
+\textbf{\thetitle}
+\end{center}
+
+\vspace{1ex}
+
+\begin{center}
+\textit{\textbf{Título do artigo em inglês}}
+\end{center}
+
+\vspace{1ex}
+
+% --- Autores alinhados à direita, CAIXA ALTA negrito ---
+\begin{flushright}
+\MakeUppercase{\textbf{Nome do Autor 1}}\footnote{Filiação institucional, e-mail, ORCID.}\\
+\MakeUppercase{\textbf{Nome do Autor 2}}\footnote{Filiação institucional, e-mail, ORCID.}
+\end{flushright}
+
+\vspace{2ex}
+
+% --- RESUMO -------------------------------------------------------------
+\noindent\textbf{RESUMO}
+
+\noindent
+Texto do resumo em parágrafo único, máximo 150 palavras, justificado, sem recuo, espaçamento simples. Apresenta tema, objetivo, método, resultados e conclusão.
+
+\vspace{1ex}
+
+\noindent\textbf{PALAVRAS-CHAVE}
+
+\noindent
+Termo 1; termo 2; termo 3; termo 4; termo 5.
+
+\vspace{1ex}
+
+% --- ABSTRACT -----------------------------------------------------------
+\noindent\textbf{ABSTRACT}
+
+\noindent
+Abstract text in single paragraph, max 150 words, justified, no indent, single spacing. Presents topic, objective, method, results, and conclusion.
+
+\vspace{1ex}
+
+\noindent\textbf{KEYWORDS}
+
+\noindent
+Term 1; term 2; term 3; term 4; term 5.
+
+\vspace{2ex}
+
+% --- INTRODUÇÃO ---------------------------------------------------------
+% Em modo article, usa-se \section* para INTRODUÇÃO/CONCLUSÃO/REFERÊNCIAS
+% (sem indicativo numérico) e \section para "1 ...", "2 ..."
+\section*{INTRODUÇÃO}
+\addcontentsline{toc}{section}{INTRODUÇÃO}
+
+\input{secoes/00_introducao.tex}
+
+% --- SEÇÕES NUMERADAS ---------------------------------------------------
+\input{secoes/01_capitulo1.tex}
+\input{secoes/02_capitulo2.tex}
+
+% --- CONCLUSÃO ----------------------------------------------------------
+\section*{CONCLUSÃO}
+\addcontentsline{toc}{section}{CONCLUSÃO}
+
+\input{secoes/99_conclusao.tex}
+
+% --- REFERÊNCIAS --------------------------------------------------------
+\section*{REFERÊNCIAS}
+\addcontentsline{toc}{section}{REFERÊNCIAS}
+\renewcommand{\bibsection}{}
+\bibliography{referencias/referencias_doutorado}
+
+\end{document}

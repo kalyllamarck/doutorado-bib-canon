@@ -1,0 +1,363 @@
+{
+  "schema_version": "2.0",
+  "descricao": "Conjunções da língua portuguesa em uso acadêmico. 18 subtipos (5 coordenativas + 13 subordinativas).",
+  "total_unicos": 802,
+  "subtipos": {
+    "coordenativas/aditivas": {
+      "arquivo": "coordenativas/aditivas.json",
+      "total": 43,
+      "formais": 39,
+      "informais": 4
+    },
+    "coordenativas/adversativas": {
+      "arquivo": "coordenativas/adversativas.json",
+      "total": 44,
+      "formais": 43,
+      "informais": 1
+    },
+    "coordenativas/alternativas": {
+      "arquivo": "coordenativas/alternativas.json",
+      "total": 43,
+      "formais": 36,
+      "informais": 7
+    },
+    "coordenativas/conclusivas": {
+      "arquivo": "coordenativas/conclusivas.json",
+      "total": 45,
+      "formais": 45,
+      "informais": 0
+    },
+    "coordenativas/explicativas": {
+      "arquivo": "coordenativas/explicativas.json",
+      "total": 44,
+      "formais": 27,
+      "informais": 17
+    },
+    "subordinativas/integrantes": {
+      "arquivo": "subordinativas/integrantes.json",
+      "total": 43,
+      "formais": 43,
+      "informais": 0
+    },
+    "subordinativas/causais": {
+      "arquivo": "subordinativas/causais.json",
+      "total": 44,
+      "formais": 44,
+      "informais": 0
+    },
+    "subordinativas/comparativas": {
+      "arquivo": "subordinativas/comparativas.json",
+      "total": 44,
+      "formais": 44,
+      "informais": 0
+    },
+    "subordinativas/concessivas": {
+      "arquivo": "subordinativas/concessivas.json",
+      "total": 44,
+      "formais": 44,
+      "informais": 0
+    },
+    "subordinativas/condicionais": {
+      "arquivo": "subordinativas/condicionais.json",
+      "total": 44,
+      "formais": 44,
+      "informais": 0
+    },
+    "subordinativas/conformativas": {
+      "arquivo": "subordinativas/conformativas.json",
+      "total": 44,
+      "formais": 44,
+      "informais": 0
+    },
+    "subordinativas/consecutivas": {
+      "arquivo": "subordinativas/consecutivas.json",
+      "total": 44,
+      "formais": 44,
+      "informais": 0
+    },
+    "subordinativas/finais": {
+      "arquivo": "subordinativas/finais.json",
+      "total": 44,
+      "formais": 44,
+      "informais": 0
+    },
+    "subordinativas/proporcionais": {
+      "arquivo": "subordinativas/proporcionais.json",
+      "total": 43,
+      "formais": 43,
+      "informais": 0
+    },
+    "subordinativas/temporais": {
+      "arquivo": "subordinativas/temporais.json",
+      "total": 45,
+      "formais": 45,
+      "informais": 0
+    },
+    "subordinativas/modais": {
+      "arquivo": "subordinativas/modais.json",
+      "total": 49,
+      "formais": 49,
+      "informais": 0
+    },
+    "subordinativas/locativas": {
+      "arquivo": "subordinativas/locativas.json",
+      "total": 48,
+      "formais": 48,
+      "informais": 0
+    },
+    "subordinativas/modo_comparativas_hibridas": {
+      "arquivo": "subordinativas/modo_comparativas_hibridas.json",
+      "total": 47,
+      "formais": 47,
+      "informais": 0
+    }
+  },
+  "polissemicas": {
+    "bem como": [
+      "coordenativas/aditivas",
+      "subordinativas/comparativas"
+    ],
+    "assim como": [
+      "coordenativas/aditivas",
+      "subordinativas/comparativas",
+      "subordinativas/conformativas",
+      "subordinativas/modais"
+    ],
+    "não obstante": [
+      "coordenativas/adversativas",
+      "subordinativas/concessivas"
+    ],
+    "ao passo que": [
+      "coordenativas/adversativas",
+      "subordinativas/proporcionais"
+    ],
+    "conquanto": [
+      "coordenativas/adversativas",
+      "subordinativas/concessivas"
+    ],
+    "posto que": [
+      "coordenativas/adversativas",
+      "subordinativas/causais",
+      "subordinativas/concessivas"
+    ],
+    "se bem que": [
+      "coordenativas/adversativas",
+      "subordinativas/concessivas"
+    ],
+    "em que pese": [
+      "coordenativas/adversativas",
+      "subordinativas/concessivas"
+    ],
+    "pois": [
+      "coordenativas/conclusivas",
+      "coordenativas/explicativas",
+      "subordinativas/causais"
+    ],
+    "de sorte que": [
+      "coordenativas/conclusivas",
+      "subordinativas/consecutivas",
+      "subordinativas/modais"
+    ],
+    "de modo que": [
+      "coordenativas/conclusivas",
+      "subordinativas/consecutivas",
+      "subordinativas/modais"
+    ],
+    "de maneira que": [
+      "coordenativas/conclusivas",
+      "subordinativas/consecutivas",
+      "subordinativas/modais"
+    ],
+    "porque": [
+      "coordenativas/explicativas",
+      "subordinativas/causais"
+    ],
+    "porquanto": [
+      "coordenativas/explicativas",
+      "subordinativas/causais"
+    ],
+    "que": [
+      "coordenativas/explicativas",
+      "subordinativas/integrantes"
+    ],
+    "já que": [
+      "coordenativas/explicativas",
+      "subordinativas/causais"
+    ],
+    "uma vez que": [
+      "coordenativas/explicativas",
+      "subordinativas/causais",
+      "subordinativas/condicionais"
+    ],
+    "visto que": [
+      "coordenativas/explicativas",
+      "subordinativas/causais"
+    ],
+    "dado que": [
+      "coordenativas/explicativas",
+      "subordinativas/causais"
+    ],
+    "se": [
+      "subordinativas/integrantes",
+      "subordinativas/condicionais"
+    ],
+    "na medida em que": [
+      "subordinativas/causais",
+      "subordinativas/condicionais",
+      "subordinativas/conformativas"
+    ],
+    "no escopo de que": [
+      "subordinativas/causais",
+      "subordinativas/finais"
+    ],
+    "como": [
+      "subordinativas/comparativas",
+      "subordinativas/conformativas",
+      "subordinativas/modais"
+    ],
+    "tal qual": [
+      "subordinativas/comparativas",
+      "subordinativas/conformativas",
+      "subordinativas/modais"
+    ],
+    "qual": [
+      "subordinativas/comparativas",
+      "subordinativas/modais"
+    ],
+    "tal como": [
+      "subordinativas/comparativas",
+      "subordinativas/modais"
+    ],
+    "feito": [
+      "subordinativas/comparativas",
+      "subordinativas/modais"
+    ],
+    "qual se": [
+      "subordinativas/comparativas",
+      "subordinativas/modo_comparativas_hibridas"
+    ],
+    "como se": [
+      "subordinativas/comparativas",
+      "subordinativas/modo_comparativas_hibridas"
+    ],
+    "em sintonia com": [
+      "subordinativas/comparativas",
+      "subordinativas/conformativas"
+    ],
+    "suposto que": [
+      "subordinativas/concessivas",
+      "subordinativas/condicionais"
+    ],
+    "sem que": [
+      "subordinativas/condicionais",
+      "subordinativas/modais"
+    ],
+    "quando": [
+      "subordinativas/condicionais",
+      "subordinativas/temporais"
+    ],
+    "sempre que": [
+      "subordinativas/condicionais",
+      "subordinativas/temporais"
+    ],
+    "conforme": [
+      "subordinativas/conformativas",
+      "subordinativas/proporcionais",
+      "subordinativas/modais"
+    ],
+    "segundo": [
+      "subordinativas/conformativas",
+      "subordinativas/modais"
+    ],
+    "consoante": [
+      "subordinativas/conformativas",
+      "subordinativas/modais"
+    ],
+    "na esteira de que": [
+      "subordinativas/conformativas",
+      "subordinativas/temporais"
+    ],
+    "do jeito que": [
+      "subordinativas/conformativas",
+      "subordinativas/modais"
+    ],
+    "da forma que": [
+      "subordinativas/conformativas",
+      "subordinativas/modais"
+    ],
+    "no espírito de que": [
+      "subordinativas/conformativas",
+      "subordinativas/modais"
+    ],
+    "na letra de que": [
+      "subordinativas/conformativas",
+      "subordinativas/modais"
+    ],
+    "acompanhando que": [
+      "subordinativas/conformativas",
+      "subordinativas/proporcionais"
+    ],
+    "ao sabor de que": [
+      "subordinativas/conformativas",
+      "subordinativas/modais"
+    ],
+    "ao talante de que": [
+      "subordinativas/conformativas",
+      "subordinativas/modais"
+    ],
+    "de forma que": [
+      "subordinativas/consecutivas",
+      "subordinativas/modais"
+    ],
+    "de jeito que": [
+      "subordinativas/consecutivas",
+      "subordinativas/modais"
+    ],
+    "à beira de que": [
+      "subordinativas/consecutivas",
+      "subordinativas/locativas"
+    ],
+    "ao tempo que": [
+      "subordinativas/proporcionais",
+      "subordinativas/temporais"
+    ],
+    "no diapasão de que": [
+      "subordinativas/proporcionais",
+      "subordinativas/modais"
+    ]
+  },
+  "informais_filtradas": [
+    "a bel-prazer",
+    "a propósito",
+    "a razão é que",
+    "ao bel-prazer",
+    "ao sabor de",
+    "ao talante",
+    "atente-se",
+    "com razão",
+    "considere-se que",
+    "de quebra",
+    "e por cima disso",
+    "e tampouco",
+    "fora isso",
+    "frise-se",
+    "isso porque",
+    "no vaivém entre",
+    "note-se",
+    "num pêndulo entre",
+    "num ziguezague de",
+    "o motivo é que",
+    "observe-se",
+    "por cima",
+    "por cima disso",
+    "prova disso",
+    "registre-se",
+    "ressalte-se",
+    "saliente-se",
+    "tanto faz",
+    "tanto é que",
+    "tome-se em conta",
+    "à bel-prazer",
+    "é que"
+  ]
+}

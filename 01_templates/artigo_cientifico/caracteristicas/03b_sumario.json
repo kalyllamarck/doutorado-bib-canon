@@ -1,0 +1,60 @@
+{
+  "id": "sumario",
+  "componente": "Sumário (índice de seções)",
+  "descricao": "Lista das seções do artigo com indicação numérica e número de página. Aparece após o bloco resumo/keywords (final pg 1) e antes da INTRODUÇÃO (pg 2). Formato linha única (uma seção por linha) com pontilhado guia entre título e número de página.",
+  "fonte_normativa": "ABNT NBR 6027:2012 (Sumário) + decisão do autor 2026-05-02",
+  "rotulo": "SUMÁRIO",
+  "formato_rotulo_word": {
+    "fonte": "Times New Roman",
+    "tamanho_pt": 12,
+    "negrito": true,
+    "alinhamento": "centralizado",
+    "case": "CAIXA ALTA",
+    "espaco_antes_pt": 0,
+    "espaco_depois_pt": 12
+  },
+  "formato_entrada_word": {
+    "fonte": "Times New Roman",
+    "tamanho_pt": 12,
+    "negrito": false,
+    "alinhamento": "esquerda",
+    "espacamento_linha": 1.5,
+    "recuo_primeira_linha_cm": 0,
+    "espaco_antes_pt": 0,
+    "espaco_depois_pt": 0,
+    "tab_lider_para_pagina": "pontilhado (....)"
+  },
+  "estrutura_entrada": "<INDICATIVO> <ESPACO> <TITULO_DA_SECAO> <PONTILHADO_GUIA> <NUMERO_PAGINA>",
+  "exemplo_visual": [
+    "1 INTRODUÇÃO ............................................. p. 2",
+    "2 TRANSIÇÃO ENERGÉTICA E SEUS CRITÉRIOS DE RUPTURA ........ p. 4",
+    "2.1 Racionalidade ambiental como critério epistêmico ....... p. 5",
+    "2.2 Decrescimento e bem viver .............................. p. 7",
+    "3 A EÓLICA NO NORDESTE ..................................... p. 12",
+    "4 CONCLUSÃO ................................................ p. 28",
+    "REFERÊNCIAS ................................................ p. 30"
+  ],
+  "regras": [
+    "Título 'SUMÁRIO' em CAIXA ALTA negrito centralizado (NBR 6027 5.1)",
+    "Indicativo numérico das seções idêntico ao usado no corpo (1, 1.1, 2, 2.1...)",
+    "INTRODUÇÃO, CONCLUSÃO, REFERÊNCIAS aparecem SEM indicativo numérico (NBR 6024)",
+    "Subseções recuadas conforme nível (1.1 alinhado a 1, sem indent extra)",
+    "Página visível inicia em 'p.' minúsculo (p. 2)",
+    "Formato linha única por entrada (não quebrar título em múltiplas linhas)",
+    "Não usar números romanos para seções",
+    "REFERÊNCIAS é última entrada do sumário, sem numeração"
+  ],
+  "render_latex": {
+    "comando": "\\tableofcontents",
+    "config_titulo": "\\renewcommand{\\contentsname}{SUMÁRIO}",
+    "config_visual": "\\setcounter{tocdepth}{2} % apenas até subsecao 1.1, nao 1.1.1"
+  },
+  "render_gdocs": {
+    "tipo": "tabela_2_colunas_invisivel",
+    "linhas": "1 por seção",
+    "coluna_1": "indicativo + título (alinhamento esquerda)",
+    "coluna_2": "número de página (alinhamento direita)",
+    "borda": "invisível",
+    "tab_leader": "DOTTED"
+  }
+}

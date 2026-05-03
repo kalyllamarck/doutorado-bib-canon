@@ -1,0 +1,285 @@
+{
+  "tipo": "construcao_sintatica",
+  "descricao": "Padrões estruturais de oração, independentemente do léxico",
+  "entradas": [
+    {
+      "id": "cst_001",
+      "nome": "oracao_explicativa_com_dois_pontos",
+      "descricao": "Uso de dois pontos para introduzir explicação ou apositivo explicativo",
+      "regex_deteccao": ":\\s+[a-zA-ZÀ-ÿ]",
+      "alternativas": ["subordinada causal com 'porque/porquanto'", "aposto com vírgula", "novo período sem sinal"]
+    },
+    {
+      "id": "cst_002",
+      "nome": "correlativa_nao_apenas_mas_tambem",
+      "descricao": "Correlação aditiva enfática",
+      "regex_deteccao": "\\bnão (apenas|só|somente)\\b.{0,150}\\bmas (também|ainda)\\b",
+      "alternativas": ["coordenação simples com 'e'", "enumeração assindética", "subordinação que integre os dois elementos em predicado único"]
+    },
+    {
+      "id": "cst_003",
+      "nome": "intercalada_circunstancial",
+      "descricao": "Sujeito + oração circunstancial entre vírgulas + verbo principal + consequência",
+      "regex_deteccao": "^[A-ZÀ-Ý][a-zà-ÿ]+,\\s+(ao|ao se|quando|enquanto|sendo)\\s+[^,]+,\\s+[a-zà-ÿ]+",
+      "exemplo_proibido": "O objeto, ao fazer tal coisa, causa isso.",
+      "alternativas": ["dividir em dois períodos", "trocar ordem: circunstancial antes do sujeito", "incorporar a circunstância ao predicado"]
+    },
+    {
+      "id": "cst_004",
+      "nome": "gerundio",
+      "descricao": "Uso de gerúndio verbal",
+      "regex_deteccao": "\\b[a-zà-ÿ]{3,}(ando|endo|indo)\\b",
+      "exclusoes": ["quando", "grande", "calendo", "lenda", "senda", "venda", "tenda", "rendo", "vendo"],
+      "alternativas": ["oração coordenada com verbo finito", "subordinada temporal ou causal", "infinitivo precedido de preposição"],
+      "observacao": "Exige revisão humana. Lista de exclusões cobre falsos positivos comuns. Adjetivos lexicalizados terminados em -ante/-ente não disparam o regex."
+    },
+    {
+      "id": "cst_005",
+      "nome": "atribuicao_generica_de_relevancia",
+      "descricao": "Fórmulas vazias que atribuem importância sem conteúdo substantivo",
+      "exemplos_proibidos": [
+        "desempenha papel crucial",
+        "exerce função central",
+        "marco de [algo]",
+        "tem importância fundamental",
+        "ocupa posição de destaque",
+        "assume lugar preponderante"
+      ],
+      "regex_deteccao": [
+        "\\b(desempenha|exerce|cumpre|tem|ocupa|assume) (um |o )?(papel|função|posição|lugar) (crucial|central|fundamental|decisivo|de destaque|importante|essencial|preponderante)\\b",
+        "\\bmarco de [a-zà-ÿ]+\\b",
+        "\\btem (uma )?importância (fundamental|central|decisiva|crucial)\\b"
+      ],
+      "alternativas": ["predicação direta do que o sujeito efetivamente faz", "verbo específico", "supressão da atribuição e entrega do conteúdo substantivo"]
+    },
+    {
+      "id": "cst_006",
+      "nome": "triade_refinamento_por_contraste",
+      "descricao": "Afirmação curta → negação de atributo superficial → substituição por atributo profundo",
+      "padrao_estrutural": [
+        "[Sujeito] [verbo] [complemento].",
+        "Não se trata de [atributo_A].",
+        "Mas de [atributo_B mais profundo]."
+      ],
+      "regex_deteccao": [
+        "\\bnão se trata de\\b.{0,120}\\bmas de\\b",
+        "\\bnão é (apenas|mero|simples|só|somente)\\b.{0,120}\\bmas\\b",
+        "\\bmais (do )?que .{0,80}, (é|trata-se de)\\b"
+      ],
+      "exemplo_proibido": "A norma regula condutas. Não se trata de mera prescrição. Mas de horizonte ético da comunidade.",
+      "exemplo_reescrito": "A norma regula condutas e, nessa regulação, desenha o horizonte ético da comunidade.",
+      "alternativas": ["integrar atributo profundo no predicado principal", "aposto substantivo", "concessiva subordinada"]
+    },
+    {
+      "id": "cst_007",
+      "nome": "abertura_laconica_com_reancoragem_nominal",
+      "descricao": "Frase curta assertiva + retomada por sintagma nominal qualificado com verbo estativo",
+      "padrao_estrutural": [
+        "[Autor] [verbo_generico_de_posicionamento] [complemento_curto].",
+        "[Sintagma_nominal_qualificado] [verbo_estativo] [em/que] [conteudo_real]."
+      ],
+      "verbos_de_posicionamento_suspeitos": ["operar", "situar-se", "mover-se", "caminhar", "seguir", "ir", "posicionar-se", "colocar-se", "inscrever-se"],
+      "sintagmas_nominais_suspeitos": ["a descoberta específica", "a tese central", "o ponto decisivo", "a contribuição particular", "a originalidade", "o achado próprio", "a novidade", "a virada", "a aposta", "a intuição central"],
+      "verbos_estativos_suspeitos": ["residir", "consistir", "estar", "encontrar-se", "repousar", "jazer"],
+      "regex_deteccao": [
+        "\\b(opera|situa-se|move-se|caminha|segue|vai) em (outro|outra|distinto|diverso)\\b",
+        "\\ba (descoberta|tese|contribuição|originalidade|novidade|virada|proposta|aposta|intuição) (específica|central|própria|decisiva|particular|maior) (reside|consiste|está|encontra-se|repousa) (em|na|no)\\b"
+      ],
+      "exemplo_proibido": "Acosta (2016, p. 27) opera em outro plano. A descoberta específica reside em sustentar que a suficiência relacional substitui a eficiência mercadológica.",
+      "exemplo_reescrito": "Acosta (2016, p. 27) sustenta que a suficiência relacional substitui a eficiência mercadológica.",
+      "alternativas": ["fundir as duas frases em período único", "suprimir o verbo de posicionamento vazio", "inverter ordem entregando conteúdo substantivo primeiro"]
+    },
+    {
+      "id": "cst_008",
+      "nome": "pseudossintese_conciliatoria",
+      "descricao": "Fórmula de complementaridade geométrica não-redutiva: metáfora espacial + dupla qualificação contrastiva-harmônica + cláusula de irredutibilidade",
+      "padrao_estrutural": [
+        "[Sujeitos plurais] [verbo de posicionamento] (em|por|sob) [metáfora_espacial] [qualificador_contrastivo] e [qualificador_harmonico].",
+        "[Cláusula_de_irredutibilidade]."
+      ],
+      "metaforas_espaciais_suspeitas": [
+        "ângulo", "ângulos", "eixo", "eixos", "plano", "planos",
+        "vetor", "vetores", "perspectiva", "perspectivas", "registro", "registros",
+        "frente", "frentes", "prisma", "prismas", "flanco", "flancos",
+        "viés", "vieses", "vertente", "vertentes", "direção", "direções"
+      ],
+      "qualificadores_contrastivos": [
+        "distintos", "diversos", "divergentes", "diferentes",
+        "paralelos", "não coincidentes", "não equivalentes", "heterogêneos"
+      ],
+      "qualificadores_harmonicos": [
+        "complementares", "convergentes", "articulados", "concorrentes",
+        "dialogantes", "em diálogo", "que se somam", "que se reforçam", "coextensivos"
+      ],
+      "clausulas_de_irredutibilidade": [
+        "nenhum se reduz ao outro",
+        "sem que um se dissolva no outro",
+        "sem subsunção recíproca",
+        "preservadas as diferenças",
+        "sem que isso apague as diferenças",
+        "sem colapso mútuo",
+        "sem absorção recíproca",
+        "resguardadas as especificidades"
+      ],
+      "regex_deteccao": [
+        "\\b(em|por|sob) (ângulos?|eixos?|planos?|vetores?|perspectivas?|registros?|frentes?|prismas?|flancos?|vieses?|vertentes?|direções) (distintos?|diversos?|divergentes?|diferentes?|paralelos?|heterogêneos?) e (complementares?|convergentes?|articulados?|concorrentes?|dialogantes?|coextensivos?)\\b",
+        "\\bnenhum se reduz ao outro\\b",
+        "\\bsem que um se (dissolva|reduza|absorva) no outro\\b",
+        "\\bpreservadas as (diferenças|especificidades)\\b"
+      ],
+      "exemplo_proibido": "Os dois autores entram em ângulos distintos e complementares, e nenhum se reduz ao outro.",
+      "exemplo_reescrito": "Os dois autores divergem quanto ao fundamento X, mas convergem ao sustentar Y.",
+      "motivo_proibicao": "Placeholder retórico que simula síntese dialética sem realizá-la; cacoete de prosa conciliatória; ausência de conteúdo substantivo na relação entre os termos contrastados",
+      "alternativas_recomendadas": [
+        "nomear o que exatamente cada autor sustenta e onde discordam e concordam, substantivamente",
+        "substituir a metáfora geométrica vazia por descrição do objeto teórico em jogo",
+        "suprimir a cláusula de irredutibilidade e deixar que o próprio texto mostre a preservação das diferenças"
+      ]
+    },
+    {
+      "id": "cst_009",
+      "nome": "abertura_condicional_se_entao",
+      "descricao": "Período iniciado por 'Se' seguido de correlato 'então' (explícito ou implícito) em posição de abertura de parágrafo ou seção",
+      "padrao_estrutural": [
+        "Se [premissa], então [consequência]."
+      ],
+      "regex_deteccao": [
+        "(^|\\n)\\s*Se\\s+[^,.]{5,200},\\s*(então|logo|portanto|segue-se que|daí que|disso decorre|nesse caso|impõe-se)\\b",
+        "(^|\\n)\\s*Se\\s+[^,.]{5,200},\\s*[a-zà-ÿ]"
+      ],
+      "motivo_proibicao": "Encenação lógica que substitui fluxo argumentativo por silogismo retórico; previsibilidade de abertura; gesto de simulação dedutiva",
+      "exemplo_proibido": "Se a norma prevê proteção ambiental, então o intérprete deve ponderar interesses econômicos contra interesses ecológicos.",
+      "exemplo_reescrito": "A previsão normativa de proteção ambiental impõe ao intérprete ponderar interesses econômicos e ecológicos.",
+      "alternativas_recomendadas": [
+        "substituir condicional por afirmação direta com nexo causal embutido no predicado",
+        "usar subordinada causal com 'porquanto/uma vez que' dentro do período principal",
+        "iniciar com o sujeito substantivo e deixar a condição implícita no desenvolvimento"
+      ],
+      "observacao": "Permitido em contextos genuinamente hipotéticos (cálculos, simulações, contrafactuais explícitos). Proibido como gesto de abertura argumentativa."
+    },
+    {
+      "id": "cst_010",
+      "nome": "toque_estrutural_ponto_numerado_com_rotulo_nominal",
+      "descricao": "Parágrafo ou seção aberta por 'Ponto N,' (ou equivalente) seguido de rótulo nominal qualificador e ponto final, funcionando como título embutido no corpo do texto",
+      "padrao_estrutural": [
+        "[Marcador_numerador] [numeral], [sintagma_nominal_rotulador]. [Desenvolvimento do parágrafo]."
+      ],
+      "marcadores_numeradores_suspeitos": [
+        "Ponto", "Passo", "Camada", "Nível", "Etapa",
+        "Movimento", "Tempo", "Momento", "Estágio", "Fase",
+        "Dimensão", "Plano", "Frente", "Eixo", "Núcleo"
+      ],
+      "rotulos_nominais_suspeitos": [
+        "premissa originária", "nome analítico", "deslocamento teórico",
+        "síntese intermediária", "virada conceitual", "fundamento remoto",
+        "achado central", "tese de fundo", "contribuição própria",
+        "ponto de chegada", "nó argumentativo", "chave de leitura"
+      ],
+      "regex_deteccao": [
+        "(^|\\n)\\s*(Ponto|Passo|Camada|Nível|Etapa|Movimento|Tempo|Momento|Estágio|Fase|Dimensão|Plano|Frente|Eixo|Núcleo)\\s+\\d+\\s*,\\s+[a-zà-ÿçãõáéíóúâêô][^.]{2,60}\\."
+      ],
+      "exemplo_proibido": "Ponto 2, nome analítico. Martínez-Alier (2007) nomeia o mecanismo...",
+      "exemplo_reescrito": "Martínez-Alier (2007) nomeia o mecanismo descrito por Summers como Princípio Lawrence Summers...",
+      "motivo_proibicao": "Resíduo de esqueleto de esboço; simula rigor expositivo; interrompe o fluxo argumentativo; coocorre com sintagmas nominais vazios (coincide com cst_007)",
+      "alternativas_recomendadas": [
+        "usar subtítulos em nível de seção (###) quando a separação for genuinamente estrutural, nunca no corpo do parágrafo",
+        "transformar o rótulo em conteúdo: entregar o que o ponto sustenta, substantivamente, já na primeira frase",
+        "suprimir integralmente o marcador e deixar que a transição argumentativa seja feita por conectivo ou por progressão temática"
+      ],
+      "coocorrencia_frequente": ["cst_007 (abertura lacônica com reancoragem nominal)", "lex_010 (deslocamento)", "lex_013 (chave)"]
+    },
+    {
+      "id": "cst_011",
+      "nome": "omissao_de_determinante_ou_preposicao",
+      "descricao": "Supressão de artigo definido/indefinido ou preposição regente antes de substantivo que, no português brasileiro culto escrito, exige determinante",
+      "padrao_estrutural": [
+        "[Verbo_transitivo] [substantivo_comum_sem_artigo] [modificador]",
+        "[Verbo_transitivo_indireto] [substantivo_sem_preposicao]"
+      ],
+      "gatilhos_deteccao_heuristica": [
+        "verbos transitivos diretos seguidos imediatamente de substantivo comum singular sem artigo: 'nomeia mecanismo', 'formaliza tese', 'sustenta ideia', 'apresenta argumento'",
+        "substantivo modificado por oração adjetiva restritiva sem artigo: 'mecanismo descrito em', 'tese defendida por', 'argumento proposto em'",
+        "verbos que regem preposição sem a preposição explícita: 'recorre fundamento', 'alude obra', 'refere-se trabalho'"
+      ],
+      "regex_deteccao_aproximada": [
+        "\\b(nomeia|formaliza|sustenta|apresenta|expõe|introduz|desenvolve|articula|funda|institui|estabelece|consagra|propõe|defende|adota|aplica)\\s+(?!(?:o|a|os|as|um|uma|uns|umas|este|esta|estes|estas|esse|essa|esses|essas|aquele|aquela|aqueles|aquelas|meu|teu|seu|nosso|vosso)\\b)[a-zà-ÿ]+\\b",
+        "\\b[a-zà-ÿ]+\\s+(descrito|descrita|descritos|descritas|proposto|proposta|defendido|defendida|apresentado|apresentada)\\s+(em|por|no|na)\\b"
+      ],
+      "motivo_proibicao": "Telegrafismo acadêmico; elipse de determinante que empobrece fluência e quebra o registro formal escrito; traço típico de prosa gerada automaticamente ou de tradução literal do inglês",
+      "exemplo_proibido": "Martínez-Alier (2007) nomeia mecanismo descrito em 1991 como Princípio Lawrence Summers.",
+      "exemplo_reescrito": "Martínez-Alier (2007) nomeia o mecanismo descrito em 1991 como Princípio Lawrence Summers.",
+      "alternativas_recomendadas": [
+        "inserir artigo definido antes de substantivo modificado por oração adjetiva restritiva",
+        "inserir artigo indefinido quando o substantivo é introduzido pela primeira vez no discurso",
+        "restaurar a preposição regente do verbo quando elidida"
+      ],
+      "observacao": "Regex gera falsos positivos. Deve ser usada como sinalizador para revisão humana, não como regra de substituição automática. Exceções legítimas: títulos, enumerações, provérbios, construções idiomáticas."
+    },
+    {
+      "id": "cst_012",
+      "nome": "anuncio_metarretorico_da_citacao",
+      "descricao": "Padrão metarretórico que ANUNCIA o ato de citar em vez de citar. Sintagma nominal qualificador do tipo 'a descoberta específica de X' + verbo estativo + conteúdo. Trata o autor como objeto a ser apresentado ao leitor, e não como interlocutor já conhecido em diálogo argumentativo direto.",
+      "padrao_estrutural": [
+        "[Sintagma_metarretorico] de [Autor] (ano, p. X) [verbo_estativo] em [conteudo_real]"
+      ],
+      "sintagmas_metarretoricos_suspeitos": [
+        "a descoberta específica",
+        "a tese central",
+        "a tese de fundo",
+        "a contribuição original",
+        "a contribuição própria",
+        "a originalidade",
+        "o achado próprio",
+        "o achado central",
+        "o ponto decisivo",
+        "o ponto central",
+        "a virada conceitual",
+        "a aposta central",
+        "a intuição central",
+        "a inovação",
+        "a proposta central",
+        "a tese maior",
+        "a chave de leitura",
+        "a contribuição decisiva",
+        "o núcleo argumentativo",
+        "a hipótese de fundo"
+      ],
+      "verbos_estativos_associados": [
+        "reside", "consiste", "está", "encontra-se", "repousa", "jaz", "radica", "centra-se", "concentra-se", "situa-se"
+      ],
+      "regex_deteccao": [
+        "\\b[Aa] (descoberta específica|tese central|tese de fundo|contribuição original|contribuição própria|originalidade|achado próprio|achado central|ponto decisivo|ponto central|virada conceitual|aposta central|intuição central|inovação|proposta central|tese maior|chave de leitura|contribuição decisiva|núcleo argumentativo|hipótese de fundo) de [\\w \\-À-ÿ]+\\s*\\(\\d{4}[a-z]?(?:,\\s*p\\.\\s*[\\w\\-e]+)?\\)\\s*(reside|consiste|está|encontra-se|repousa|jaz|radica|centra-se|concentra-se|situa-se)\\b",
+        "\\b[Oo] (ponto decisivo|ponto central|achado próprio|achado central|núcleo argumentativo) de [\\w \\-À-ÿ]+\\s*\\(\\d{4}[a-z]?(?:,\\s*p\\.\\s*[\\w\\-e]+)?\\)\\s*(reside|consiste|está|encontra-se|repousa)\\b"
+      ],
+      "exemplo_proibido": "A descoberta específica de Raworth (2017, p. e48) reside em traduzir a sustentabilidade em geometria de fronteiras simultâneas.",
+      "exemplo_reescrito": "Raworth (2017, p. e48) traduz a sustentabilidade em geometria de fronteiras simultâneas.",
+      "outros_exemplos": [
+        {
+          "proibido": "A tese central de Marques (2018, p. 50) consiste em demonstrar que a insustentabilidade ambiental do capitalismo não é desvio conjuntural.",
+          "reescrito": "Marques (2018, p. 50) demonstra que a insustentabilidade ambiental do capitalismo não constitui desvio conjuntural."
+        },
+        {
+          "proibido": "O ponto decisivo de Leff (2006, p. 22) está em sustentar que a racionalidade ambiental é contracorrente da econômica.",
+          "reescrito": "Leff (2006, p. 22) sustenta que a racionalidade ambiental é contracorrente da econômica."
+        },
+        {
+          "proibido": "A contribuição original de Piketty (2014) reside em mostrar que r > g.",
+          "reescrito": "Piketty (2014) mostra que r > g."
+        }
+      ],
+      "motivo_proibicao": "Padrão metarretórico que apresenta o autor ao leitor (gesto biográfico-expositivo) em vez de tratá-lo como interlocutor já conhecido em diálogo argumentativo direto. Duplica o trabalho do parágrafo: anuncia o que vem em vez de fazer vir. Inflaciona o texto sem agregar substância. Aparenta densidade analítica enquanto entrega apenas embalagem.",
+      "alternativas_recomendadas": [
+        "Suprimir o sintagma_metarretorico inteiro e o verbo estativo",
+        "Conjugar o verbo de conteúdo (traduzir, demonstrar, sustentar, mostrar) diretamente com o autor como sujeito",
+        "Manter Autor (ano, p. X) imediatamente antes do verbo de conteúdo",
+        "Operação automatizável: regex match → substituir 'A descoberta específica de X (Y, p. Z) reside em VERBAR' por 'X (Y, p. Z) VERBA'"
+      ],
+      "operacao_fix_automatizavel": {
+        "regex_match": "\\b[Aa] (descoberta específica|tese central|tese de fundo|contribuição original|contribuição própria|originalidade|achado próprio|achado central|ponto decisivo|ponto central|virada conceitual|aposta central|intuição central|inovação|proposta central|tese maior|chave de leitura|contribuição decisiva|núcleo argumentativo|hipótese de fundo) de ([\\w \\-À-ÿ]+) \\((\\d{4}[a-z]?(?:,\\s*p\\.\\s*[\\w\\-e]+)?)\\) (reside|consiste|está|encontra-se|repousa|jaz|radica|centra-se|concentra-se|situa-se) (em|na|no) (traduzir|demonstrar|sustentar|mostrar|formular|propor|defender|afirmar|nomear|identificar|distinguir|caracterizar|conceituar|articular|estabelecer|fundamentar|cunhar)",
+        "substituicao_template": "{2} ({3}) {6}",
+        "ressalva": "Conjugar o verbo de conteúdo na 3ª pessoa singular do presente do indicativo (traduzir → traduz, demonstrar → demonstra, sustentar → sustenta) — operação a cargo do humano após match"
+      },
+      "coocorrencia_frequente": ["cst_007 (abertura lacônica com reancoragem nominal)", "cst_010 (tópico numerado com rótulo nominal)"]
+    }
+  ]
+}

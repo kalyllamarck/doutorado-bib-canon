@@ -1,0 +1,335 @@
+{
+  "subtipo": "explicativas",
+  "categoria": "coordenativas",
+  "definicao": "Indicam explicação, justificativa ou razão",
+  "total": 44,
+  "formais": 27,
+  "informais": 17,
+  "polissemicas": 8,
+  "itens": [
+    {
+      "forma": "porque",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/causais"
+      ]
+    },
+    {
+      "forma": "pois",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "coordenativas/conclusivas",
+        "subordinativas/causais"
+      ]
+    },
+    {
+      "forma": "porquanto",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/causais"
+      ]
+    },
+    {
+      "forma": "que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/integrantes"
+      ]
+    },
+    {
+      "forma": "já que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/causais"
+      ]
+    },
+    {
+      "forma": "uma vez que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/causais",
+        "subordinativas/condicionais"
+      ]
+    },
+    {
+      "forma": "visto que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/causais"
+      ]
+    },
+    {
+      "forma": "haja vista",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "dado que",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": true,
+      "outros_subtipos": [
+        "subordinativas/causais"
+      ]
+    },
+    {
+      "forma": "isto é",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "ou seja",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "a saber",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "quer dizer",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "vale dizer",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em outras palavras",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "noutros termos",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "explica-se",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "explique-se",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "com efeito",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "é que",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "isso porque",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "a razão é que",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "o motivo é que",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "tanto é que",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "prova disso",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "tome-se em conta",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "considere-se que",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "atente-se",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "note-se",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "frise-se",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "observe-se",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "saliente-se",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "registre-se",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "ressalte-se",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "é dizer",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "vale notar",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "a propósito",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "com razão",
+      "registro": "informal",
+      "score_academico": 1,
+      "polissemica": false,
+      "proibido_artigo_academico": true,
+      "motivo_proibicao": "registro coloquial"
+    },
+    {
+      "forma": "pela razão de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "pelo fato de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "sob o fundamento de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "no fundamento de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em razão de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em virtude de",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    }
+  ]
+}
