@@ -43,7 +43,7 @@ created: 2026-05-04
 | 01-01-XX | 01 | 1 | CORE-12 (#1 install) | — | `uv sync` exit 0 sem erro | smoke | `uv sync` | ✅ executor cria pyproject.toml | ⬜ pending |
 | 01-01-XX | 01 | 1 | CORE-12 (#2 --help) | — | `validar --help` exit 0 + contém "biblioteca canônica" | unit | `uv run pytest tests/test_cli.py::test_validar_help_exit_zero -x` | ❌ W0 (test não existe ainda) | ⬜ pending |
 | 01-01-XX | 01 | 1 | CORE-12 (#3 version) | — | `import biblio_validador; assert __version__ == "0.1.0"` | unit | `uv run pytest tests/test_cli.py::test_version_exposed -x` | ❌ W0 | ⬜ pending |
-| 01-01-XX | 01 | 1 | CORE-12 (#4 deps) | — | pyproject.toml declara 6 deps M1 com versões pinadas | structural | `uv run pytest tests/test_cli.py::test_deps_declared -x` | ❌ W0 | ⬜ pending |
+| 01-01-XX | 01 | 1 | CORE-12 (#4 deps) | — | pyproject.toml declara 6 deps M1 com versões pinadas | structural | `uv run pytest tests/test_cli.py::test_pyproject_declares_m1_deps -x` | ❌ W0 | ⬜ pending |
 
 *Status: ⬜ pending · ✅ green · ❌ red · ⚠️ flaky*
 
