@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: planning
-stopped_at: Phase 1 context gathered
-last_updated: "2026-05-04T14:03:42.977Z"
-last_activity: 2026-05-04 — ROADMAP.md e STATE.md criados por gsd-roadmapper
+status: verifying
+stopped_at: Completed 01-01-PLAN.md (Phase 01 ready_for_verification)
+last_updated: "2026-05-04T15:22:35.876Z"
+last_activity: 2026-05-04
 progress:
   total_phases: 59
-  completed_phases: 0
-  total_plans: 0
-  completed_plans: 0
-  percent: 0
+  completed_phases: 1
+  total_plans: 1
+  completed_plans: 1
+  percent: 100
 ---
 
 # Project State
@@ -21,14 +21,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-05-03)
 
 **Core value:** Garantir que todo texto produzido no doutorado passe pelos mesmos crivos editoriais sem fricção manual, com correções rastreáveis até a regra-fonte em JSON canônico
-**Current focus:** Phase 1 — Bootstrap
+**Current focus:** Phase 01 — bootstrap
 
 ## Current Position
 
-Phase: 1 of 59 (Bootstrap)
-Plan: 0 of ? in current phase
-Status: Ready to plan
-Last activity: 2026-05-04 — ROADMAP.md e STATE.md criados por gsd-roadmapper
+Phase: 01 (bootstrap) — EXECUTING
+Plan: 1 of 1
+Status: Phase complete — ready for verification
+Last activity: 2026-05-04
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -52,6 +52,7 @@ Progress: [░░░░░░░░░░] 0%
 - Trend: n/a
 
 *Updated after each plan completion*
+| Phase 01 P01 | 14 | 3 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -65,6 +66,9 @@ Recent decisions affecting current work:
 - Init: 3 níveis de fixer AUTO/ASSISTIDO/LLM (severidade determina intervenção)
 - Init: Patches em ordem reversa (evita drift de offsets)
 - Init: YOLO mode + parallel + fine granularity (phases pequenas e independentes)
+- [Phase 01]: Phase 1: @app.callback() (NÃO @app.command()) no skeleton Typer — preserva help top-level e permite transição transparente para multi-command em Phase 8 (Pitfall 1 ALTA)
+- [Phase 01]: Phase 1: extend-exclude no [tool.ruff] para 01_templates+02_escrita+03_fontes+04_normas+05_metadados — biblioteca canônica de dados não pertence ao projeto Python; será integrada seletivamente em M8
+- [Phase 01]: Phase 1: PEP 735 [dependency-groups].dev em vez de [project.optional-dependencies].dev — instala por default em uv sync, sem precisar --extra dev (D-08)
 
 ### Pending Todos
 
@@ -85,6 +89,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-05-04T14:03:42.970Z
-Stopped at: Phase 1 context gathered
-Resume file: .planning/phases/01-bootstrap/01-CONTEXT.md
+Last session: 2026-05-04T15:22:35.871Z
+Stopped at: Completed 01-01-PLAN.md (Phase 01 ready_for_verification)
+Resume file: None

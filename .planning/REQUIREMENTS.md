@@ -18,7 +18,7 @@
 - [ ] **CORE-09**: Orchestrator mínimo + relatório `AUDITORIA.md` priorizado por severidade
 - [ ] **CORE-10**: Pipeline funcional contra `Artigos/.../artigo.md` real (artigo Eólica Nordeste como caso de teste)
 - [ ] **CORE-11**: Normalização Unicode NFC no parser (evita falhas com acentos compostos)
-- [ ] **CORE-12**: Layout `src/biblio_validador/` com `pyproject.toml` + `uv` install + entry point `validar` no PATH
+- [x] **CORE-12**: Layout `src/biblio_validador/` com `pyproject.toml` + `uv` install + entry point `validar` no PATH
 
 ### Validadores Primitivos (M2)
 
@@ -147,7 +147,7 @@ Deferred. Tracked but not in current roadmap.
 | CORE-09 | Phase 8 — Orchestrator Mínimo | Pending |
 | CORE-10 | Phase 9 — Pipeline E2E | Pending |
 | CORE-11 | Phase 2 — Parser Markdown | Pending |
-| CORE-12 | Phase 1 — Bootstrap | Pending |
+| CORE-12 | Phase 1 — Bootstrap | Complete |
 | VAL-01 | Phase 10 — VAL-01 Termos Lexicais | Pending |
 | VAL-02 | Phase 11 — VAL-02 Expressões Conectivas | Pending |
 | VAL-03 | Phase 12 — VAL-03 Colocações Semânticas | Pending |
