@@ -136,13 +136,74 @@ Deferred. Tracked but not in current roadmap.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| (Será preenchida pelo gsd-roadmapper na próxima etapa) | | |
+| CORE-01 | Phase 2 — Parser Markdown | Pending |
+| CORE-02 | Phase 3 — Dataclasses Core | Pending |
+| CORE-03 | Phase 3 — Dataclasses Core | Pending |
+| CORE-04 | Phase 4 — Contratos ABC | Pending |
+| CORE-05 | Phase 4 — Contratos ABC | Pending |
+| CORE-06 | Phase 5 — PatchAplicador | Pending |
+| CORE-07 | Phase 6 — Validador Piloto cst_012 | Pending |
+| CORE-08 | Phase 7 — Fixer AUTO Piloto cst_012 | Pending |
+| CORE-09 | Phase 8 — Orchestrator Mínimo | Pending |
+| CORE-10 | Phase 9 — Pipeline E2E | Pending |
+| CORE-11 | Phase 2 — Parser Markdown | Pending |
+| CORE-12 | Phase 1 — Bootstrap | Pending |
+| VAL-01 | Phase 10 — VAL-01 Termos Lexicais | Pending |
+| VAL-02 | Phase 11 — VAL-02 Expressões Conectivas | Pending |
+| VAL-03 | Phase 12 — VAL-03 Colocações Semânticas | Pending |
+| VAL-04 | Phase 13 — VAL-04 Construções Sintáticas | Pending |
+| VAL-05 | Phase 14 — VAL-05 Sinais Gráficos | Pending |
+| VAL-06 | Phase 15 — VAL-06 Conjunções | Pending |
+| VAL-07 | Phase 16 — VAL-07 Parser LaTeX | Pending |
+| VAL-08 | Phase 17 — VAL-08 Benchmark | Pending |
+| AGR-01 | Phase 18 — AGR-01 Coocorrência | Pending |
+| AGR-02 | Phase 19 — AGR-02 Escrita Canônica | Pending |
+| AGR-03 | Phase 20 — AGR-03 Versionamento | Pending |
+| ST-01 | Phase 21 — ST-01 Títulos | Pending |
+| ST-02 | Phase 22 — ST-02 Autores | Pending |
+| ST-03 | Phase 23 — ST-03 Resumo | Pending |
+| ST-04 | Phase 24 — ST-04 Sumário | Pending |
+| ST-05 | Phase 25 — ST-05 Introdução | Pending |
+| ST-06 | Phase 26 — ST-06 Seções | Pending |
+| ST-07 | Phase 27 — ST-07 Conclusão | Pending |
+| ST-08 | Phase 28 — ST-08 Referências | Pending |
+| ST-09 | Phase 29 — ST-09 Citações | Pending |
+| ST-10 | Phase 30 — ST-10 Notas de Rodapé | Pending |
+| ST-11 | Phase 31 — ST-11 Página Global | Pending |
+| FXA-01 | Phase 32 — FXA-01 Fixer Termos Lexicais | Pending |
+| FXA-02 | Phase 33 — FXA-02 Fixer Expressões Conectivas | Pending |
+| FXA-03 | Phase 34 — FXA-03 Fixer Sinais Gráficos | Pending |
+| FXA-04 | Phase 35 — FXA-04 Fixer Estrangeirismos | Pending |
+| FXA-05 | Phase 36 — FXA-05 Fixer cst_012 Refatorado | Pending |
+| FXS-01 | Phase 37 — FXS-01 Fixer Dois-pontos | Pending |
+| FXS-02 | Phase 38 — FXS-02 Fixer Gerúndio | Pending |
+| FXS-03 | Phase 39 — FXS-03 Fixer Anglicismos | Pending |
+| FXS-04 | Phase 40 — FXS-04 Fixer Determinante | Pending |
+| FXS-05 | Phase 41 — FXS-05 Fixer Conjunção Inicial | Pending |
+| FXL-01 | Phase 42 — FXL-01 Cliente Claude API | Pending |
+| FXL-02 | Phase 43 — FXL-02 Fixer Pseudossíntese | Pending |
+| FXL-03 | Phase 44 — FXL-03 Fixer Tópico Numerado | Pending |
+| FXL-04 | Phase 45 — FXL-04 Fixer Abertura Lacônica | Pending |
+| FXL-05 | Phase 46 — FXL-05 Fixer Coocorrência | Pending |
+| FXL-06 | Phase 47 — FXL-06 Fixer Citação Proibida | Pending |
+| FXL-07 | Phase 48 — FXL-07 Pós-validação LLM | Pending |
+| FXL-08 | Phase 49 — FXL-08 Guardrail LLM | Pending |
+| ORC-01 | Phase 50 — ORC-01 Orchestrator Validador | Pending |
+| ORC-02 | Phase 51 — ORC-02 Orchestrator Fixer | Pending |
+| ORC-03 | Phase 52 — ORC-03 CLI Unificado | Pending |
+| ORC-04 | Phase 53 — ORC-04 Testes Validadores | Pending |
+| ORC-05 | Phase 54 — ORC-05 Testes Fixers | Pending |
+| ORC-06 | Phase 55 — ORC-06 Integração LaTeX | Pending |
+| ORC-07 | Phase 56 — ORC-07 Integração GDocs | Pending |
+| ORC-08 | Phase 57 — ORC-08 Pre-commit Hook | Pending |
+| ORC-09 | Phase 58 — ORC-09 Output JSON | Pending |
+| ORC-10 | Phase 59 — ORC-10 Logging Estruturado | Pending |
 
 **Coverage:**
 - v1 requirements: 60 total (CORE: 12 + VAL: 8 + AGR: 3 + ST: 11 + FXA: 5 + FXS: 5 + FXL: 8 + ORC: 10)
-- Mapped to phases: 0 (pendente roadmap)
-- Unmapped: 60 ⚠️
+- Mapped to phases: 60/60 ✓
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-05-03*
-*Last updated: 2026-05-03 after initial definition*
+*Last updated: 2026-05-04 after roadmap creation (gsd-roadmapper)*
