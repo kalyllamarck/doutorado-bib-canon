@@ -113,7 +113,8 @@ Construção incremental de um linter de prosa acadêmica PT-BR organizada em 8 
   2. `validar --help` retorna usage sem error code
   3. `src/biblio_validador/__init__.py` existe com versão `0.1.0`
   4. `pyproject.toml` declara todas as dependências do SUMMARY.md com versões fixadas
-**Plans**: TBD
+**Plans:** 1 plan
+- [ ] 01-01-PLAN.md — Bootstrap: uv init + overrides D-XX + 3 tasks (scaffold, deps, validation)
 
 ### Phase 2: Parser Markdown
 **Goal**: Parser `.md` CommonMark + footnotes que segmenta em parágrafos com offsets byte-exact e normalização NFC
@@ -801,7 +802,7 @@ M1: Phases 1-9 (sequencial) -> M2: Phases 10-17 (10-16 em paralelo, 17 bloqueado
 
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
-| 1. Bootstrap | M1 | 0/? | Not started | - |
+| 1. Bootstrap | M1 | 0/1 | Not started | - |
 | 2. Parser Markdown | M1 | 0/? | Not started | - |
 | 3. Dataclasses Core | M1 | 0/? | Not started | - |
 | 4. Contratos ABC | M1 | 0/? | Not started | - |
