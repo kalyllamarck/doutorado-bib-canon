@@ -55,7 +55,7 @@ created: 2026-05-04
 - [ ] `tests/test_cli.py` — 3 testes consolidados:
   - `test_validar_help_exit_zero` (CORE-12 #2)
   - `test_version_exposed` (CORE-12 #3)
-  - `test_deps_declared` (CORE-12 #4 via `tomllib.load()`)
+  - `test_pyproject_declares_m1_deps` (CORE-12 #4 via `tomllib.load()`)
 - [ ] `pytest 9.0.3` + `pytest-cov 7.1.0` instalados via `uv add --dev` (D-08)
 
 ---
