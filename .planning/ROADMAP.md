@@ -21,7 +21,7 @@ Construção incremental de um linter de prosa acadêmica PT-BR organizada em 8 
 
 ### M1 — Piloto + Infraestrutura Core
 
-- [ ] **Phase 1: Bootstrap** - `pyproject.toml` + layout `src/biblio_validador/` + `uv` install + entry point CLI
+- [x] **Phase 1: Bootstrap** - `pyproject.toml` + layout `src/biblio_validador/` + `uv` install + entry point CLI
 - [ ] **Phase 2: Parser Markdown** - Parser `.md` CommonMark + footnotes com offsets byte-exact e NFC
 - [ ] **Phase 3: Dataclasses Core** - `Violacao` + `Patch` + enum `EstadoPatch`
 - [ ] **Phase 4: Contratos ABC** - `ValidadorBase` + `FixerBase` com contratos completos
