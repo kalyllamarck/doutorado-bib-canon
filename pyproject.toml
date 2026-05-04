@@ -32,6 +32,16 @@ build-backend = "uv_build"
 [tool.ruff]
 line-length = 80
 target-version = "py313"
+# Phase 1 escopo: validador novo em src/ + tests/. Legacy Python em
+# 01_templates/ (gdocs render, abntex2 helpers) é fora do projeto e será
+# normalizado em phase futura quando integrado ao orchestrator (M8).
+extend-exclude = [
+    "01_templates",
+    "02_escrita",
+    "03_fontes",
+    "04_normas",
+    "05_metadados",
+]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]
