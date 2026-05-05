@@ -1,9 +1,9 @@
 ---
 phase: 4
 slug: contratos-abc
-status: draft
-nyquist_compliant: false
-wave_0_complete: false
+status: green
+nyquist_compliant: true
+wave_0_complete: true
 created: 2026-05-05
 ---
 
@@ -94,4 +94,4 @@ created: 2026-05-05
 - [ ] ruff passa em `src/biblio_validador/core/` e `tests/core/test_contracts.py`
 - [ ] `nyquist_compliant: true` set in frontmatter
 
-**Approval:** pending
+**Approval:** approved 2026-05-05

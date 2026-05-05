@@ -209,15 +209,20 @@ def test_aux_violacao_hashable_patch_unhashable() -> None:
 
 
 def test_aux_imports_via_re_export_funcionam() -> None:
-    """D-03: __init__.py re-exporta os 4 simbolos publicos."""
+    """D-03: __init__.py re-exporta os 4 simbolos publicos da Phase 3.
+
+    Phase 4 estendeu __all__ com 6 simbolos (ValidadorBase, FixerBase,
+    AplicacaoResultado, ContextoFixer, Scope, ModoFixer); aqui validamos
+    apenas que os 4 da Phase 3 permanecem exportados.
+    """
     from biblio_validador.core import __all__
 
-    assert set(__all__) == {
+    assert {
         "EstadoPatch",
         "Patch",
         "Severidade",
         "Violacao",
-    }
+    }.issubset(set(__all__))
 
 
 def test_aux_violacao_regra_id_vazio_raises() -> None:
