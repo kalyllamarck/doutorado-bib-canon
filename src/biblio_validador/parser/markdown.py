@@ -146,6 +146,17 @@ class ParserMd:
         # Strip trailing newline do conteúdo, mantendo offset_bytes
         # intacto (Pitfall 3)
         chunk = src_bytes[offset_bytes:end_offset].rstrip(b"\n")
+        # Footnote body: pular o prefixo de definição "[^label]: "
+        # (sintaxe markdown, não conteúdo). Ajusta offset/len para
+        # preservar round-trip byte-exact (Test 6 invariante).
+        if (
+            tipo == TipoSecao.NOTA_RODAPE
+            and ref_nota is not None
+        ):
+            prefixo = f"[^{ref_nota}]: ".encode("utf-8")
+            if chunk.startswith(prefixo):
+                offset_bytes += len(prefixo)
+                chunk = chunk[len(prefixo):]
         texto = chunk.decode("utf-8")
         return Paragrafo(
             arquivo=arquivo,
