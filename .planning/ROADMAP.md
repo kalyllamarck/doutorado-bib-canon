@@ -138,7 +138,7 @@ Construção incremental de um linter de prosa acadêmica PT-BR organizada em 8 
   3. `dataclasses.asdict(violacao)` produz dict serializável em JSON sem erros
   4. Tentativa de mutar `Violacao.regra_id` lança `FrozenInstanceError`
 **Plans:** 1 plan
-- [ ] 03-01-PLAN.md — Dataclasses Core: enums.py + dataclasses.py + re-export + 12 tests + gate (5 tasks)
+- [x] 03-01-PLAN.md — Dataclasses Core: enums.py + dataclasses.py + re-export + 12 tests + gate (5 tasks)
 
 ### Phase 4: Contratos ABC
 **Goal**: ABCs `ValidadorBase` e `FixerBase` com contratos completos que forçam implementação dos métodos obrigatórios
