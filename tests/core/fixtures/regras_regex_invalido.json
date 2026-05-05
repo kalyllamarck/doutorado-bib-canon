@@ -1,0 +1,6 @@
+{
+  "tipo": "fake",
+  "entradas": [
+    {"id": "cst_invalido", "regex_deteccao": "(?P<unfinished"}
+  ]
+}

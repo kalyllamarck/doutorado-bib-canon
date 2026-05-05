@@ -1,0 +1,9 @@
+{
+  "tipo": "fake",
+  "entradas": [
+    {"id": "cst_str", "regex_deteccao": "\\bsimples\\b"},
+    {"id": "cst_lista", "regex_deteccao": ["\\ba\\b", "\\bb\\b"]},
+    {"id": "cst_alt_key", "regex_deteccao_aproximada": ["\\bc\\b"]},
+    {"id": "cst_skip", "exemplos_proibidos": ["foo", "bar"]}
+  ]
+}
