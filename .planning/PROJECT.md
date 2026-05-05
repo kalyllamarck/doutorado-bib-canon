@@ -12,15 +12,16 @@ Sistema modular de validação e correção automatizada para artigos científic
 
 ### Validated
 
-(None yet — ship to validate)
+- [x] REQ-CORE-01: Parser `.md` CommonMark + footnotes com offsets byte-exact e NFC — Validated in Phase 2 (Parser Markdown), 2026-05-05
+- [x] REQ-CORE-02: Dataclass `Violacao` (frozen+slots, 11 campos, `__post_init__` invariantes, `to_dict()` JSON-safe) — Validated in Phase 3 (Dataclasses Core), 2026-05-05
+- [x] REQ-CORE-03: Dataclass `Patch` (slots-only, 10 campos, `EstadoPatch` enum, `to_dict()` JSON-safe) — Validated in Phase 3 (Dataclasses Core), 2026-05-05
+- [x] REQ-CORE-11: Normalização NFC no parser — Validated in Phase 2, 2026-05-05
+- [x] REQ-CORE-12: Layout `src/biblio_validador/` + `pyproject.toml` + `uv` + entry point `validar` — Validated in Phase 1 (Bootstrap), 2026-05-04
 
 ### Active
 
 #### Núcleo (M1 piloto end-to-end)
 
-- [ ] REQ-CORE-01: Parser que lê `.md` e `.tex` em parágrafos + frases + linhas com offsets byte-exact
-- [ ] REQ-CORE-02: Dataclass `Violacao` (arquivo, linha, col, regra_id, severidade, sugestões, princípio_canônico_violado)
-- [ ] REQ-CORE-03: Dataclass `Patch` (linha, col, before, after, motivo, confiança, requer_revisão)
 - [ ] REQ-CORE-04: Contrato `ValidadorBase` (carregar JSON → aplicar regex → emitir Violacao[])
 - [ ] REQ-CORE-05: Contrato `FixerBase` (Violacao → propor Patch[] → aplicar byte-exact)
 - [ ] REQ-CORE-06: Aplicador de patches em ordem reversa (evita drift de offsets)
@@ -160,4 +161,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-05-03 after initialization*
+*Last updated: 2026-05-05 after Phase 3 (Dataclasses Core) completion*
