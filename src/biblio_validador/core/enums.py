@@ -50,3 +50,37 @@ class EstadoPatch(Enum):
     ACEITO = "aceito"
     REJEITADO = "rejeitado"
     SUPRIMIDO = "suprimido"
+
+
+class Scope(Enum):
+    """Granularidade do alvo de validacao (D-10, D-15).
+
+    Orchestrator (Phase 50) usa SCOPE para roteamento e batching:
+        PARAGRAFO -> validador opera paragrafo-por-paragrafo (M2 padrao)
+        SECAO     -> opera por secao (M4 estrutural)
+        DOCUMENTO -> opera no documento inteiro (M3 agregadores)
+
+    Sem peso() — nao ha ordenacao inerente entre granularidades.
+    """
+
+    PARAGRAFO = "paragrafo"
+    SECAO = "secao"
+    DOCUMENTO = "documento"
+
+
+class ModoFixer(Enum):
+    """Nivel de intervencao de um Fixer (D-13, D-17).
+
+    Orchestrator (Phase 51) usa MODO para decidir UX:
+        AUTO      -> substituicao deterministica sem confirmacao
+        ASSISTIDO -> propoe N reescritas, autor escolhe via prompt CLI
+        LLM       -> chama Claude API para reescrita semantica
+
+    Mapeamento ModoFixer -> confianca default e responsabilidade do fixer
+    concreto (Phase 7+), nao da ABC. Phase 3 D-17 ja registrou: confianca
+    em Patch e SEM default — forca fixer a declarar intencionalmente.
+    """
+
+    AUTO = "auto"
+    ASSISTIDO = "assistido"
+    LLM = "llm"
