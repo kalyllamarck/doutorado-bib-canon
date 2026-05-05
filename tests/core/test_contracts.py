@@ -15,12 +15,12 @@ Convencoes herdadas (Phase 3 D-26):
 
 from __future__ import annotations
 
-import json  # noqa: F401  # used in T-04-03-03 (json.JSONDecodeError test)
+import json
 import re
 from collections.abc import Mapping
 from dataclasses import FrozenInstanceError  # noqa: F401  # used in T-04-03-04
 from pathlib import Path
-from typing import ClassVar  # noqa: F401  # used in T-04-03-03/04 subclasses
+from typing import ClassVar
 
 import pytest
 
@@ -149,3 +149,103 @@ def test_fixer_base_abstract_aplicar() -> None:
 
     with pytest.raises(TypeError, match="abstract"):
         _Incomplete()  # type: ignore[abstract]
+
+
+# ============================================================================
+# Success criterion #2: carregar_regras() compila regex 1x (cache class-level)
+# ============================================================================
+
+
+class _ValidadorComCache(ValidadorBase):
+    """Subclasse concreta usando o pattern cache via cls.__dict__.get."""
+
+    JSON_SOURCE: ClassVar[Path] = FIXT / "regras_fake.json"
+    SCOPE: ClassVar[Scope] = Scope.PARAGRAFO
+
+    @classmethod
+    def carregar_regras(cls) -> Mapping[str, re.Pattern[str]]:
+        cached = cls.__dict__.get("_regras_compiladas")
+        if cached is not None:
+            return cached  # type: ignore[no-any-return]
+        result = _carregar_json_simples(cls.JSON_SOURCE)
+        cls._regras_compiladas = result
+        return result
+
+    def validar(self, paragrafos: list[Paragrafo]) -> list[Violacao]:
+        return []
+
+
+class _ValidadorSubA(_ValidadorComCache):
+    """Cache per-subclass — JSON_SOURCE_A."""
+
+    JSON_SOURCE: ClassVar[Path] = FIXT / "regras_fake.json"
+
+
+class _ValidadorSubB(_ValidadorComCache):
+    """Cache per-subclass — JSON_SOURCE_B (str_e_lista)."""
+
+    JSON_SOURCE: ClassVar[Path] = FIXT / "regras_str_e_lista.json"
+
+
+def test_carregar_regras_cache_hit() -> None:
+    """Chamar carregar_regras() 2x retorna o mesmo objeto (id() identico)."""
+    # Limpar cache de outros testes
+    _ValidadorComCache._regras_compiladas = None
+    r1 = _ValidadorComCache.carregar_regras()
+    r2 = _ValidadorComCache.carregar_regras()
+    assert id(r1) == id(r2), "cache miss — recompilou"
+
+
+def test_carregar_regras_per_subclass_isolation() -> None:
+    """Subclasses A e B com JSON_SOURCE distintos NAO compartilham cache.
+
+    RESEARCH Pitfall 2: getattr(cls, '_x') traversaria MRO; cls.__dict__.get
+    e' per-subclass.
+    """
+    # Limpar caches herdados
+    for kls in (_ValidadorComCache, _ValidadorSubA, _ValidadorSubB):
+        kls._regras_compiladas = None
+    rA = _ValidadorSubA.carregar_regras()
+    rB = _ValidadorSubB.carregar_regras()
+    assert id(rA) != id(rB), "Sub A e B compartilharam cache (Pitfall 2)"
+    # rA tem cst_999 (regras_fake); rB tem cst_str/cst_lista/cst_alt_key
+    assert "cst_999" in rA
+    assert {"cst_str", "cst_lista", "cst_alt_key"}.issubset(rB.keys())
+
+
+# ============================================================================
+# Cobertura de erros (D-22, D-33)
+# ============================================================================
+
+
+def test_carregar_regras_file_not_found() -> None:
+    """JSON_SOURCE inexistente propaga FileNotFoundError."""
+    with pytest.raises(FileNotFoundError):
+        _carregar_json_simples(Path("/does/not/exist.json"))
+
+
+def test_carregar_regras_json_decode_error() -> None:
+    """JSON malformado propaga json.JSONDecodeError."""
+    with pytest.raises(json.JSONDecodeError):
+        _carregar_json_simples(FIXT / "regras_malformadas.json")
+
+
+def test_carregar_regras_regex_error() -> None:
+    """Regex invalido propaga re.error com regra_id no message."""
+    with pytest.raises(re.error, match="cst_invalido"):
+        _carregar_json_simples(FIXT / "regras_regex_invalido.json")
+
+
+def test_carregar_regras_normalizes_str_and_list() -> None:
+    """RESEARCH Pattern 5 + skip-branch: aceita str, list, chave alternativa,
+    e PULA entradas sem regex (espelha cst_005 com so exemplos_proibidos).
+
+    Coverage do branch `if raw is None: continue` em _carregar_json_simples.
+    """
+    result = _carregar_json_simples(FIXT / "regras_str_e_lista.json")
+    # cst_str, cst_lista, cst_alt_key compilam; cst_skip e' pulado
+    assert set(result.keys()) == {"cst_str", "cst_lista", "cst_alt_key"}
+    assert "cst_skip" not in result, "entrada sem regex deveria ser pulada"
+    # Cada Pattern e' um re.Pattern compilado
+    for rid, pattern in result.items():
+        assert isinstance(pattern, re.Pattern), f"{rid} nao e' Pattern"
