@@ -1,0 +1,6 @@
+{
+  "tipo": "fake",
+  "entradas": [
+    {"id": "cst_999", "regex_deteccao": "\\bfake\\b"}
+  ]
+}
