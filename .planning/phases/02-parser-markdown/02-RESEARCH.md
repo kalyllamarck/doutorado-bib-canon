@@ -1258,56 +1258,39 @@ Already enumerated above in `## Common Pitfalls`. Cross-reference:
 | P5 (Unicode PT-BR) | Pitfall 4 (NFD macOS) + Pitfall 6 (BOM) | Phase 2 normaliza source-único |
 | P12 (corpus testes) | Test Strategy 5 testes do D-26 + property | Cobre canônicos + variantes + reais |
 
-## Open Questions
+## Open Questions (RESOLVED)
 
 1. **Tratar `fence` (bloco de código) como `Paragrafo(DESCONHECIDO)` ou pular?**
-   - What we know: D-09 lista decisão de slice byte; CONTEXT.md "Deferred"
-     diz que blocos de código "virariam Paragrafo(tipo=DESCONHECIDO) por
-     padrão. Validadores devem ignorar."
-   - What's unclear: Se devemos emitir o fence ou silenciosamente pular.
-   - Recommendation: Emitir como `Paragrafo(tipo=DESCONHECIDO,
-     nivel_heading=None)` — o filtro `tipo != DESCONHECIDO` em validadores
-     já estava previsto. Manter consistência: tudo que tem `map` vira
-     `Paragrafo`. **Snippet de referência segue essa convenção.**
+   - **RESOLVED:** Emitir como `Paragrafo(tipo=DESCONHECIDO,
+     nivel_heading=None)`. Convenção: tudo que tem `map` vira `Paragrafo`.
+     Filtro `tipo != DESCONHECIDO` em validadores já previsto na Deferred
+     section do CONTEXT.md. Walker do `markdown.py` (Task 1) implementa essa
+     regra; snippet de referência (RESEARCH §"Example 2") segue.
 
 2. **Lista (list_item) — emitir 1 `Paragrafo` por item ou agrupar?**
-   - What we know: Cada `list_item_open` contém um `paragraph_open` interno
-     com `map`. O walker do snippet de referência emite 1 `Paragrafo` por
-     `paragraph_open` interno.
-   - What's unclear: Se isso é o comportamento desejado (cada item da lista
-     é um parágrafo separado?) ou se o agregador deveria juntar a lista
-     inteira.
-   - Recommendation: Manter 1 `Paragrafo` por item. Validadores que precisem
-     ver "a lista inteira" reconstroem via `linha_inicio` consecutivos.
-     **Sinaliza ao planner: documentar essa convenção em docstring.**
+   - **RESOLVED:** 1 `Paragrafo` por `paragraph_open` interno do
+     `list_item_open`. Validadores que precisem ver a lista inteira
+     reconstroem via `linha_inicio` consecutivos. Convenção documentada na
+     docstring de `ParserMd.parsear` (Task 1, AC referente a D-21).
 
 3. **Heading `## CONSIDERAÇÕES FINAIS` (em CAIXA ALTA) cai no mapa?**
-   - What we know: D-05 lista `consideracoes finais` (lowercase, sem acento)
-     como chave. O `_normalizar_heading` faz casefold + remove acentos, então
-     "CONSIDERAÇÕES FINAIS" → "consideracoes finais" → match. **Verificado
-     pela função `_normalizar_heading` no snippet.**
-   - What's unclear: Se há outras variações que o autor usa
-     ("ANÁLISE FINAL", "FECHAMENTO", etc.) que deveriam estar no mapa.
-   - Recommendation: Inspecionar o artigo Eólica para ver as headings reais
-     (já fiz: ele usa `# Correntes eólicas...`, `## RESUMO`, `## INTRODUÇÃO`,
-     `## 1 TRANSIÇÃO ENERGÉTICA`, `### 1.1 Racionalidade ambiental`, etc.).
-     Mapa atual cobre. Variações vêm em phases futuras.
+   - **RESOLVED:** Sim. `_normalizar_heading` faz NFKD + casefold + strip
+     combining marks, então "CONSIDERAÇÕES FINAIS" → "consideracoes finais"
+     → `TipoSecao.CONCLUSAO`. Mapa do D-05 cobre todas as headings reais do
+     artigo Eólica. Variações futuras entram via PR pontual quando outro
+     artigo exigir.
 
 4. **`paragrafo_pai_idx` quando há múltiplas referências `[^1]` no mesmo doc?**
-   - What we know: D-16 fixou "primeiro parágrafo que contém `[^n]`".
-   - What's unclear: Apenas confirmação de implementação. O snippet
-     `_resolver_pais` usa `if label not in label_to_idx` para guardar
-     somente o primeiro. **OK.**
+   - **RESOLVED:** Primeira ocorrência vence (D-16). Implementação:
+     `if label not in label_to_idx` em `_resolver_pais`. Pinned por
+     teste implícito no `test_footnote_separa_e_linka`.
 
 5. **Heading h1 múltiplo — segundo h1 vira `SECAO`?**
-   - What we know: D-06 "2º+ heading h1 cai em `SECAO`."
-   - What's unclear: O artigo Eólica usa `# Correntes...` (h1) na linha 1
-     mas dentro do corpo usa `## 1 TRANSIÇÃO...` (h2 numerada). Não há h1
-     duplicado. Como testar essa decisão?
-   - Recommendation: Adicionar **um teste extra** (não nos 5 do D-26, mas
-     facultativo) com 2 h1: `# Title 1\n\n# Outra h1\n` → segundo deve ser
-     `SECAO`. Documentar em comentário de teste como edge case improvável
-     em prosa real.
+   - **RESOLVED:** Decisão D-06 mantida; teste extra **dropado** para
+     preservar contrato de 6 testes do D-26 / VALIDATION.md. Edge case
+     improvável em prosa acadêmica real (artigo Eólica usa h1 único).
+     Reabrir só se um artigo futuro apresentar h1 duplicado e o
+     comportamento atual surpreender.
 
 ## Environment Availability
 
