@@ -126,7 +126,7 @@ Construção incremental de um linter de prosa acadêmica PT-BR organizada em 8 
   3. Footnotes `[^n]` são segmentados como `TipoSecao.NOTA_RODAPE` separado do corpo
   4. Teste com trecho do artigo Eólica Nordeste retorna parágrafos identificáveis linha a linha
 **Plans:** 1 plan
-- [ ] 02-01-PLAN.md — Parser Markdown: scaffold parser/ + types.py + markdown.py + 6 tests + gate (3 tasks)
+- [x] 02-01-PLAN.md — Parser Markdown: scaffold parser/ + types.py + markdown.py + 6 tests + gate (3 tasks)
 
 ### Phase 3: Dataclasses Core
 **Goal**: Dataclasses `Violacao` e `Patch` com todos os campos especificados + enum `EstadoPatch` tipado e imutável

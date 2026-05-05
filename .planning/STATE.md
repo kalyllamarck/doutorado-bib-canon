@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: executing
-stopped_at: Phase 2 context gathered
-last_updated: "2026-05-05T08:55:59.698Z"
-last_activity: 2026-05-05 -- Phase 2 planning complete
+status: verifying
+stopped_at: Completed 02-01-PLAN.md (parser markdown)
+last_updated: "2026-05-05T09:51:51.389Z"
+last_activity: 2026-05-05
 progress:
   total_phases: 59
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 2
-  completed_plans: 1
-  percent: 50
+  completed_plans: 2
+  percent: 100
 ---
 
 # Project State
@@ -21,14 +21,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-05-03)
 
 **Core value:** Garantir que todo texto produzido no doutorado passe pelos mesmos crivos editoriais sem fricção manual, com correções rastreáveis até a regra-fonte em JSON canônico
-**Current focus:** Phase 01 — bootstrap
+**Current focus:** Phase 02 — Parser Markdown
 
 ## Current Position
 
-Phase: 01 (bootstrap) — EXECUTING
+Phase: 02 (Parser Markdown) — EXECUTING
 Plan: 1 of 1
-Status: Ready to execute
-Last activity: 2026-05-05 -- Phase 2 planning complete
+Status: Phase complete — ready for verification
+Last activity: 2026-05-05
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -53,6 +53,7 @@ Progress: [░░░░░░░░░░] 0%
 
 *Updated after each plan completion*
 | Phase 01 P01 | 14 | 3 tasks | 8 files |
+| Phase 02 P01 | 41min | 3 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -69,6 +70,9 @@ Recent decisions affecting current work:
 - [Phase 01]: Phase 1: @app.callback() (NÃO @app.command()) no skeleton Typer — preserva help top-level e permite transição transparente para multi-command em Phase 8 (Pitfall 1 ALTA)
 - [Phase 01]: Phase 1: extend-exclude no [tool.ruff] para 01_templates+02_escrita+03_fontes+04_normas+05_metadados — biblioteca canônica de dados não pertence ao projeto Python; será integrada seletivamente em M8
 - [Phase 01]: Phase 1: PEP 735 [dependency-groups].dev em vez de [project.optional-dependencies].dev — instala por default em uv sync, sem precisar --extra dev (D-08)
+- [Phase 02]: Phase 2: footnote body prefix stripping em _build_paragrafo (chunk[len(prefixo):]) preserva round-trip byte-exact e isola surface de validação para Phase 6+ — resolve inconsistência interna entre Contract 5 e Contract 7 do plan original
+- [Phase 02]: Phase 2: convenção test_aux_<descrição> autorizada para coverage gap fill sem violar set canônico de 6 testes D-26 (88% -> 97% via 7 auxiliares)
+- [Phase 02]: Phase 2: invariante byte-exact src_bytes_nfc[offset:offset+len_bytes].decode() == p.texto pinado por property test — Phase 5 PatchAplicador herda
 
 ### Pending Todos
 
@@ -89,6 +93,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-05-05T07:58:49.054Z
-Stopped at: Phase 2 context gathered
-Resume file: .planning/phases/02-parser-markdown/02-CONTEXT.md
+Last session: 2026-05-05T09:51:51.385Z
+Stopped at: Completed 02-01-PLAN.md (parser markdown)
+Resume file: None

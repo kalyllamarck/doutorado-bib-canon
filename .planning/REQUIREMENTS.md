@@ -7,7 +7,7 @@
 
 ### Core (M1 — Piloto + Infraestrutura)
 
-- [ ] **CORE-01**: Parser que lê `.md` (CommonMark + footnotes) em parágrafos + frases + linhas com offsets byte-exact via `markdown-it-py` 4.0.0
+- [x] **CORE-01**: Parser que lê `.md` (CommonMark + footnotes) em parágrafos + frases + linhas com offsets byte-exact via `markdown-it-py` 4.0.0
 - [ ] **CORE-02**: Dataclass `Violacao(arquivo, linha_inicio, linha_fim, col_inicio, col_fim, trecho_violador, regra_id, regra_nome, severidade, sugestoes, principio_canonico_violado)`
 - [ ] **CORE-03**: Dataclass `Patch(arquivo, linha, col_inicio, col_fim, texto_original, texto_substituto, motivo, confianca, requer_revisao_humana, estado)` com enum EstadoPatch (PROPOSTO/ACEITO/REJEITADO/SUPRIMIDO)
 - [ ] **CORE-04**: ABC `ValidadorBase` com `JSON_SOURCE`, `SCOPE`, `carregar_regras()`, `validar(paragrafos) -> list[Violacao]`
@@ -17,7 +17,7 @@
 - [ ] **CORE-08**: Fixer AUTO piloto cst_012 com regex determinístico (`A descoberta específica de X (Y) reside em VERBAR` → `X (Y) VERBA`)
 - [ ] **CORE-09**: Orchestrator mínimo + relatório `AUDITORIA.md` priorizado por severidade
 - [ ] **CORE-10**: Pipeline funcional contra `Artigos/.../artigo.md` real (artigo Eólica Nordeste como caso de teste)
-- [ ] **CORE-11**: Normalização Unicode NFC no parser (evita falhas com acentos compostos)
+- [x] **CORE-11**: Normalização Unicode NFC no parser (evita falhas com acentos compostos)
 - [x] **CORE-12**: Layout `src/biblio_validador/` com `pyproject.toml` + `uv` install + entry point `validar` no PATH
 
 ### Validadores Primitivos (M2)
@@ -136,7 +136,7 @@ Deferred. Tracked but not in current roadmap.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CORE-01 | Phase 2 — Parser Markdown | Pending |
+| CORE-01 | Phase 2 — Parser Markdown | Complete |
 | CORE-02 | Phase 3 — Dataclasses Core | Pending |
 | CORE-03 | Phase 3 — Dataclasses Core | Pending |
 | CORE-04 | Phase 4 — Contratos ABC | Pending |
@@ -146,7 +146,7 @@ Deferred. Tracked but not in current roadmap.
 | CORE-08 | Phase 7 — Fixer AUTO Piloto cst_012 | Pending |
 | CORE-09 | Phase 8 — Orchestrator Mínimo | Pending |
 | CORE-10 | Phase 9 — Pipeline E2E | Pending |
-| CORE-11 | Phase 2 — Parser Markdown | Pending |
+| CORE-11 | Phase 2 — Parser Markdown | Complete |
 | CORE-12 | Phase 1 — Bootstrap | Complete |
 | VAL-01 | Phase 10 — VAL-01 Termos Lexicais | Pending |
 | VAL-02 | Phase 11 — VAL-02 Expressões Conectivas | Pending |
