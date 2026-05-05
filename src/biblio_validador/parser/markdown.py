@@ -54,9 +54,7 @@ class ParserMd:
         # NFC source-único (D-11, CORE-11)
         text_nfc = unicodedata.normalize("NFC", text)
         if text != text_nfc:
-            logger.info(
-                f"source NFD detectado, convertido para NFC: {path}"
-            )
+            logger.info(f"source NFD detectado, convertido para NFC: {path}")
 
         if not text_nfc.strip():
             return []
@@ -149,14 +147,11 @@ class ParserMd:
         # Footnote body: pular o prefixo de definição "[^label]: "
         # (sintaxe markdown, não conteúdo). Ajusta offset/len para
         # preservar round-trip byte-exact (Test 6 invariante).
-        if (
-            tipo == TipoSecao.NOTA_RODAPE
-            and ref_nota is not None
-        ):
-            prefixo = f"[^{ref_nota}]: ".encode("utf-8")
+        if tipo == TipoSecao.NOTA_RODAPE and ref_nota is not None:
+            prefixo = f"[^{ref_nota}]: ".encode()
             if chunk.startswith(prefixo):
                 offset_bytes += len(prefixo)
-                chunk = chunk[len(prefixo):]
+                chunk = chunk[len(prefixo) :]
         texto = chunk.decode("utf-8")
         return Paragrafo(
             arquivo=arquivo,
@@ -204,32 +199,51 @@ class ParserMd:
                 if nivel == 1 and is_first_h1:
                     is_first_h1 = False
                 current_secao = secao
-                out.append(self._build_paragrafo(
-                    t, src_bytes, linha_offsets, arquivo,
-                    indice=len(out), tipo=secao,
-                    nivel_heading=nivel, ref_nota=None,
-                ))
+                out.append(
+                    self._build_paragrafo(
+                        t,
+                        src_bytes,
+                        linha_offsets,
+                        arquivo,
+                        indice=len(out),
+                        tipo=secao,
+                        nivel_heading=nivel,
+                        ref_nota=None,
+                    )
+                )
                 i += 3  # heading_open + inline + heading_close
                 continue
             if t.type == "paragraph_open":
                 # Pitfall 1: paragraph_open dentro de footnote_open
                 # tem map; footnote_open tem map=None
-                tipo = (TipoSecao.NOTA_RODAPE if in_footnote
-                        else current_secao)
-                out.append(self._build_paragrafo(
-                    t, src_bytes, linha_offsets, arquivo,
-                    indice=len(out), tipo=tipo,
-                    nivel_heading=None,
-                    ref_nota=in_footnote,
-                ))
+                tipo = TipoSecao.NOTA_RODAPE if in_footnote else current_secao
+                out.append(
+                    self._build_paragrafo(
+                        t,
+                        src_bytes,
+                        linha_offsets,
+                        arquivo,
+                        indice=len(out),
+                        tipo=tipo,
+                        nivel_heading=None,
+                        ref_nota=in_footnote,
+                    )
+                )
                 i += 1
                 continue
             if t.type == "fence":
-                out.append(self._build_paragrafo(
-                    t, src_bytes, linha_offsets, arquivo,
-                    indice=len(out), tipo=TipoSecao.DESCONHECIDO,
-                    nivel_heading=None, ref_nota=None,
-                ))
+                out.append(
+                    self._build_paragrafo(
+                        t,
+                        src_bytes,
+                        linha_offsets,
+                        arquivo,
+                        indice=len(out),
+                        tipo=TipoSecao.DESCONHECIDO,
+                        nivel_heading=None,
+                        ref_nota=None,
+                    )
+                )
                 i += 1
                 continue
             # Pitfall 7: bullet_list_open / list_item_open /
@@ -261,9 +275,7 @@ class ParserMd:
                         f"footnote órfã: [^{p.ref_nota}] sem ref "
                         f"localizável em {p.arquivo}"
                     )
-                final.append(
-                    dataclasses.replace(p, paragrafo_pai_idx=pai_idx)
-                )
+                final.append(dataclasses.replace(p, paragrafo_pai_idx=pai_idx))
             else:
                 final.append(p)
         return final

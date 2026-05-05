@@ -32,13 +32,13 @@ class Paragrafo:
     """
 
     arquivo: Path
-    indice: int                       # 0-based, ordem topológica
+    indice: int  # 0-based, ordem topológica
     tipo: TipoSecao
-    nivel_heading: int | None         # 1-6 se heading; None se corpo
-    texto: str                        # slice raw NFC, com markup preservado
-    linha_inicio: int                 # 1-based
-    linha_fim: int                    # 1-based, inclusivo
-    offset_bytes: int                 # absoluto em UTF-8 NFC
-    len_bytes: int                    # bytes UTF-8 NFC
-    ref_nota: str | None              # label da footnote ("a", "1", ...)
-    paragrafo_pai_idx: int | None     # idx do parágrafo que cita [^ref_nota]
+    nivel_heading: int | None  # 1-6 se heading; None se corpo
+    texto: str  # slice raw NFC, com markup preservado
+    linha_inicio: int  # 1-based
+    linha_fim: int  # 1-based, inclusivo
+    offset_bytes: int  # absoluto em UTF-8 NFC
+    len_bytes: int  # bytes UTF-8 NFC
+    ref_nota: str | None  # label da footnote ("a", "1", ...)
+    paragrafo_pai_idx: int | None  # idx do parágrafo que cita [^ref_nota]
