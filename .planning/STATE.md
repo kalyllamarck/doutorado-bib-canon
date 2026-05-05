@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Phase 4 context gathered
-last_updated: "2026-05-05T19:10:31.738Z"
+stopped_at: Completed 04-02-PLAN.md (4 tasks, 5min)
+last_updated: "2026-05-05T19:20:53.271Z"
 last_activity: 2026-05-05 -- Phase 4 planning complete
 progress:
   total_phases: 59
   completed_phases: 3
   total_plans: 6
-  completed_plans: 3
-  percent: 50
+  completed_plans: 4
+  percent: 67
 ---
 
 # Project State
@@ -54,6 +54,7 @@ Progress: [░░░░░░░░░░] 0%
 *Updated after each plan completion*
 | Phase 01 P01 | 14 | 3 tasks | 8 files |
 | Phase 02 P01 | 41min | 3 tasks | 8 files |
+| Phase 04-contratos-abc P02 | 5min | 4 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -73,6 +74,9 @@ Recent decisions affecting current work:
 - [Phase 02]: Phase 2: footnote body prefix stripping em _build_paragrafo (chunk[len(prefixo):]) preserva round-trip byte-exact e isola surface de validação para Phase 6+ — resolve inconsistência interna entre Contract 5 e Contract 7 do plan original
 - [Phase 02]: Phase 2: convenção test_aux_<descrição> autorizada para coverage gap fill sem violar set canônico de 6 testes D-26 (88% -> 97% via 7 auxiliares)
 - [Phase 02]: Phase 2: invariante byte-exact src_bytes_nfc[offset:offset+len_bytes].decode() == p.texto pinado por property test — Phase 5 PatchAplicador herda
+- [Phase 04-contratos-abc]: Phase 4 Plan 02: decorator order @classmethod ABOVE @abstractmethod (RESEARCH Pattern 1, empiricamente verificado)
+- [Phase 04-contratos-abc]: Phase 4 Plan 02: ContextoFixer obriga eq=False — frozen+slots com campo Mapping[str, re.Pattern] gera __hash__ que tenta hashear dict (unhashable) -> TypeError; eq=False suprime auto-eq/hash (RESEARCH Pitfall 4)
+- [Phase 04-contratos-abc]: Phase 4 Plan 02: cache class-level documentado em docstring de ValidadorBase via cls.__dict__.get pattern (não getattr) — evita compartilhamento de cache entre subclasses por MRO traversal (RESEARCH Pitfall 2)
 
 ### Pending Todos
 
@@ -93,6 +97,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-05-05T17:58:28.165Z
-Stopped at: Phase 4 context gathered
-Resume file: .planning/phases/04-contratos-abc/04-CONTEXT.md
+Last session: 2026-05-05T19:20:53.268Z
+Stopped at: Completed 04-02-PLAN.md (4 tasks, 5min)
+Resume file: None

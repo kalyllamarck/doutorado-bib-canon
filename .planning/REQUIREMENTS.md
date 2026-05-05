@@ -10,8 +10,8 @@
 - [x] **CORE-01**: Parser que lê `.md` (CommonMark + footnotes) em parágrafos + frases + linhas com offsets byte-exact via `markdown-it-py` 4.0.0
 - [ ] **CORE-02**: Dataclass `Violacao(arquivo, linha_inicio, linha_fim, col_inicio, col_fim, trecho_violador, regra_id, regra_nome, severidade, sugestoes, principio_canonico_violado)`
 - [ ] **CORE-03**: Dataclass `Patch(arquivo, linha, col_inicio, col_fim, texto_original, texto_substituto, motivo, confianca, requer_revisao_humana, estado)` com enum EstadoPatch (PROPOSTO/ACEITO/REJEITADO/SUPRIMIDO)
-- [ ] **CORE-04**: ABC `ValidadorBase` com `JSON_SOURCE`, `SCOPE`, `carregar_regras()`, `validar(paragrafos) -> list[Violacao]`
-- [ ] **CORE-05**: ABC `FixerBase` com `VIOLACAO_IDS`, `MODO`, `pode_corrigir(v)`, `propor_patches(v, contexto) -> list[Patch]`, `aplicar(patches, modo_interativo)`
+- [x] **CORE-04**: ABC `ValidadorBase` com `JSON_SOURCE`, `SCOPE`, `carregar_regras()`, `validar(paragrafos) -> list[Violacao]`
+- [x] **CORE-05**: ABC `FixerBase` com `VIOLACAO_IDS`, `MODO`, `pode_corrigir(v)`, `propor_patches(v, contexto) -> list[Patch]`, `aplicar(patches, modo_interativo)`
 - [ ] **CORE-06**: Aplicador de patches em ordem reversa preservando byte-exact (evita drift de offsets)
 - [ ] **CORE-07**: Validador piloto cst_012 (anúncio metarretórico) ponta a ponta sobre `.md`
 - [ ] **CORE-08**: Fixer AUTO piloto cst_012 com regex determinístico (`A descoberta específica de X (Y) reside em VERBAR` → `X (Y) VERBA`)
@@ -139,8 +139,8 @@ Deferred. Tracked but not in current roadmap.
 | CORE-01 | Phase 2 — Parser Markdown | Complete |
 | CORE-02 | Phase 3 — Dataclasses Core | Pending |
 | CORE-03 | Phase 3 — Dataclasses Core | Pending |
-| CORE-04 | Phase 4 — Contratos ABC | Pending |
-| CORE-05 | Phase 4 — Contratos ABC | Pending |
+| CORE-04 | Phase 4 — Contratos ABC | Complete |
+| CORE-05 | Phase 4 — Contratos ABC | Complete |
 | CORE-06 | Phase 5 — PatchAplicador | Pending |
 | CORE-07 | Phase 6 — Validador Piloto cst_012 | Pending |
 | CORE-08 | Phase 7 — Fixer AUTO Piloto cst_012 | Pending |
