@@ -218,3 +218,55 @@ def test_aux_imports_via_re_export_funcionam() -> None:
         "Severidade",
         "Violacao",
     }
+
+
+def test_aux_violacao_regra_id_vazio_raises() -> None:
+    """D-22: regra_id vazio ou whitespace-only levanta ValueError."""
+    with pytest.raises(ValueError, match="regra_id"):
+        Violacao(
+            arquivo=Path("a.md"),
+            linha_inicio=1,
+            linha_fim=1,
+            col_inicio=1,
+            col_fim=1,
+            trecho_violador="",
+            regra_id="   ",  # whitespace-only
+            regra_nome="X",
+            severidade=Severidade.ERRO,
+        )
+
+
+def test_aux_violacao_trecho_len_invariante() -> None:
+    """D-22: trecho_violador len != col_fim - col_inicio (intra-linha)."""
+    with pytest.raises(ValueError, match="trecho_violador"):
+        Violacao(
+            arquivo=Path("a.md"),
+            linha_inicio=1,
+            linha_fim=1,
+            col_inicio=1,
+            col_fim=3,  # span = 2 chars
+            trecho_violador="xyz",  # 3 chars — mismatch
+            regra_id="lex_001",
+            regra_nome="X",
+            severidade=Severidade.ERRO,
+        )
+
+
+def test_aux_patch_linha_col_invariantes_raise() -> None:
+    """D-23: linha<1, col_inicio<1 e col_fim<col_inicio levantam ValueError."""
+    with pytest.raises(ValueError, match="linha"):
+        _patch_minimo(linha=0)
+    with pytest.raises(ValueError, match="col_inicio"):
+        _patch_minimo(col_inicio=0)
+    with pytest.raises(ValueError, match="col_fim"):
+        _patch_minimo(col_inicio=5, col_fim=3)
+
+
+def test_aux_normalize_for_json_list_branch() -> None:
+    """_normalize_for_json cobre branch list (linha 30 do modulo)."""
+    from pathlib import Path as P
+
+    from biblio_validador.core.dataclasses import _normalize_for_json
+
+    result = _normalize_for_json([P("x.md"), "texto"])
+    assert result == ["x.md", "texto"]
