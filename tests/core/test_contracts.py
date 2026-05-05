@@ -18,7 +18,7 @@ from __future__ import annotations
 import json
 import re
 from collections.abc import Mapping
-from dataclasses import FrozenInstanceError  # noqa: F401  # used in T-04-03-04
+from dataclasses import FrozenInstanceError
 from pathlib import Path
 from typing import ClassVar
 
@@ -249,3 +249,113 @@ def test_carregar_regras_normalizes_str_and_list() -> None:
     # Cada Pattern e' um re.Pattern compilado
     for rid, pattern in result.items():
         assert isinstance(pattern, re.Pattern), f"{rid} nao e' Pattern"
+
+
+# ============================================================================
+# Success criterion #3: pode_corrigir retorna False fora de VIOLACAO_IDS
+# ============================================================================
+
+
+class _FixerCompleto(FixerBase):
+    """Subclasse concreta com VIOLACAO_IDS limitado a {cst_999}."""
+
+    VIOLACAO_IDS: ClassVar[frozenset[str]] = frozenset({"cst_999"})
+    MODO: ClassVar[ModoFixer] = ModoFixer.AUTO
+
+    def propor_patches(
+        self,
+        v: Violacao,
+        contexto: ContextoFixer,
+    ) -> list[Patch]:
+        return []
+
+    def aplicar(
+        self,
+        patches: list[Patch],
+        modo_interativo: bool,
+    ) -> AplicacaoResultado:
+        return AplicacaoResultado((), (), (), 0)
+
+
+def test_pode_corrigir_returns_true_for_known_id() -> None:
+    """v.regra_id em VIOLACAO_IDS -> True."""
+    fixer = _FixerCompleto()
+    v = _make_violacao(regra_id="cst_999")
+    assert fixer.pode_corrigir(v) is True
+
+
+def test_pode_corrigir_returns_false_for_unknown_id() -> None:
+    """v.regra_id fora de VIOLACAO_IDS -> False (success criterion #3)."""
+    fixer = _FixerCompleto()
+    v = _make_violacao(regra_id="cst_001")
+    assert fixer.pode_corrigir(v) is False
+
+
+# ============================================================================
+# Dataclasses auxiliares: AplicacaoResultado (frozen+slots) +
+# ContextoFixer (eq=False)
+# ============================================================================
+
+
+def test_aplicacao_resultado_frozen_slots() -> None:
+    """AplicacaoResultado frozen+slots: reatribuir gera FrozenInstanceError."""
+    ar = AplicacaoResultado(
+        patches_aceitos=(),
+        patches_rejeitados=(),
+        patches_suprimidos=(),
+        bytes_modificados=42,
+    )
+    assert ar.bytes_modificados == 42
+    assert hasattr(AplicacaoResultado, "__slots__")
+    with pytest.raises(FrozenInstanceError):
+        ar.bytes_modificados = 0  # type: ignore[misc]
+
+
+def test_contexto_fixer_eq_false_unhashable_safe() -> None:
+    """ContextoFixer com eq=False e' instanciavel mesmo com Mapping field.
+
+    RESEARCH Pitfall 4: sem eq=False, frozen+slots+dict-field gera __hash__
+    auto que tenta hashear Mapping (dict) -> TypeError em hash() ou em
+    qualquer uso como key. Com eq=False:
+        - instancia normalmente
+        - ContextoFixer.__hash__ e' herdado de object (id-based) OU None
+        - eq usa identidade (id())
+    """
+    paragrafo = _make_paragrafo()
+    pat = re.compile(r"\bfake\b")
+    ctx = ContextoFixer(
+        paragrafo=paragrafo,
+        todas_violacoes_paragrafo=(),
+        regras_compiladas={"cst_999": pat},
+    )
+    # Instanciacao bem-sucedida e' a evidencia primaria de Pitfall 4 mitigado
+    assert ctx.paragrafo == paragrafo
+    assert ctx.regras_compiladas["cst_999"] is pat
+    # Nao acessamos hash(ctx) — eq=False com frozen=True pode ainda dar
+    # __hash__ herdado de object (id-based) que NAO levanta TypeError.
+    # O contrato e': eq=False evita que dataclass tente sintetizar
+    # __eq__/__hash__ baseado em fields (que falharia com Mapping).
+
+
+# ============================================================================
+# Smoke test: re-export do core/__init__.py
+# ============================================================================
+
+
+def test_core_reexport_smoke() -> None:
+    """Os 10 simbolos da Phase 3 + Phase 4 estao em biblio_validador.core."""
+    import biblio_validador.core as core_mod
+
+    expected = {
+        "AplicacaoResultado",
+        "ContextoFixer",
+        "EstadoPatch",
+        "FixerBase",
+        "ModoFixer",
+        "Patch",
+        "Scope",
+        "Severidade",
+        "ValidadorBase",
+        "Violacao",
+    }
+    assert set(core_mod.__all__) == expected
