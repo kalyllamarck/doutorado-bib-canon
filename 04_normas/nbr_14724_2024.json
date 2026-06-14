@@ -1,0 +1,236 @@
+{
+  "id": "nbr-14724-2024",
+  "norma": "ABNT NBR 14724:2024",
+  "titulo": "Informação e documentação — Trabalhos acadêmicos — Apresentação",
+  "edicao": "Quarta edição",
+  "data_publicacao": "2024-12-16",
+  "substitui": "ABNT NBR 14724:2011",
+  "paginas": 12,
+  "ics": "01.0140",
+  "fonte_pdf_local": "Normas da ABNT/ABNT_NBR_14724_2024-1.pdf",
+  "url_referencia": "https://tpp-uff.com.br/wp-content/uploads/2025/02/ABNT_NBR_14724_2024-1.pdf",
+  "secao_1_escopo": {
+    "texto_literal": "Esta Norma especifica os princípios gerais para a elaboração de trabalhos acadêmicos (teses, dissertações e outros), visando sua apresentação à instituição (banca, comissão examinadora de professores, especialistas designados e/ou outros). Esta Norma aplica-se, no que couber, aos trabalhos acadêmicos e similares, intra e extraclasse."
+  },
+  "secao_2_referencias_normativas": [
+    "ABNT NBR 6023 — Informação e documentação — Referências — Elaboração",
+    "ABNT NBR 6024 — Informação e documentação — Numeração progressiva das seções de um documento — Apresentação",
+    "ABNT NBR 6027 — Informação e documentação — Sumário — Apresentação",
+    "ABNT NBR 6028 — Informação e documentação — Resumo, resenha e recensão — Apresentação",
+    "ABNT NBR 6034 — Informação e documentação — Índice — Apresentação",
+    "ABNT NBR 10520 — Informação e documentação — Citações em documentos — Apresentação",
+    "ABNT NBR 12225 — Informação e documentação — Lombada — Apresentação",
+    "IBGE — Normas de apresentação tabular. 3. ed. Rio de Janeiro, 1993"
+  ],
+  "secao_3_termos_e_definicoes": {
+    "tese": {
+      "definicao_literal": "documento que apresenta o resultado de um trabalho experimental ou exposição de um estudo científico de tema único e bem delimitado",
+      "nota_literal": "A tese é elaborada com base em investigação original, constituindo-se em real contribuição para a especialidade em questão. É feita sob a coordenação de um orientador (doutor) e visa a obtenção do título de doutor ou similar."
+    },
+    "dissertacao": "documento que apresenta o resultado de um trabalho experimental ou exposição de um estudo científico retrospectivo, de tema único e bem delimitado em sua extensão, com o objetivo de reunir, analisar e interpretar informações",
+    "anexo": "texto ou documento não elaborado pelo autor, que serve de fundamentação, comprovação e ilustração",
+    "apendice": "texto ou documento elaborado pelo autor, a fim de complementar sua argumentação, sem prejuízo da unidade nuclear do trabalho",
+    "capa": "proteção externa do trabalho sobre a qual se imprimem as informações indispensáveis à sua identificação",
+    "citacao": "menção, no texto, de uma informação extraída de outra fonte",
+    "dedicatoria": "texto em que o autor presta homenagem ou dedica seu trabalho",
+    "epigrafe": "texto em que o autor apresenta uma citação, seguida de indicação de autoria, relacionado com a matéria tratada no corpo do trabalho",
+    "errata": "lista dos erros ocorridos no texto, seguidos das devidas correções",
+    "folha": "papel com formato definido composto de duas faces, anverso e verso",
+    "folha_de_aprovacao": "folha que contém os elementos essenciais à aprovação do trabalho",
+    "folha_de_rosto": "folha que contém os elementos essenciais à identificação do trabalho",
+    "glossario": "relação de palavras ou expressões técnicas de uso restrito ou de sentido obscuro, utilizadas no texto, acompanhadas das respectivas definições",
+    "indice": "lista de palavras ou frases, ordenadas segundo determinado critério, que localiza e remete para as informações contidas no texto",
+    "referencia": "conjunto padronizado de elementos descritivos retirados de um documento, que permite sua identificação individual",
+    "resumo_lingua_vernacula": "apresentação concisa dos pontos relevantes de um texto, fornecendo uma visão rápida e clara do conteúdo e das conclusões do trabalho",
+    "resumo_lingua_estrangeira": "versão do resumo para idioma de divulgação internacional",
+    "sumario": "enumeração das divisões, seções e outras partes do trabalho, na mesma ordem e grafia em que a matéria nele se sucede"
+  },
+  "secao_4_estrutura": {
+    "4_1_parte_externa": {
+      "4_1_1_capa": {
+        "obrigatorio": true,
+        "ordem_elementos": [
+          "a) nome da instituição (opcional)",
+          "b) nome do autor",
+          "c) título: deve ser claro e preciso, identificando o seu conteúdo e possibilitando a indexação e recuperação da informação",
+          "d) subtítulo: se houver, deve ser precedido de dois-pontos, evidenciando a sua subordinação ao título",
+          "e) número do volume (se houver mais de um)",
+          "f) local (cidade) da instituição",
+          "g) ano de depósito do trabalho"
+        ]
+      },
+      "4_1_2_lombada": {
+        "obrigatorio": false,
+        "regra": "Se for impressa, deve ser apresentada conforme a ABNT NBR 12225."
+      }
+    },
+    "4_2_parte_interna": {
+      "4_2_1_pre_textuais": {
+        "ordem_obrigatoria": [
+          "4.2.1.1 Folha de rosto (obrigatório)",
+          "4.2.1.2 Errata (opcional)",
+          "4.2.1.3 Folha de aprovação (obrigatório)",
+          "4.2.1.4 Dedicatória (opcional)",
+          "4.2.1.5 Agradecimentos (opcional)",
+          "4.2.1.6 Epígrafe (opcional)",
+          "4.2.1.7 Resumo na língua vernácula (obrigatório)",
+          "4.2.1.8 Resumo em língua estrangeira (obrigatório)",
+          "4.2.1.9 Lista de ilustrações (opcional)",
+          "4.2.1.10 Lista de tabelas (opcional)",
+          "4.2.1.11 Lista de abreviaturas e siglas (opcional)",
+          "4.2.1.12 Lista de símbolos (opcional)",
+          "4.2.1.13 Sumário (obrigatório)"
+        ],
+        "folha_de_rosto_anverso": [
+          "a) nome do autor",
+          "b) título",
+          "c) subtítulo (se houver)",
+          "d) número do volume (se houver mais de um)",
+          "e) natureza: tipo do trabalho, objetivo, nome da instituição, área de concentração",
+          "f) nome do orientador e, se houver, do coorientador",
+          "g) local (cidade) da instituição",
+          "h) ano de depósito do trabalho"
+        ],
+        "folha_de_rosto_verso": "Deve conter os dados internacionais de catalogação na publicação, conforme o código de catalogação vigente."
+      },
+      "4_2_2_textuais": {
+        "componentes": ["Introdução", "Desenvolvimento", "Conclusão"],
+        "texto_literal_4_2_2": "O texto é composto de uma parte introdutória, que apresenta os objetivos do trabalho e as razões de sua elaboração; o desenvolvimento, que detalha a pesquisa ou estudo realizado; e uma parte conclusiva.",
+        "regra_critica_literal": "O trabalho acadêmico não pode ser dividido em capítulos; deve ser organizado em seções (ver 5.4).",
+        "nota_de_rodape_1": "A nomenclatura dos títulos dos elementos textuais fica a critério do autor.",
+        "interpretacao": "A norma exige organização em SEÇÕES NUMERADAS (NBR 6024), não em 'capítulos' como divisão estrutural. Porém, a nomenclatura dos títulos é livre — o autor pode rotular as seções primárias como 'CAPÍTULO 1', 'CAPÍTULO 2' etc., desde que respeite a numeração progressiva. PPGD/Unifor usa 'capítulo' como sinônimo informal de seção primária."
+      },
+      "4_2_3_pos_textuais": {
+        "ordem_obrigatoria": [
+          "4.2.3.1 Referências (obrigatório, conforme NBR 6023)",
+          "4.2.3.2 Glossário (opcional, ordem alfabética)",
+          "4.2.3.3 Apêndice (opcional, precedido da palavra APÊNDICE + letra maiúscula consecutiva + travessão + título)",
+          "4.2.3.4 Anexo (opcional, precedido da palavra ANEXO + letra maiúscula consecutiva + travessão + título)",
+          "4.2.3.5 Índice (opcional, conforme NBR 6034)"
+        ],
+        "exemplo_apendice": "APÊNDICE A — AVALIAÇÃO NUMÉRICA DE CÉLULAS INFLAMATÓRIAS",
+        "exemplo_anexo": "ANEXO A — REPRESENTAÇÃO GRÁFICA DE CONTAGEM DE CÉLULAS INFLAMATÓRIAS"
+      }
+    }
+  },
+  "secao_5_regras_gerais": {
+    "5_1_formato": {
+      "papel": "A4 (21 cm × 29,7 cm), branco ou reciclado",
+      "cor_texto": "preta (outras cores apenas em ilustrações)",
+      "margens_anverso": {
+        "esquerda_cm": 3,
+        "superior_cm": 3,
+        "direita_cm": 2,
+        "inferior_cm": 2
+      },
+      "margens_verso": {
+        "direita_cm": 3,
+        "superior_cm": 3,
+        "esquerda_cm": 2,
+        "inferior_cm": 2,
+        "obs": "Trabalho acadêmico pode ser impresso em anverso e verso, mas teses PPGD usam anverso único"
+      },
+      "fonte_texto_principal_pt": 12,
+      "fonte_excecoes": [
+        "Citações diretas com mais de três linhas",
+        "Notas de rodapé",
+        "Paginação",
+        "Dados internacionais de catalogação na publicação",
+        "Fontes e legendas das ilustrações e tabelas"
+      ],
+      "fonte_excecoes_tamanho": "menor e uniforme (PPGD adota corpo 10)"
+    },
+    "5_2_espacamento": {
+      "regra_geral": "espaçamento 1,5 entre as linhas",
+      "espaco_simples_em": [
+        "Citações diretas com mais de três linhas",
+        "Notas de rodapé",
+        "Referências",
+        "Títulos das ilustrações e tabelas",
+        "Fontes e legendas das ilustrações e tabelas",
+        "Natureza do trabalho (tipo, objetivo, instituição, área de concentração)"
+      ],
+      "entre_referencias": "um espaço simples em branco",
+      "natureza_na_folha_de_rosto_e_aprovacao": "alinhada do meio da mancha gráfica até a margem direita",
+      "5_2_1_notas_de_rodape_literal": "As notas de rodapé devem ser digitadas dentro das margens, ficando separadas do texto por um espaço simples entre as linhas e por filete de 5 cm, a partir da margem esquerda. As notas devem ser alinhadas, a partir da segunda linha da mesma nota, abaixo da primeira letra da primeira palavra, de forma a destacar o expoente, sem espaço entre elas e com fonte menor.",
+      "5_2_2_indicativos_de_secao": {
+        "regra_literal": "O indicativo numérico, em algarismo arábico, de uma seção precede seu título, alinhado à esquerda, separado por um espaço de caractere.",
+        "secoes_primarias_em_anverso_unico": "devem começar em nova página",
+        "espacamento_entre_titulo_e_texto": "1,5 entre as linhas",
+        "titulos_multilinha": "a partir da segunda linha, alinhados abaixo da primeira letra da primeira palavra do título"
+      },
+      "5_2_3_titulos_sem_indicativo_numerico_centralizados": [
+        "Errata",
+        "Agradecimentos",
+        "Lista de ilustrações",
+        "Lista de tabelas",
+        "Lista de abreviaturas e siglas",
+        "Lista de símbolos",
+        "Resumos (vernácula e estrangeira)",
+        "Sumário",
+        "Referências",
+        "Glossário",
+        "Apêndice(s)",
+        "Anexo(s)",
+        "Índice(s)"
+      ],
+      "5_2_4_elementos_sem_titulo_e_sem_indicativo": [
+        "Folha de aprovação",
+        "Dedicatória",
+        "Epígrafe"
+      ],
+      "5_2_4_recomendacao": "Dedicatória e epígrafe alinhadas do meio da mancha gráfica até a margem direita, na parte inferior da página."
+    },
+    "5_3_paginacao": {
+      "regras_literais": [
+        "As folhas ou páginas pré-textuais devem ser contadas, mas não numeradas.",
+        "O verso da folha de rosto, que contém os dados internacionais de catalogação, não pode ser contado ou numerado.",
+        "Para trabalhos digitados somente no anverso, todas as folhas, a partir da folha de rosto, devem ser contadas sequencialmente, considerando somente o anverso.",
+        "A numeração deve figurar, a partir da primeira folha da parte textual, em algarismos arábicos, no canto superior direito da folha, a 2 cm da borda superior, ficando o último algarismo a 2 cm da borda direita da folha.",
+        "Apêndice e anexo numerados de maneira contínua, dando seguimento à do texto principal."
+      ]
+    },
+    "5_4_numeracao_progressiva": {
+      "remete_a": "ABNT NBR 6024",
+      "uso": "Para evidenciar a sistematização do conteúdo. Destacam-se gradativamente, no sumário e no texto, os títulos das seções, utilizando-se os recursos de negrito, itálico ou sublinhado."
+    },
+    "5_5_citacoes": {
+      "remete_a": "ABNT NBR 10520"
+    },
+    "5_6_siglas": {
+      "regra_literal": "A sigla, quando mencionada pela primeira vez no texto, deve ser indicada entre parênteses, precedida pelo nome completo.",
+      "exemplo": "Associação Brasileira de Normas Técnicas (ABNT)"
+    },
+    "5_7_equacoes_e_formulas": {
+      "regra": "Destacadas no texto e, se necessário, numeradas com algarismos arábicos entre parênteses, alinhados à direita. Nas menções subsequentes, pode-se utilizar somente o número."
+    },
+    "5_8_ilustracoes": {
+      "regra_literal": "Qualquer tipo de ilustração deve ser precedido por sua palavra designativa (desenho, esquema, fluxograma, fotografia, gráfico, mapa, organograma, planta, quadro, retrato, figura, imagem, entre outros), seguida de seu número de ordem de ocorrência no texto, em algarismos arábicos, de travessão e do respectivo título.",
+      "fonte_apos_ilustracao": "Indicar fonte conforme NBR 10520. Se elaborada pelo autor: 'elaborado pelo próprio autor' ou 'elaboração própria'.",
+      "posicao": "Inserida o mais próximo possível do trecho a que se refere."
+    },
+    "5_9_tabelas": {
+      "regra": "Citadas no texto, inseridas o mais próximo possível do trecho. Padronizadas conforme normas de apresentação tabular do IBGE. Fonte conforme NBR 10520."
+    }
+  },
+  "relacao_com_normas_complementares": {
+    "NBR_6023": "Referências (formato de cada tipo de fonte)",
+    "NBR_6024": "Numeração progressiva de seções (hierarquia 1, 1.1, 1.1.1...)",
+    "NBR_6027": "Sumário (apresentação e ordem)",
+    "NBR_6028": "Resumo, resenha e recensão (forma e estrutura)",
+    "NBR_6034": "Índice (apresentação)",
+    "NBR_10520": "Citações em documentos (autor-data)",
+    "NBR_12225": "Lombada (apresentação)",
+    "IBGE_1993": "Normas de apresentação tabular"
+  },
+  "divergencias_e_complementos_ppgd_unifor": {
+    "ver_arquivo": "guia_ppgd_unifor.json",
+    "principais": [
+      "PPGD usa 'capítulo' como sinônimo informal de seção primária (NBR permite via nota de rodapé: 'a nomenclatura dos títulos fica a critério do autor')",
+      "PPGD trata Introdução e Conclusão como SEM indicativo numérico (não previsto explicitamente na NBR 14724 — a NBR só lista os títulos centralizados em 5.2.3)",
+      "PPGD exige PÁGINA em citações INDIRETAS (NBR 10520 só exige em diretas)",
+      "PPGD recomenda volume de 250-300 referências",
+      "PPGD exige menção à FUNCAP nos agradecimentos do autor bolsista"
+    ]
+  }
+}

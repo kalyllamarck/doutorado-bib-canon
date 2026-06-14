@@ -1,0 +1,125 @@
+{
+  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hdr",
+  "attrib": {
+    "{http://schemas.openxmlformats.org/markup-compatibility/2006}Ignorable": "w14 wp14"
+  },
+  "text": null,
+  "tail": null,
+  "children": [
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}p",
+      "attrib": {},
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pPr",
+          "attrib": {},
+          "text": null,
+          "tail": null,
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pStyle",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "Header"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}jc",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "right"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r",
+          "attrib": {},
+          "text": null,
+          "tail": null,
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rPr",
+              "attrib": {},
+              "text": null,
+              "tail": null,
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rFonts",
+                  "attrib": {
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ascii": "Times New Roman",
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hAnsi": "Times New Roman"
+                  },
+                  "text": null,
+                  "tail": null,
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}sz",
+                  "attrib": {
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "20"
+                  },
+                  "text": null,
+                  "tail": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}fldChar",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}fldCharType": "begin"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}instrText",
+              "attrib": {
+                "{http://www.w3.org/XML/1998/namespace}space": "preserve"
+              },
+              "text": "PAGE",
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}fldChar",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}fldCharType": "end"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nsmap": {
+    "m": "http://schemas.openxmlformats.org/officeDocument/2006/math",
+    "mc": "http://schemas.openxmlformats.org/markup-compatibility/2006",
+    "mo": "http://schemas.microsoft.com/office/mac/office/2008/main",
+    "mv": "urn:schemas-microsoft-com:mac:vml",
+    "o": "urn:schemas-microsoft-com:office:office",
+    "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+    "v": "urn:schemas-microsoft-com:vml",
+    "w10": "urn:schemas-microsoft-com:office:word",
+    "w14": "http://schemas.microsoft.com/office/word/2010/wordml",
+    "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+    "wne": "http://schemas.microsoft.com/office/word/2006/wordml",
+    "wp14": "http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing",
+    "wp": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+    "wpc": "http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas",
+    "wpg": "http://schemas.microsoft.com/office/word/2010/wordprocessingGroup",
+    "wpi": "http://schemas.microsoft.com/office/word/2010/wordprocessingInk",
+    "wps": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+  }
+}

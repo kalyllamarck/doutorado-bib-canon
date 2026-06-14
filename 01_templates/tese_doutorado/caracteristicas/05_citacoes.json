@@ -1,0 +1,133 @@
+{
+  "id": "citacoes",
+  "componente": "Citações no corpo da tese (autor-data)",
+  "descricao": "Sistema autor-data ABNT NBR 10520 com exigência específica do PPGD/Unifor: PÁGINA é obrigatória TAMBÉM em citações indiretas (paráfrases). Cita-se por sobrenome + ano + página.",
+  "fonte_normativa": "ABNT NBR 10520:2023 + Guia Metodológico PPGD/Unifor",
+  "estilos_aceitos": {
+    "inline": {
+      "padrao": "Autor (ano, p. X)",
+      "exemplo": "Conforme Sarlet (2018, p. 145), os direitos fundamentais possuem dimensão objetiva.",
+      "uso": "Quando o autor é sujeito da frase",
+      "regras": [
+        "Sobrenome em case normal (Sarlet, não SARLET)",
+        "Ano entre parênteses imediatamente após",
+        "Página OBRIGATÓRIA, mesmo em paráfrase (exigência PPGD)"
+      ]
+    },
+    "parentetico": {
+      "padrao": "(AUTOR, ano, p. X)",
+      "exemplo": "Os direitos fundamentais possuem dimensão objetiva (SARLET, 2018, p. 145).",
+      "uso": "Quando o autor não é sujeito da frase; ao fim da frase ou parágrafo",
+      "regras": [
+        "Sobrenome em CAIXA ALTA dentro do parênteses",
+        "Vírgula entre sobrenome e ano",
+        "Vírgula entre ano e página",
+        "Página OBRIGATÓRIA, mesmo em paráfrase (exigência PPGD)"
+      ]
+    }
+  },
+  "tipos_de_citacao": {
+    "indireta_parafrase": {
+      "descricao": "Reescrita do conteúdo do autor com palavras próprias. Estilo PADRÃO da tese.",
+      "exemplo_inline": "Sarlet (2018, p. 145) sustenta que os direitos fundamentais possuem dimensão objetiva, irradiando-se para todo o ordenamento.",
+      "exemplo_parentetico": "Os direitos fundamentais possuem dimensão objetiva, irradiando-se para todo o ordenamento (SARLET, 2018, p. 145).",
+      "regra_critica_ppgd": "PÁGINA OBRIGATÓRIA mesmo em paráfrase — exigência expressa do Guia Metodológico PPGD/Unifor"
+    },
+    "direta_curta": {
+      "descricao": "Transcrição literal de até 3 linhas do original. Aspas duplas no corpo do texto.",
+      "exemplo": "A teoria opera como \"contracorrente da racionalidade dominante\" (LEFF, 2006, p. 22).",
+      "regras": [
+        "Aspas duplas tipográficas \"...\" (não retas \"\")",
+        "Texto idêntico ao original",
+        "Página obrigatória",
+        "Pequenos ajustes (omissão, acréscimo) sinalizados com [...] e [acréscimo]",
+        "Citação dentro de citação: usar aspas simples '...' para a interna"
+      ]
+    },
+    "direta_longa": {
+      "descricao": "Transcrição literal de mais de 3 linhas. Bloco recuado.",
+      "formato": {
+        "recuo_esquerdo_cm": 4.0,
+        "fonte_pt": 10,
+        "espacamento_linha": 1.0,
+        "sem_aspas": true,
+        "alinhamento": "justificado"
+      },
+      "regra_estrutural": "PROIBIDO iniciar ou terminar seção com citação direta longa"
+    },
+    "com_termo_estrangeiro": {
+      "descricao": "Quando o autor original cunha termo técnico em outro idioma, traduzir para PT-BR + termo original entre parênteses.",
+      "exemplo_correto": "Constata-se a existência de um teto ambiental (headroom) que define o limite das pressões biofísicas (RAWORTH, 2017, p. 49).",
+      "regras": [
+        "Termo traduzido em PT-BR vai no texto sem itálico nem aspas",
+        "Termo original entre parênteses, em itálico se for em latim, alemão, francês, inglês etc.",
+        "Quando não houver tradução consolidada, escolher a mais utilizada e justificar em nota de rodapé"
+      ]
+    },
+    "apud": {
+      "descricao": "Citação de fonte secundária (autor citando autor). EVITAR — usar somente quando obra original for inacessível.",
+      "exemplo": "Summers (1991 apud MARTÍNEZ-ALIER, 2007, p. 81) sustenta que...",
+      "regra": "Nas referências, listar APENAS a obra acessada"
+    }
+  },
+  "regras_obrigatorias_ppgd": [
+    "PÁGINA é obrigatória em TODA citação, direta OU indireta — esta é a exigência específica do PPGD/Unifor que diferencia da ABNT padrão",
+    "TODA menção a autor no corpo do texto inclui ano",
+    "JAMAIS citar título da obra no corpo do texto (apenas autor + ano + página)",
+    "Mais de 3 autores: usar 'et al.' a partir da 2ª menção (ou desde a 1ª, mantido padrão único em toda a tese)",
+    "Autor coletivo/instituição: nome em CAIXA ALTA (BRASIL, OIT, STF)",
+    "Múltiplas obras do mesmo autor no mesmo ano: usar sufixos 'a', 'b', 'c' (ex.: Sarlet, 2018a; Sarlet, 2018b)",
+    "Obras do mesmo autor em anos diferentes na mesma citação: separar por vírgula (ex.: SARLET, 2018, 2020)",
+    "Múltiplos autores na mesma citação parentética: separados por ponto-e-vírgula (ex.: SARLET, 2018; CANOTILHO, 2003)",
+    "Citação de lei: ver formato em pos_textuais.json > tipos_de_fonte.lei_nacional",
+    "Citação de jurisprudência: ver formato em pos_textuais.json > tipos_de_fonte.juriprudencia"
+  ],
+  "regras_estruturais_tese": {
+    "introducao": {
+      "permitidas": ["indireta_parafrase"],
+      "proibidas": ["direta_curta", "direta_longa"]
+    },
+    "conclusao": {
+      "permitidas": [],
+      "proibidas": ["indireta_parafrase", "direta_curta", "direta_longa", "apud"]
+    },
+    "capitulos": {
+      "permitidas": ["indireta_parafrase", "direta_curta", "direta_longa", "com_termo_estrangeiro", "apud"],
+      "regras": [
+        "Não iniciar nem terminar seção com citação direta",
+        "Preferir paráfrase com página a citação direta",
+        "Notas de rodapé preferencialmente explicativas, não de referência"
+      ]
+    }
+  },
+  "regras_de_qualidade": [
+    "Profundidade doutrinária: extrair tese específica do autor (mecanismo, argumento preciso); demonstrar aplicação ao problema; articular autores por ângulos distintos",
+    "Teste de utilidade: se remover a citação e o parágrafo perder apenas decoração (não substância), citação é superficial e deve ser reescrita",
+    "Não citar autores em sequência sem articular suas teses entre si",
+    "Evitar 'salada de citações' (vários autores em fila sem síntese)"
+  ],
+  "notas_de_rodape": {
+    "preferencia": "explicativas (não de referência)",
+    "fonte_pt": 10,
+    "espacamento_linha": 1.0,
+    "alinhamento": "justificado",
+    "numeracao": "contínua em toda a tese",
+    "regras": [
+      "Usar para esclarecer, exemplificar, traduzir, qualificar — não para referenciar (referência vai no sistema autor-data)",
+      "Tradução de citação em língua estrangeira pode ir em nota de rodapé",
+      "Justificativa para escolha terminológica controversa pode ir em nota"
+    ]
+  },
+  "render_latex": {
+    "inline_autor_data": "\\citeonline[p.~145]{sarlet2018}",
+    "parentetico": "\\cite[p.~145]{sarlet2018}",
+    "apud": "\\apud[p.~81]{summers1991}{martinezalier2007}",
+    "citacao_direta_longa": "\\begin{citacao}...\\end{citacao}",
+    "nota_rodape": "\\footnote{...}",
+    "obs": "abntex2 já implementa NBR 10520 com biblatex-abnt"
+  },
+  "render_gdocs": {
+    "tipo": "texto_inline_normal",
+    "obs": "Google Docs não tem comando nativo de citação. Auditoria pós-render valida regex (Autor (ano, p. X)|(AUTOR, ano, p. X)) + presença na lista de referências."
+  }
+}

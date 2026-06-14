@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "_common.schema.json",
+  "title": "Schema base comum a todos os componentes da tese",
+  "description": "Campos obrigatórios mínimos que todo JSON canônico da tese deve conter.",
+  "type": "object",
+  "required": [
+    "id",
+    "componente",
+    "descricao",
+    "fonte_normativa"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$",
+      "description": "Slug único em kebab-case"
+    },
+    "componente": {
+      "type": "string",
+      "minLength": 3,
+      "description": "Nome humano do componente"
+    },
+    "descricao": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Descrição do que o componente é e qual sua função na tese"
+    },
+    "fonte_normativa": {
+      "type": "string",
+      "description": "Norma(s) que regulam este componente. Ex: 'ABNT NBR 14724:2024 + Guia Metodológico PPGD/Unifor'"
+    },
+    "render_latex": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        }
+      ],
+      "description": "Comandos ou padrões LaTeX (abntex2) para renderizar este componente"
+    },
+    "render_gdocs": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        }
+      ],
+      "description": "Instruções batchUpdate Google Docs para renderizar este componente"
+    }
+  }
+}

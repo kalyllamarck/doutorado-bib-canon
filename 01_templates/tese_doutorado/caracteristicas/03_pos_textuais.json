@@ -1,0 +1,126 @@
+{
+  "id": "pos-textuais",
+  "componente": "Elementos pós-textuais da tese",
+  "descricao": "Elementos que sucedem o corpo da tese. Apenas Referências é obrigatório. Todos sem indicativo numérico.",
+  "fonte_normativa": "ABNT NBR 14724:2024 seção 4.3 + NBR 6023:2018 + Guia PPGD",
+  "ordem_obrigatoria": [
+    "referencias",
+    "glossario_opcional",
+    "apendices_opcional",
+    "anexos_opcional",
+    "indice_opcional"
+  ],
+  "elementos": {
+    "referencias": {
+      "obrigatorio": true,
+      "indicativo_numerico": false,
+      "fonte_normativa": "ABNT NBR 6023:2018",
+      "titulo": "REFERÊNCIAS",
+      "formato_titulo": {
+        "fonte_pt": 14,
+        "negrito": true,
+        "caixa": "alta",
+        "alinhamento": "esquerda",
+        "sem_indicativo": true
+      },
+      "regras": [
+        "Início em nova página",
+        "Ordem alfabética pelo sobrenome do primeiro autor",
+        "Alinhamento exclusivamente à esquerda (sem justificar)",
+        "Espaçamento simples dentro de cada referência",
+        "Uma linha em branco entre referências",
+        "Sobrenome do autor em CAIXA ALTA",
+        "Título da obra em negrito (livro, periódico) ou itálico, mantendo padrão único no documento",
+        "Volume recomendado pelo PPGD: 250 a 300 referências",
+        "Combinar clássicos, contemporâneos (últimos 4 anos) e fontes estrangeiras"
+      ],
+      "tipos_de_fonte": {
+        "livro": "SOBRENOME, Prenomes. **Título**: subtítulo. Edição. Local: Editora, ano.",
+        "capitulo_livro": "SOBRENOME, Prenomes. Título do capítulo. In: SOBRENOME, Prenomes (org.). **Título do livro**. Local: Editora, ano. p. X-Y.",
+        "artigo_periodico": "SOBRENOME, Prenomes. Título do artigo. **Nome do Periódico**, Local, v. X, n. Y, p. Z-W, mês ano. DOI/URL.",
+        "tese_dissertacao": "SOBRENOME, Prenomes. **Título**. Ano. Tese (Doutorado em Direito) — Programa, Universidade, Cidade, ano.",
+        "lei_nacional": "BRASIL. Lei nº X.XXX, de DD de mmm de AAAA. Ementa. **Diário Oficial da União**, Brasília, DF, DD mmm AAAA.",
+        "jurisprudencia": "BRASIL. [Tribunal]. [Tipo de decisão] nº X. Relator: Nome. Data. Disponível em: URL. Acesso em: DD mmm AAAA.",
+        "site": "SOBRENOME, Prenomes (ou INSTITUIÇÃO). Título. Local, ano. Disponível em: URL. Acesso em: DD mmm AAAA.",
+        "relatorio_publico": "INSTITUIÇÃO. **Título do relatório**. Local: Editora/Órgão, ano. URL."
+      },
+      "regras_filtro_qualitativo": [
+        "Priorizar Qualis A1-A4 para artigos",
+        "Priorizar Web of Science, Scopus, SciELO",
+        "Aceitar SSRN, HeinOnline, JSTOR, ScienceDirect, Springer, Wiley",
+        "Repositórios institucionais aceitos: BDTD/IBICT, Catálogo CAPES, USP, UFMG, UFRGS, UFRJ, UnB, UFC, Unifor",
+        "Fontes proibidas (mesmo que apareçam em pesquisa): Wikipedia, blogs (Medium, Substack), redes sociais, jornais (Globo, UOL, Folha, NYT), didáticos básicos (InfoEscola, BrasilEscola, Jusbrasil)"
+      ]
+    },
+    "glossario_opcional": {
+      "obrigatorio": false,
+      "fonte_normativa": "NBR 14724:2024 seção 4.3.2",
+      "titulo": "GLOSSÁRIO",
+      "regras": [
+        "Sem indicativo numérico",
+        "Ordem alfabética dos termos",
+        "Termo em negrito seguido de definição"
+      ]
+    },
+    "apendices_opcional": {
+      "obrigatorio": false,
+      "fonte_normativa": "NBR 14724:2024 seção 4.3.3",
+      "regras": [
+        "Material elaborado pelo PRÓPRIO autor",
+        "Identificação por letras maiúsculas: APÊNDICE A, APÊNDICE B...",
+        "Cada apêndice em página nova",
+        "Título: APÊNDICE A — Título descritivo",
+        "Sem indicativo numérico"
+      ],
+      "exemplos": [
+        "Questionários elaborados pelo autor",
+        "Roteiros de entrevista",
+        "Dados primários coletados"
+      ]
+    },
+    "anexos_opcional": {
+      "obrigatorio": false,
+      "fonte_normativa": "NBR 14724:2024 seção 4.3.4",
+      "regras": [
+        "Material NÃO elaborado pelo autor",
+        "Identificação por letras maiúsculas: ANEXO A, ANEXO B...",
+        "Cada anexo em página nova",
+        "Título: ANEXO A — Título descritivo",
+        "Sem indicativo numérico"
+      ],
+      "exemplos": [
+        "Cópia de legislação relevante",
+        "Pareceres",
+        "Documentos institucionais"
+      ]
+    },
+    "indice_opcional": {
+      "obrigatorio": false,
+      "fonte_normativa": "ABNT NBR 6034:2004",
+      "regras": [
+        "Preferir índice onomástico (autores citados)",
+        "Ordem alfabética",
+        "Página de referência ao lado",
+        "Sem indicativo numérico"
+      ]
+    }
+  },
+  "regras_globais_pos_textuais": [
+    "Todos os elementos sem indicativo numérico",
+    "Todos os títulos em caixa alta, negrito, alinhamento à esquerda, corpo 14",
+    "Aparecem no sumário sem numeração",
+    "Cada elemento principal inicia em página nova",
+    "Paginação contínua a partir da última página textual"
+  ],
+  "render_latex": {
+    "referencias": "\\bibliography{referencias} % com biber e estilo abnt",
+    "glossario": "\\printglossary[title=GLOSSÁRIO]",
+    "apendice": "\\partapendices \\chapter{TÍTULO} % usa abntex2",
+    "anexo": "\\partanexos \\chapter{TÍTULO} % usa abntex2",
+    "indice": "\\printindex"
+  },
+  "render_gdocs": {
+    "referencias": "HEADING_1 'REFERÊNCIAS' sem numeração + corpo com formato customizado (sem justificar)",
+    "apendice_anexo": "HEADING_1 'APÊNDICE A — ...' / 'ANEXO A — ...' com PAGE_BREAK antes"
+  }
+}

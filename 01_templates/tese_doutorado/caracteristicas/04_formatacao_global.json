@@ -1,0 +1,191 @@
+{
+  "id": "formatacao-global",
+  "componente": "Formatação global da tese",
+  "descricao": "Configurações que valem para o documento inteiro: papel, margens, fonte default, espaçamento, paginação, alinhamento. Aplicam-se a toda página exceto onde substituídas por componente específico.",
+  "fonte_normativa": "ABNT NBR 14724:2024 seção 5 + Guia Metodológico PPGD/Unifor",
+  "papel": {
+    "tamanho": "A4",
+    "largura_cm": 21.0,
+    "altura_cm": 29.7,
+    "cor": "branco",
+    "impressao": "anverso (frente única) — verso aceito apenas para ficha catalográfica"
+  },
+  "margens": {
+    "superior_cm": 3.0,
+    "inferior_cm": 2.0,
+    "esquerda_cm": 3.0,
+    "direita_cm": 2.0,
+    "anverso_unico": true
+  },
+  "fonte": {
+    "default_face": "Times New Roman",
+    "alternativa_aceita": "Arial",
+    "tamanho_default_pt": 12,
+    "tamanhos_especificos_ppgd": {
+      "citacao_longa": 10,
+      "notas_rodape": 10,
+      "legendas_ilustracoes_tabelas": 10,
+      "fontes_de_ilustracoes_tabelas": 10,
+      "ficha_catalografica": 10,
+      "natureza_trabalho_folha_rosto": 10,
+      "titulos_primarios_maiusculas_sem_negrito": 16,
+      "secao_secundaria_1_1_minusculas_com_negrito": 14,
+      "secao_terciaria_1_1_1_italico": 14,
+      "secao_quaternaria_1_1_1_2_normal": 14,
+      "secao_quinaria_1_1_1_2_1_sublinhado": 14,
+      "sumario_titulos": 12,
+      "titulo_capa_destaque": 16
+    },
+    "obs_critica_ppgd_vs_convencao": "Guia PPGD especifica TNR 16 maiúsculas SEM negrito para títulos primários. NBR 14724 sugere apenas tamanho 'maior'. Convenção comum (mas não obrigatória): 14 com negrito. PREVALECE o Guia PPGD.",
+    "cor": "preto",
+    "cor_alternativa": "somente em ilustrações"
+  },
+  "espacamento": {
+    "linha_default": 1.5,
+    "linha_simples_em": [
+      "Citação longa (recuada)",
+      "Notas de rodapé",
+      "Referências (dentro de cada entrada)",
+      "Legendas e fontes de ilustrações/tabelas",
+      "Ficha catalográfica",
+      "Natureza do trabalho (folha de rosto)",
+      "Resumo e abstract"
+    ],
+    "entre_referencias": "1 linha em branco",
+    "antes_e_depois_de_secao": "1 linha em branco",
+    "espaco_antes_paragrafo_pt": 0,
+    "espaco_depois_paragrafo_pt": 0
+  },
+  "alinhamento": {
+    "default": "justificado",
+    "esquerda_em": [
+      "Referências (NBR 6023)",
+      "Títulos de seções primárias (NBR 6024)",
+      "Subseções"
+    ],
+    "centralizado_em": [
+      "Capa (todos os elementos)",
+      "Folha de aprovação (após bloco de natureza)",
+      "Títulos sem indicativo numérico (Resumo, Abstract, Sumário, Introdução, Conclusão, Referências, Apêndice, Anexo, Glossário, Índice, Agradecimentos, Listas)",
+      "Legendas de ilustrações e tabelas"
+    ]
+  },
+  "paragrafo": {
+    "recuo_primeira_linha_cm": 1.0,
+    "recuo_regra_word": "1 Tab",
+    "obs_ppgd": "Guia PPGD seção 2.3 especifica 1,0 cm — diverge da convenção comum de 1,25 cm",
+    "alinhamento": "justificado",
+    "espacamento": 1.5,
+    "limite_palavras": 60,
+    "limite_linhas": 7,
+    "regras": [
+      "Não usar tabulação dupla",
+      "Não inserir linhas em branco entre parágrafos (apenas recuo)",
+      "Manter controle de linhas órfãs e viúvas ativado",
+      "Manter com o próximo (keep_next) ativado em títulos de seção"
+    ]
+  },
+  "paginacao": {
+    "tipo_numero": "algarismos arábicos",
+    "posicao": "canto superior direito",
+    "distancia_borda_superior_cm": 2.0,
+    "distancia_borda_direita_cm": 2.0,
+    "fonte_pt": 10,
+    "regras": [
+      "Páginas pré-textuais são CONTADAS a partir da folha de rosto mas SEM número visível",
+      "Capa NÃO conta na paginação",
+      "Número visível inicia a partir da 2ª folha da Introdução",
+      "Paginação contínua até a última página dos elementos pós-textuais",
+      "Em apêndices e anexos: paginação continua a sequência principal"
+    ]
+  },
+  "citacao_longa": {
+    "recuo_esquerdo_cm": 4.0,
+    "fonte_pt": 10,
+    "espacamento_linha": 1.0,
+    "sem_aspas": true,
+    "alinhamento": "justificado",
+    "espaco_antes": "1 linha em branco",
+    "espaco_depois": "1 linha em branco",
+    "criterio": "Citação direta com mais de 3 linhas"
+  },
+  "titulos_primarios": {
+    "fonte_pt": 16,
+    "negrito": false,
+    "caixa": "alta",
+    "alinhamento_padrao": "esquerda",
+    "alinhamento_quando_sem_indicativo": "centralizado (NBR 14724) ou esquerda (PPGD trata introdução/conclusão como primária à esquerda)",
+    "obs_ppgd_critica": "Guia PPGD: TNR 16 MAIÚSCULAS sem negrito — divergente da convenção comum (14 negrito)",
+    "regras": [
+      "Cada título primário em página nova",
+      "Sem ponto final no título",
+      "Indicativo numérico separado do título por 1 espaço (sem ponto)"
+    ],
+    "sem_indicativo_numerico": [
+      "INTRODUÇÃO",
+      "CONCLUSÃO",
+      "REFERÊNCIAS",
+      "GLOSSÁRIO",
+      "APÊNDICE",
+      "ANEXO",
+      "ÍNDICE",
+      "AGRADECIMENTOS",
+      "RESUMO",
+      "ABSTRACT",
+      "LISTAS",
+      "SUMÁRIO"
+    ],
+    "sem_titulo_e_sem_numeracao": [
+      "Folha de aprovação",
+      "Dedicatória",
+      "Epígrafe"
+    ]
+  },
+  "idioma": {
+    "padrao": "pt-BR",
+    "hifenizacao": true,
+    "abstract": "inglês OU espanhol (fiel ao resumo)"
+  },
+  "regras_globais": [
+    "Cor preta para texto; cores apenas em ilustrações",
+    "Frente única (anverso) — verso aceito apenas para ficha catalográfica",
+    "Quebra de página antes de cada elemento estrutural (capítulo, referências, apêndice etc.)",
+    "Evitar linhas órfãs e viúvas",
+    "Headings com 'manter com o próximo' (keep_next) ativado",
+    "Hifenização automática com babel português brasileiro",
+    "Sem rodapé com data, autor ou título do trabalho (só notas de rodapé explicativas)"
+  ],
+  "volume_recomendado": {
+    "paginas_por_capitulo": 50,
+    "capitulos_total": 4,
+    "introducao": "5 a 10 páginas",
+    "conclusao": "5 a 10 páginas",
+    "referencias_quantidade": "250 a 300"
+  },
+  "render_latex": {
+    "documentclass": "\\documentclass[12pt,a4paper,oneside,brazil]{abntex2}",
+    "geometry": "\\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=2cm]{geometry}",
+    "fonte": "\\setmainfont{Times New Roman}",
+    "espacamento": "\\OnehalfSpacing",
+    "recuo": "\\setlength{\\parindent}{1cm}",
+    "paginacao": "\\pagestyle{plain}",
+    "babel": "\\usepackage[brazil]{babel}",
+    "bibliografia": "\\usepackage[backend=biber,style=abnt]{biblatex}"
+  },
+  "render_gdocs": {
+    "updateDocumentStyle": {
+      "documentStyle": {
+        "marginTop":    {"magnitude": 85.04, "unit": "PT"},
+        "marginBottom": {"magnitude": 56.69, "unit": "PT"},
+        "marginLeft":   {"magnitude": 85.04, "unit": "PT"},
+        "marginRight":  {"magnitude": 56.69, "unit": "PT"},
+        "pageSize": {
+          "width":  {"magnitude": 595.276, "unit": "PT"},
+          "height": {"magnitude": 841.890, "unit": "PT"}
+        },
+        "useFirstPageHeaderFooter": true
+      },
+      "fields": "marginTop,marginBottom,marginLeft,marginRight,pageSize,useFirstPageHeaderFooter"
+    }
+  }
+}

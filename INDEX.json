@@ -10,8 +10,13 @@
         "artigo_cientifico": {
           "status": "completo",
           "caracteristicas_count": 11,
-          "app": ["latex", "gdocs"],
-          "renderizadores_funcionais": ["latex (compila zero erros)", "gdocs (cria doc + skeleton)"]
+          "saida_canonica": "docx",
+          "app": ["docx", "gdocs", "latex"],
+          "renderizadores_funcionais": [
+            "docx (CANÔNICO — render_docx.py, .docx ABNT byte-fiel via lsa-componentes)",
+            "gdocs (alternativo — cria doc + skeleton)",
+            "latex (legado — compila zero erros)"
+          ]
         },
         "tese_doutorado": {"status": "vazio"},
         "relatorio_institucional": {"status": "vazio"},
@@ -27,15 +32,16 @@
           "perguntas_teste_estresse": 6,
           "tensoes_resolvidas": 3
         },
-        "termos_proibidos": {
+        "escrita_proibida": {
           "status": "completo",
-          "arquivos": 6,
+          "arquivos": 8,
           "entradas_lexicais": 14,
           "entradas_expressoes": 5,
           "entradas_colocacoes": 2,
           "entradas_construcoes": 12,
           "entradas_sinais": 3,
-          "regras_coocorrencia": 9
+          "regras_coocorrencia": 9,
+          "estrangeirismos_sem_italico": "08_estrangeirismos_sem_italico.json — 10 estrangeirismos + 10 siglas estrangeiras (Ponto 5 auditoria ABNT, NBR 6022/14724)"
         },
         "conjuncoes": {
           "status": "completo",
@@ -44,7 +50,7 @@
           "total_entradas": 802,
           "categorias": ["coordenativas (5 subtipos)", "subordinativas (13 subtipos)"]
         },
-        "traducao_estrangeirismos": {"status": "vazio"},
+        "traducao_estrangeirismos": {"status": "coberto_em_escrita_proibida/08_estrangeirismos_sem_italico.json"},
         "voz_e_tempo_verbal": {"status": "pendente"},
         "profundidade_doutrinaria": {"status": "pendente"},
         "marcadores_discursivos": {"status": "pendente"}
@@ -57,21 +63,22 @@
       "piloto_planejado": "leff_enrique/2006_ecologia_politica"
     },
     "04_normas": {
-      "descricao": "Normas técnicas referenciais em JSON",
-      "status": "vazio",
-      "normas_alvo": [
+      "descricao": "Normas técnicas referenciais em JSON. Ver 04_normas/INDEX.json para busca por tópico.",
+      "status": "completo",
+      "normas_presentes": [
         "ABNT NBR 6023:2018 (Referências)",
+        "ABNT NBR 6024:2012 (Numeração progressiva)",
         "ABNT NBR 6027:2012 (Sumário)",
-        "ABNT NBR 6028:2021 (Resumo)",
-        "ABNT NBR 10520:2023 (Citações)",
+        "ABNT NBR 6028:2021 (Resumo — c/ tabela por tipo de documento: artigo 100-250, tese 150-500)",
+        "ABNT NBR 10520:2023 (Citações — c/ nota de convenção caixa-alta área Direito)",
         "ABNT NBR 14724:2024 (Trabalhos acadêmicos)",
-        "Citação e Referência 2025 (Guia prático)"
+        "Guia Metodológico PPGD/Unifor (prevalece sobre ABNT em conflito)"
       ]
     },
     "05_metadados": {
       "descricao": "JSON Schema + glossário",
       "subitens": {
-        "schemas": {"status": "vazio"},
+        "schemas": {"status": "completo (schemas/tese_doutorado/ — 5 schemas + validate.py)"},
         "glossario.json": {"status": "pendente"}
       }
     }
@@ -79,19 +86,21 @@
   "estatisticas_globais": {
     "total_jsons_validos": 36,
     "total_arquivos": 38,
-    "total_entradas_estruturadas": "11 caracteristicas + 16 principios + 41 termos_proibidos (incluindo coc) + 802 conjuncoes = 870+"
+    "total_entradas_estruturadas": "11 caracteristicas + 16 principios + 41 escrita_proibida (incluindo coc) + 802 conjuncoes = 870+"
   },
   "renderizadores_funcionais": [
-    "01_templates/artigo_cientifico/app/latex/build.sh — compila .tex em ~3s",
-    "01_templates/artigo_cientifico/app/gdocs/criar_template.py — cria Google Doc via gws"
+    "01_templates/artigo_cientifico/app/docx/render_docx.py — CANÔNICO: gera .docx ABNT byte-fiel (estilos/margens do docx-modelo) via lsa-componentes",
+    "01_templates/artigo_cientifico/app/gdocs/criar_template.py — alternativo: cria Google Doc via gws",
+    "01_templates/artigo_cientifico/app/latex/build.sh — legado: compila .tex em ~3s"
   ],
+  "saida_canonica_global": "docx (LaTeX deixou de ser exigência; mantido como legado)",
   "proximos_passos": [
     "1. Bootstrap 03_fontes/ com Leff 2006 piloto",
-    "2. Extrair 04_normas/ NBR 6023 e 14724 para JSON",
-    "3. Criar 05_metadados/schemas/ JSON Schema v7 para cada componente",
-    "4. Estender 02_escrita/ com traducao_estrangeirismos por idioma",
-    "5. Criar template tese_doutorado em 01_templates/",
+    "2. Estender estrangeirismos_sem_italico com mais entradas por domínio (neuro, IA, etc.)",
+    "3. Adicionar app/docx/ ao template tese_doutorado (espelhar artigo_cientifico)",
+    "4. Notas de rodapé + sumário automáticos no render_docx.py (hoje manuais no Word)",
+    "5. Avaliar JSON de critérios Qualis/indexação de periódicos (Ponto 6 auditoria — decisão de escopo)",
     "6. Criar template peticao_juridica em 01_templates/",
-    "7. Construir validador autônomo que aplica termos_proibidos + escrita_canonica + conjuncoes em qualquer .md/.tex e gera relatório de violações"
+    "7. Construir validador autônomo que aplica escrita_proibida + escrita_canonica + conjuncoes em qualquer .md/.docx e gera relatório de violações"
   ]
 }

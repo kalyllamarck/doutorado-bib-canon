@@ -1,0 +1,97 @@
+{
+  "fonte_docx": "artigo_abnt_modelo.docx",
+  "arquivos_xml_capturados": [
+    {
+      "part_docx": "[Content_Types].xml",
+      "json_destino": "content_types.json",
+      "tamanho_xml_bytes": 1999
+    },
+    {
+      "part_docx": "_rels/.rels",
+      "json_destino": "package_rels.json",
+      "tamanho_xml_bytes": 734
+    },
+    {
+      "part_docx": "word/_rels/document.xml.rels",
+      "json_destino": "document_rels.json",
+      "tamanho_xml_bytes": 1489
+    },
+    {
+      "part_docx": "word/styles.xml",
+      "json_destino": "styles.json",
+      "tamanho_xml_bytes": 349666
+    },
+    {
+      "part_docx": "word/settings.xml",
+      "json_destino": "settings.json",
+      "tamanho_xml_bytes": 2535
+    },
+    {
+      "part_docx": "word/webSettings.xml",
+      "json_destino": "web_settings.json",
+      "tamanho_xml_bytes": 438
+    },
+    {
+      "part_docx": "word/fontTable.xml",
+      "json_destino": "font_table.json",
+      "tamanho_xml_bytes": 2811
+    },
+    {
+      "part_docx": "word/theme/theme1.xml",
+      "json_destino": "theme.json",
+      "tamanho_xml_bytes": 10939
+    },
+    {
+      "part_docx": "word/footnotes.xml",
+      "json_destino": "footnotes.json",
+      "tamanho_xml_bytes": 970
+    },
+    {
+      "part_docx": "word/numbering.xml",
+      "json_destino": "numbering.json",
+      "tamanho_xml_bytes": 5513
+    },
+    {
+      "part_docx": "docProps/core.xml",
+      "json_destino": "doc_props_core.json",
+      "tamanho_xml_bytes": 721
+    },
+    {
+      "part_docx": "docProps/app.xml",
+      "json_destino": "doc_props_app.json",
+      "tamanho_xml_bytes": 1132
+    },
+    {
+      "part_docx": "word/header1.xml",
+      "json_destino": "headers/header1.json",
+      "tamanho_xml_bytes": 1539
+    }
+  ],
+  "arquivos_xml_ignorados": [
+    {
+      "part_docx": "customXml/item1.xml",
+      "destino_raw": "custom_xml/item1.xml"
+    },
+    {
+      "part_docx": "customXml/_rels/item1.xml.rels",
+      "destino_raw": "custom_xml/_rels/item1.xml.rels"
+    },
+    {
+      "part_docx": "customXml/itemProps1.xml",
+      "destino_raw": "custom_xml/itemProps1.xml"
+    }
+  ],
+  "midia": [],
+  "_rels_descobertos": [],
+  "outros": [
+    {
+      "part_docx": "word/stylesWithEffects.xml",
+      "destino": "_outros/word/stylesWithEffects.xml"
+    },
+    {
+      "part_docx": "docProps/thumbnail.jpeg",
+      "destino": "_outros/docProps/thumbnail.jpeg"
+    }
+  ],
+  "section_properties_capturado": true
+}

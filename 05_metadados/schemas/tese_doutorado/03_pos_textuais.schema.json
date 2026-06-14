@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "03_pos_textuais.schema.json",
+  "title": "Pós-textuais — Schema",
+  "allOf": [
+    {
+      "$ref": "_common.schema.json"
+    }
+  ],
+  "type": "object",
+  "required": [
+    "id",
+    "ordem_obrigatoria",
+    "elementos"
+  ],
+  "properties": {
+    "id": {
+      "const": "pos-textuais"
+    },
+    "ordem_obrigatoria": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "elementos": {
+      "type": "object",
+      "required": [
+        "referencias"
+      ],
+      "patternProperties": {
+        "^[a-z_]+$": {
+          "type": "object",
+          "required": [
+            "obrigatorio"
+          ],
+          "properties": {
+            "obrigatorio": {
+              "type": "boolean"
+            },
+            "indicativo_numerico": {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
+            },
+            "titulo": {
+              "type": "string"
+            },
+            "regras": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "tipos_de_fonte": {
+              "type": "object"
+            },
+            "regras_filtro_qualitativo": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "regras_globais_pos_textuais": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

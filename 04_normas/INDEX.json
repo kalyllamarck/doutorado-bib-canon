@@ -1,0 +1,191 @@
+{
+  "id": "index-normas",
+  "schema_version": "1.0",
+  "data_atualizacao": "2026-06-14",
+  "descricao": "Índice de busca rápida das normas ABNT + Guia PPGD aplicáveis à tese. Cada tópico aponta para o arquivo + chave JSON onde a regra reside. Em caso de divergência entre ABNT e Guia PPGD, prevalece o Guia PPGD (ver `guia_ppgd_unifor.json.regra_precedencia`).",
+
+  "arquivos": {
+    "nbr_6023_2018.json": {
+      "norma": "ABNT NBR 6023:2018",
+      "regula": "Referências bibliográficas — elaboração e apresentação",
+      "aplica_em": "Lista pós-textual de referências"
+    },
+    "nbr_6024_2012.json": {
+      "norma": "ABNT NBR 6024:2012",
+      "regula": "Numeração progressiva das seções (1, 1.1, 1.1.1)",
+      "aplica_em": "Toda a estrutura textual da tese"
+    },
+    "nbr_6027_2012.json": {
+      "norma": "ABNT NBR 6027:2012",
+      "regula": "Sumário — elementos, hierarquia e apresentação",
+      "aplica_em": "Sumário pré-textual"
+    },
+    "nbr_6028_2021.json": {
+      "norma": "ABNT NBR 6028:2021",
+      "regula": "Resumo, resenha e recensão — extensão, voz, palavras-chave",
+      "aplica_em": "Resumo + Abstract (pré-textuais)"
+    },
+    "nbr_10520_2023.json": {
+      "norma": "ABNT NBR 10520:2023",
+      "regula": "Citações no texto — direta, indireta, longa, apud, sistema autor-data",
+      "aplica_em": "Todo o corpo textual"
+    },
+    "nbr_14724_2024.json": {
+      "norma": "ABNT NBR 14724:2024",
+      "regula": "Trabalhos acadêmicos — estrutura completa (pré-textuais, textuais, pós-textuais), formatação (margens, fonte, paginação)",
+      "aplica_em": "Documento inteiro"
+    },
+    "guia_ppgd_unifor.json": {
+      "norma": "Guia Metodológico PPGD/Unifor",
+      "regula": "Exigências do programa que complementam ou sobrescrevem a ABNT 14724",
+      "aplica_em": "Documento inteiro — prevalece sobre ABNT em caso de conflito"
+    }
+  },
+
+  "indice_por_topico": {
+    "estrutura_geral_da_tese": {
+      "ordem_pre_textuais_textuais_pos_textuais": "nbr_14724_2024.json#secao_4_estrutura",
+      "componentes_obrigatorios": "nbr_14724_2024.json#secao_4_estrutura + guia_ppgd_unifor.json#componentes_obrigatorios_capa_ppgd",
+      "checklist_pre_defesa": "guia_ppgd_unifor.json#checklist_pre_defesa"
+    },
+
+    "capa_e_folha_de_rosto": {
+      "componentes_capa": "guia_ppgd_unifor.json#componentes_obrigatorios_capa_ppgd",
+      "ordem_dos_elementos": "nbr_14724_2024.json#secao_4_estrutura",
+      "template_oficial": "guia_ppgd_unifor.json#template_oficial"
+    },
+
+    "ficha_catalografica": {
+      "como_gerar": "guia_ppgd_unifor.json#ficha_catalografica",
+      "url_unifor": "guia_ppgd_unifor.json#ficha_catalografica"
+    },
+
+    "folha_de_aprovacao": {
+      "regras": "nbr_14724_2024.json#secao_4_estrutura",
+      "particularidades_ppgd": "guia_ppgd_unifor.json#secao_1_estrutura_formal"
+    },
+
+    "agradecimentos": {
+      "regra_geral": "nbr_14724_2024.json#secao_4_estrutura",
+      "mencao_funcap_obrigatoria": "guia_ppgd_unifor.json#agradecimentos_funcap"
+    },
+
+    "resumo_e_abstract": {
+      "regras_basicas": "nbr_6028_2021.json#regras_resumo_para_tese",
+      "extensao_por_tipo_de_documento": "nbr_6028_2021.json#extensao_por_tipo_de_documento",
+      "extensao_voz_pessoa": "nbr_6028_2021.json#regras_resumo_para_tese",
+      "palavras_chave": "nbr_6028_2021.json#palavras_chave",
+      "abstract_estrangeiro": "nbr_6028_2021.json#resumo_em_lingua_estrangeira",
+      "proibicoes_no_resumo": "nbr_6028_2021.json#proibicoes_no_resumo",
+      "render_latex": "nbr_6028_2021.json#render_latex_abntex2"
+    },
+
+    "sumario": {
+      "elementos_e_hierarquia": "nbr_6027_2012.json#elementos_constituintes",
+      "regras_gerais": "nbr_6027_2012.json#regras_gerais",
+      "o_que_entra_no_sumario": "nbr_6027_2012.json#elementos_que_aparecem_no_sumario",
+      "introducao_e_conclusao_sem_numeracao": "nbr_6027_2012.json#elementos_sem_indicativo_numerico_no_sumario",
+      "hierarquia_visual": "nbr_6027_2012.json#hierarquia_visual",
+      "render_latex": "nbr_6027_2012.json#render_latex_abntex2"
+    },
+
+    "numeracao_de_secoes": {
+      "sistema_progressivo": "nbr_6024_2012.json#regras_de_numeracao",
+      "titulos_sem_indicativo": "nbr_6024_2012.json#titulos_sem_indicativo_numerico",
+      "texto_literal_item_4_2": "nbr_6024_2012.json#titulos_sem_indicativo_numerico.texto_literal_item_4_2",
+      "introducao_e_conclusao_sem_indicativo": "nbr_6024_2012.json#titulos_sem_indicativo_numerico.introducao_e_conclusao",
+      "alineas_e_subalineas": "nbr_6024_2012.json#alineas_e_subalineas",
+      "destaques_tipograficos": "nbr_6024_2012.json#destaques_tipograficos",
+      "particularidades_ppgd": "nbr_6024_2012.json#implicacao_para_tese_ppgd"
+    },
+
+    "citacoes_no_texto": {
+      "tipos_de_citacao": "nbr_10520_2023.json#tipos_de_citacao",
+      "citacao_direta_curta": "nbr_10520_2023.json#citacao_direta",
+      "citacao_direta_longa": "nbr_10520_2023.json#citacao_direta",
+      "citacao_indireta_parafrase": "nbr_10520_2023.json#citacao_indireta_parafrase",
+      "apud_citacao_de_citacao": "nbr_10520_2023.json#citacao_de_citacao_apud",
+      "sistema_autor_data": "nbr_10520_2023.json#sistema_de_chamada",
+      "tabela_autor_data": "nbr_10520_2023.json#sistema_de_chamada_autor_data_tabela",
+      "entrevistas_e_depoimentos": "nbr_10520_2023.json#entrevistas_e_depoimentos",
+      "fontes_nao_publicadas": "nbr_10520_2023.json#fontes_nao_publicadas",
+      "documentos_em_elaboracao": "nbr_10520_2023.json#documentos_em_fase_de_elaboracao",
+      "mudancas_2023_vs_2002": "nbr_10520_2023.json#mudancas_versus_nbr_10520_2002",
+      "exigencia_pagina_em_indireta_ppgd": "nbr_10520_2023.json#convencao_ppgd_unifor",
+      "convencao_caixa_alta_direito": "nbr_10520_2023.json#convencao_editorial_area_direito.sobrenome_caixa_alta_no_parentetico",
+      "mencao_legal_nao_e_citacao": "nbr_10520_2023.json#convencao_editorial_area_direito.mencao_a_diploma_legal_nao_e_citacao",
+      "render_latex": "nbr_10520_2023.json#render_latex_abntex2"
+    },
+
+    "referencias_bibliograficas": {
+      "elementos_essenciais_e_complementares": "nbr_6023_2018.json#secao_4_elementos",
+      "informacao_localizacao_online": "nbr_6023_2018.json#secao_5_localizacao",
+      "regras_gerais_apresentacao": "nbr_6023_2018.json#secao_6_regras_gerais_apresentacao",
+      "modelos_essenciais_por_tipo": "nbr_6023_2018.json#secao_7_modelos_essenciais",
+      "regras_de_transcricao": "nbr_6023_2018.json#secao_8_transcricao",
+      "ordenacao_alfabetica_cronologica": "nbr_6023_2018.json#secao_9_ordenacao_referencias",
+      "abreviaturas": "nbr_6023_2018.json#abreviaturas_principais"
+    },
+
+    "formatacao_visual_documento": {
+      "margens_fonte_espacamento": "nbr_14724_2024.json#secao_5_regras_gerais",
+      "paginacao": "nbr_14724_2024.json#secao_5_regras_gerais",
+      "regras_gerais_apresentacao_grafica": "nbr_14724_2024.json#secao_5_regras_gerais",
+      "exigencias_ppgd": "guia_ppgd_unifor.json#secao_2_formatacao"
+    },
+
+    "divergencias_abnt_vs_ppgd": {
+      "lista_de_divergencias": "guia_ppgd_unifor.json#divergencias_explicitas_vs_abnt",
+      "regra_de_precedencia": "guia_ppgd_unifor.json#regra_precedencia",
+      "complementos_ppgd_no_14724": "nbr_14724_2024.json#divergencias_e_complementos_ppgd_unifor"
+    },
+
+    "termos_e_definicoes": {
+      "nbr_14724": "nbr_14724_2024.json#secao_3_termos_e_definicoes",
+      "nbr_6024": "nbr_6024_2012.json#definicoes",
+      "nbr_6027": "nbr_6027_2012.json#definicao_sumario",
+      "nbr_6028": "nbr_6028_2021.json#definicoes"
+    },
+
+    "escopo_de_cada_norma": {
+      "nbr_14724": "nbr_14724_2024.json#secao_1_escopo",
+      "nbr_6023": "nbr_6023_2018.json#secao_1_escopo",
+      "nbr_6024": "nbr_6024_2012.json#escopo",
+      "nbr_6027": "nbr_6027_2012.json#escopo",
+      "nbr_6028": "nbr_6028_2021.json#escopo",
+      "nbr_10520": "nbr_10520_2023.json#escopo",
+      "guia_ppgd": "guia_ppgd_unifor.json#escopo"
+    },
+
+    "relacao_entre_as_normas": {
+      "rede_normativa_14724": "nbr_14724_2024.json#relacao_com_normas_complementares",
+      "rede_normativa_14724_referencias": "nbr_14724_2024.json#secao_2_referencias_normativas"
+    }
+  },
+
+  "perguntas_frequentes": {
+    "como_citar_indiretamente_com_pagina": "nbr_10520_2023.json#convencao_ppgd_unifor — PPGD exige sobrenome + ano + página também em citações indiretas",
+    "qual_extensao_do_resumo": "nbr_6028_2021.json#extensao_por_tipo_de_documento — depende do tipo: artigo científico/congresso/relatório = 100–250 palavras; tese/dissertação = 150–500 palavras (NBR 6028:2021, item 4.1)",
+    "quantas_palavras_chave": "nbr_6028_2021.json#palavras_chave — 3 a 5, separadas por ponto e vírgula",
+    "introducao_recebe_numero": "nbr_6024_2012.json#titulos_sem_indicativo_numerico — NÃO; Introdução, Conclusão, Agradecimentos, Listas, Sumário, Glossário, Apêndice, Anexo e Índice ficam centralizados sem indicativo",
+    "agradecer_FUNCAP_e_obrigatorio": "guia_ppgd_unifor.json#agradecimentos_funcap — SIM, obrigatório para bolsista FUNCAP",
+    "quem_vence_em_conflito_ABNT_PPGD": "guia_ppgd_unifor.json#regra_precedencia",
+    "como_gerar_ficha_catalografica": "guia_ppgd_unifor.json#ficha_catalografica — gerada em unifor.br/ficha-catalografica",
+    "paginacao_aparece_a_partir_de_qual_folha": "nbr_14724_2024.json#secao_5_regras_gerais — conta da folha de rosto; aparece a partir da 2ª folha da introdução"
+  },
+
+  "fluxo_de_uso": [
+    "1. Pergunta concreta surge durante redação ou revisão",
+    "2. Buscar no `indice_por_topico` o tópico mais próximo",
+    "3. Seguir o ponteiro `arquivo#chave` até a regra detalhada",
+    "4. Se houver divergência ABNT × PPGD, abrir `divergencias_abnt_vs_ppgd` para conferir precedência",
+    "5. Se a pergunta for recorrente, registrar no `perguntas_frequentes`"
+  ],
+
+  "como_atualizar_este_index": [
+    "Ao adicionar nova norma → criar entrada em `arquivos` + mapear tópicos relevantes em `indice_por_topico`",
+    "Ao adicionar nova seção dentro de uma norma → atualizar os ponteiros em `indice_por_topico`",
+    "Ao identificar nova divergência ABNT × PPGD → registrar em `divergencias_abnt_vs_ppgd`",
+    "Ao receber pergunta recorrente → adicionar em `perguntas_frequentes`"
+  ]
+}

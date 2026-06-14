@@ -1,0 +1,207 @@
+{
+  "id": "textuais",
+  "componente": "Elementos textuais da tese (corpo)",
+  "descricao": "Núcleo da tese: introdução, desenvolvimento em 4 capítulos, conclusão. Estrutura fixa definida pelo autor (4 capítulos). Sem 'epílogo' — a parte final chama-se Conclusão.",
+  "fonte_normativa": "ABNT NBR 14724:2024 seção 4.2 + Guia Metodológico PPGD/Unifor",
+  "ordem_obrigatoria": [
+    "introducao",
+    "capitulo_1",
+    "capitulo_2",
+    "capitulo_3",
+    "capitulo_4",
+    "conclusao"
+  ],
+  "elementos": {
+    "introducao": {
+      "obrigatorio": true,
+      "indicativo_numerico": false,
+      "fonte_normativa": "NBR 14724:2024 + Guia PPGD",
+      "titulo": "INTRODUÇÃO",
+      "formato_titulo": {
+        "fonte_pt": 16,
+        "negrito": false,
+        "caixa": "alta",
+        "alinhamento": "esquerda",
+        "sem_indicativo": true,
+        "obs": "PPGD usa TNR 16 maiúsculas SEM negrito em títulos primários (diverge da convenção comum 14 negrito)"
+      },
+      "conteudo_obrigatorio": [
+        "Contextualização do tema",
+        "Apresentação do tema",
+        "Problema de pesquisa",
+        "Justificativa",
+        "Originalidade da contribuição (exigência de tese)",
+        "Objetivo geral",
+        "Objetivos específicos (em diálogo com a estrutura dos 4 capítulos)",
+        "Metodologia (tipo de pesquisa, abordagem, técnicas, fontes)",
+        "Estrutura do trabalho (anúncio dos 4 capítulos)"
+      ],
+      "regras": [
+        "Sem citações diretas (curtas ou longas)",
+        "Citações indiretas (paráfrases) aceitas, com sobrenome + ano + página",
+        "Verbo impessoal preferencial",
+        "Volume sugerido pelo PPGD: ~10 páginas (mínimo 5)",
+        "Início em nova página",
+        "Primeira página da introdução: número de página contado mas não visível; visível a partir da 2ª folha"
+      ],
+      "proibicoes": [
+        "Citações diretas curtas",
+        "Citações diretas longas (recuadas)",
+        "Antecipar conclusões",
+        "Resumir capítulos em vez de anunciá-los"
+      ]
+    },
+    "capitulo_1": {
+      "obrigatorio": true,
+      "indicativo_numerico": "1",
+      "titulo_provisorio": "[a definir]",
+      "formato_titulo": {
+        "fonte_pt": 16,
+        "negrito": false,
+        "caixa": "alta",
+        "alinhamento": "esquerda",
+        "padrao": "1 TÍTULO DO CAPÍTULO"
+      },
+      "volume_sugerido_paginas": 50,
+      "subdivisoes_admitidas": "1.1, 1.2, 1.3 ... 1.1.1, 1.1.2 ..."
+    },
+    "capitulo_2": {
+      "obrigatorio": true,
+      "indicativo_numerico": "2",
+      "titulo_provisorio": "[a definir]",
+      "formato_titulo": "idem capitulo_1, padrão '2 TÍTULO'",
+      "volume_sugerido_paginas": 50
+    },
+    "capitulo_3": {
+      "obrigatorio": true,
+      "indicativo_numerico": "3",
+      "titulo_provisorio": "[a definir]",
+      "formato_titulo": "idem capitulo_1, padrão '3 TÍTULO'",
+      "volume_sugerido_paginas": 50
+    },
+    "capitulo_4": {
+      "obrigatorio": true,
+      "indicativo_numerico": "4",
+      "titulo_provisorio": "[a definir]",
+      "formato_titulo": "idem capitulo_1, padrão '4 TÍTULO'",
+      "volume_sugerido_paginas": 50
+    },
+    "conclusao": {
+      "obrigatorio": true,
+      "indicativo_numerico": false,
+      "fonte_normativa": "NBR 14724:2024 + Guia PPGD",
+      "titulo": "CONCLUSÃO",
+      "formato_titulo": {
+        "fonte_pt": 16,
+        "negrito": false,
+        "caixa": "alta",
+        "alinhamento": "esquerda",
+        "sem_indicativo": true,
+        "obs": "PPGD usa TNR 16 maiúsculas SEM negrito"
+      },
+      "conteudo_obrigatorio": [
+        "Retomada das conclusões parciais de cada capítulo",
+        "Resposta direta ao problema de pesquisa",
+        "Confirmação/rejeição das hipóteses",
+        "Contribuições originais da tese",
+        "Limitações da pesquisa",
+        "Agenda de pesquisas futuras"
+      ],
+      "regras": [
+        "Início em nova página",
+        "Verbo impessoal",
+        "Volume sugerido: 5-10 páginas"
+      ],
+      "proibicoes": [
+        "QUALQUER citação (direta ou indireta)",
+        "Introduzir conceitos novos não tratados no corpo",
+        "Repetir literalmente trechos dos capítulos"
+      ]
+    }
+  },
+  "regras_hierarquia_secoes": {
+    "fonte_normativa": "ABNT NBR 6024:2012 + Guia Metodológico PPGD/Unifor seção 2.2",
+    "obs_critica": "PPGD especifica fonte 16 sem negrito para primárias, e 14 para todos os subníveis (com decorações diferentes). Diverge da convenção comum.",
+    "niveis": {
+      "primaria": {
+        "padrao": "N TÍTULO",
+        "fonte_pt": 16,
+        "negrito": false,
+        "caixa": "alta",
+        "exemplo": "2 DIREITOS FUNDAMENTAIS"
+      },
+      "secundaria": {
+        "padrao": "N.N Título",
+        "fonte_pt": 14,
+        "negrito": true,
+        "caixa": "primeira maiúscula",
+        "exemplo": "2.1 Dimensão objetiva"
+      },
+      "terciaria": {
+        "padrao": "N.N.N Título",
+        "fonte_pt": 14,
+        "negrito": false,
+        "italico": true,
+        "exemplo": "2.1.1 Eficácia horizontal"
+      },
+      "quaternaria": {
+        "padrao": "N.N.N.N Título",
+        "fonte_pt": 14,
+        "negrito": false,
+        "italico": false,
+        "sublinhado": false,
+        "exemplo": "2.1.1.1 Subdivisão (normal)"
+      },
+      "quinaria": {
+        "padrao": "N.N.N.N.N Título",
+        "fonte_pt": 14,
+        "sublinhado": true,
+        "exemplo": "2.1.1.1.1 Subdivisão (sublinhado)"
+      }
+    },
+    "regras_globais": [
+      "Sem ponto entre indicativo e título (correto: '2.1 Título'; errado: '2.1. Título')",
+      "Alinhamento sempre à esquerda",
+      "Espaço de 1 linha em branco antes e depois do título de seção",
+      "Não terminar página com título de seção (manter junto com o parágrafo seguinte)",
+      "Não iniciar nem terminar seção com citação direta"
+    ]
+  },
+  "regras_paragrafo": {
+    "limite_palavras": 60,
+    "limite_linhas": 7,
+    "recuo_primeira_linha_cm": 1.0,
+    "alinhamento": "justificado",
+    "espacamento": 1.5,
+    "obs_recuo": "PPGD especifica 1,0 cm (1 Tab no Word) — diverge da convenção comum de 1,25 cm",
+    "regras": [
+      "Parágrafos curtos: máximo 60 palavras / 6-7 linhas",
+      "Cada parágrafo desenvolve uma única ideia",
+      "Conectivos entre parágrafos sem repetição",
+      "Voz impessoal predominante",
+      "Verbo na 3ª pessoa do singular ou 1ª pessoa do plural acadêmica"
+    ]
+  },
+  "regras_capitulo": [
+    "Cada capítulo inicia em página nova",
+    "Cada capítulo abre com introdução de seção (anuncia o que será feito)",
+    "Cada capítulo encerra com conclusão parcial",
+    "Conclusões parciais alimentam a Conclusão geral",
+    "Preferir notas de rodapé explicativas (não de referência)"
+  ],
+  "render_latex": {
+    "introducao": "\\textual\\chapter*{INTRODUÇÃO}\\addcontentsline{toc}{chapter}{INTRODUÇÃO}",
+    "capitulo": "\\chapter{TÍTULO DO CAPÍTULO}",
+    "secao": "\\section{Título}",
+    "subsecao": "\\subsection{Título}",
+    "subsubsecao": "\\subsubsection{Título}",
+    "conclusao": "\\chapter*{CONCLUSÃO}\\addcontentsline{toc}{chapter}{CONCLUSÃO}",
+    "obs_abntex2": "Classe abntex2 já implementa NBR 6024:2012 para hierarquia de seções"
+  },
+  "render_gdocs": {
+    "introducao_conclusao": "HEADING_1 sem numeração, centralizado",
+    "capitulos": "HEADING_1 com numeração arábica",
+    "secoes": "HEADING_2 ... HEADING_5 conforme nível",
+    "page_break_antes_de_cada_capitulo": true
+  }
+}

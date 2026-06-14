@@ -1,0 +1,315 @@
+{
+  "id": "guia-ppgd-unifor",
+  "norma": "Instruções e Guia Metodológico para Elaboração de Teses, Dissertações e Artigos — PPGD/Unifor",
+  "titulo_oficial": "Instruções e Guia Metodológico para Elaboração de Teses, Dissertações e Artigos",
+  "fonte_pdf_local": "Comissão de Autoavaliação da Unifor/Relatório Analítico Bolsas Funcap/06_Documentos_Referencia/REF_05_Regimento_PPGD_UNIFOR_2018.pdf (Guia Metodológico inserido como Parte do Regimento Interno do PPGD)",
+  "ano_edicao": "2018",
+  "apresentacao": "Profa. Dra. Gina Vidal Marcílio Pompeu (Coordenadora do PPGD)",
+  "instituicao": {
+    "fundacao": "Fundação Edson Queiroz",
+    "universidade": "Universidade de Fortaleza — Unifor",
+    "vice_reitoria": "Vice-Reitoria de Ensino de Graduação e Pós-Graduação — VRE",
+    "programa": "Programa de Pós-Graduação em Direito Constitucional — PPGD",
+    "nota_capes_2018": 6,
+    "nota_capes_2026": 6
+  },
+  "escopo": "Conjunto de exigências formais do PPGD/Unifor que complementam, e em alguns pontos divergem, da ABNT NBR 14724. Aplica-se a teses, dissertações e artigos do programa.",
+  "url_referencia_oficial": "https://pt.scribd.com/document/384185246/Guia-Metodologico-Unifor",
+  "template_oficial": "https://unifor.br/documents/d/pos-graduacao/4-template-teses-dissertacoes",
+  "ficha_catalografica": {
+    "gerador_oficial": "https://unifor.br/ficha-catalografica",
+    "regra": "Gerada obrigatoriamente pelo gerador oficial da Unifor; não editar manualmente"
+  },
+  "secao_1_estrutura_formal": {
+    "1_1_elementos_pre_textuais": {
+      "ordem_obrigatoria_ppgd": [
+        "Folha de rosto",
+        "Verso da folha de rosto (ficha catalográfica)",
+        "Folha de aprovação",
+        "Dedicatória",
+        "Agradecimento",
+        "Epígrafe (opcional)",
+        "Resumo na língua vernácula (ABNT NBR 6028)",
+        "Resumo em inglês (ABNT NBR 6028)",
+        "Sumário (ABNT NBR 6027)"
+      ],
+      "obs": "Capa segue modelo padrão obrigatório (apêndices A e B do Guia)"
+    },
+    "1_1_1_resumo": {
+      "extensao_tese": "150 a 500 palavras (NBR 6028)",
+      "extensao_artigo": "100 a 250 palavras",
+      "estrutura_texto_literal": "O resumo deve ressaltar a natureza do trabalho, o objetivo, as referências teóricas de apoio, o método e metodologias utilizadas, os resultados e as conclusões do estudo ou pesquisa.",
+      "sugestao_ppgd": "Constar no resumo somente o objetivo GERAL (não os específicos). 86% das teses premiadas pela CAPES apresentam apenas objetivos gerais.",
+      "formato": "Único parágrafo, frases sequenciadas, concisas e afirmativas. Voz ativa, 3ª pessoa do singular.",
+      "obrigatorio_conter": [
+        "Objetivo geral",
+        "Justificativa",
+        "Problemática",
+        "Metodologia",
+        "Principais resultados",
+        "Conclusão (facultativo)"
+      ]
+    },
+    "1_1_palavras_chave": {
+      "quantidade_recomendada_ppgd": "3 a 5 palavras-chave",
+      "antecedidas_de": "Palavras-chave:",
+      "separador_ppgd": "PONTO (não ponto-e-vírgula)",
+      "regra_literal": "antecedidas da expressão 'Palavras-chave:', separadas entre si por ponto e finalizadas também por ponto",
+      "selecao": "Preferentemente em vocabulário controlado; sequenciar do geral ao específico"
+    },
+    "1_2_elementos_textuais": {
+      "componentes": ["Introdução", "Desenvolvimento", "Conclusão"],
+      "1_2_1_introducao": {
+        "nomenclatura_ppgd": "introdução e conclusão NÃO são numeradas (PPGD definiu, divergindo da ABNT)",
+        "formato_titulo": "Fonte 14, em negrito, com alinhamento à esquerda (regra da seção primária)",
+        "proibicoes": [
+          "Verbos no futuro",
+          "Citações DIRETAS",
+          "Aceitam-se citações INDIRETAS"
+        ],
+        "conteudo_obrigatorio": [
+          "Breve contextualização",
+          "Tema",
+          "Problema",
+          "Justificativa e relevância",
+          "Originalidade da pesquisa",
+          "Objetivos (geral e específicos)",
+          "Metodologia",
+          "Abordagem das seções"
+        ],
+        "extensao_recomendada_ppgd": "Média de 10 páginas. Não menos que 5 páginas (justificativa: Monebhurrun; Varella, 2013, p. 431)",
+        "media_observada_teses_capes": "12,5 páginas (3,6% do total)"
+      },
+      "1_2_2_desenvolvimento": {
+        "verbo": "impessoal (preferencial)",
+        "estilo": "Claro, acessível, inteligível para avaliador e público geral",
+        "paragrafo": {
+          "limite_palavras": 60,
+          "limite_linhas": "6 a 7"
+        },
+        "secoes": {
+          "numeracao": "algarismo arábico + título + alinhamento à esquerda",
+          "espacamento_titulo_e_texto": "1,5 entre as linhas (NBR 6024)",
+          "regra_critica_literal": "Sugere-se que não se comece ou termine seções com citação direta. Os títulos e demais subdivisões sempre devem conter um texto relacionado a eles."
+        },
+        "nomenclatura": "A ABNT usa seção/subseção; deve-se evitar capítulo/subcapítulo"
+      },
+      "1_2_3_citacoes": {
+        "regra_critica_ppgd_literal": "Embora a ABNT exija apenas a indicação do autor e ano nas citações indiretas, dispensando a página, o PPGD optou por requerer em seus trabalhos que conste o sobrenome do autor, seguido do ano em que a obra foi publicada e da página de onde foi extraído o trecho que está sendo parafraseado.",
+        "implicacao": "JAMAIS escrever 'Conforme Sarlet (2018), ...' — sempre incluir página, mesmo em paráfrase",
+        "introducao_e_conclusao": "Não se recomenda citações diretas. Preferencialmente não usar nem indiretas.",
+        "citacao_curta": "Até 3 linhas, no corpo entre aspas duplas",
+        "citacao_longa": {
+          "criterio": "Mais de 3 linhas",
+          "formato": "Recuo de 4 cm, fonte menor, sem aspas"
+        },
+        "supressoes": "Reticências entre colchetes [...]",
+        "preferencia": "Paráfrases sobre citações diretas",
+        "exemplos_literais": {
+          "inline": "Segundo Lakatos e Marconi (2003, p. 79) \"texto citado\"",
+          "parentetico": "\"texto citado\" (LAKATOS; MARCONI, 2003, p. 79)."
+        },
+        "obs_sobrenome_no_parentetico": "Guia 2018 usa CAIXA ALTA no parentético (LAKATOS; MARCONI). NBR 10520:2023 mudou para primeira maiúscula. Manter UNIFORMIDADE em toda a tese."
+      },
+      "1_2_4_notas_de_rodape": {
+        "tipos_aceitos": ["bibliográficas", "explicativas"],
+        "uso_explicativa": "Limitado ao mínimo necessário",
+        "funcoes_explicativa": [
+          "Reforçar validade de afirmação",
+          "Prestar esclarecimentos",
+          "Transcrever original de citação em língua estrangeira",
+          "Traduzir citação estrangeira do corpo do texto"
+        ],
+        "formato": {
+          "fonte_pt": 10,
+          "espacamento": "simples",
+          "filete_separador_cm": 5,
+          "indicacao_remissiva": "número em expoente, sobrescrito",
+          "numeracao": "contínua (por capítulo ou toda a obra)"
+        }
+      },
+      "1_2_5_conclusao": {
+        "conteudo_obrigatorio": [
+          "Análise e discussão do resultado",
+          "Retomada das conclusões parciais",
+          "Resposta ao problema de investigação",
+          "Confirmação/rejeição das hipóteses",
+          "Contribuições acadêmicas, profissionais, sociais",
+          "Limitações da pesquisa",
+          "Sugestões para pesquisas futuras"
+        ],
+        "regra_critica": "NÃO usar citações na conclusão (mesmo princípio da introdução, mas mais rigoroso)"
+      }
+    },
+    "1_3_elementos_pos_textuais": {
+      "obrigatorio": ["Referências"],
+      "opcionais": ["Apêndice", "Anexo", "Glossário (após referências)", "Índice (recomendado: onomástico)"],
+      "1_3_1_referencias": {
+        "volume_recomendado_tese": "250 a 300 referências (Monebhurrun; Varella, 2013, p. 442)",
+        "composicao_sugerida": [
+          "Obras clássicas sobre o tema",
+          "Autores contemporâneos (últimos 4 anos)",
+          "Fontes internacionais (estrangeiras)",
+          "Periódicos científicos (preferencial)"
+        ],
+        "preferir": "Dissertações de mestrado, teses de doutorado, artigos científicos (obras consolidadas e específicas)",
+        "evitar": [
+          "Textos de estudantes de graduação",
+          "Manuais muito genéricos",
+          "Manuais e resumos",
+          "Revistas sem qualificação",
+          "Sites de caráter informativo, não acadêmico"
+        ],
+        "formato": {
+          "norma": "ABNT NBR 6023",
+          "ordem": "alfabética",
+          "alinhamento": "margem esquerda",
+          "entre_referencias": "espaço duplo (PPGD) — divergente da NBR 6023 que diz 'um espaço simples em branco'",
+          "dentro_da_referencia": "espaço simples",
+          "titulo_destaque": "negrito uniforme em todas as referências"
+        },
+        "ferramentas_sugeridas": ["Mendeley", "More (UFSC)"]
+      }
+    }
+  },
+  "secao_2_formatacao": {
+    "2_1_espacos_papel_letra": {
+      "espacos": {
+        "entre_linhas_texto": 1.5,
+        "entre_linhas_resumo": "simples",
+        "entre_linhas_citacao_longa": "simples",
+        "entre_linhas_notas_rodape": "simples",
+        "entre_paragrafos": "12 pt",
+        "entre_texto_e_ilustracoes": "12 pt",
+        "entre_texto_e_citacoes_longas": "12 pt",
+        "inicio_texto_apos_titulo": "12 pt",
+        "inicio_texto_sem_titulo": "0 (apenas margem superior)",
+        "inicio_folha_ate_titulo": "80 pt",
+        "entre_texto_e_subtitulo": "12 pt",
+        "entre_referencia_e_outra": "espaço simples em branco",
+        "entre_texto_e_nota_rodape": "1,25",
+        "entre_itens_sumario": 1.5
+      },
+      "papel": {
+        "tamanho": "A4 (21,0 × 29,7 cm)",
+        "cor": "branco"
+      },
+      "letra": {
+        "fonte_padrao": "Times New Roman",
+        "tamanho_texto": 12,
+        "tamanho_citacao_longa": 10,
+        "tamanho_titulo_maiusculas": 16,
+        "tamanho_titulo_negrito": "Times New Roman 14 negrito (para 1.1)",
+        "tamanho_subtitulo_minusculas": "14, itálico (para 1.1.1)",
+        "tamanho_nota_rodape": 10,
+        "tamanho_sumario": "12 para títulos/subtítulos"
+      }
+    },
+    "2_2_identificacao_secoes": {
+      "regra_geral": "Seções numeradas em algarismo arábico, título separado por 1 espaço, alinhamento à esquerda",
+      "espacamento_entre_titulo_e_texto": "1,5 entre as linhas (NBR 6024)",
+      "titulos_sem_indicativo_numerico": [
+        "Errata",
+        "Agradecimentos",
+        "Lista de ilustrações",
+        "Lista de abreviaturas e siglas",
+        "Lista de símbolos",
+        "Resumos",
+        "Sumário",
+        "Referências",
+        "Glossário",
+        "Apêndice",
+        "Anexo",
+        "Índice"
+      ],
+      "elementos_sem_titulo_e_sem_indicativo": [
+        "Folha de aprovação",
+        "Dedicatória",
+        "Epígrafe"
+      ],
+      "hierarquia_visual_ppgd_literal": {
+        "titulos_primarios_e_sem_indicativo": "16 — LETRAS MAIÚSCULAS s/ negrito",
+        "subtitulos_minusculas_14": "Genérico para nível 2+",
+        "1_1": "14 — c/ negrito",
+        "1_1_1": "14 — itálico",
+        "1_1_1_2": "14 — normal",
+        "1_1_1_2_1": "14 — sublinhado"
+      },
+      "obs_critica_vs_claude_md": "PPGD usa TNR 16 MAIÚSCULAS SEM NEGRITO para títulos primários — DIVERGENTE da convenção NBR 14724 (14 com negrito). Predominará o Guia PPGD sobre a NBR.",
+      "limite_subsecoes": 5
+    },
+    "2_3_margens": {
+      "esquerda_cm": 3.0,
+      "direita_cm": 2.0,
+      "superior_cm": 3.0,
+      "inferior_cm": 2.0,
+      "inicio_paragrafo_cm": 1.0,
+      "regua_word": "1 Tab",
+      "citacao_longa_cm": 4.0,
+      "obs_recuo_paragrafo": "PPGD especifica 1,0 cm — DIVERGENTE da convenção comum de 1,25 cm"
+    },
+    "2_4_numeracao_paginas": {
+      "tipo": "algarismos arábicos",
+      "posicao": "margem superior, à direita",
+      "contagem": "a partir da folha de rosto",
+      "indicacao_visivel": "a partir da SEGUNDA folha da introdução",
+      "abrangencia": "até o término do documento, incluindo apêndices, anexos e índices"
+    }
+  },
+  "agradecimentos_funcap": {
+    "obrigatorio_quando_bolsista": true,
+    "texto_padrao": "O presente trabalho foi realizado com o apoio da Fundação Cearense de Apoio ao Desenvolvimento Científico e Tecnológico (FUNCAP).",
+    "razao": "Bolsa de pesquisa"
+  },
+  "componentes_obrigatorios_capa_ppgd": [
+    "FUNDAÇÃO EDSON QUEIROZ",
+    "UNIVERSIDADE DE FORTALEZA — UNIFOR",
+    "VICE-REITORIA DE ENSINO DE GRADUAÇÃO E PÓS-GRADUAÇÃO — VRE",
+    "PROGRAMA DE PÓS-GRADUAÇÃO EM DIREITO CONSTITUCIONAL — PPGD",
+    "NOME DO AUTOR",
+    "TÍTULO DA TESE",
+    "FORTALEZA-CE",
+    "MÊS/ANO"
+  ],
+  "divergencias_explicitas_vs_abnt": [
+    "PPGD trata Introdução e Conclusão como SEM indicativo numérico (NBR 6024 não isenta)",
+    "PPGD exige PÁGINA em citações INDIRETAS (NBR 10520 não exige)",
+    "PPGD usa TNR 16 maiúsculas SEM negrito em títulos primários (convenção comum: 14 negrito)",
+    "PPGD usa 1,0 cm de recuo de parágrafo (convenção comum: 1,25 cm)",
+    "PPGD usa PONTO como separador de palavras-chave (NBR 6028 usa ponto-e-vírgula)",
+    "PPGD usa ESPAÇO DUPLO entre referências (NBR 6023 diz 'um espaço simples em branco')",
+    "PPGD recomenda volume de 250-300 referências (NBR não especifica)",
+    "PPGD exige menção FUNCAP nos agradecimentos quando bolsista"
+  ],
+  "regra_precedencia": "Em caso de conflito entre NBR 14724 e Guia PPGD/Unifor, PREVALECE o Guia PPGD para teses do programa.",
+  "contatos_institucionais": {
+    "secretaria_ppgd": {
+      "email": "ppgd@unifor.br",
+      "telefone": "(85) 3477-3058"
+    },
+    "padronizacao_abnt_spt": {
+      "email": "spt@unifor.br"
+    },
+    "normalizacao_biblioteca": {
+      "email": "sec@unifor.br",
+      "whatsapp": "(85) 3477-3167"
+    }
+  },
+  "checklist_pre_defesa": [
+    "Ficha catalográfica gerada no gerador oficial da Unifor",
+    "Menção FUNCAP nos agradecimentos (se bolsista)",
+    "TODAS as citações com sobrenome + ano + página",
+    "ZERO citações na Conclusão",
+    "ZERO citações DIRETAS na Introdução",
+    "Volume entre 250 e 300 referências",
+    "Abstract em inglês (ou espanhol) fiel ao resumo",
+    "Estrutura: introdução + 4 capítulos + conclusão (definição autor)",
+    "Margens 3,0 esq / 3,0 sup / 2,0 dir / 2,0 inf cm",
+    "Recuo de parágrafo: 1,0 cm",
+    "Fonte Times New Roman 12 (texto), 10 (citação longa/notas), 16 (título primário maiúsculas s/negrito), 14 (subtítulos com decorações)",
+    "Espaçamento 1,5 entrelinhas (texto); simples em resumo/citação longa/notas/referências",
+    "Paginação visível a partir da 2ª folha da introdução",
+    "Palavras-chave separadas por PONTO",
+    "Notas de rodapé fonte 10, espaço simples, separador 5 cm"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "01_pre_textuais.schema.json",
+  "title": "Pré-textuais — Schema",
+  "allOf": [
+    {
+      "$ref": "_common.schema.json"
+    }
+  ],
+  "type": "object",
+  "required": [
+    "id",
+    "componente",
+    "descricao",
+    "fonte_normativa",
+    "ordem_obrigatoria",
+    "elementos"
+  ],
+  "properties": {
+    "id": {
+      "const": "pre-textuais"
+    },
+    "ordem_obrigatoria": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "string"
+      },
+      "description": "Ordem fixa dos elementos pré-textuais conforme NBR 14724"
+    },
+    "elementos": {
+      "type": "object",
+      "required": [
+        "capa",
+        "folha_rosto",
+        "ficha_catalografica",
+        "folha_aprovacao",
+        "resumo_pt",
+        "abstract",
+        "sumario"
+      ],
+      "patternProperties": {
+        "^[a-z_]+$": {
+          "type": "object",
+          "required": [
+            "obrigatorio"
+          ],
+          "properties": {
+            "obrigatorio": {
+              "type": "boolean"
+            },
+            "fonte_normativa": {
+              "type": "string"
+            },
+            "regras": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "ordem_conteudo": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "regras_globais_pre_textuais": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

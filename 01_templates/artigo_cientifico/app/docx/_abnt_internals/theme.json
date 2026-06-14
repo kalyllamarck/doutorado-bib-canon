@@ -1,0 +1,2126 @@
+{
+  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}theme",
+  "attrib": {
+    "name": "Office Theme"
+  },
+  "text": "\n  ",
+  "tail": null,
+  "children": [
+    {
+      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}themeElements",
+      "attrib": {},
+      "text": "\n    ",
+      "tail": "\n  ",
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}clrScheme",
+          "attrib": {
+            "name": "Office"
+          },
+          "text": "\n      ",
+          "tail": "\n    ",
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}dk1",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n      ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}sysClr",
+                  "attrib": {
+                    "val": "windowText",
+                    "lastClr": "000000"
+                  },
+                  "text": null,
+                  "tail": "\n      ",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}lt1",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n      ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}sysClr",
+                  "attrib": {
+                    "val": "window",
+                    "lastClr": "FFFFFF"
+                  },
+                  "text": null,
+                  "tail": "\n      ",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}dk2",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n      ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}srgbClr",
+                  "attrib": {
+                    "val": "1F497D"
+                  },
+                  "text": null,
+                  "tail": "\n      ",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}lt2",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n      ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}srgbClr",
+                  "attrib": {
+                    "val": "EEECE1"
+                  },
+                  "text": null,
+                  "tail": "\n      ",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}accent1",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n      ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}srgbClr",
+                  "attrib": {
+                    "val": "4F81BD"
+                  },
+                  "text": null,
+                  "tail": "\n      ",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}accent2",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n      ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}srgbClr",
+                  "attrib": {
+                    "val": "C0504D"
+                  },
+                  "text": null,
+                  "tail": "\n      ",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}accent3",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n      ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}srgbClr",
+                  "attrib": {
+                    "val": "9BBB59"
+                  },
+                  "text": null,
+                  "tail": "\n      ",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}accent4",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n      ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}srgbClr",
+                  "attrib": {
+                    "val": "8064A2"
+                  },
+                  "text": null,
+                  "tail": "\n      ",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}accent5",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n      ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}srgbClr",
+                  "attrib": {
+                    "val": "4BACC6"
+                  },
+                  "text": null,
+                  "tail": "\n      ",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}accent6",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n      ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}srgbClr",
+                  "attrib": {
+                    "val": "F79646"
+                  },
+                  "text": null,
+                  "tail": "\n      ",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}hlink",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n      ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}srgbClr",
+                  "attrib": {
+                    "val": "0000FF"
+                  },
+                  "text": null,
+                  "tail": "\n      ",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}folHlink",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n    ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}srgbClr",
+                  "attrib": {
+                    "val": "800080"
+                  },
+                  "text": null,
+                  "tail": "\n      ",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}fontScheme",
+          "attrib": {
+            "name": "Office"
+          },
+          "text": "\n      ",
+          "tail": "\n    ",
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}majorFont",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n      ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}latin",
+                  "attrib": {
+                    "typeface": "Calibri"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}ea",
+                  "attrib": {
+                    "typeface": ""
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}cs",
+                  "attrib": {
+                    "typeface": ""
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Jpan",
+                    "typeface": "ＭＳ ゴシック"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Hang",
+                    "typeface": "맑은 고딕"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Hans",
+                    "typeface": "宋体"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Hant",
+                    "typeface": "新細明體"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Arab",
+                    "typeface": "Times New Roman"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Hebr",
+                    "typeface": "Times New Roman"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Thai",
+                    "typeface": "Angsana New"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Ethi",
+                    "typeface": "Nyala"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Beng",
+                    "typeface": "Vrinda"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Gujr",
+                    "typeface": "Shruti"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Khmr",
+                    "typeface": "MoolBoran"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Knda",
+                    "typeface": "Tunga"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Guru",
+                    "typeface": "Raavi"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Cans",
+                    "typeface": "Euphemia"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Cher",
+                    "typeface": "Plantagenet Cherokee"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Yiii",
+                    "typeface": "Microsoft Yi Baiti"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Tibt",
+                    "typeface": "Microsoft Himalaya"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Thaa",
+                    "typeface": "MV Boli"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Deva",
+                    "typeface": "Mangal"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Telu",
+                    "typeface": "Gautami"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Taml",
+                    "typeface": "Latha"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Syrc",
+                    "typeface": "Estrangelo Edessa"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Orya",
+                    "typeface": "Kalinga"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Mlym",
+                    "typeface": "Kartika"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Laoo",
+                    "typeface": "DokChampa"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Sinh",
+                    "typeface": "Iskoola Pota"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Mong",
+                    "typeface": "Mongolian Baiti"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Viet",
+                    "typeface": "Times New Roman"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Uigh",
+                    "typeface": "Microsoft Uighur"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Geor",
+                    "typeface": "Sylfaen"
+                  },
+                  "text": null,
+                  "tail": "\n      ",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}minorFont",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n    ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}latin",
+                  "attrib": {
+                    "typeface": "Cambria"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}ea",
+                  "attrib": {
+                    "typeface": ""
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}cs",
+                  "attrib": {
+                    "typeface": ""
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Jpan",
+                    "typeface": "ＭＳ 明朝"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Hang",
+                    "typeface": "맑은 고딕"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Hans",
+                    "typeface": "宋体"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Hant",
+                    "typeface": "新細明體"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Arab",
+                    "typeface": "Arial"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Hebr",
+                    "typeface": "Arial"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Thai",
+                    "typeface": "Cordia New"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Ethi",
+                    "typeface": "Nyala"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Beng",
+                    "typeface": "Vrinda"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Gujr",
+                    "typeface": "Shruti"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Khmr",
+                    "typeface": "DaunPenh"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Knda",
+                    "typeface": "Tunga"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Guru",
+                    "typeface": "Raavi"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Cans",
+                    "typeface": "Euphemia"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Cher",
+                    "typeface": "Plantagenet Cherokee"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Yiii",
+                    "typeface": "Microsoft Yi Baiti"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Tibt",
+                    "typeface": "Microsoft Himalaya"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Thaa",
+                    "typeface": "MV Boli"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Deva",
+                    "typeface": "Mangal"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Telu",
+                    "typeface": "Gautami"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Taml",
+                    "typeface": "Latha"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Syrc",
+                    "typeface": "Estrangelo Edessa"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Orya",
+                    "typeface": "Kalinga"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Mlym",
+                    "typeface": "Kartika"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Laoo",
+                    "typeface": "DokChampa"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Sinh",
+                    "typeface": "Iskoola Pota"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Mong",
+                    "typeface": "Mongolian Baiti"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Viet",
+                    "typeface": "Arial"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Uigh",
+                    "typeface": "Microsoft Uighur"
+                  },
+                  "text": null,
+                  "tail": "\n        ",
+                  "children": []
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}font",
+                  "attrib": {
+                    "script": "Geor",
+                    "typeface": "Sylfaen"
+                  },
+                  "text": null,
+                  "tail": "\n      ",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}fmtScheme",
+          "attrib": {
+            "name": "Office"
+          },
+          "text": "\n      ",
+          "tail": "\n  ",
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}fillStyleLst",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n      ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}solidFill",
+                  "attrib": {},
+                  "text": "\n          ",
+                  "tail": "\n        ",
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                      "attrib": {
+                        "val": "phClr"
+                      },
+                      "text": null,
+                      "tail": "\n        ",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}gradFill",
+                  "attrib": {
+                    "rotWithShape": "1"
+                  },
+                  "text": "\n          ",
+                  "tail": "\n        ",
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}gsLst",
+                      "attrib": {},
+                      "text": "\n            ",
+                      "tail": "\n          ",
+                      "children": [
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}gs",
+                          "attrib": {
+                            "pos": "0"
+                          },
+                          "text": "\n              ",
+                          "tail": "\n            ",
+                          "children": [
+                            {
+                              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                              "attrib": {
+                                "val": "phClr"
+                              },
+                              "text": "\n                ",
+                              "tail": "\n            ",
+                              "children": [
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}tint",
+                                  "attrib": {
+                                    "val": "50000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n                ",
+                                  "children": []
+                                },
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}satMod",
+                                  "attrib": {
+                                    "val": "300000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n              ",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}gs",
+                          "attrib": {
+                            "pos": "35000"
+                          },
+                          "text": "\n              ",
+                          "tail": "\n            ",
+                          "children": [
+                            {
+                              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                              "attrib": {
+                                "val": "phClr"
+                              },
+                              "text": "\n                ",
+                              "tail": "\n            ",
+                              "children": [
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}tint",
+                                  "attrib": {
+                                    "val": "37000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n                ",
+                                  "children": []
+                                },
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}satMod",
+                                  "attrib": {
+                                    "val": "300000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n              ",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}gs",
+                          "attrib": {
+                            "pos": "100000"
+                          },
+                          "text": "\n              ",
+                          "tail": "\n          ",
+                          "children": [
+                            {
+                              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                              "attrib": {
+                                "val": "phClr"
+                              },
+                              "text": "\n                ",
+                              "tail": "\n            ",
+                              "children": [
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}tint",
+                                  "attrib": {
+                                    "val": "15000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n                ",
+                                  "children": []
+                                },
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}satMod",
+                                  "attrib": {
+                                    "val": "350000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n              ",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}lin",
+                      "attrib": {
+                        "ang": "16200000",
+                        "scaled": "1"
+                      },
+                      "text": null,
+                      "tail": "\n        ",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}gradFill",
+                  "attrib": {
+                    "rotWithShape": "1"
+                  },
+                  "text": "\n          ",
+                  "tail": "\n      ",
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}gsLst",
+                      "attrib": {},
+                      "text": "\n            ",
+                      "tail": "\n          ",
+                      "children": [
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}gs",
+                          "attrib": {
+                            "pos": "0"
+                          },
+                          "text": "\n              ",
+                          "tail": "\n            ",
+                          "children": [
+                            {
+                              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                              "attrib": {
+                                "val": "phClr"
+                              },
+                              "text": "\n                ",
+                              "tail": "\n            ",
+                              "children": [
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}tint",
+                                  "attrib": {
+                                    "val": "100000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n                ",
+                                  "children": []
+                                },
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}shade",
+                                  "attrib": {
+                                    "val": "100000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n                ",
+                                  "children": []
+                                },
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}satMod",
+                                  "attrib": {
+                                    "val": "130000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n              ",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}gs",
+                          "attrib": {
+                            "pos": "100000"
+                          },
+                          "text": "\n              ",
+                          "tail": "\n          ",
+                          "children": [
+                            {
+                              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                              "attrib": {
+                                "val": "phClr"
+                              },
+                              "text": "\n                ",
+                              "tail": "\n            ",
+                              "children": [
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}tint",
+                                  "attrib": {
+                                    "val": "50000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n                ",
+                                  "children": []
+                                },
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}shade",
+                                  "attrib": {
+                                    "val": "100000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n                ",
+                                  "children": []
+                                },
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}satMod",
+                                  "attrib": {
+                                    "val": "350000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n              ",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}lin",
+                      "attrib": {
+                        "ang": "16200000",
+                        "scaled": "0"
+                      },
+                      "text": null,
+                      "tail": "\n        ",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}lnStyleLst",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n      ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}ln",
+                  "attrib": {
+                    "w": "9525",
+                    "cap": "flat",
+                    "cmpd": "sng",
+                    "algn": "ctr"
+                  },
+                  "text": "\n          ",
+                  "tail": "\n        ",
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}solidFill",
+                      "attrib": {},
+                      "text": "\n            ",
+                      "tail": "\n          ",
+                      "children": [
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                          "attrib": {
+                            "val": "phClr"
+                          },
+                          "text": "\n              ",
+                          "tail": "\n          ",
+                          "children": [
+                            {
+                              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}shade",
+                              "attrib": {
+                                "val": "95000"
+                              },
+                              "text": null,
+                              "tail": "\n              ",
+                              "children": []
+                            },
+                            {
+                              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}satMod",
+                              "attrib": {
+                                "val": "105000"
+                              },
+                              "text": null,
+                              "tail": "\n            ",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}prstDash",
+                      "attrib": {
+                        "val": "solid"
+                      },
+                      "text": null,
+                      "tail": "\n        ",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}ln",
+                  "attrib": {
+                    "w": "25400",
+                    "cap": "flat",
+                    "cmpd": "sng",
+                    "algn": "ctr"
+                  },
+                  "text": "\n          ",
+                  "tail": "\n        ",
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}solidFill",
+                      "attrib": {},
+                      "text": "\n            ",
+                      "tail": "\n          ",
+                      "children": [
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                          "attrib": {
+                            "val": "phClr"
+                          },
+                          "text": null,
+                          "tail": "\n          ",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}prstDash",
+                      "attrib": {
+                        "val": "solid"
+                      },
+                      "text": null,
+                      "tail": "\n        ",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}ln",
+                  "attrib": {
+                    "w": "38100",
+                    "cap": "flat",
+                    "cmpd": "sng",
+                    "algn": "ctr"
+                  },
+                  "text": "\n          ",
+                  "tail": "\n      ",
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}solidFill",
+                      "attrib": {},
+                      "text": "\n            ",
+                      "tail": "\n          ",
+                      "children": [
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                          "attrib": {
+                            "val": "phClr"
+                          },
+                          "text": null,
+                          "tail": "\n          ",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}prstDash",
+                      "attrib": {
+                        "val": "solid"
+                      },
+                      "text": null,
+                      "tail": "\n        ",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}effectStyleLst",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n      ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}effectStyle",
+                  "attrib": {},
+                  "text": "\n          ",
+                  "tail": "\n        ",
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}effectLst",
+                      "attrib": {},
+                      "text": "\n            ",
+                      "tail": "\n        ",
+                      "children": [
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}outerShdw",
+                          "attrib": {
+                            "blurRad": "40000",
+                            "dist": "20000",
+                            "dir": "5400000",
+                            "rotWithShape": "0"
+                          },
+                          "text": "\n              ",
+                          "tail": "\n          ",
+                          "children": [
+                            {
+                              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}srgbClr",
+                              "attrib": {
+                                "val": "000000"
+                              },
+                              "text": "\n                ",
+                              "tail": "\n            ",
+                              "children": [
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}alpha",
+                                  "attrib": {
+                                    "val": "38000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n              ",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}effectStyle",
+                  "attrib": {},
+                  "text": "\n          ",
+                  "tail": "\n        ",
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}effectLst",
+                      "attrib": {},
+                      "text": "\n            ",
+                      "tail": "\n        ",
+                      "children": [
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}outerShdw",
+                          "attrib": {
+                            "blurRad": "40000",
+                            "dist": "23000",
+                            "dir": "5400000",
+                            "rotWithShape": "0"
+                          },
+                          "text": "\n              ",
+                          "tail": "\n          ",
+                          "children": [
+                            {
+                              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}srgbClr",
+                              "attrib": {
+                                "val": "000000"
+                              },
+                              "text": "\n                ",
+                              "tail": "\n            ",
+                              "children": [
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}alpha",
+                                  "attrib": {
+                                    "val": "35000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n              ",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}effectStyle",
+                  "attrib": {},
+                  "text": "\n          ",
+                  "tail": "\n      ",
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}effectLst",
+                      "attrib": {},
+                      "text": "\n            ",
+                      "tail": "\n          ",
+                      "children": [
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}outerShdw",
+                          "attrib": {
+                            "blurRad": "40000",
+                            "dist": "23000",
+                            "dir": "5400000",
+                            "rotWithShape": "0"
+                          },
+                          "text": "\n              ",
+                          "tail": "\n          ",
+                          "children": [
+                            {
+                              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}srgbClr",
+                              "attrib": {
+                                "val": "000000"
+                              },
+                              "text": "\n                ",
+                              "tail": "\n            ",
+                              "children": [
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}alpha",
+                                  "attrib": {
+                                    "val": "35000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n              ",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}scene3d",
+                      "attrib": {},
+                      "text": "\n            ",
+                      "tail": "\n          ",
+                      "children": [
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}camera",
+                          "attrib": {
+                            "prst": "orthographicFront"
+                          },
+                          "text": "\n              ",
+                          "tail": "\n            ",
+                          "children": [
+                            {
+                              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}rot",
+                              "attrib": {
+                                "lat": "0",
+                                "lon": "0",
+                                "rev": "0"
+                              },
+                              "text": null,
+                              "tail": "\n            ",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}lightRig",
+                          "attrib": {
+                            "rig": "threePt",
+                            "dir": "t"
+                          },
+                          "text": "\n              ",
+                          "tail": "\n          ",
+                          "children": [
+                            {
+                              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}rot",
+                              "attrib": {
+                                "lat": "0",
+                                "lon": "0",
+                                "rev": "1200000"
+                              },
+                              "text": null,
+                              "tail": "\n            ",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}sp3d",
+                      "attrib": {},
+                      "text": "\n            ",
+                      "tail": "\n        ",
+                      "children": [
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}bevelT",
+                          "attrib": {
+                            "w": "63500",
+                            "h": "25400"
+                          },
+                          "text": null,
+                          "tail": "\n          ",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}bgFillStyleLst",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n    ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}solidFill",
+                  "attrib": {},
+                  "text": "\n          ",
+                  "tail": "\n        ",
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                      "attrib": {
+                        "val": "phClr"
+                      },
+                      "text": null,
+                      "tail": "\n        ",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}gradFill",
+                  "attrib": {
+                    "rotWithShape": "1"
+                  },
+                  "text": "\n          ",
+                  "tail": "\n        ",
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}gsLst",
+                      "attrib": {},
+                      "text": "\n            ",
+                      "tail": "\n          ",
+                      "children": [
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}gs",
+                          "attrib": {
+                            "pos": "0"
+                          },
+                          "text": "\n              ",
+                          "tail": "\n            ",
+                          "children": [
+                            {
+                              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                              "attrib": {
+                                "val": "phClr"
+                              },
+                              "text": "\n                ",
+                              "tail": "\n            ",
+                              "children": [
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}tint",
+                                  "attrib": {
+                                    "val": "40000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n                ",
+                                  "children": []
+                                },
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}satMod",
+                                  "attrib": {
+                                    "val": "350000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n              ",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}gs",
+                          "attrib": {
+                            "pos": "40000"
+                          },
+                          "text": "\n              ",
+                          "tail": "\n            ",
+                          "children": [
+                            {
+                              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                              "attrib": {
+                                "val": "phClr"
+                              },
+                              "text": "\n                ",
+                              "tail": "\n            ",
+                              "children": [
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}tint",
+                                  "attrib": {
+                                    "val": "45000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n                ",
+                                  "children": []
+                                },
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}shade",
+                                  "attrib": {
+                                    "val": "99000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n                ",
+                                  "children": []
+                                },
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}satMod",
+                                  "attrib": {
+                                    "val": "350000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n              ",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}gs",
+                          "attrib": {
+                            "pos": "100000"
+                          },
+                          "text": "\n              ",
+                          "tail": "\n          ",
+                          "children": [
+                            {
+                              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                              "attrib": {
+                                "val": "phClr"
+                              },
+                              "text": "\n                ",
+                              "tail": "\n            ",
+                              "children": [
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}shade",
+                                  "attrib": {
+                                    "val": "20000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n                ",
+                                  "children": []
+                                },
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}satMod",
+                                  "attrib": {
+                                    "val": "255000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n              ",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}path",
+                      "attrib": {
+                        "path": "circle"
+                      },
+                      "text": "\n            ",
+                      "tail": "\n        ",
+                      "children": [
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}fillToRect",
+                          "attrib": {
+                            "l": "50000",
+                            "t": "-80000",
+                            "r": "50000",
+                            "b": "180000"
+                          },
+                          "text": null,
+                          "tail": "\n          ",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}gradFill",
+                  "attrib": {
+                    "rotWithShape": "1"
+                  },
+                  "text": "\n          ",
+                  "tail": "\n      ",
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}gsLst",
+                      "attrib": {},
+                      "text": "\n            ",
+                      "tail": "\n          ",
+                      "children": [
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}gs",
+                          "attrib": {
+                            "pos": "0"
+                          },
+                          "text": "\n              ",
+                          "tail": "\n            ",
+                          "children": [
+                            {
+                              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                              "attrib": {
+                                "val": "phClr"
+                              },
+                              "text": "\n                ",
+                              "tail": "\n            ",
+                              "children": [
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}tint",
+                                  "attrib": {
+                                    "val": "80000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n                ",
+                                  "children": []
+                                },
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}satMod",
+                                  "attrib": {
+                                    "val": "300000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n              ",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}gs",
+                          "attrib": {
+                            "pos": "100000"
+                          },
+                          "text": "\n              ",
+                          "tail": "\n          ",
+                          "children": [
+                            {
+                              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                              "attrib": {
+                                "val": "phClr"
+                              },
+                              "text": "\n                ",
+                              "tail": "\n            ",
+                              "children": [
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}shade",
+                                  "attrib": {
+                                    "val": "30000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n                ",
+                                  "children": []
+                                },
+                                {
+                                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}satMod",
+                                  "attrib": {
+                                    "val": "200000"
+                                  },
+                                  "text": null,
+                                  "tail": "\n              ",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}path",
+                      "attrib": {
+                        "path": "circle"
+                      },
+                      "text": "\n            ",
+                      "tail": "\n        ",
+                      "children": [
+                        {
+                          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}fillToRect",
+                          "attrib": {
+                            "l": "50000",
+                            "t": "50000",
+                            "r": "50000",
+                            "b": "50000"
+                          },
+                          "text": null,
+                          "tail": "\n          ",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}objectDefaults",
+      "attrib": {},
+      "text": "\n    ",
+      "tail": "\n  ",
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}spDef",
+          "attrib": {},
+          "text": "\n      ",
+          "tail": "\n    ",
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}spPr",
+              "attrib": {},
+              "text": null,
+              "tail": "\n      ",
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}bodyPr",
+              "attrib": {},
+              "text": null,
+              "tail": "\n      ",
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}lstStyle",
+              "attrib": {},
+              "text": null,
+              "tail": "\n      ",
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}style",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n    ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}lnRef",
+                  "attrib": {
+                    "idx": "1"
+                  },
+                  "text": "\n          ",
+                  "tail": "\n        ",
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                      "attrib": {
+                        "val": "accent1"
+                      },
+                      "text": null,
+                      "tail": "\n        ",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}fillRef",
+                  "attrib": {
+                    "idx": "3"
+                  },
+                  "text": "\n          ",
+                  "tail": "\n        ",
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                      "attrib": {
+                        "val": "accent1"
+                      },
+                      "text": null,
+                      "tail": "\n        ",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}effectRef",
+                  "attrib": {
+                    "idx": "2"
+                  },
+                  "text": "\n          ",
+                  "tail": "\n        ",
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                      "attrib": {
+                        "val": "accent1"
+                      },
+                      "text": null,
+                      "tail": "\n        ",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}fontRef",
+                  "attrib": {
+                    "idx": "minor"
+                  },
+                  "text": "\n          ",
+                  "tail": "\n      ",
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                      "attrib": {
+                        "val": "lt1"
+                      },
+                      "text": null,
+                      "tail": "\n        ",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}lnDef",
+          "attrib": {},
+          "text": "\n      ",
+          "tail": "\n  ",
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}spPr",
+              "attrib": {},
+              "text": null,
+              "tail": "\n      ",
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}bodyPr",
+              "attrib": {},
+              "text": null,
+              "tail": "\n      ",
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}lstStyle",
+              "attrib": {},
+              "text": null,
+              "tail": "\n      ",
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}style",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n    ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}lnRef",
+                  "attrib": {
+                    "idx": "2"
+                  },
+                  "text": "\n          ",
+                  "tail": "\n        ",
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                      "attrib": {
+                        "val": "accent1"
+                      },
+                      "text": null,
+                      "tail": "\n        ",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}fillRef",
+                  "attrib": {
+                    "idx": "0"
+                  },
+                  "text": "\n          ",
+                  "tail": "\n        ",
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                      "attrib": {
+                        "val": "accent1"
+                      },
+                      "text": null,
+                      "tail": "\n        ",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}effectRef",
+                  "attrib": {
+                    "idx": "1"
+                  },
+                  "text": "\n          ",
+                  "tail": "\n        ",
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                      "attrib": {
+                        "val": "accent1"
+                      },
+                      "text": null,
+                      "tail": "\n        ",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}fontRef",
+                  "attrib": {
+                    "idx": "minor"
+                  },
+                  "text": "\n          ",
+                  "tail": "\n      ",
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}schemeClr",
+                      "attrib": {
+                        "val": "tx1"
+                      },
+                      "text": null,
+                      "tail": "\n        ",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/drawingml/2006/main}extraClrSchemeLst",
+      "attrib": {},
+      "text": null,
+      "tail": "\n",
+      "children": []
+    }
+  ],
+  "nsmap": {
+    "a": "http://schemas.openxmlformats.org/drawingml/2006/main"
+  }
+}

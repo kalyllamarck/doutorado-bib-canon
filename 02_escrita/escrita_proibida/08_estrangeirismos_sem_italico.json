@@ -1,0 +1,176 @@
+{
+  "id": "est_italico",
+  "tipo": "estrangeirismo_grafia",
+  "descricao": "Estrangeirismos não incorporados ao português usados sem itálico, e siglas estrangeiras técnicas sem extensão em português na primeira ocorrência",
+  "regra_fonte": "ABNT NBR 6022:2018 item 5; NBR 14724:2011 item 5.1",
+  "severidade": "alta",
+  "nota": "Estrangeirismos já dicionarizados e correntes em PT-BR (online, software, internet, site) NÃO exigem itálico e NÃO devem constar desta lista. Apenas termos não incorporados ao léxico normativo.",
+
+  "estrangeirismos_nao_incorporados": [
+    {
+      "id": "est_001",
+      "forma": "deepfake",
+      "variantes": ["deepfakes"],
+      "regex_ausencia_italico": "(?<![*_])\\bdeepfakes?\\b(?![*_])",
+      "regra": "Termo em inglês não dicionarizado em PT-BR: obrigatório em itálico (*deepfake*) ou substituído por equivalente em português (vídeo falsificado por IA, falsificação sintética).",
+      "substitutos_sugeridos": ["falsificação sintética", "vídeo falsificado por IA", "manipulação audiovisual sintética"]
+    },
+    {
+      "id": "est_002",
+      "forma": "microtargeting",
+      "variantes": ["micro-targeting", "micro targeting"],
+      "regex_ausencia_italico": "(?<![*_])\\bmicro[-\\s]?targeting\\b(?![*_])",
+      "regra": "Termo em inglês não dicionarizado em PT-BR: obrigatório em itálico (*microtargeting*) ou substituído por equivalente em português.",
+      "substitutos_sugeridos": ["segmentação hiperpersonalizada", "microsegmentação eleitoral", "direcionamento ultrassegmentado"]
+    },
+    {
+      "id": "est_003",
+      "forma": "neurofeedback",
+      "variantes": ["neuro-feedback"],
+      "regex_ausencia_italico": "(?<![*_])\\bneuro[-]?feedback\\b(?![*_])",
+      "regra": "Termo técnico em inglês sem equivalente dicionarizado em PT-BR: obrigatório em itálico (*neurofeedback*) na primeira ocorrência; nas demais, manter itálico por convenção da área.",
+      "substitutos_sugeridos": ["neurorretroalimentação", "biorretroalimentação neurofisiológica"]
+    },
+    {
+      "id": "est_004",
+      "forma": "fake news",
+      "variantes": ["fakenews", "fake-news"],
+      "regex_ausencia_italico": "(?<![*_])\\bfake[-\\s]?news\\b(?![*_])",
+      "regra": "Expressão em inglês não incorporada como unidade lexical ao PT-BR normativo: obrigatório em itálico (*fake news*) ou substituído por equivalente.",
+      "substitutos_sugeridos": ["desinformação", "notícia falsa", "informação fabricada"]
+    },
+    {
+      "id": "est_005",
+      "forma": "hate speech",
+      "variantes": ["hate-speech"],
+      "regex_ausencia_italico": "(?<![*_])\\bhate[-\\s]?speech\\b(?![*_])",
+      "regra": "Expressão em inglês sem incorporação plena ao PT-BR normativo: obrigatório em itálico (*hate speech*) ou substituído por equivalente.",
+      "substitutos_sugeridos": ["discurso de ódio", "discurso odioso"]
+    },
+    {
+      "id": "est_006",
+      "forma": "benchmarking",
+      "variantes": ["benchmark", "benchmarks"],
+      "regex_ausencia_italico": "(?<![*_])\\bbenchmark(?:ing|s)?\\b(?![*_])",
+      "regra": "Termo técnico em inglês não dicionarizado em PT-BR: obrigatório em itálico (*benchmarking*) na primeira ocorrência.",
+      "substitutos_sugeridos": ["cotejo de desempenho", "referenciação comparativa", "padrão de referência"]
+    },
+    {
+      "id": "est_007",
+      "forma": "compliance",
+      "variantes": [],
+      "regex_ausencia_italico": "(?<![*_])\\bcompliance\\b(?![*_])",
+      "regra": "Termo em inglês de uso crescente no Direito brasileiro, ainda não dicionarizado: obrigatório em itálico (*compliance*) ou substituído por equivalente em PT-BR.",
+      "substitutos_sugeridos": ["conformidade normativa", "conformidade regulatória", "programa de integridade"]
+    },
+    {
+      "id": "est_008",
+      "forma": "stakeholder",
+      "variantes": ["stakeholders"],
+      "regex_ausencia_italico": "(?<![*_])\\bstakeholders?\\b(?![*_])",
+      "regra": "Termo em inglês não dicionarizado em PT-BR: obrigatório em itálico (*stakeholders*) ou substituído por equivalente.",
+      "substitutos_sugeridos": ["parte interessada", "partes interessadas", "atores relevantes"]
+    },
+    {
+      "id": "est_009",
+      "forma": "feedback",
+      "variantes": [],
+      "regex_ausencia_italico": "(?<![*_])\\bfeedback\\b(?![*_])",
+      "regra": "Termo em inglês: preferir equivalente em PT-BR; se mantido, obrigatório em itálico (*feedback*).",
+      "substitutos_sugeridos": ["retroalimentação", "retorno", "resposta avaliativa"]
+    },
+    {
+      "id": "est_010",
+      "forma": "oversight",
+      "variantes": [],
+      "regex_ausencia_italico": "(?<![*_])\\boversight\\b(?![*_])",
+      "regra": "Termo técnico em inglês (governança de IA): obrigatório em itálico (*oversight*) na primeira ocorrência ou substituído por equivalente.",
+      "substitutos_sugeridos": ["supervisão", "fiscalização", "controle externo"]
+    }
+  ],
+
+  "siglas_estrangeiras_tecnicas": [
+    {
+      "id": "sig_001",
+      "sigla": "EEG",
+      "extensao_en": "electroencephalography",
+      "extensao_pt": "eletroencefalografia",
+      "regra": "1ª ocorrência: extensão em português + sigla em itálico entre parênteses — ex.: eletroencefalografia (*EEG*). Demais ocorrências: só a sigla (EEG), sem itálico.",
+      "regex_deteccao": "\\bEEG\\b"
+    },
+    {
+      "id": "sig_002",
+      "sigla": "DBS",
+      "extensao_en": "deep brain stimulation",
+      "extensao_pt": "estimulação cerebral profunda",
+      "regra": "1ª ocorrência: estimulação cerebral profunda (*DBS*). Demais ocorrências: só DBS.",
+      "regex_deteccao": "\\bDBS\\b"
+    },
+    {
+      "id": "sig_003",
+      "sigla": "TMS",
+      "extensao_en": "transcranial magnetic stimulation",
+      "extensao_pt": "estimulação magnética transcraniana",
+      "regra": "1ª ocorrência: estimulação magnética transcraniana (*TMS*). Demais ocorrências: só TMS.",
+      "regex_deteccao": "\\bTMS\\b"
+    },
+    {
+      "id": "sig_004",
+      "sigla": "tDCS",
+      "extensao_en": "transcranial direct current stimulation",
+      "extensao_pt": "estimulação transcraniana por corrente contínua",
+      "regra": "1ª ocorrência: estimulação transcraniana por corrente contínua (*tDCS*). Demais ocorrências: só tDCS.",
+      "regex_deteccao": "\\btDCS\\b"
+    },
+    {
+      "id": "sig_005",
+      "sigla": "fMRI",
+      "extensao_en": "functional magnetic resonance imaging",
+      "extensao_pt": "ressonância magnética funcional",
+      "regra": "1ª ocorrência: ressonância magnética funcional (*fMRI*). Demais ocorrências: só fMRI.",
+      "regex_deteccao": "\\bfMRI\\b"
+    },
+    {
+      "id": "sig_006",
+      "sigla": "AI",
+      "extensao_en": "artificial intelligence",
+      "extensao_pt": "inteligência artificial",
+      "regra": "Preferir a sigla em português IA. Se AI for usado (ex.: citação de entidade estrangeira), 1ª ocorrência: inteligência artificial (*AI*); demais: só AI.",
+      "regex_deteccao": "\\bAI\\b",
+      "observacao": "Sigla concorrente com IA (português). Em texto acadêmico em PT-BR, prefira IA."
+    },
+    {
+      "id": "sig_007",
+      "sigla": "DNA",
+      "extensao_en": "deoxyribonucleic acid",
+      "extensao_pt": "ácido desoxirribonucleico",
+      "regra": "DNA é sigla consagrada em PT-BR e dispensa extensão após a 1ª introdução. 1ª ocorrência formal recomenda ácido desoxirribonucleico (DNA).",
+      "regex_deteccao": "\\bDNA\\b",
+      "observacao": "Sigla amplamente incorporada ao português; exigência de extensão na 1ª ocorrência é boa prática, não obrigação rígida."
+    },
+    {
+      "id": "sig_008",
+      "sigla": "CRISPR",
+      "extensao_en": "Clustered Regularly Interspaced Short Palindromic Repeats",
+      "extensao_pt": "repetições palindrômicas curtas agrupadas e regularmente interespaçadas",
+      "regra": "1ª ocorrência: repetições palindrômicas curtas agrupadas (*CRISPR*). Demais ocorrências: só CRISPR.",
+      "regex_deteccao": "\\bCRISPR\\b"
+    },
+    {
+      "id": "sig_009",
+      "sigla": "GDPR",
+      "extensao_en": "General Data Protection Regulation",
+      "extensao_pt": "Regulamento Geral de Proteção de Dados",
+      "regra": "1ª ocorrência: Regulamento Geral de Proteção de Dados (*GDPR*). Demais ocorrências: só GDPR.",
+      "regex_deteccao": "\\bGDPR\\b"
+    },
+    {
+      "id": "sig_010",
+      "sigla": "CEO",
+      "extensao_en": "chief executive officer",
+      "extensao_pt": "diretor-executivo",
+      "regra": "1ª ocorrência em texto formal: diretor-executivo (*CEO*). Demais ocorrências: CEO.",
+      "regex_deteccao": "\\bCEO\\b"
+    }
+  ]
+}

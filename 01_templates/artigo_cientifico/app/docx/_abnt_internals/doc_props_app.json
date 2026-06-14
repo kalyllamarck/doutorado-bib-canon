@@ -1,0 +1,213 @@
+{
+  "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}Properties",
+  "attrib": {},
+  "text": "\n  ",
+  "tail": null,
+  "children": [
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}Template",
+      "attrib": {},
+      "text": "Normal.dotm",
+      "tail": "\n  ",
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}TotalTime",
+      "attrib": {},
+      "text": "0",
+      "tail": "\n  ",
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}Pages",
+      "attrib": {},
+      "text": "1",
+      "tail": "\n  ",
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}Words",
+      "attrib": {},
+      "text": "0",
+      "tail": "\n  ",
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}Characters",
+      "attrib": {},
+      "text": "0",
+      "tail": "\n  ",
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}Application",
+      "attrib": {},
+      "text": "Microsoft Macintosh Word",
+      "tail": "\n  ",
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}DocSecurity",
+      "attrib": {},
+      "text": "0",
+      "tail": "\n  ",
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}Lines",
+      "attrib": {},
+      "text": "0",
+      "tail": "\n  ",
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}Paragraphs",
+      "attrib": {},
+      "text": "0",
+      "tail": "\n  ",
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}ScaleCrop",
+      "attrib": {},
+      "text": "false",
+      "tail": "\n  ",
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}HeadingPairs",
+      "attrib": {},
+      "text": "\n    ",
+      "tail": "\n  ",
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes}vector",
+          "attrib": {
+            "size": "2",
+            "baseType": "variant"
+          },
+          "text": "\n      ",
+          "tail": "\n  ",
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes}variant",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n      ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes}lpstr",
+                  "attrib": {},
+                  "text": "Title",
+                  "tail": "\n      ",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes}variant",
+              "attrib": {},
+              "text": "\n        ",
+              "tail": "\n    ",
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes}i4",
+                  "attrib": {},
+                  "text": "1",
+                  "tail": "\n      ",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}TitlesOfParts",
+      "attrib": {},
+      "text": "\n    ",
+      "tail": "\n  ",
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes}vector",
+          "attrib": {
+            "size": "1",
+            "baseType": "lpstr"
+          },
+          "text": "\n      ",
+          "tail": "\n  ",
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes}lpstr",
+              "attrib": {},
+              "text": null,
+              "tail": "\n    ",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}Manager",
+      "attrib": {},
+      "text": null,
+      "tail": "\n  ",
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}Company",
+      "attrib": {},
+      "text": null,
+      "tail": "\n  ",
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}LinksUpToDate",
+      "attrib": {},
+      "text": "false",
+      "tail": "\n  ",
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}CharactersWithSpaces",
+      "attrib": {},
+      "text": "0",
+      "tail": "\n  ",
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}SharedDoc",
+      "attrib": {},
+      "text": "false",
+      "tail": "\n  ",
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}HyperlinkBase",
+      "attrib": {},
+      "text": null,
+      "tail": "\n  ",
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}HyperlinksChanged",
+      "attrib": {},
+      "text": "false",
+      "tail": "\n  ",
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/extended-properties}AppVersion",
+      "attrib": {},
+      "text": "14.0000",
+      "tail": "\n",
+      "children": []
+    }
+  ],
+  "nsmap": {
+    "": "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties",
+    "vt": "http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes"
+  }
+}

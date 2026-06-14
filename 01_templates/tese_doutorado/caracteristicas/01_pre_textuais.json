@@ -1,0 +1,213 @@
+{
+  "id": "pre-textuais",
+  "componente": "Elementos pré-textuais da tese",
+  "descricao": "Conjunto ordenado e obrigatório/opcional de elementos que antecedem o corpo da tese. Ordem fixa por NBR 14724. Algumas peças sem indicativo numérico, outras sem título.",
+  "fonte_normativa": "ABNT NBR 14724:2024 seção 4.1.1 + Guia Metodológico PPGD/Unifor",
+  "ordem_obrigatoria": [
+    "capa",
+    "folha_rosto",
+    "ficha_catalografica",
+    "errata_opcional",
+    "folha_aprovacao",
+    "dedicatoria_opcional",
+    "agradecimentos_opcional",
+    "epigrafe_opcional",
+    "resumo_pt",
+    "abstract",
+    "listas_opcionais",
+    "sumario"
+  ],
+  "elementos": {
+    "capa": {
+      "obrigatorio": true,
+      "ordem_conteudo": [
+        "FUNDAÇÃO EDSON QUEIROZ",
+        "UNIVERSIDADE DE FORTALEZA — UNIFOR",
+        "VICE-REITORIA DE ENSINO DE GRADUAÇÃO E PÓS-GRADUAÇÃO — VRE",
+        "PROGRAMA DE PÓS-GRADUAÇÃO EM DIREITO CONSTITUCIONAL — PPGD",
+        "NOME DO AUTOR (caixa alta)",
+        "TÍTULO DA TESE (caixa alta, negrito)",
+        "Subtítulo (se houver, sem negrito)",
+        "FORTALEZA-CE",
+        "MÊS/ANO"
+      ],
+      "fonte_normativa": "NBR 14724:2024 seção 4.1.1.1",
+      "regras": [
+        "Sem paginação visível",
+        "Alinhamento centralizado",
+        "Espaçamento entre blocos define hierarquia visual",
+        "Título em destaque maior (corpo 14-16, negrito)"
+      ]
+    },
+    "folha_rosto": {
+      "obrigatorio": true,
+      "ordem_conteudo": [
+        "Nome do autor (caixa alta)",
+        "Título (caixa alta, negrito)",
+        "Subtítulo (se houver)",
+        "Natureza do trabalho (Tese apresentada ao PPGD da Unifor como requisito parcial para obtenção do título de Doutor em Direito Constitucional)",
+        "Área de concentração: Direito Constitucional Público e Teoria Política",
+        "Linha de pesquisa: [a definir]",
+        "Orientador: [Prof./Profa. Dr./Dra. Nome]",
+        "Coorientador (se houver)",
+        "Cidade-UF",
+        "Mês/Ano"
+      ],
+      "fonte_normativa": "NBR 14724:2024 seção 4.1.1.2",
+      "regras": [
+        "Natureza do trabalho em bloco com recuo, justificado, do centro à margem direita",
+        "Espaçamento simples no bloco da natureza",
+        "Demais elementos centralizados, espaçamento 1,5"
+      ]
+    },
+    "ficha_catalografica": {
+      "obrigatorio": true,
+      "fonte_normativa": "ABNT NBR 6023:2018 + ficha gerada em unifor.br/ficha-catalografica",
+      "localizacao": "Verso da folha de rosto",
+      "regras": [
+        "Gerada obrigatoriamente no gerador oficial da Unifor",
+        "Não editar manualmente",
+        "Inserir no .tex via figura ou ambiente flutuante na posição correta"
+      ],
+      "url_gerador": "https://unifor.br/ficha-catalografica"
+    },
+    "errata_opcional": {
+      "obrigatorio": false,
+      "fonte_normativa": "NBR 14724:2024 seção 4.1.1.3",
+      "regras": ["Inserir após defesa, se necessário"]
+    },
+    "folha_aprovacao": {
+      "obrigatorio": true,
+      "fonte_normativa": "NBR 14724:2024 seção 4.1.1.4",
+      "ordem_conteudo": [
+        "Nome do autor (caixa alta)",
+        "Título (caixa alta, negrito)",
+        "Bloco de natureza do trabalho (mesmo da folha rosto)",
+        "Data de aprovação: __/__/____",
+        "BANCA EXAMINADORA",
+        "Linhas de assinatura para 5 membros: orientador + 4 examinadores"
+      ],
+      "regras": [
+        "Sem título 'FOLHA DE APROVAÇÃO' no topo",
+        "Sem indicativo numérico",
+        "Espaço para assinaturas manuscritas após defesa"
+      ]
+    },
+    "dedicatoria_opcional": {
+      "obrigatorio": false,
+      "fonte_normativa": "NBR 14724:2024 seção 4.1.1.5",
+      "regras": [
+        "Sem título 'DEDICATÓRIA'",
+        "Sem indicativo numérico",
+        "Texto curto, alinhamento inferior direito ou centralizado conforme template Unifor"
+      ]
+    },
+    "agradecimentos_opcional": {
+      "obrigatorio": false,
+      "fonte_normativa": "NBR 14724:2024 seção 4.1.1.6",
+      "regras": [
+        "Título AGRADECIMENTOS centralizado, sem indicativo numérico",
+        "OBRIGATÓRIO mencionar a FUNCAP (bolsa)",
+        "Texto justificado, espaçamento 1,5"
+      ],
+      "mencao_obrigatoria_funcap": "O presente trabalho foi realizado com o apoio da Fundação Cearense de Apoio ao Desenvolvimento Científico e Tecnológico (FUNCAP)."
+    },
+    "epigrafe_opcional": {
+      "obrigatorio": false,
+      "fonte_normativa": "NBR 14724:2024 seção 4.1.1.7 + NBR 10520",
+      "regras": [
+        "Sem título 'EPÍGRAFE'",
+        "Sem indicativo numérico",
+        "Citação com indicação de autoria (NBR 10520)",
+        "Alinhamento inferior direito"
+      ]
+    },
+    "resumo_pt": {
+      "obrigatorio": true,
+      "fonte_normativa": "ABNT NBR 6028:2021",
+      "regras": [
+        "Título RESUMO centralizado, sem indicativo numérico",
+        "Parágrafo único, sem recuo, espaçamento simples",
+        "150 a 500 palavras",
+        "Verbo na voz ativa, 3ª pessoa do singular",
+        "Frase inicial deve indicar tema",
+        "Sequência sugerida pelo PPGD: objetivo geral, justificativa, problemática, metodologia, principais resultados, conclusão (facultativa)",
+        "3 a 5 palavras-chave após o resumo, separadas por PONTO (.) — EXIGÊNCIA PPGD que diverge da NBR 6028",
+        "Palavras-chave em linha imediatamente abaixo do resumo"
+      ],
+      "formato_palavras_chave": "Palavras-chave: termo 1. termo 2. termo 3."
+    },
+    "abstract": {
+      "obrigatorio": true,
+      "fonte_normativa": "NBR 6028:2021 + Guia PPGD",
+      "regras": [
+        "Versão fiel do resumo em inglês OU espanhol",
+        "Título ABSTRACT (ou RESUMEN) centralizado",
+        "Mesmo formato do resumo: parágrafo único, simples, sem recuo",
+        "Keywords (ou Palabras clave) imediatamente abaixo"
+      ]
+    },
+    "listas_opcionais": {
+      "obrigatorio": false,
+      "fonte_normativa": "NBR 14724:2024 seções 4.1.1.10-4.1.1.13",
+      "tipos": {
+        "lista_ilustracoes": "LISTA DE FIGURAS / LISTA DE GRÁFICOS / LISTA DE QUADROS",
+        "lista_tabelas": "LISTA DE TABELAS",
+        "lista_abreviaturas_siglas": "LISTA DE ABREVIATURAS E SIGLAS",
+        "lista_simbolos": "LISTA DE SÍMBOLOS"
+      },
+      "regras": [
+        "Cada lista em página própria",
+        "Título centralizado, sem indicativo numérico",
+        "Elementos em ordem de aparição no texto (exceto siglas: ordem alfabética)"
+      ]
+    },
+    "sumario": {
+      "obrigatorio": true,
+      "fonte_normativa": "ABNT NBR 6027:2012",
+      "regras": [
+        "Título SUMÁRIO centralizado, sem indicativo numérico",
+        "Indicativos numéricos dos capítulos em arábicos",
+        "Introdução, Conclusão, Referências, Apêndices, Anexos NÃO recebem indicativo numérico (mas aparecem no sumário)",
+        "Seções e subseções alinhadas pelo indicativo da seção mais elevada",
+        "Página alinhada à direita, conectada por linha pontilhada ou espaço"
+      ],
+      "exclusoes_indicativo_numerico": [
+        "INTRODUÇÃO",
+        "CONCLUSÃO",
+        "REFERÊNCIAS",
+        "GLOSSÁRIO",
+        "APÊNDICE",
+        "ANEXO",
+        "ÍNDICE"
+      ]
+    }
+  },
+  "regras_globais_pre_textuais": [
+    "Páginas contadas a partir da folha de rosto, mas paginação visível só aparece a partir da introdução",
+    "Capa NÃO conta na paginação",
+    "Todos os títulos centralizados, sem indicativo numérico",
+    "Fonte default: Times New Roman ou Arial, corpo 12, espaçamento 1,5",
+    "Resumo e abstract: espaçamento simples"
+  ],
+  "render_latex": {
+    "comandos_abntex2": [
+      "\\imprimircapa",
+      "\\imprimirfolhaderosto",
+      "\\imprimirficha (custom — insere PDF da ficha)",
+      "\\imprimirfolhadeaprovacao",
+      "\\imprimirdedicatoria",
+      "\\imprimiragradecimentos",
+      "\\imprimirepigrafe",
+      "\\imprimirresumo",
+      "\\imprimirabstract",
+      "\\imprimirlistadefiguras",
+      "\\imprimirlistadetabelas",
+      "\\imprimirlistadesiglas",
+      "\\imprimirsumario"
+    ]
+  },
+  "render_gdocs": {
+    "obs": "Cada elemento gera bloco com style HEADING_1 centralizado (sem numeração) + corpo do elemento. Quebras de página entre elementos via PAGE_BREAK."
+  }
+}

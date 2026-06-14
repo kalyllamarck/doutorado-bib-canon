@@ -1,0 +1,209 @@
+{
+  "id": "nbr-10520-2023",
+  "norma": "ABNT NBR 10520:2023",
+  "titulo": "Informação e documentação — Citações em documentos — Apresentação",
+  "edicao": "3ª edição",
+  "data_publicacao": "2023",
+  "substitui": "ABNT NBR 10520:2002",
+  "fonte_pdf_local": "Normas da ABNT/Citação e Referência 2025.pdf (guia que consolida a NBR 10520:2023)",
+  "escopo": "Especifica as características exigíveis para apresentação de citações em documentos.",
+  "definicao_literal": "Citação é a 'menção, no texto, de uma informação extraída de outra fonte' (ABNT NBR 10520:2023).",
+  "por_que_citar": [
+    "Apoiar hipótese, sustentar ideia ou ilustrar raciocínio",
+    "Comprovar veracidade das informações e possibilitar aprofundamento",
+    "Por questões éticas — não usar ideias de outros sem citação (plágio)",
+    "Dar credibilidade ao trabalho científico",
+    "Informar sobre trabalhos desenvolvidos na área"
+  ],
+  "tipos_de_citacao": [
+    "Citação direta (curta ou longa)",
+    "Citação indireta (paráfrase)",
+    "Citação de citação (apud)"
+  ],
+  "sistema_de_chamada": {
+    "obrigatorio": "autor-data",
+    "regra_unica_2023": "Todas as citações devem constar nas referências; tudo o que está citado deve estar referenciado e vice-versa"
+  },
+  "mudancas_versus_nbr_10520_2002": {
+    "obs_critica": "A NBR 10520:2023 alterou convenções relevantes da versão de 2002 — verificar qual edição o PPGD/Unifor adota oficialmente antes de migrar a tese inteira",
+    "principais_alteracoes": [
+      "Sobrenome no sistema parentético: Primeira letra maiúscula (Ex: 'Moraes') em vez de CAIXA ALTA (Ex: 'MORAES')",
+      "Vários autores em mesma citação parentética: separados por PONTO-E-VÍRGULA em vez de vírgula",
+      "Novas formas de localização para fontes sem página: cap., art., inc., local., slide, min/s",
+      "Padronização de 'tradução nossa' e 'grifo nosso'"
+    ]
+  },
+  "convencao_ppgd_unifor": {
+    "regra_que_diverge_da_nbr": "PÁGINA OBRIGATÓRIA também em citação INDIRETA (NBR não exige em paráfrase)",
+    "sobrenome_no_parentetico": "Verificar com o Guia Metodológico PPGD/Unifor — pode usar caixa alta (convenção 2002) ou primeira maiúscula (convenção 2023)",
+    "recomendacao": "Manter UNIFORMIDADE em toda a tese, independentemente da convenção adotada"
+  },
+  "convencao_editorial_area_direito": {
+    "obs": "Camada de convenção editorial — complementa, mas não substitui, a NBR 10520:2023",
+    "sobrenome_caixa_alta_no_parentetico": {
+      "regra_nbr_2023": "A NBR 10520:2023 liberou inicial maiúscula apenas (ex.: 'Moraes') na citação parentética, abandonando a caixa alta obrigatória da edição de 2002",
+      "pratica_qualis_a1_direito": "Periódicos Qualis A1 da área de Direito (ex.: Revista de Direito Administrativo, Revista Brasileira de Direito Constitucional) continuam adotando CAIXA ALTA no sobrenome parentético (ex.: 'MORAES') por tradição herdada da NBR 10520:2002",
+      "recomendacao_pratica": "Usar CAIXA ALTA no sobrenome parentético salvo instrução explícita em contrário nas normas editoriais do periódico-alvo; verificar sempre as diretrizes do veículo antes de submeter"
+    },
+    "mencao_a_diploma_legal_nao_e_citacao": {
+      "distincao": "Menção a diploma legal (lei, resolução, decreto, portaria, medida provisória, emenda constitucional) NÃO é citação bibliográfica no sentido das NBR 10520 e NBR 6023 — é referência a documento jurídico-normativo, regida pela NBR 6023:2018, seção 8.10",
+      "consequencia_pratica": "A vedação editorial a 'citações na introdução' (regra de boas práticas acadêmicas) NÃO alcança menções a diplomas legais; mencionar a CF/88, uma lei ou um decreto na Introdução é referência normativa, não citação de autor",
+      "exemplos_de_mencao_legal": [
+        "O art. 5º, LV, da Constituição Federal de 1988 assegura...",
+        "A Lei nº 9.784/1999 regula o processo administrativo federal...",
+        "O Decreto nº 9.203/2017 instituiu a política de governança..."
+      ],
+      "fonte_nbr": "NBR 6023:2018, seção 8.10 — Documentos jurídicos"
+    }
+  },
+  "citacao_direta": {
+    "definicao": "Transcrição textual com exatidão das palavras do autor consultado.",
+    "regras_gerais": [
+      "Usar somente quando absolutamente necessário",
+      "Especificar página após data, separada por vírgula e precedida de 'p.' (ou 'local.' em obras eletrônicas)",
+      "Manter texto idêntico ao original"
+    ],
+    "ate_3_linhas": {
+      "formato": "Aspas duplas dentro do parágrafo, fonte 12, espaçamento 1,5",
+      "exemplo_inline": "Para Minayo (2001, p. 22), \"o conjunto de dados quantitativos e qualitativos não se opõem, ao contrário, se complementam\".",
+      "exemplo_parentetico": "[...] realidade social que \"é o próprio dinamismo da vida individual e coletiva com toda a riqueza de significados dela transbordante\" (Minayo, 2001, p. 15)."
+    },
+    "acima_de_3_linhas": {
+      "formato": {
+        "recuo_esquerdo_cm": 4,
+        "fonte_pt": 10,
+        "espacamento_linha": 1.0,
+        "sem_aspas": true,
+        "espaco_antes_e_depois": "1 linha em branco a 1,5"
+      },
+      "obs_ppgd": "PROIBIDA em introdução e conclusão da tese (regra PPGD)"
+    },
+    "documentos_nao_paginados": {
+      "regra": "Não especificar a falta de paginação; informar apenas autor e data",
+      "exemplo": "\"Primeiro, o apoio à independência dos povos coloniais já era algo manifesto na sociedade brasileira\" (Santos, 2005)."
+    },
+    "documentos_com_localizadores_especiais": {
+      "leis": "(Brasil, 1998, cap. V, art. 49, inc. I)",
+      "ebooks": "(Dongo-Montoya, 2009, local. 264)",
+      "filmes": "(Cidade [...], 2002, 9 min 41 s)",
+      "slides": "Segundo Brody e Harnad (2004, slide 2, tradução nossa, grifo nosso), ..."
+    },
+    "citacao_em_outro_idioma": {
+      "opcoes": [
+        "Citar na língua original",
+        "Citar tradução + indicar 'tradução nossa' ou 'tradução própria' após chamada"
+      ],
+      "exemplo": "\"Nos primeiros mecanismos citados empregam-se moléculas com grupos químicos capazes de reagir entre si para gerar a união entre elas\" (Macchi, 2003, p. 55, tradução nossa)."
+    },
+    "supressoes_e_destaques": {
+      "supressao": "Usar [...] dentro de colchetes",
+      "interpolacao": "[texto adicional do citante] entre colchetes",
+      "enfase_do_citante": "Adicionar ', grifo nosso' ou ', grifo próprio'",
+      "enfase_do_original": "Adicionar ', grifo do autor'",
+      "exemplo": "\"Neste sentido, [...] se reconhece no processo de produção rural a vigência de leis biológicas de reprodução e a utilização de formas primitivas de uso da energia [fotossíntese]\" (Silva, 1999, p. 179, grifo nosso)."
+    }
+  },
+  "citacao_indireta_parafrase": {
+    "definicao": "Transcrição das ideias do autor usando palavras próprias do citante.",
+    "regras_nbr": [
+      "Dispensa aspas duplas",
+      "Sem limites de linhas",
+      "NBR NÃO exige indicação de página",
+      "Indicar autor + ano"
+    ],
+    "regra_ppgd_que_modifica_nbr": "PPGD/Unifor EXIGE página também em citação indireta — divergência explícita do Guia Metodológico em relação à NBR 10520",
+    "exemplos": {
+      "inline_nbr": "Conforme a classificação proposta por Rauen (1999), a ironia seria uma forma implícita de heterogeneidade.",
+      "inline_ppgd": "Conforme a classificação proposta por Rauen (1999, p. 47), a ironia seria uma forma implícita de heterogeneidade.",
+      "parentetico_nbr": "A análise dos dados corresponde à apresentação dos resultados (Rauen, 1999).",
+      "parentetico_ppgd": "A análise dos dados corresponde à apresentação dos resultados (Rauen, 1999, p. 47)."
+    }
+  },
+  "citacao_de_citacao_apud": {
+    "definicao": "Transcrição (direta ou indireta) de texto cujo original não foi acessado.",
+    "estrutura": "Autor original (ano apud Autor consultado, ano, p. X)",
+    "exemplos": [
+      "Pela abordagem de Boss e Krauss (2007 apud Bender, 2014), as tecnologias de comunicação são fundamentais.",
+      "\"Outra variável que tem importância especial como característica de personalidade é a auto-estima\" (Korman, 1968 apud Pasquali et al., 1981, p. 55)."
+    ],
+    "regra_critica": "Nas REFERÊNCIAS, listar APENAS a obra acessada (Bender 2014, Pasquali 1981), nunca a obra original não consultada",
+    "uso_recomendado": "EVITAR ao máximo; usar somente quando obra original for inacessível"
+  },
+  "fontes_nao_publicadas": {
+    "tipos": ["palestras", "debates", "comunicações pessoais", "discursos"],
+    "regra": "Indicar no texto ou em nota de rodapé",
+    "exemplo_no_texto": "Em discurso proferido por Jadir dos Santos, em 21 de março de 2019, no auditório da ABNT, foram descritos os principais aspectos da cultura organizacional.",
+    "exemplo_em_nota": "Jadir dos Santos descreveu os principais aspectos da cultura organizacional¹.\\n¹ Discurso proferido no auditório da ABNT, em 21 de março de 2019.",
+    "obs": "Fontes não publicadas NÃO geram entrada nas referências"
+  },
+  "documentos_em_fase_de_elaboracao": {
+    "regra": "Mencionar fato no texto + informações em nota de rodapé",
+    "exemplo": "Segundo a norma de livro, que está em processo de revisão, o resumo pode constar na quarta capa¹.\\n¹ Projeto da ABNT NBR 6029, a ser publicada pela ABNT."
+  },
+  "entrevistas_e_depoimentos": {
+    "regra": "Omitir nome do entrevistado quando necessário",
+    "exemplo": "\"A família é um núcleo de convivência, unido por laços afetivos, que normalmente compartilha o mesmo teto\" (Entrevistado A).",
+    "obs": "Transcrição não gera referência"
+  },
+  "casos_especiais": {
+    "varios_trabalhos_mesmo_autor_mesma_data": {
+      "regra": "Usar letras minúsculas após a data",
+      "exemplo": "Brasil (2012a), Brasil (2012b)"
+    },
+    "coincidencia_sobrenomes": {
+      "regra": "Acrescentar iniciais dos prenomes",
+      "exemplo": "(Silva, C., 1958) (Silva, O., 1958)",
+      "se_iniciais_iguais": "Colocar prenomes por extenso: (Barbosa, Cássio, 1965) (Barbosa, Celso, 1965)"
+    },
+    "mesmo_autor_anos_diferentes": {
+      "regra": "Datas separadas por vírgula em ordem cronológica",
+      "exemplo": "Leite (1972, 1993, 1995)"
+    },
+    "diversos_autores_simultaneos": {
+      "regra": "Separados por ponto-e-vírgula, ordem alfabética",
+      "exemplo": "(Colly, 2009; Morassutti, 2014; Silva, 2010; Zanol, 2010)"
+    }
+  },
+  "sistema_de_chamada_autor_data_tabela": {
+    "um_autor": {
+      "no_texto": "Segundo Moraes (1993)",
+      "no_parenteses": "(Moraes, 1993)"
+    },
+    "dois_autores": {
+      "no_texto": "Segundo Moraes e Souza (1997)",
+      "no_parenteses": "(Moraes; Souza, 1997)"
+    },
+    "tres_autores": {
+      "no_texto": "Para Dudziak, Gabriel e Vilela (2000)",
+      "no_parenteses": "(Dudziak; Gabriel; Vilela, 2000)"
+    },
+    "quatro_ou_mais_autores": {
+      "no_texto_opcao_1": "De acordo com Taylor, Levine, Marcellin-Little e Millis (2008)",
+      "no_texto_opcao_2": "De acordo com Taylor et al. (2008)",
+      "no_parenteses_opcao_1": "(Taylor; Levine; Marcellin-Little; Millis, 2008)",
+      "no_parenteses_opcao_2": "(Taylor et al., 2008)",
+      "regra": "Escolher um padrão e manter UNIFORME em todo o trabalho"
+    },
+    "entidade_coletiva": {
+      "no_texto": "Comissão das Comunidades Europeias (2002), ABNT (2023)",
+      "no_parenteses": "(Comissão das Comunidades Europeias, 2002), (ABNT, 2023)"
+    },
+    "entrada_pelo_titulo": {
+      "regra": "Primeira palavra do título (em destaque) + [...] + ano + página",
+      "exemplos": [
+        "Anteprojeto [...] (1987, p. 55)",
+        "(Nos canaviais [...], 1995, p. 12)"
+      ]
+    }
+  },
+  "render_latex_abntex2": {
+    "biblatex_estilo": "abnt (carregar com \\usepackage[backend=biber,style=abnt]{biblatex})",
+    "comandos": {
+      "parentetico": "\\cite[p.~22]{minayo2001}",
+      "inline": "\\citeonline[p.~22]{minayo2001}",
+      "apud": "\\apud[p.~55]{korman1968}{pasquali1981}",
+      "tradução_nossa": "\\cite[p.~55,~tradução~nossa]{macchi2003}",
+      "citacao_longa": "\\begin{citacao}...\\end{citacao}"
+    }
+  }
+}

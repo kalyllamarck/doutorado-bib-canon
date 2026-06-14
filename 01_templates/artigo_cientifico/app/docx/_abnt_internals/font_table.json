@@ -1,0 +1,510 @@
+{
+  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}fonts",
+  "attrib": {
+    "{http://schemas.openxmlformats.org/markup-compatibility/2006}Ignorable": "w14"
+  },
+  "text": "\n  ",
+  "tail": null,
+  "children": [
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}font",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}name": "Symbol"
+      },
+      "text": "\n    ",
+      "tail": "\n  ",
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}panose1",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "00000000000000000000"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}charset",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "02"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}family",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "auto"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pitch",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "variable"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}sig",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb0": "00000000",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb1": "10000000",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb2": "00000000",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb3": "00000000",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}csb0": "80000000",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}csb1": "00000000"
+          },
+          "text": null,
+          "tail": "\n  ",
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}font",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}name": "Times New Roman"
+      },
+      "text": "\n    ",
+      "tail": "\n  ",
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}panose1",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "02020603050405020304"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}charset",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "00"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}family",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "auto"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pitch",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "variable"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}sig",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb0": "E0002AFF",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb1": "C0007841",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb2": "00000009",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb3": "00000000",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}csb0": "000001FF",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}csb1": "00000000"
+          },
+          "text": null,
+          "tail": "\n  ",
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}font",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}name": "Cambria"
+      },
+      "text": "\n    ",
+      "tail": "\n  ",
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}panose1",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "02040503050406030204"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}charset",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "00"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}family",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "auto"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pitch",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "variable"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}sig",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb0": "E00002FF",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb1": "400004FF",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb2": "00000000",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb3": "00000000",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}csb0": "0000019F",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}csb1": "00000000"
+          },
+          "text": null,
+          "tail": "\n  ",
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}font",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}name": "ＭＳ 明朝"
+      },
+      "text": "\n    ",
+      "tail": "\n  ",
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}panose1",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "00000000000000000000"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}charset",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "80"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}family",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "roman"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}notTrueType",
+          "attrib": {},
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pitch",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "fixed"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}sig",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb0": "00000001",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb1": "08070000",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb2": "00000010",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb3": "00000000",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}csb0": "00020000",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}csb1": "00000000"
+          },
+          "text": null,
+          "tail": "\n  ",
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}font",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}name": "Calibri"
+      },
+      "text": "\n    ",
+      "tail": "\n  ",
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}panose1",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "020F0502020204030204"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}charset",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "00"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}family",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "auto"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pitch",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "variable"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}sig",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb0": "E10002FF",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb1": "4000ACFF",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb2": "00000009",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb3": "00000000",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}csb0": "0000019F",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}csb1": "00000000"
+          },
+          "text": null,
+          "tail": "\n  ",
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}font",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}name": "ＭＳ ゴシック"
+      },
+      "text": "\n    ",
+      "tail": "\n  ",
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}panose1",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "00000000000000000000"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}charset",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "80"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}family",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "modern"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}notTrueType",
+          "attrib": {},
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pitch",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "fixed"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}sig",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb0": "00000001",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb1": "08070000",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb2": "00000010",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb3": "00000000",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}csb0": "00020000",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}csb1": "00000000"
+          },
+          "text": null,
+          "tail": "\n  ",
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}font",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}name": "Courier"
+      },
+      "text": "\n    ",
+      "tail": "\n  ",
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}panose1",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "02000500000000000000"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}charset",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "00"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}family",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "auto"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pitch",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "variable"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}sig",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb0": "00000003",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb1": "00000000",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb2": "00000000",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb3": "00000000",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}csb0": "00000001",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}csb1": "00000000"
+          },
+          "text": null,
+          "tail": "\n  ",
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}font",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}name": "Arial"
+      },
+      "text": "\n    ",
+      "tail": "\n",
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}panose1",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "020B0604020202020204"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}charset",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "00"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}family",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "auto"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pitch",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "variable"
+          },
+          "text": null,
+          "tail": "\n    ",
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}sig",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb0": "E0002AFF",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb1": "C0007843",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb2": "00000009",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}usb3": "00000000",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}csb0": "000001FF",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}csb1": "00000000"
+          },
+          "text": null,
+          "tail": "\n  ",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "nsmap": {
+    "mc": "http://schemas.openxmlformats.org/markup-compatibility/2006",
+    "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+    "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+    "w14": "http://schemas.microsoft.com/office/word/2010/wordml"
+  }
+}

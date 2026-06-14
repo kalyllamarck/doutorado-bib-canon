@@ -1,0 +1,1401 @@
+{
+  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}numbering",
+  "attrib": {
+    "{http://schemas.openxmlformats.org/markup-compatibility/2006}Ignorable": "w14 wp14"
+  },
+  "text": null,
+  "tail": null,
+  "children": [
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNum",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNumId": "0"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}nsid",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "FFFFFF7C"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}multiLevelType",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "singleLevel"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tmpl",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "C310EC42"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvl",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ilvl": "0"
+          },
+          "text": null,
+          "tail": null,
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}start",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}numFmt",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "decimal"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvlText",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "%1."
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvlJc",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "left"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pPr",
+              "attrib": {},
+              "text": null,
+              "tail": null,
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tabs",
+                  "attrib": {},
+                  "text": null,
+                  "tail": null,
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tab",
+                      "attrib": {
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "num",
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pos": "1800"
+                      },
+                      "text": null,
+                      "tail": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ind",
+                  "attrib": {
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}left": "1800",
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hanging": "360"
+                  },
+                  "text": null,
+                  "tail": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNum",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNumId": "1"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}nsid",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "FFFFFF7D"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}multiLevelType",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "singleLevel"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tmpl",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "E4089024"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvl",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ilvl": "0"
+          },
+          "text": null,
+          "tail": null,
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}start",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}numFmt",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "decimal"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvlText",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "%1."
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvlJc",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "left"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pPr",
+              "attrib": {},
+              "text": null,
+              "tail": null,
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tabs",
+                  "attrib": {},
+                  "text": null,
+                  "tail": null,
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tab",
+                      "attrib": {
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "num",
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pos": "1440"
+                      },
+                      "text": null,
+                      "tail": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ind",
+                  "attrib": {
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}left": "1440",
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hanging": "360"
+                  },
+                  "text": null,
+                  "tail": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNum",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNumId": "2"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}nsid",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "FFFFFF7E"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}multiLevelType",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "singleLevel"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tmpl",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "FB12693A"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvl",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ilvl": "0"
+          },
+          "text": null,
+          "tail": null,
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}start",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}numFmt",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "decimal"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pStyle",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "ListNumber3"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvlText",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "%1."
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvlJc",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "left"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pPr",
+              "attrib": {},
+              "text": null,
+              "tail": null,
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tabs",
+                  "attrib": {},
+                  "text": null,
+                  "tail": null,
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tab",
+                      "attrib": {
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "num",
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pos": "1080"
+                      },
+                      "text": null,
+                      "tail": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ind",
+                  "attrib": {
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}left": "1080",
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hanging": "360"
+                  },
+                  "text": null,
+                  "tail": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNum",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNumId": "3"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}nsid",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "FFFFFF7F"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}multiLevelType",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "singleLevel"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tmpl",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "38441652"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvl",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ilvl": "0"
+          },
+          "text": null,
+          "tail": null,
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}start",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}numFmt",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "decimal"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pStyle",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "ListNumber2"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvlText",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "%1."
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvlJc",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "left"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pPr",
+              "attrib": {},
+              "text": null,
+              "tail": null,
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tabs",
+                  "attrib": {},
+                  "text": null,
+                  "tail": null,
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tab",
+                      "attrib": {
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "num",
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pos": "720"
+                      },
+                      "text": null,
+                      "tail": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ind",
+                  "attrib": {
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}left": "720",
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hanging": "360"
+                  },
+                  "text": null,
+                  "tail": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNum",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNumId": "4"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}nsid",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "FFFFFF81"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}multiLevelType",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "singleLevel"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tmpl",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "171AC3A4"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvl",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ilvl": "0"
+          },
+          "text": null,
+          "tail": null,
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}start",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}numFmt",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "bullet"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvlText",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": ""
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvlJc",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "left"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pPr",
+              "attrib": {},
+              "text": null,
+              "tail": null,
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tabs",
+                  "attrib": {},
+                  "text": null,
+                  "tail": null,
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tab",
+                      "attrib": {
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "num",
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pos": "1440"
+                      },
+                      "text": null,
+                      "tail": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ind",
+                  "attrib": {
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}left": "1440",
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hanging": "360"
+                  },
+                  "text": null,
+                  "tail": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rPr",
+              "attrib": {},
+              "text": null,
+              "tail": null,
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rFonts",
+                  "attrib": {
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ascii": "Symbol",
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hAnsi": "Symbol",
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hint": "default"
+                  },
+                  "text": null,
+                  "tail": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNum",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNumId": "5"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}nsid",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "FFFFFF82"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}multiLevelType",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "singleLevel"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tmpl",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "F3EAFDEC"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvl",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ilvl": "0"
+          },
+          "text": null,
+          "tail": null,
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}start",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}numFmt",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "bullet"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pStyle",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "ListBullet3"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvlText",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": ""
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvlJc",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "left"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pPr",
+              "attrib": {},
+              "text": null,
+              "tail": null,
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tabs",
+                  "attrib": {},
+                  "text": null,
+                  "tail": null,
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tab",
+                      "attrib": {
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "num",
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pos": "1080"
+                      },
+                      "text": null,
+                      "tail": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ind",
+                  "attrib": {
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}left": "1080",
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hanging": "360"
+                  },
+                  "text": null,
+                  "tail": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rPr",
+              "attrib": {},
+              "text": null,
+              "tail": null,
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rFonts",
+                  "attrib": {
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ascii": "Symbol",
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hAnsi": "Symbol",
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hint": "default"
+                  },
+                  "text": null,
+                  "tail": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNum",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNumId": "6"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}nsid",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "FFFFFF83"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}multiLevelType",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "singleLevel"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tmpl",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "3D1EFFD4"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvl",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ilvl": "0"
+          },
+          "text": null,
+          "tail": null,
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}start",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}numFmt",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "bullet"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pStyle",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "ListBullet2"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvlText",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": ""
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvlJc",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "left"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pPr",
+              "attrib": {},
+              "text": null,
+              "tail": null,
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tabs",
+                  "attrib": {},
+                  "text": null,
+                  "tail": null,
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tab",
+                      "attrib": {
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "num",
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pos": "720"
+                      },
+                      "text": null,
+                      "tail": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ind",
+                  "attrib": {
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}left": "720",
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hanging": "360"
+                  },
+                  "text": null,
+                  "tail": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rPr",
+              "attrib": {},
+              "text": null,
+              "tail": null,
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rFonts",
+                  "attrib": {
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ascii": "Symbol",
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hAnsi": "Symbol",
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hint": "default"
+                  },
+                  "text": null,
+                  "tail": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNum",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNumId": "7"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}nsid",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "FFFFFF88"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}multiLevelType",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "singleLevel"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tmpl",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "D0A62B40"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvl",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ilvl": "0"
+          },
+          "text": null,
+          "tail": null,
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}start",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}numFmt",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "decimal"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pStyle",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "ListNumber"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvlText",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "%1."
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvlJc",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "left"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pPr",
+              "attrib": {},
+              "text": null,
+              "tail": null,
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tabs",
+                  "attrib": {},
+                  "text": null,
+                  "tail": null,
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tab",
+                      "attrib": {
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "num",
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pos": "360"
+                      },
+                      "text": null,
+                      "tail": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ind",
+                  "attrib": {
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}left": "360",
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hanging": "360"
+                  },
+                  "text": null,
+                  "tail": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNum",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNumId": "8"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}nsid",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "FFFFFF89"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}multiLevelType",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "singleLevel"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tmpl",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "29761A62"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvl",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ilvl": "0"
+          },
+          "text": null,
+          "tail": null,
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}start",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}numFmt",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "bullet"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pStyle",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "ListBullet"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvlText",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": ""
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lvlJc",
+              "attrib": {
+                "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "left"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pPr",
+              "attrib": {},
+              "text": null,
+              "tail": null,
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tabs",
+                  "attrib": {},
+                  "text": null,
+                  "tail": null,
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tab",
+                      "attrib": {
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "num",
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pos": "360"
+                      },
+                      "text": null,
+                      "tail": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ind",
+                  "attrib": {
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}left": "360",
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hanging": "360"
+                  },
+                  "text": null,
+                  "tail": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rPr",
+              "attrib": {},
+              "text": null,
+              "tail": null,
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rFonts",
+                  "attrib": {
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ascii": "Symbol",
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hAnsi": "Symbol",
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hint": "default"
+                  },
+                  "text": null,
+                  "tail": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}num",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}numId": "1"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNumId",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "8"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}num",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}numId": "2"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNumId",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "6"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}num",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}numId": "3"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNumId",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "5"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}num",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}numId": "4"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNumId",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "4"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}num",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}numId": "5"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNumId",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "7"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}num",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}numId": "6"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNumId",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "3"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}num",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}numId": "7"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNumId",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "2"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}num",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}numId": "8"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNumId",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}num",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}numId": "9"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}abstractNumId",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "0"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "nsmap": {
+    "wpc": "http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas",
+    "mo": "http://schemas.microsoft.com/office/mac/office/2008/main",
+    "mc": "http://schemas.openxmlformats.org/markup-compatibility/2006",
+    "mv": "urn:schemas-microsoft-com:mac:vml",
+    "o": "urn:schemas-microsoft-com:office:office",
+    "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+    "m": "http://schemas.openxmlformats.org/officeDocument/2006/math",
+    "v": "urn:schemas-microsoft-com:vml",
+    "wp14": "http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing",
+    "wp": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+    "w10": "urn:schemas-microsoft-com:office:word",
+    "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+    "w14": "http://schemas.microsoft.com/office/word/2010/wordml",
+    "wpg": "http://schemas.microsoft.com/office/word/2010/wordprocessingGroup",
+    "wpi": "http://schemas.microsoft.com/office/word/2010/wordprocessingInk",
+    "wne": "http://schemas.microsoft.com/office/word/2006/wordml",
+    "wps": "http://schemas.microsoft.com/office/word/2010/wordprocessingShape"
+  }
+}

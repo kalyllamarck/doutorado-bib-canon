@@ -1,0 +1,197 @@
+{
+  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}footnotes",
+  "attrib": {},
+  "text": null,
+  "tail": null,
+  "children": [
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}footnote",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type": "separator",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id": "-1"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}p",
+          "attrib": {},
+          "text": null,
+          "tail": null,
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r",
+              "attrib": {},
+              "text": null,
+              "tail": null,
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}separator",
+                  "attrib": {},
+                  "text": null,
+                  "tail": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}footnote",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type": "continuationSeparator",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id": "0"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}p",
+          "attrib": {},
+          "text": null,
+          "tail": null,
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r",
+              "attrib": {},
+              "text": null,
+              "tail": null,
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}continuationSeparator",
+                  "attrib": {},
+                  "text": null,
+                  "tail": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}footnote",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}id": "1"
+      },
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}p",
+          "attrib": {},
+          "text": null,
+          "tail": null,
+          "children": [
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pPr",
+              "attrib": {},
+              "text": null,
+              "tail": null,
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rPr",
+                  "attrib": {},
+                  "text": null,
+                  "tail": null,
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}sz",
+                      "attrib": {
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "20"
+                      },
+                      "text": null,
+                      "tail": null,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r",
+              "attrib": {},
+              "text": null,
+              "tail": null,
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rPr",
+                  "attrib": {},
+                  "text": null,
+                  "tail": null,
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}vertAlign",
+                      "attrib": {
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "superscript"
+                      },
+                      "text": null,
+                      "tail": null,
+                      "children": []
+                    },
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}sz",
+                      "attrib": {
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "20"
+                      },
+                      "text": null,
+                      "tail": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}footnoteRef",
+                  "attrib": {},
+                  "text": null,
+                  "tail": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}r",
+              "attrib": {},
+              "text": null,
+              "tail": null,
+              "children": [
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rPr",
+                  "attrib": {},
+                  "text": null,
+                  "tail": null,
+                  "children": [
+                    {
+                      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}sz",
+                      "attrib": {
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "20"
+                      },
+                      "text": null,
+                      "tail": null,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t",
+                  "attrib": {
+                    "{http://www.w3.org/XML/1998/namespace}space": "preserve"
+                  },
+                  "text": " Doutoranda em Direito Constitucional pelo Programa de Pos-Graduacao em Direito da Universidade de Fortaleza (Unifor). Servidora do Tribunal Regional Eleitoral do Ceara (TRE/CE). Fortaleza/CE, Brasil. E-mail: [A CONFIRMAR]. ORCID: https://orcid.org/0000-0002-2679-3948. Curriculo Lattes: [A CONFIRMAR; provavel http://lattes.cnpq.br/2735892712231659].",
+                  "tail": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nsmap": {
+    "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+  }
+}

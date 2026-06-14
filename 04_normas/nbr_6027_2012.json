@@ -1,0 +1,56 @@
+{
+  "id": "nbr-6027-2012",
+  "norma": "ABNT NBR 6027:2012",
+  "titulo": "Informação e documentação — Sumário — Apresentação",
+  "edicao": "2ª edição",
+  "data_publicacao": "2012-12-18",
+  "escopo": "Estabelece os requisitos para apresentação de sumário de documentos que exigem visão de conjunto e consulta. Não se aplica a publicações com partes autônomas (índice analítico, listas de figuras etc.).",
+  "definicao_sumario": "Enumeração das divisões, seções e outras partes de um documento, na mesma ordem e grafia em que a matéria nele se sucede. Apresentado como elemento pré-textual, é o último elemento antes da parte textual.",
+  "elementos_constituintes": [
+    "Indicativo da seção (quando houver)",
+    "Título da seção, com a mesma grafia (caixa, negrito, itálico) usada no corpo do texto",
+    "Subtítulo (se houver), separado do título por dois-pontos",
+    "Número da página inicial da seção (ou intervalo, à direita)"
+  ],
+  "regras_gerais": [
+    "Título 'SUMÁRIO' centralizado, em caixa alta, negrito, sem indicativo numérico (NBR 14724 seção 5.2.3)",
+    "Elementos do sumário em arquivo único, na mesma sequência em que aparecem no texto",
+    "Indicativos das seções alinhados à esquerda; títulos alinhados pela letra do título da seção mais elevada",
+    "Página numerada alinhada à direita, conectada ao título por linha pontilhada ou espaço",
+    "Espaçamento entre as entradas: 1,5",
+    "Subordinação visual entre níveis: usar recuos progressivos",
+    "Se houver mais de um volume, em cada um deve constar o sumário completo do trabalho, separados por volume"
+  ],
+  "elementos_que_aparecem_no_sumario": {
+    "pre_textuais": "NÃO aparecem (capa, folha de rosto, ficha, aprovação, dedicatória, agradecimentos, epígrafe, resumos, listas, sumário)",
+    "textuais": "TODOS aparecem (introdução, seções primárias/secundárias/etc., conclusão)",
+    "pos_textuais": "TODOS aparecem (referências, glossário, apêndices, anexos, índice)"
+  },
+  "elementos_sem_indicativo_numerico_no_sumario": {
+    "regra": "Aparecem no sumário sem numeração, mas mantendo o mesmo destaque tipográfico do título no corpo (caixa alta, negrito)",
+    "lista": [
+      "INTRODUÇÃO (PPGD/Unifor)",
+      "CONCLUSÃO (PPGD/Unifor)",
+      "REFERÊNCIAS",
+      "GLOSSÁRIO",
+      "APÊNDICE A — ...",
+      "ANEXO A — ...",
+      "ÍNDICE"
+    ]
+  },
+  "hierarquia_visual": {
+    "exemplo": [
+      "INTRODUÇÃO ......................................................... 14",
+      "1 SEÇÃO PRIMÁRIA (CAPÍTULO 1) ......................... 20",
+      "1.1 Seção secundária ............................................. 22",
+      "1.1.1 Seção terciária ............................................... 25",
+      "2 SEÇÃO PRIMÁRIA (CAPÍTULO 2) ........................ 70",
+      "CONCLUSÃO ...................................................... 250",
+      "REFERÊNCIAS .................................................... 260",
+      "APÊNDICE A — TÍTULO ....................................... 290"
+    ]
+  },
+  "ordem_apresentacao_no_documento": "Último elemento pré-textual, imediatamente antes da Introdução",
+  "linguagem": "Se houver mais de um idioma, apresentar um sumário em cada idioma, em folhas separadas",
+  "render_latex_abntex2": "\\imprimirsumario % gera sumário automaticamente a partir dos \\chapter e \\section"
+}

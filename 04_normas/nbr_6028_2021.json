@@ -1,0 +1,120 @@
+{
+  "id": "nbr-6028-2021",
+  "norma": "ABNT NBR 6028:2021",
+  "titulo": "Informação e documentação — Resumo, resenha e recensão — Apresentação",
+  "edicao": "3ª edição",
+  "data_publicacao": "2021-11-25",
+  "substitui": "ABNT NBR 6028:2003",
+  "escopo": "Estabelece os requisitos para apresentação de resumos, resenhas e recensões em qualquer tipo de documento.",
+  "definicoes": {
+    "resumo": "Apresentação concisa dos pontos relevantes de um documento, fornecendo uma visão rápida e clara do conteúdo e das conclusões do trabalho.",
+    "tipos_de_resumo": {
+      "indicativo": {
+        "descricao": "Indica os pontos principais do documento, sem apresentar dados qualitativos, quantitativos etc.",
+        "extensao": "150 a 250 palavras (genericamente)",
+        "uso": "Catálogos, bases de dados"
+      },
+      "informativo": {
+        "descricao": "Informa ao leitor finalidades, metodologia, resultados e conclusões do documento, de tal forma que este possa, inclusive, dispensar a consulta ao original.",
+        "extensao": "150 a 500 palavras (para teses, dissertações, artigos)",
+        "uso": "OBRIGATÓRIO em teses e dissertações"
+      },
+      "informativo_indicativo": "Combina características dos dois anteriores"
+    },
+    "palavras_chave": "Palavras representativas do conteúdo do documento, escolhidas em vocabulário controlado.",
+    "resenha": "Tipo de resumo crítico, com avaliação e julgamento da obra.",
+    "recensao": "Tipo de resenha mais ampla, com análise crítica detalhada."
+  },
+  "extensao_por_tipo_de_documento": {
+    "fonte": "ABNT NBR 6028:2021, item 4.1",
+    "obs": "A extensão do resumo varia conforme o tipo de documento — verificar a faixa correta antes de redigir",
+    "artigo_cientifico": {
+      "minimo": 100,
+      "maximo": 250
+    },
+    "relatorio_tecnico": {
+      "minimo": 100,
+      "maximo": 250
+    },
+    "trabalho_de_congresso": {
+      "minimo": 100,
+      "maximo": 250
+    },
+    "tese_ou_dissertacao": {
+      "minimo": 150,
+      "maximo": 500
+    }
+  },
+  "regras_resumo_para_tese": {
+    "obrigatorio_em": "Teses, dissertações, trabalhos acadêmicos (NBR 14724 seção 4.2.1.7)",
+    "tipo_exigido": "informativo",
+    "extensao_palavras": {
+      "minimo": 150,
+      "maximo": 500,
+      "obs": "Específico para teses e dissertações — para artigos científicos a faixa é 100–250 (ver extensao_por_tipo_de_documento)"
+    },
+    "estrutura_obrigatoria": [
+      "Primeira frase: indicar tema do trabalho",
+      "Objetivo geral",
+      "Métodos e técnicas",
+      "Resultados",
+      "Conclusões"
+    ],
+    "formato": {
+      "paragrafo": "ÚNICO (não dividir)",
+      "recuo_primeira_linha": "SEM recuo",
+      "espacamento_linha": "SIMPLES (1,0)",
+      "alinhamento": "justificado",
+      "fonte": "Times New Roman ou Arial, corpo 12",
+      "titulo": "RESUMO centralizado, em caixa alta, negrito, sem indicativo numérico"
+    },
+    "verbo": "Voz ativa, 3ª pessoa do singular",
+    "regras_literais": [
+      "O resumo deve ressaltar o objetivo, o método, os resultados e as conclusões do documento",
+      "A ordem e a extensão destes itens dependem do tipo de resumo e do tratamento que cada item recebe no documento original",
+      "Devem-se evitar: símbolos, contrações que não sejam de uso corrente; fórmulas, equações, diagramas etc.",
+      "Frases curtas, sequenciadas",
+      "Primeira frase deve ser significativa, explicando o tema principal do documento"
+    ]
+  },
+  "palavras_chave": {
+    "obrigatorio": true,
+    "posicao": "Imediatamente abaixo do resumo, separado por um espaço",
+    "quantidade": "3 a 5 palavras (PPGD recomenda esta faixa)",
+    "formato_nbr_6028": "Palavras-chave: termo 1; termo 2; termo 3.",
+    "formato_ppgd_unifor": "Palavras-chave: termo 1. termo 2. termo 3.",
+    "obs_critica_divergencia": "Guia PPGD/Unifor 2018 especifica 'separadas entre si por PONTO e finalizadas também por ponto' — DIVERGE da NBR 6028 que usa ponto-e-vírgula. Para tese do PPGD, prevalece o Guia.",
+    "regras": [
+      "Prefácio 'Palavras-chave:' em negrito, seguido de dois-pontos",
+      "Termos separados por PONTO (.) na tese PPGD (ou ponto-e-vírgula na NBR padrão)",
+      "Termina com ponto final",
+      "Cada termo iniciado com letra minúscula, exceto nomes próprios",
+      "Preferir termos do vocabulário controlado da área (tesauro, descritores)"
+    ],
+    "exemplo_ppgd": "Palavras-chave: direito constitucional. previdência social. sustentabilidade. estado democrático."
+  },
+  "resumo_em_lingua_estrangeira": {
+    "obrigatorio_em_tese": true,
+    "regra_ppgd": "Inglês OU espanhol (escolha do autor)",
+    "fidelidade": "Tradução fiel do resumo em PT-BR, mantendo estrutura e extensão",
+    "titulo": "ABSTRACT (inglês) ou RESUMEN (espanhol), centralizado, caixa alta, negrito",
+    "palavras_chave_traduzidas": {
+      "ingles": "Keywords: term 1; term 2; term 3.",
+      "espanhol": "Palabras clave: término 1; término 2; término 3."
+    }
+  },
+  "proibicoes_no_resumo": [
+    "Símbolos e contrações fora do uso corrente",
+    "Fórmulas, equações, diagramas, ilustrações",
+    "Tabelas",
+    "Citações bibliográficas (NÃO citar autores no resumo)",
+    "Notas de rodapé",
+    "Dividir em parágrafos (parágrafo único obrigatório)",
+    "Primeira pessoa (eu, nós, este trabalho)",
+    "Voz passiva imprecisa"
+  ],
+  "render_latex_abntex2": {
+    "resumo_pt": "\\begin{resumo}...\\palavraschave{...; ...; ...}\\end{resumo}",
+    "abstract": "\\begin{resumo}[Abstract]\\begin{otherlanguage*}{english}...\\palavraschave{...; ...; ...}\\end{otherlanguage*}\\end{resumo}"
+  }
+}

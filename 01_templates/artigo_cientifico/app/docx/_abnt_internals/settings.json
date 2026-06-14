@@ -1,0 +1,438 @@
+{
+  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}settings",
+  "attrib": {
+    "{http://schemas.openxmlformats.org/markup-compatibility/2006}Ignorable": "w14"
+  },
+  "text": null,
+  "tail": null,
+  "children": [
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}zoom",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "bestFit"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}proofState",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}spelling": "clean",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}grammar": "clean"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}defaultTabStop",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "720"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}characterSpacingControl",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "doNotCompress"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}savePreviewPicture",
+      "attrib": {},
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}compat",
+      "attrib": {},
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}useFELayout",
+          "attrib": {},
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}compatSetting",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}name": "compatibilityMode",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}uri": "http://schemas.microsoft.com/office/word",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "14"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}compatSetting",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}name": "overrideTableStyleFontSizeAndJustification",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}uri": "http://schemas.microsoft.com/office/word",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}compatSetting",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}name": "enableOpenTypeFeatures",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}uri": "http://schemas.microsoft.com/office/word",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}compatSetting",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}name": "doNotFlipMirrorIndents",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}uri": "http://schemas.microsoft.com/office/word",
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "1"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rsids",
+      "attrib": {},
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rsidRoot",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "00B47730"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rsid",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "00034616"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rsid",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "0006063C"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rsid",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "0015074B"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rsid",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "0029639D"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rsid",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "00326F90"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rsid",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "00AA1D8D"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rsid",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "00B47730"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rsid",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "00CB0664"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rsid",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "00FC693F"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/math}mathPr",
+      "attrib": {},
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/math}mathFont",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/officeDocument/2006/math}val": "Cambria Math"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/math}brkBin",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/officeDocument/2006/math}val": "before"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/math}brkBinSub",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/officeDocument/2006/math}val": "--"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/math}smallFrac",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/officeDocument/2006/math}val": "0"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/math}dispDef",
+          "attrib": {},
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/math}lMargin",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/officeDocument/2006/math}val": "0"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/math}rMargin",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/officeDocument/2006/math}val": "0"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/math}defJc",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/officeDocument/2006/math}val": "centerGroup"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/math}wrapIndent",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/officeDocument/2006/math}val": "1440"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/math}intLim",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/officeDocument/2006/math}val": "subSup"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{http://schemas.openxmlformats.org/officeDocument/2006/math}naryLim",
+          "attrib": {
+            "{http://schemas.openxmlformats.org/officeDocument/2006/math}val": "undOvr"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}themeFontLang",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "en-US",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}eastAsia": "ja-JP"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}clrSchemeMapping",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}bg1": "light1",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t1": "dark1",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}bg2": "light2",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t2": "dark2",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}accent1": "accent1",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}accent2": "accent2",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}accent3": "accent3",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}accent4": "accent4",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}accent5": "accent5",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}accent6": "accent6",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hyperlink": "hyperlink",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}followedHyperlink": "followedHyperlink"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}doNotAutoCompressPictures",
+      "attrib": {},
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}shapeDefaults",
+      "attrib": {},
+      "text": null,
+      "tail": null,
+      "children": [
+        {
+          "tag": "{urn:schemas-microsoft-com:office:office}shapedefaults",
+          "attrib": {
+            "{urn:schemas-microsoft-com:vml}ext": "edit",
+            "spidmax": "1027"
+          },
+          "text": null,
+          "tail": null,
+          "children": []
+        },
+        {
+          "tag": "{urn:schemas-microsoft-com:office:office}shapelayout",
+          "attrib": {
+            "{urn:schemas-microsoft-com:vml}ext": "edit"
+          },
+          "text": null,
+          "tail": null,
+          "children": [
+            {
+              "tag": "{urn:schemas-microsoft-com:office:office}idmap",
+              "attrib": {
+                "{urn:schemas-microsoft-com:vml}ext": "edit",
+                "data": "1"
+              },
+              "text": null,
+              "tail": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}decimalSymbol",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "."
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}listSeparator",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": ","
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.microsoft.com/office/word/2010/wordml}docId",
+      "attrib": {
+        "{http://schemas.microsoft.com/office/word/2010/wordml}val": "24062061"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.microsoft.com/office/word/2010/wordml}defaultImageDpi",
+      "attrib": {
+        "{http://schemas.microsoft.com/office/word/2010/wordml}val": "300"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    }
+  ],
+  "nsmap": {
+    "mc": "http://schemas.openxmlformats.org/markup-compatibility/2006",
+    "o": "urn:schemas-microsoft-com:office:office",
+    "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+    "m": "http://schemas.openxmlformats.org/officeDocument/2006/math",
+    "v": "urn:schemas-microsoft-com:vml",
+    "w10": "urn:schemas-microsoft-com:office:word",
+    "w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+    "w14": "http://schemas.microsoft.com/office/word/2010/wordml",
+    "sl": "http://schemas.openxmlformats.org/schemaLibrary/2006/main"
+  }
+}

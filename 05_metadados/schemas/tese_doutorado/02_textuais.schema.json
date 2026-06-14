@@ -1,0 +1,256 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "02_textuais.schema.json",
+  "title": "Textuais — Schema",
+  "allOf": [
+    {
+      "$ref": "_common.schema.json"
+    }
+  ],
+  "type": "object",
+  "required": [
+    "id",
+    "ordem_obrigatoria",
+    "elementos",
+    "regras_hierarquia_secoes",
+    "regras_paragrafo"
+  ],
+  "properties": {
+    "id": {
+      "const": "textuais"
+    },
+    "ordem_obrigatoria": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "string",
+        "enum": [
+          "introducao",
+          "capitulo_1",
+          "capitulo_2",
+          "capitulo_3",
+          "capitulo_4",
+          "conclusao"
+        ]
+      }
+    },
+    "elementos": {
+      "type": "object",
+      "required": [
+        "introducao",
+        "capitulo_1",
+        "capitulo_2",
+        "capitulo_3",
+        "capitulo_4",
+        "conclusao"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "introducao": {
+          "$ref": "#/definitions/elemento_textual"
+        },
+        "capitulo_1": {
+          "$ref": "#/definitions/elemento_textual"
+        },
+        "capitulo_2": {
+          "$ref": "#/definitions/elemento_textual"
+        },
+        "capitulo_3": {
+          "$ref": "#/definitions/elemento_textual"
+        },
+        "capitulo_4": {
+          "$ref": "#/definitions/elemento_textual"
+        },
+        "conclusao": {
+          "$ref": "#/definitions/elemento_textual"
+        }
+      }
+    },
+    "regras_hierarquia_secoes": {
+      "type": "object",
+      "required": [
+        "fonte_normativa",
+        "niveis"
+      ],
+      "properties": {
+        "fonte_normativa": {
+          "type": "string"
+        },
+        "obs_critica": {
+          "type": "string"
+        },
+        "niveis": {
+          "type": "object",
+          "required": [
+            "primaria",
+            "secundaria",
+            "terciaria",
+            "quaternaria",
+            "quinaria"
+          ],
+          "patternProperties": {
+            "^(primaria|secundaria|terciaria|quaternaria|quinaria)$": {
+              "type": "object",
+              "required": [
+                "padrao",
+                "fonte_pt"
+              ],
+              "properties": {
+                "padrao": {
+                  "type": "string"
+                },
+                "fonte_pt": {
+                  "type": "integer",
+                  "minimum": 8,
+                  "maximum": 20
+                },
+                "negrito": {
+                  "type": "boolean"
+                },
+                "italico": {
+                  "type": "boolean"
+                },
+                "sublinhado": {
+                  "type": "boolean"
+                },
+                "caixa": {
+                  "type": "string",
+                  "enum": [
+                    "alta",
+                    "primeira maiúscula",
+                    "minúscula"
+                  ]
+                },
+                "exemplo": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "regras_paragrafo": {
+      "type": "object",
+      "required": [
+        "limite_palavras",
+        "limite_linhas",
+        "recuo_primeira_linha_cm",
+        "alinhamento",
+        "espacamento"
+      ],
+      "properties": {
+        "limite_palavras": {
+          "type": "integer",
+          "minimum": 30,
+          "maximum": 100
+        },
+        "limite_linhas": {
+          "type": "integer",
+          "minimum": 3,
+          "maximum": 10
+        },
+        "recuo_primeira_linha_cm": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2.5
+        },
+        "alinhamento": {
+          "type": "string",
+          "enum": [
+            "justificado",
+            "esquerda",
+            "centralizado"
+          ]
+        },
+        "espacamento": {
+          "type": "number",
+          "enum": [
+            1.0,
+            1.5,
+            2.0
+          ]
+        }
+      }
+    }
+  },
+  "definitions": {
+    "elemento_textual": {
+      "type": "object",
+      "required": [
+        "obrigatorio"
+      ],
+      "properties": {
+        "obrigatorio": {
+          "type": "boolean"
+        },
+        "indicativo_numerico": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "boolean"
+            }
+          ]
+        },
+        "titulo": {
+          "type": "string"
+        },
+        "titulo_provisorio": {
+          "type": "string"
+        },
+        "formato_titulo": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "object",
+              "properties": {
+                "fonte_pt": {
+                  "type": "integer",
+                  "minimum": 8,
+                  "maximum": 20
+                },
+                "negrito": {
+                  "type": "boolean"
+                },
+                "caixa": {
+                  "type": "string"
+                },
+                "alinhamento": {
+                  "type": "string"
+                }
+              }
+            }
+          ]
+        },
+        "conteudo_obrigatorio": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "regras": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "proibicoes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "volume_sugerido_paginas": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 200
+        }
+      }
+    }
+  }
+}

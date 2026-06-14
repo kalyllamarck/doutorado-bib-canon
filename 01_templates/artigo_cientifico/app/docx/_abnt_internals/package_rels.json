@@ -1,0 +1,55 @@
+{
+  "tag": "{http://schemas.openxmlformats.org/package/2006/relationships}Relationships",
+  "attrib": {},
+  "text": null,
+  "tail": null,
+  "children": [
+    {
+      "tag": "{http://schemas.openxmlformats.org/package/2006/relationships}Relationship",
+      "attrib": {
+        "Id": "rId3",
+        "Type": "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties",
+        "Target": "docProps/core.xml"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/package/2006/relationships}Relationship",
+      "attrib": {
+        "Id": "rId4",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties",
+        "Target": "docProps/app.xml"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/package/2006/relationships}Relationship",
+      "attrib": {
+        "Id": "rId1",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+        "Target": "word/document.xml"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/package/2006/relationships}Relationship",
+      "attrib": {
+        "Id": "rId2",
+        "Type": "http://schemas.openxmlformats.org/package/2006/relationships/metadata/thumbnail",
+        "Target": "docProps/thumbnail.jpeg"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    }
+  ],
+  "nsmap": {
+    "": "http://schemas.openxmlformats.org/package/2006/relationships"
+  }
+}

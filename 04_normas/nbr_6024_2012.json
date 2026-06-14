@@ -1,0 +1,100 @@
+{
+  "id": "nbr-6024-2012",
+  "norma": "ABNT NBR 6024:2012",
+  "titulo": "Informação e documentação — Numeração progressiva das seções de um documento — Apresentação",
+  "edicao": "2ª edição",
+  "data_publicacao": "2012-02-14",
+  "escopo": "Estabelece o sistema de numeração progressiva das seções de documentos escritos, de modo a expor numa sequência lógica o inter-relacionamento da matéria.",
+  "definicoes": {
+    "secao": "Parte em que se divide o texto de um documento, contendo as matérias consideradas afins na exposição ordenada do assunto.",
+    "secao_primaria": "Principal divisão do texto de um documento.",
+    "secao_secundaria_terciaria_quaternaria_quinaria": "Divisões do texto resultantes de subdivisões da seção primária, secundária, terciária e quaternária, respectivamente.",
+    "alinea": "Subdivisão de seção ou parágrafo, com letra minúscula seguida de parêntese.",
+    "subalinea": "Subdivisão de alínea.",
+    "indicativo_de_secao": "Número ou grupo numérico que antecede cada seção do documento."
+  },
+  "regras_de_numeracao": {
+    "limite_niveis": 5,
+    "tipo_numero": "algarismos arábicos",
+    "estrutura_hierarquica": {
+      "primaria": "1, 2, 3, ...",
+      "secundaria": "1.1, 1.2, 2.1, 2.2, ...",
+      "terciaria": "1.1.1, 1.1.2, ...",
+      "quaternaria": "1.1.1.1, 1.1.1.2, ...",
+      "quinaria": "1.1.1.1.1 (LIMITE — não usar 6º nível)"
+    },
+    "regras_literais": [
+      "O indicativo de uma seção é alinhado à margem esquerda, precedendo o título, dele separado por um espaço",
+      "NÃO se utiliza ponto, hífen, travessão ou qualquer sinal após o indicativo de seção ou de seu título",
+      "Indicativos das seções primárias devem ser grafados em números inteiros a partir de 1",
+      "O indicativo de uma seção secundária é constituído pelo indicativo da seção primária a que pertence, seguido do número que lhe for atribuído na sequência do assunto, separados por ponto",
+      "Mesmo critério para seções terciárias, quaternárias e quinárias"
+    ],
+    "exemplo_correto": "2.1 Direitos fundamentais",
+    "exemplo_errado": [
+      "2.1. Direitos fundamentais (com ponto após indicativo)",
+      "2.1 - Direitos fundamentais (com hífen)",
+      "2.1: Direitos fundamentais (com dois-pontos)"
+    ]
+  },
+  "destaques_tipograficos": {
+    "criterio": "Diferenciar visualmente cada nível de seção usando combinação de recursos: caixa alta, negrito, itálico, sublinhado",
+    "regra": "Manter UNIFORMIDADE ao longo do documento — mesmo recurso para o mesmo nível",
+    "exemplo_padrao_tese_ppgd": {
+      "primaria": "1 TÍTULO EM CAIXA ALTA, NEGRITO",
+      "secundaria": "1.1 Título com Primeira Maiúscula, Negrito",
+      "terciaria": "1.1.1 Título em itálico",
+      "quaternaria": "1.1.1.1 Título sublinhado",
+      "quinaria": "1.1.1.1.1 Título regular"
+    }
+  },
+  "alineas_e_subalineas": {
+    "regras_alineas": [
+      "Texto da seção que precede as alíneas termina em dois-pontos",
+      "Alíneas indicadas por letras minúsculas seguidas de parêntese",
+      "Ordem alfabética: a), b), c), ...",
+      "Texto da alínea começa com letra minúscula e termina em ponto-e-vírgula, exceto a última que termina em ponto final",
+      "Segunda e demais linhas alinhadas sob a primeira letra do texto da alínea"
+    ],
+    "regras_subalineas": [
+      "Subalíneas começam com travessão imediatamente após o recuo",
+      "Texto das subalíneas começa com minúscula e termina em ponto-e-vírgula (última: ponto final)",
+      "Recuo maior que o da alínea"
+    ]
+  },
+  "titulos_sem_indicativo_numerico": {
+    "lista": [
+      "Errata",
+      "Agradecimentos",
+      "Lista de ilustrações",
+      "Lista de tabelas",
+      "Lista de abreviaturas e siglas",
+      "Lista de símbolos",
+      "Resumos",
+      "Sumário",
+      "Referências",
+      "Glossário",
+      "Apêndice(s)",
+      "Anexo(s)",
+      "Índice(s)"
+    ],
+    "regra": "Centralizados (conforme NBR 14724 seção 5.2.3)",
+    "texto_literal_item_4_2": "Não se numeram os títulos, sem indicativo numérico — errata, agradecimentos, lista de ilustrações, lista de abreviaturas e siglas, lista de símbolos, resumos, sumário, referências, glossário, apêndice(s), anexo(s) e índice(s) — que devem ser centralizados.",
+    "fonte_texto_literal": "ABNT NBR 6024:2012, item 4.2",
+    "introducao_e_conclusao": {
+      "posicao_na_nbr": "A NBR 6024:2012 não lista explicitamente Introdução e Conclusão entre os títulos sem indicativo numérico",
+      "pratica_consolidada": "Manuais de normalização de referência (UFSC, USP, UFRJ) e o Guia PPGD/Unifor tratam Introdução e Conclusão como elementos sem indicativo numérico, por serem divisões textuais de natureza pré/pós-temática na arquitetura do trabalho acadêmico",
+      "recomendacao": "Não numerar Introdução nem Conclusão — centralizá-las sem indicativo, seguindo a prática consolidada e a orientação do PPGD/Unifor"
+    }
+  },
+  "elementos_sem_titulo_e_sem_indicativo": [
+    "Folha de aprovação",
+    "Dedicatória",
+    "Epígrafe"
+  ],
+  "implicacao_para_tese_ppgd": [
+    "Capítulos = seções primárias (NBR proíbe 'capítulo' como divisão estrutural mas autoriza a nomenclatura)",
+    "Introdução e Conclusão: a NBR 6024 não as lista entre os 'sem indicativo', mas PPGD trata como tais por convenção do programa",
+    "Limite de 5 níveis de subdivisão (1.1.1.1.1) — após isso, usar alíneas"
+  ]
+}

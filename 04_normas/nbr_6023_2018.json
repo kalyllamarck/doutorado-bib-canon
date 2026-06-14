@@ -1,0 +1,121 @@
+{
+  "id": "nbr-6023-2018",
+  "norma": "ABNT NBR 6023:2018",
+  "titulo": "Informação e documentação — Referências — Elaboração",
+  "edicao": "2ª edição",
+  "data_publicacao": "2018-11-14",
+  "fonte_pdf_local": "Normas da ABNT/ABNT NBR 6023 2018 (1).pdf",
+  "secao_1_escopo": "Estabelece os princípios gerais para a elaboração de referências utilizadas para produzir documentos e para inclusão em bibliografias, resumos, resenhas, recensões e outros.",
+  "secao_4_elementos": {
+    "essenciais": "Informações indispensáveis à identificação do documento. Vinculados ao suporte documental — variam conforme o tipo.",
+    "complementares": "Informações que, acrescentadas aos essenciais, permitem melhor caracterizar os documentos."
+  },
+  "secao_5_localizacao": [
+    "No rodapé",
+    "No fim de textos, partes ou seções",
+    "Em lista de referências (FORMATO USADO NA TESE)",
+    "Antecedendo resumos, resenhas, recensões e erratas"
+  ],
+  "secao_6_regras_gerais_apresentacao": [
+    "6.1 Elementos essenciais e complementares apresentados em sequência padronizada",
+    "6.3 LITERAL: 'As referências devem ser elaboradas em espaço simples, alinhadas à margem esquerda do texto e separadas entre si por uma linha em branco de espaço simples.'",
+    "6.4 Pontuação uniforme para todas as referências",
+    "6.5 Elementos essenciais refletem os dados do documento referenciado; informações acrescidas seguem o idioma do texto em elaboração",
+    "6.6 Documentos online: registrar endereço precedido de 'Disponível em:' e data de acesso precedida de 'Acesso em:'",
+    "6.7 Recurso tipográfico (negrito, itálico ou sublinhado) para destacar título deve ser UNIFORME em todas as referências",
+    "6.8 Se optar por elementos complementares, incluir em TODAS as referências do mesmo tipo",
+    "6.9 Casos omissos: resolver pelo código de catalogação vigente"
+  ],
+  "secao_7_modelos_essenciais": {
+    "livro_monografia_no_todo": {
+      "estrutura": "SOBRENOME, Prenome. Título: subtítulo. Edição (se >1ª). Local: Editora, ano.",
+      "exemplo": "FOUCAULT, Michel. Vigiar e punir: nascimento da prisão. 42. ed. Petrópolis: Vozes, 2014.",
+      "notas": [
+        "Sobrenome em CAIXA ALTA",
+        "Título em negrito (escolher recurso tipográfico e manter uniforme)",
+        "Subtítulo precedido de dois-pontos, sem negrito",
+        "Local: cidade da editora; se não identificada, usar [S. l.]",
+        "Editora sem 'Editora' nem 'Ltda.' (omitir designação comercial)",
+        "Se ano não identificado: [200?] ou [201-]"
+      ]
+    },
+    "capitulo_de_livro": {
+      "estrutura": "SOBRENOME, Prenome do autor do capítulo. Título do capítulo. In: SOBRENOME, Prenome do organizador (org.). Título do livro. Local: Editora, ano. p. X-Y.",
+      "exemplo": "CANOTILHO, J. J. Gomes. Estado de direito. In: BARROSO, Luís Roberto (org.). Constituição e democracia. Rio de Janeiro: Renovar, 2010. p. 45-78."
+    },
+    "artigo_de_periodico": {
+      "estrutura": "SOBRENOME, Prenome. Título do artigo. Título do Periódico, Local, v. X, n. Y, p. Z-W, mês ano.",
+      "exemplo": "SARLET, Ingo Wolfgang. Dignidade da pessoa humana. Revista de Direito Constitucional, São Paulo, v. 12, n. 47, p. 100-130, jul./set. 2018.",
+      "notas": [
+        "Mês abreviado em PT-BR: jan., fev., mar., abr., maio, jun., jul., ago., set., out., nov., dez.",
+        "Maio NÃO abrevia"
+      ]
+    },
+    "artigo_de_periodico_online": {
+      "estrutura": "[mesmo modelo] DOI: https://... OU Disponível em: <URL>. Acesso em: DD mmm. AAAA.",
+      "exemplo": "BARROSO, Luís Roberto. Neoconstitucionalismo. Direito Público, Brasília, v. 1, n. 1, p. 5-50, 2003. Disponível em: https://exemplo.org/artigo. Acesso em: 12 maio 2026."
+    },
+    "tese_dissertacao": {
+      "estrutura": "SOBRENOME, Prenome. Título: subtítulo. Ano. Total de folhas. Tese (Doutorado em Área) — Programa, Universidade, Cidade, ano.",
+      "exemplo": "PEREIRA, Kalyl Lamarck Silvério. Título da tese. 2026. 250 f. Tese (Doutorado em Direito Constitucional) — Programa de Pós-Graduação em Direito, Universidade de Fortaleza, Fortaleza, 2026."
+    },
+    "legislacao_brasileira": {
+      "estrutura": "JURISDIÇÃO. Lei nº X.XXX, de DD de mmm. de AAAA. Ementa. Diário Oficial da União: seção 1, Brasília, DF, ano X, n. Y, p. Z, DD mmm AAAA.",
+      "exemplo": "BRASIL. Lei nº 8.213, de 24 de julho de 1991. Dispõe sobre os Planos de Benefícios da Previdência Social e dá outras providências. Diário Oficial [da] República Federativa do Brasil, Brasília, DF, 25 jul. 1991."
+    },
+    "constituicao": {
+      "estrutura": "JURISDIÇÃO. Constituição (ano). Título. Local: Editora, ano.",
+      "exemplo": "BRASIL. Constituição (1988). Constituição da República Federativa do Brasil de 1988. Brasília, DF: Senado Federal, 1988."
+    },
+    "jurisprudencia": {
+      "estrutura": "JURISDIÇÃO. Órgão julgador. Tipo de decisão. Número. Partes. Relator. Local, DD mmm. AAAA. Disponível em: URL. Acesso em: DD mmm. AAAA.",
+      "exemplo": "BRASIL. Supremo Tribunal Federal. Recurso Extraordinário 631.240/MG. Relator: Min. Roberto Barroso. Brasília, 03 set. 2014."
+    },
+    "site_documento_online": {
+      "estrutura": "AUTOR (ou INSTITUIÇÃO). Título. Local, ano. Disponível em: URL. Acesso em: DD mmm. AAAA.",
+      "exemplo": "ONU. Declaração Universal dos Direitos Humanos. Nova York, 1948. Disponível em: https://www.un.org/. Acesso em: 12 maio 2026."
+    },
+    "evento_no_todo": {
+      "estrutura": "NOME DO EVENTO, número., ano, Local. Anais [...]. Local: Editora, ano.",
+      "exemplo": "ENCONTRO NACIONAL DO CONPEDI, 30., 2021, Belém. Anais [...]. Florianópolis: CONPEDI, 2021."
+    },
+    "trabalho_em_evento": {
+      "estrutura": "SOBRENOME, Prenome. Título do trabalho. In: NOME DO EVENTO, número., ano, Local. Anais [...]. Local: Editora, ano. p. X-Y.",
+      "exemplo": "DIAS, Eduardo Rocha. Constitucionalismo previdenciário. In: ENCONTRO NACIONAL DO CONPEDI, 30., 2021, Belém. Anais [...]. Florianópolis: CONPEDI, 2021. p. 200-220."
+    }
+  },
+  "secao_8_transcricao": {
+    "autoria_com_um_autor": "SOBRENOME, Prenome.",
+    "autoria_com_dois_autores": "SOBRENOME, Prenome; SOBRENOME, Prenome.",
+    "autoria_com_tres_autores": "SOBRENOME, Prenome; SOBRENOME, Prenome; SOBRENOME, Prenome.",
+    "autoria_mais_de_tres": "SOBRENOME, Prenome et al. (escolher padrão e manter uniforme)",
+    "autoria_coletiva_instituicional": "NOME DA INSTITUIÇÃO EM CAIXA ALTA.",
+    "obra_sem_autor": "Iniciar pelo título, com primeira palavra em letras maiúsculas",
+    "sobrenomes_compostos": [
+      "Junior, Filho, Neto: SOBRENOME JUNIOR, Prenome",
+      "Sobrenome estrangeiro com partícula (de, da, du, von, van, dos, das): SOBRENOME, Prenome — partícula em minúscula"
+    ]
+  },
+  "secao_9_ordenacao_referencias": {
+    "metodo_principal": "Ordem alfabética pelo elemento de entrada (primeiro autor ou título)",
+    "regras": [
+      "Mesma autoria, várias obras: ordenar por ano (mais antiga primeira)",
+      "Mesmo autor, mesmo ano: usar 'a', 'b', 'c' após o ano",
+      "Mais de um autor: ordenar pelo primeiro sobrenome do primeiro autor"
+    ]
+  },
+  "abreviaturas_principais": {
+    "S.l.": "Sine loco (sem local)",
+    "S.n.": "Sine nomine (sem editora)",
+    "et al.": "Et alii (e outros)",
+    "Org.": "Organizador(es)",
+    "Coord.": "Coordenador(es)",
+    "Ed.": "Editor(es) OU Edição (depende do contexto)",
+    "p.": "Página(s)",
+    "f.": "Folha(s)",
+    "v.": "Volume",
+    "n.": "Número",
+    "il.": "Ilustrado",
+    "trad.": "Tradução, tradutor"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}sectPr",
+  "attrib": {
+    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rsidR": "00FC693F",
+    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rsidRPr": "0006063C",
+    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}rsidSect": "00034616"
+  },
+  "text": null,
+  "tail": null,
+  "children": [
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}headerReference",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}type": "default",
+        "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId9"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pgSz",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}w": "12240",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}h": "15840"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}pgMar",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}top": "1701",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}right": "1134",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}bottom": "1134",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}left": "1701",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}header": "720",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}footer": "720",
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}gutter": "0"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}cols",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}space": "720"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}docGrid",
+      "attrib": {
+        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}linePitch": "360"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    }
+  ]
+}

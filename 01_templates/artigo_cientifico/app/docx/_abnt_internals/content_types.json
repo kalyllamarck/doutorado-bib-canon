@@ -1,0 +1,171 @@
+{
+  "tag": "{http://schemas.openxmlformats.org/package/2006/content-types}Types",
+  "attrib": {},
+  "text": null,
+  "tail": null,
+  "children": [
+    {
+      "tag": "{http://schemas.openxmlformats.org/package/2006/content-types}Default",
+      "attrib": {
+        "Extension": "jpeg",
+        "ContentType": "image/jpeg"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/package/2006/content-types}Default",
+      "attrib": {
+        "Extension": "rels",
+        "ContentType": "application/vnd.openxmlformats-package.relationships+xml"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/package/2006/content-types}Default",
+      "attrib": {
+        "Extension": "xml",
+        "ContentType": "application/xml"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/package/2006/content-types}Override",
+      "attrib": {
+        "PartName": "/customXml/itemProps1.xml",
+        "ContentType": "application/vnd.openxmlformats-officedocument.customXmlProperties+xml"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/package/2006/content-types}Override",
+      "attrib": {
+        "PartName": "/docProps/app.xml",
+        "ContentType": "application/vnd.openxmlformats-officedocument.extended-properties+xml"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/package/2006/content-types}Override",
+      "attrib": {
+        "PartName": "/docProps/core.xml",
+        "ContentType": "application/vnd.openxmlformats-package.core-properties+xml"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/package/2006/content-types}Override",
+      "attrib": {
+        "PartName": "/word/document.xml",
+        "ContentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/package/2006/content-types}Override",
+      "attrib": {
+        "PartName": "/word/fontTable.xml",
+        "ContentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.fontTable+xml"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/package/2006/content-types}Override",
+      "attrib": {
+        "PartName": "/word/footnotes.xml",
+        "ContentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.footnotes+xml"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/package/2006/content-types}Override",
+      "attrib": {
+        "PartName": "/word/header1.xml",
+        "ContentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.header+xml"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/package/2006/content-types}Override",
+      "attrib": {
+        "PartName": "/word/numbering.xml",
+        "ContentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/package/2006/content-types}Override",
+      "attrib": {
+        "PartName": "/word/settings.xml",
+        "ContentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/package/2006/content-types}Override",
+      "attrib": {
+        "PartName": "/word/styles.xml",
+        "ContentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/package/2006/content-types}Override",
+      "attrib": {
+        "PartName": "/word/stylesWithEffects.xml",
+        "ContentType": "application/vnd.ms-word.stylesWithEffects+xml"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/package/2006/content-types}Override",
+      "attrib": {
+        "PartName": "/word/theme/theme1.xml",
+        "ContentType": "application/vnd.openxmlformats-officedocument.theme+xml"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    },
+    {
+      "tag": "{http://schemas.openxmlformats.org/package/2006/content-types}Override",
+      "attrib": {
+        "PartName": "/word/webSettings.xml",
+        "ContentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.webSettings+xml"
+      },
+      "text": null,
+      "tail": null,
+      "children": []
+    }
+  ],
+  "nsmap": {
+    "": "http://schemas.openxmlformats.org/package/2006/content-types"
+  }
+}

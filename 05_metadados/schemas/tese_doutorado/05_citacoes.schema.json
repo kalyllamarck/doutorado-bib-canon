@@ -1,0 +1,133 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "05_citacoes.schema.json",
+  "title": "Citações — Schema",
+  "allOf": [
+    {
+      "$ref": "_common.schema.json"
+    }
+  ],
+  "type": "object",
+  "required": [
+    "id",
+    "estilos_aceitos",
+    "tipos_de_citacao",
+    "regras_obrigatorias_ppgd"
+  ],
+  "properties": {
+    "id": {
+      "const": "citacoes"
+    },
+    "estilos_aceitos": {
+      "type": "object",
+      "required": [
+        "inline",
+        "parentetico"
+      ],
+      "properties": {
+        "inline": {
+          "$ref": "#/definitions/estilo_citacao"
+        },
+        "parentetico": {
+          "$ref": "#/definitions/estilo_citacao"
+        }
+      }
+    },
+    "tipos_de_citacao": {
+      "type": "object",
+      "required": [
+        "indireta_parafrase",
+        "direta_curta",
+        "direta_longa"
+      ],
+      "additionalProperties": true
+    },
+    "regras_obrigatorias_ppgd": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "string"
+      },
+      "description": "Inclui regra crítica: página obrigatória em citação indireta (exigência PPGD)"
+    },
+    "regras_estruturais_tese": {
+      "type": "object",
+      "required": [
+        "introducao",
+        "conclusao",
+        "capitulos"
+      ],
+      "properties": {
+        "introducao": {
+          "type": "object",
+          "required": [
+            "permitidas",
+            "proibidas"
+          ],
+          "properties": {
+            "permitidas": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "proibidas": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "conclusao": {
+          "type": "object",
+          "required": [
+            "permitidas",
+            "proibidas"
+          ],
+          "properties": {
+            "permitidas": {
+              "type": "array",
+              "maxItems": 0,
+              "description": "Conclusão NÃO admite citações (regra PPGD)"
+            },
+            "proibidas": {
+              "type": "array",
+              "minItems": 1
+            }
+          }
+        },
+        "capitulos": {
+          "type": "object"
+        }
+      }
+    }
+  },
+  "definitions": {
+    "estilo_citacao": {
+      "type": "object",
+      "required": [
+        "padrao",
+        "exemplo",
+        "regras"
+      ],
+      "properties": {
+        "padrao": {
+          "type": "string"
+        },
+        "exemplo": {
+          "type": "string"
+        },
+        "uso": {
+          "type": "string"
+        },
+        "regras": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "04_formatacao_global.schema.json",
+  "title": "Formatação Global — Schema",
+  "allOf": [
+    {
+      "$ref": "_common.schema.json"
+    }
+  ],
+  "type": "object",
+  "required": [
+    "id",
+    "papel",
+    "margens",
+    "fonte",
+    "espacamento",
+    "alinhamento",
+    "paragrafo",
+    "paginacao"
+  ],
+  "properties": {
+    "id": {
+      "const": "formatacao-global"
+    },
+    "papel": {
+      "type": "object",
+      "required": [
+        "tamanho",
+        "largura_cm",
+        "altura_cm",
+        "cor"
+      ],
+      "properties": {
+        "tamanho": {
+          "const": "A4"
+        },
+        "largura_cm": {
+          "type": "number",
+          "const": 21.0
+        },
+        "altura_cm": {
+          "type": "number",
+          "const": 29.7
+        },
+        "cor": {
+          "type": "string",
+          "enum": [
+            "branco",
+            "reciclado",
+            "branco ou reciclado"
+          ]
+        }
+      }
+    },
+    "margens": {
+      "type": "object",
+      "required": [
+        "superior_cm",
+        "inferior_cm",
+        "esquerda_cm",
+        "direita_cm"
+      ],
+      "properties": {
+        "superior_cm": {
+          "type": "number",
+          "const": 3.0
+        },
+        "inferior_cm": {
+          "type": "number",
+          "const": 2.0
+        },
+        "esquerda_cm": {
+          "type": "number",
+          "const": 3.0
+        },
+        "direita_cm": {
+          "type": "number",
+          "const": 2.0
+        }
+      }
+    },
+    "fonte": {
+      "type": "object",
+      "required": [
+        "default_face",
+        "tamanho_default_pt"
+      ],
+      "properties": {
+        "default_face": {
+          "type": "string",
+          "enum": [
+            "Times New Roman",
+            "Arial"
+          ]
+        },
+        "alternativa_aceita": {
+          "type": "string",
+          "enum": [
+            "Times New Roman",
+            "Arial"
+          ]
+        },
+        "tamanho_default_pt": {
+          "type": "integer",
+          "const": 12
+        },
+        "cor": {
+          "type": "string",
+          "enum": [
+            "preto",
+            "preta"
+          ]
+        }
+      }
+    },
+    "espacamento": {
+      "type": "object",
+      "required": [
+        "linha_default"
+      ],
+      "properties": {
+        "linha_default": {
+          "type": "number",
+          "const": 1.5
+        },
+        "linha_simples_em": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "paragrafo": {
+      "type": "object",
+      "required": [
+        "recuo_primeira_linha_cm",
+        "alinhamento",
+        "espacamento"
+      ],
+      "properties": {
+        "recuo_primeira_linha_cm": {
+          "type": "number",
+          "enum": [
+            1.0,
+            1.25
+          ],
+          "description": "1,0 para PPGD; 1,25 para convenção comum"
+        },
+        "alinhamento": {
+          "type": "string",
+          "const": "justificado"
+        },
+        "espacamento": {
+          "type": "number",
+          "const": 1.5
+        },
+        "limite_palavras": {
+          "type": "integer"
+        },
+        "limite_linhas": {
+          "type": "integer"
+        }
+      }
+    },
+    "paginacao": {
+      "type": "object",
+      "required": [
+        "tipo_numero",
+        "posicao",
+        "fonte_pt"
+      ],
+      "properties": {
+        "tipo_numero": {
+          "type": "string",
+          "const": "algarismos arábicos"
+        },
+        "posicao": {
+          "type": "string",
+          "const": "canto superior direito"
+        },
+        "fonte_pt": {
+          "type": "integer",
+          "const": 10
+        }
+      }
+    },
+    "citacao_longa": {
+      "type": "object",
+      "properties": {
+        "recuo_esquerdo_cm": {
+          "type": "number",
+          "const": 4.0
+        },
+        "fonte_pt": {
+          "type": "integer",
+          "const": 10
+        },
+        "espacamento_linha": {
+          "type": "number",
+          "const": 1.0
+        },
+        "sem_aspas": {
+          "type": "boolean",
+          "const": true
+        }
+      }
+    }
+  }
+}
