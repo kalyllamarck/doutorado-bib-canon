@@ -101,6 +101,14 @@
       "regex": "\\bmarcos?\\b",
       "substitutos_sugeridos": ["baliza", "parâmetro", "referência", "esteio", "alicerce", "fundamento"],
       "observacao": "Uso metafórico/abstrato vedado. Permitido sentido literal (marco de fronteira, marco histórico datado com ano)."
+    },
+    {
+      "id": "lex_015",
+      "forma_canonica": "operar",
+      "variantes": ["opera", "operam", "operar", "operou", "operaram", "operando", "operada", "operado", "operadas", "operados", "opere", "operem", "operação", "operações", "operante", "operantes"],
+      "regex": "\\boper(a|am|ar|ou|aram|ando|ad[ao]s?|e|em|ação|ações|antes?)\\b",
+      "substitutos_sugeridos": ["atuar", "incidir", "funcionar", "agir", "vigorar", "produzir efeitos", "dar-se", "processar-se", "realizar-se"],
+      "observacao": "Veda o verbo 'operar' e suas formas/derivações. Permitidos 'operacional' e 'operário' (sentidos distintos, não capturados pelo regex)."
     }
   ]
 }

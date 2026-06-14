@@ -2,8 +2,8 @@
   "subtipo": "aditivas",
   "categoria": "coordenativas",
   "definicao": "Ligam elementos de mesma função sintática indicando soma ou acréscimo",
-  "total": 43,
-  "formais": 39,
+  "total": 42,
+  "formais": 38,
   "informais": 4,
   "polissemicas": 2,
   "itens": [
@@ -39,12 +39,6 @@
     },
     {
       "forma": "ademais",
-      "registro": "formal_academico",
-      "score_academico": 4,
-      "polissemica": false
-    },
-    {
-      "forma": "outrossim",
       "registro": "formal_academico",
       "score_academico": 4,
       "polissemica": false

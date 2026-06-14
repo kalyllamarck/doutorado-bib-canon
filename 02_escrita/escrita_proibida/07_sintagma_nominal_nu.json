@@ -1,0 +1,82 @@
+{
+  "tipo": "construcao_sintatica",
+  "descricao": "Sintagma nominal nu (bare singular): substantivo comum, contável e singular em posição de objeto direto sem determinante (artigo definido nem indefinido). Produz leitura genérica ou qualitativa que pode obscurecer o referente individuado pretendido.",
+  "entradas": [
+    {
+      "id": "cst_013",
+      "nome": "sintagma_nominal_nu",
+      "nomes_alternativos": ["bare singular", "bare noun", "substantivo nu", "elipse de artigo"],
+      "descricao": "Substantivo comum, contável e singular usado sem determinante em posição de objeto direto (ou sujeito de oração passiva). Em português brasileiro, o padrão default para objeto contável singular é ter determinante ('a linha', 'uma linha'). A supressão produz leitura genérica-qualitativa que aproxima o nome de predicado ou categoria abstrata, em vez de referente individuado.",
+      "posicoes_criticas": [
+        "objeto direto de verbo de ação: 'desenha linha' (esperado: 'desenha a linha' / 'desenha uma linha')",
+        "sujeito de oração passiva sem determinante: 'linha foi estabelecida' (raro, mas possível)",
+        "complemento nominal sem preposição visível: 'possui caráter' (esperado: 'possui um caráter' / 'possui o caráter')"
+      ],
+      "mecanismo_gramatical": {
+        "fenomeno": "Omissão do artigo em posição de argumento interno direto com substantivo contável singular",
+        "efeito_semantico": "Leitura genérica (tipo/qualidade) em vez de referencial (instância individuada). O substantivo passa a funcionar como predicado ou categoria, não como objeto discreto.",
+        "efeito_estilístico": "Tom nominal-telegráfico, sentencioso, associado a títulos, prosa jurídica pericial e jornalismo. Apropriado em alguns registros, mas gera 'impressão de quebra' no discurso acadêmico corrido."
+      },
+      "exemplos": [
+        {
+          "proibido": "A história clínica e previdenciária do requerente desenha linha temporal estável de incapacidade laborativa total.",
+          "problema": "'linha' é substantivo contável singular sem determinante em posição de objeto direto",
+          "reescrito_indefinido": "A história clínica e previdenciária do requerente desenha uma linha temporal estável de incapacidade laborativa total.",
+          "reescrito_definido": "A história clínica e previdenciária do requerente desenha a linha temporal estável de incapacidade laborativa total.",
+          "nota": "Inserir 'uma' mantém a densidade do texto sem a quebra; inserir 'a' pressupõe linha já conhecida (usar apenas se referente foi mencionado antes)."
+        },
+        {
+          "proibido": "O laudo revela padrão de deterioração progressiva.",
+          "reescrito": "O laudo revela um padrão de deterioração progressiva.",
+          "ou": "O laudo documenta a deterioração progressiva."
+        },
+        {
+          "proibido": "A EC 103/2019 configura ruptura com o modelo de solidariedade.",
+          "reescrito": "A EC 103/2019 configura uma ruptura com o modelo de solidariedade.",
+          "ou": "A EC 103/2019 rompe com o modelo de solidariedade. (preferível: verbo específico elimina o problema)"
+        },
+        {
+          "proibido": "A norma estabelece critério objetivo de vedação.",
+          "reescrito": "A norma estabelece um critério objetivo de vedação.",
+          "alternativa": "A norma objetiva o critério de vedação. (economiza o sintagma inteiro)"
+        }
+      ],
+      "excecoes_legitimas": [
+        "Expressões fixas/idiomáticas onde a ausência de artigo é normativa: 'fazer jus', 'ter ciência', 'ter conhecimento', 'prestar atenção', 'pedir socorro'",
+        "Substantivos massivos (não contáveis) em que artigo é opcional: 'há insegurança jurídica', 'produz risco'",
+        "Plurais genéricos: 'estabelece critérios' (plural sem artigo é padrão aceito em português)",
+        "Predicativos sem artigo por regra de concordância nominal: 'tornou-se referência obrigatória'",
+        "Titulações: 'nomeado Ministro', 'eleito Presidente'"
+      ],
+      "gatilho_de_deteccao": {
+        "metodo": "Heurístico — requer revisão humana ou analisador morfossintático (POS tagger). Regex puro gera falsos positivos.",
+        "regex_heuristico": "\\b(desenha|revela|configura|estabelece|apresenta|constitui|representa|evidencia|demonstra|documenta|forma|cria|produz|gera)\\s+(?!a\\b|o\\b|as\\b|os\\b|um\\b|uma\\b|uns\\b|umas\\b|seu|sua|este|esta|esse|essa|aquele|aquela|nenhum|nenhuma|todo|toda|cada|qualquer|dois|duas|três|algum|alguma)[A-ZÀ-Öa-zà-ö][a-zà-ö]+(?:\\s+[a-zà-ö]+)*",
+        "instrucao_revisao": "Localizar verbo de ação + substantivo singular sem determinante. Verificar: (1) é contável? (2) está no singular? (3) não é expressão fixa? Se SIM às três: corrigir.",
+        "falsos_positivos_comuns": [
+          "Expressões idiomáticas (ver excecoes_legitimas)",
+          "Predicativos ('é referência')",
+          "Aposição sem artigo ('o Ministro, servidor público, ...')"
+        ]
+      },
+      "alternativas_recomendadas": [
+        "Inserir artigo indefinido 'um/uma' para individualizar o referente (solução conservadora)",
+        "Inserir artigo definido 'o/a' apenas se o referente já foi mencionado antes",
+        "Substituir o sintagma 'verbo + bare noun' por verbo específico de conteúdo (preferível): 'configura ruptura' → 'rompe'; 'apresenta caráter' → 'caracteriza-se'",
+        "Reformular com predicativo: 'desenha linha temporal' → 'traça uma trajetória temporal'"
+      ],
+      "motivo_proibicao": "No discurso acadêmico corrido, a ausência de determinante em objeto direto contável singular produz 'impressão de quebra' no fluxo de leitura porque viola a expectativa gramatical padrão do português brasileiro. O leitor hesita sobre o estatuto referencial do nome (instância ou tipo?). Em textos jurídico-doutrinários com argumentação encadeada, onde cada referente deve ser rastreável, o bare singular obscurece a cadeia anafórica e pode enfraquecer a precisão da argumentação.",
+      "coocorrencia_frequente": [
+        "cst_001 (dois-pontos — textos de tom telegráfico tendem a combinar os dois recursos)",
+        "p_04 (determinantes obrigatórios — este é o princípio canônico violado)",
+        "estilo nominal/telegráfico em peças processuais que transborda para a prosa acadêmica"
+      ],
+      "referencia_linguistica": {
+        "termo_tecnico_pt": "Sintagma nominal nu / substantivo nu",
+        "termo_tecnico_en": "Bare singular / bare noun",
+        "termo_estilístico": "Elipse de artigo / estilo nominal telegráfico / assíndeto determinativo",
+        "fenomeno_gramatical": "Variação paramétrica do PB quanto à obrigatoriedade do artigo; estudado em linguística formal como 'bare singular' em contraste com línguas como o inglês (onde é mais frequente) e o espanhol (onde também é restrito)"
+      },
+      "principio_canonico_violado": "p_04 (determinantes_e_preposicoes_obrigatorios)"
+    }
+  ]
+}

@@ -1,0 +1,622 @@
+{
+  "id": "voz-autoral-kalyl",
+  "schema_version": "2.0",
+  "data_atualizacao": "2026-05-12",
+  "componente": "Voz autoral da tese de Kalyl Lamarck — três eixos coexistentes",
+  "descricao": "Define COMO o autor escreve. Complementa escrita_canonica.json (princípios universais p_00-p_20) e escrita_proibida/ (regex negativos) com o padrão positivo da voz da tese. Em conflito, escrita_canonica.json prevalece.",
+  "fontes_de_extracao": [
+    "Artigo Pompeu; Pereira (2025) — Capacidades, sustentabilidade e BPC/Bolsa Família",
+    "Dissertação Kalyl Lamarck Silvério Pereira (2025), p.17, p.19, p.22-23, p.31, p.50, p.64, p.93"
+  ],
+  "inspiracao_literaria": {
+    "obra": "Dostoiévski, Memórias do Subsolo (1864)",
+    "principio": "narrador em terceira pessoa que conduz o leitor para dentro do raciocínio sem entregar a conclusão antes de construir o caminho",
+    "transposicao_para_voz_academica": "manter pessoa gramatical impessoal reflexiva; o pulso narrativo se manifesta via conectivos de localização, marcadores autorais e imagens recorrentes — nunca via 1ª pessoa",
+    "ver_canon": "p_17.referencia_literaria"
+  },
+  "principio_zero": {
+    "id": "v_00",
+    "nome": "conducao_invisivel",
+    "regra_mae": "A voz se manifesta como condução invisível do leitor pelo raciocínio. O autor está presente em toda decisão (palavra, conjunção, imagem, ordem) mas jamais como sujeito gramatical de primeira pessoa. O leitor descobre, não recebe; é levado, não dirigido.",
+    "criterio_operacional": {
+      "descricao": "Tradução observável do princípio em sinais lexicais/sintáticos. Validador automático aplica.",
+      "checks": [
+        "Pessoa gramatical: nenhum 'eu', 'me', 'mim', 'comigo', 'nós', 'nos', 'conosco', 'nossa pesquisa'",
+        "Pulso narrativo: ao menos um dos seguintes presente — marcador autoral (ver eixos[1].marcadores_autorais_aceitos), conectivo de localização, motivo recorrente",
+        "Fechamento autoral: último período do parágrafo NÃO termina em referência (Autor, ano, p. X) — termina em sentença substantiva da pesquisa",
+        "Ausência de sumário neutro: parágrafo NÃO consiste em encadear 'X (ano) sustenta... Y (ano) afirma... Z (ano) corrobora...'"
+      ]
+    },
+    "justifica": "Unifica os três eixos. Estrutural (oração longa) realiza a presença sintática do autor; pedagógico (breadcrumbs e marcadores) realiza a presença argumentativa; literário (motivos recorrentes) realiza a presença sensível — sem que em nenhum dos três o autor apareça em 1ª pessoa."
+  },
+  "principios_estruturantes": [
+    {
+      "id": "v_01",
+      "nome": "argumento_que_se_desenrola",
+      "porque": "A tese é teórica antes de ser prática — sustenta posição contra correntes; a posição precisa SE MOSTRAR construída, não ser anunciada. Conclusão antecipada economiza páginas mas perde adesão argumentativa.",
+      "o_que_implica_no_texto": "Conclusões aparecem no fim do parágrafo, do tópico, do capítulo; nunca como tese declarada antes de defendida.",
+      "viola_quando": "Parágrafo começa anunciando o que vai provar; abertura de seção entrega o achado antes da preparação semântica."
+    },
+    {
+      "id": "v_02",
+      "nome": "autor_pensa_com_os_citados",
+      "porque": "Originalidade jurídico-constitucional não nasce do vácuo — dialoga com corrente estabelecida. Mostrar o pensamento AO LADO do autor citado, não atrás dele, é o que faz o leitor confiar que há produção, não apenas leitura.",
+      "o_que_implica_no_texto": "Paráfrase integrada substitui citação direta; voz autoral fecha cada parágrafo onde autor foi citado.",
+      "viola_quando": "Sequência de citações sem comentário próprio; parágrafo termina em referência sem sentença autoral."
+    },
+    {
+      "id": "v_03",
+      "nome": "leitor_como_companheiro",
+      "porque": "Tese de Direito Constitucional não é exposição de tese pronta — é jornada metodológica. O avaliador da banca precisa enxergar o método em ação. Esconder o método torna o raciocínio opaco; explicitá-lo dá ao leitor instrumento para auditar.",
+      "o_que_implica_no_texto": "Breadcrumbs em aberturas de seção, marcadores autorais em tomadas de posição, justificação narrada em escolhas entre correntes.",
+      "viola_quando": "Seção abre direto na sustentação sem dizer o que vai investigar; escolha entre correntes não é narrada (leitor infere)."
+    },
+    {
+      "id": "v_04",
+      "nome": "metafora_que_volta",
+      "porque": "Metáfora literária em tese é navalha de dois gumes — uma só basta para enobrecer; uma só basta para banalizar. A diferença está na recorrência: imagem que volta cria moldura interpretativa; imagem isolada vira ornamento.",
+      "o_que_implica_no_texto": "Toda metáfora introduzida em capítulo deve reaparecer em pelo menos um outro ponto do texto, ganhando camada nova de sentido em cada retorno.",
+      "viola_quando": "Imagem aparece uma vez e desaparece; metáfora usada como hipérbole isolada."
+    },
+    {
+      "id": "v_05",
+      "nome": "impessoalidade_com_pulso",
+      "porque": "Rigor acadêmico exige 3ª pessoa impessoal — mas voz sem pulso vira sumário automático. O autor está na decisão de cada conjunção, ordem de oração e imagem; precisa só não estar no sujeito gramatical.",
+      "o_que_implica_no_texto": "Marcadores autorais p_19, conectivos rotacionados (p_20) e motivos recorrentes sustentam o pulso; pronomes de 1ª pessoa permanecem ausentes.",
+      "viola_quando": "Voz vira monótona (sem pulso) ou aparece 'esta dissertação propõe-se a' em vez de 'esta pesquisa sustenta que'."
+    },
+    {
+      "id": "v_06",
+      "nome": "rigor_dogmatico_inegociavel",
+      "porque": "É antes de tudo tese JURÍDICA. Recursos literários e pedagógicos servem ao argumento dogmático, nunca o substituem.",
+      "o_que_implica_no_texto": "Em sustentação dogmática, análise jurisprudencial e exegese de norma: zero metáfora, zero breadcrumb pedagógico — apenas eixo 1.",
+      "viola_quando": "Sustentação técnica é enfeitada com imagem literária; análise de ratio decidendi vira narrativa."
+    }
+  ],
+  "anti_voz": {
+    "descricao": "Padrões que DESCARACTERIZAM a voz autoral. Presença de qualquer um = revisão imediata. Polo negativo dos eixos.",
+    "padroes_proibidos": [
+      {
+        "id": "av_01",
+        "nome": "sumario_neutro_de_literatura",
+        "marca": "Sequência 'Autor A (ano) sustenta X. Autor B (ano) afirma Y. Autor C (ano) corrobora.' sem comentário próprio entre as paráfrases.",
+        "correcao": "Inserir sentença autoral após cada paráfrase OU enxugar para uma referência com pensamento integrado."
+      },
+      {
+        "id": "av_02",
+        "nome": "primeira_pessoa_disfarcada",
+        "marca": "'Nossa pesquisa', 'no nosso entendimento', 'no entendimento deste autor', 'cabe a nós', 'nossa análise demonstra'.",
+        "correcao": "Substituir por marcador autoral impessoal: 'esta pesquisa sustenta', 'aqui se demonstra', 'cumpre observar'."
+      },
+      {
+        "id": "av_03",
+        "nome": "oracao_curta_isolada_sem_funcao_aforistica",
+        "marca": "Frase de até 8 palavras com ponto final em zona dogmática ou de sustentação. Ex.: 'O direito é construção. O Estado o legitima.'",
+        "correcao": "Fundir em oração longa com qualificação interna OU mover para zona autorizada (título, abertura, transição maior) se houver função aforística."
+      },
+      {
+        "id": "av_04",
+        "nome": "metafora_ornamental_isolada",
+        "marca": "Imagem literária que aparece uma vez no texto, sem retorno. Particularmente hipérboles ('verdadeira tragédia constitucional').",
+        "correcao": "Remover OU plantar pelo menos uma reaparição em outro capítulo/seção, com camada nova de sentido."
+      },
+      {
+        "id": "av_05",
+        "nome": "marcador_autoral_excessivo",
+        "marca": "Mais de 1 marcador autoral por parágrafo, ou marcadores em todo parágrafo da seção.",
+        "correcao": "Concentrar marcador em parágrafo de tomada de posição; demais parágrafos descrevem sem marcador."
+      },
+      {
+        "id": "av_06",
+        "nome": "recurso_literario_em_zona_dogmatica",
+        "marca": "Metáfora, aforismo ou pergunta retórica em parágrafo de análise jurisprudencial, exegese de norma ou sustentação técnica.",
+        "correcao": "Remover. Eixos 2 e 3 cedem ao eixo 1 nessas zonas (ver v_06 + mapa_eixo_zona)."
+      }
+    ]
+  },
+  "tom_diacronico": {
+    "descricao": "A voz autoral existe em variantes documentadas. Mapear evita que o agente colete tom de um documento e aplique a outro indevidamente.",
+    "variantes": {
+      "dissertacao_2025": {
+        "descricao": "Voz existencial-densa, marcada por motivos recorrentes (Sísifo, pedra, rocha, ciclo, abismo). Eixo 3 mais presente; perguntas retóricas frequentes; títulos sentenciais aforísticos.",
+        "motivos_predominantes": [
+          "sisifo",
+          "rocha_pedra",
+          "ciclo_absurdo"
+        ],
+        "onde_predomina": [
+          "títulos de capítulo",
+          "aberturas de capítulo"
+        ]
+      },
+      "artigo_pompeu_pereira_2025": {
+        "descricao": "Voz conceitual-mais-leve, motivos derivados de Sen e do repertório das capacidades. Eixo 3 menos denso; pedagogia mais explícita.",
+        "motivos_predominantes": [
+          "tapecaria_de_liberdades",
+          "penumbra",
+          "seiva_orcamentaria"
+        ],
+        "onde_predomina": [
+          "aberturas conceituais",
+          "exposições de tese"
+        ]
+      },
+      "voz_alvo_da_tese": {
+        "descricao": "Mistura calibrada: densidade da dissertação em títulos e aberturas de capítulo; pedagogia explícita do artigo em transições e sustentações.",
+        "balanco_aproximado": "60% dissertação + 40% artigo, ajustável por capítulo conforme conteúdo (capítulos teóricos puxam para dissertação; capítulos dogmáticos puxam para artigo).",
+        "motivos_canonizados_disponiveis": "ver eixos[2].metaforas_duraveis_canonizadas. Motivos novos podem surgir, desde que se inscrevam na regra de durabilidade (v_04)."
+      }
+    }
+  },
+  "exemplos_canonicos_paragrafo_inteiro": {
+    "descricao": "Parágrafos integrais da Dissertação Kalyl Lamarck (2025) anotados com os três eixos atuando juntos. Calibração de ouvido para o agente — ler ANTES de redigir.",
+    "exemplos": [
+      {
+        "id": "ex_01_abertura_capitulo_com_motivo_recorrente",
+        "fonte": "Dissertação 2025, p.19, abertura do Cap.1 (após título 'O APELO DE SÍSIFO, AINDA SEM ECO EXTRAMUROS')",
+        "texto": "Da pedra que se ergue, da carne que se enrijece, da rocha que se enraíza no peito do segurado, da carne sustentam o ciclo; reformas que adicionam peso cego, empurram Sísifo para um abismo sem rito nem glória. Daí surge a importância de pesquisar esse estado de lucidez. A pedra foi alterada após a Emenda Constitucional – EC nº 103/2019. Quais as novas características da rocha? O segurado está transformado em contraforte do sistema; suporta o conjunto sem jamais tocar o cume – isso representa a quebra do ciclo? Ou será que a falta de rebelião se assenta porque a saída é ausente, porém a rocha que rola perene desse absurdo preserva a dimensão humana?",
+        "anotacao_dos_eixos": {
+          "eixo_1_estrutural": "Orações longas com qualificações em série; voz reflexiva ('sustentam', 'adicionam', 'empurram', 'foi alterada').",
+          "eixo_2_pedagogico": "'Daí surge a importância de pesquisar esse estado de lucidez' — anuncia ao leitor POR QUE aquilo importa antes de seguir; preparação semântica que motiva a investigação.",
+          "eixo_3_literario": "Motivos recorrentes Sísifo + pedra + rocha + ciclo + abismo, todos vinculados à EC 103/2019; perguntas retóricas como sondagem; pulso existencial Dostoievsky-Camus."
+        }
+      },
+      {
+        "id": "ex_02_sustentacao_dogmatica_pura",
+        "fonte": "Dissertação 2025, p.50",
+        "texto": "Embora parte da literatura especializada relacione o controle de convencionalidade a previsões normativas expressas nos artigos 2º e 68.1 da CADH, bem como nos artigos 26 e 27 da Convenção de Viena sobre o Direito dos Tratados, a literatura jurídica examinada no parágrafo anterior indica, sumariamente, que tais dispositivos não estabelecem qualquer procedimento sistematizado para a verificação jurisdicional da conformidade entre normas internas e tratados internacionais. Ademais, os Estados Partes estão juridicamente obrigados a cumprir as decisões proferidas por Tribunais Internacionais aos quais se vincularam por meio de tratado. Entretanto, esses mesmos Tribunais encontram-se adstritos ao âmbito normativo do bloco de convencionalidade que fundamenta sua atuação. Por essa lógica, a verificação jurisdicional da conformidade entre normas internas e tratados internacionais depende de critério construído pela própria pesquisa.",
+        "anotacao_dos_eixos": {
+          "eixo_1_estrutural": "Oração longa SVP com qualificações internas ricas; voz reflexiva impessoal; citação indireta integrada (CADH, Convenção de Viena); fechamento autoral ('depende de critério construído pela própria pesquisa').",
+          "eixo_2_pedagogico": "'a literatura jurídica examinada no parágrafo anterior' — breadcrumb de localização. Rotação de conjunções de abertura ('Embora', 'Ademais', 'Entretanto', 'Por essa lógica').",
+          "eixo_3_literario": "AUSENTE — zona dogmática, eixo 3 corretamente suprimido. Confirma v_06."
+        }
+      }
+    ]
+  },
+  "playbook_remediacao": {
+    "descricao": "Para cada falha detectada nos checks ou anti-padrões, a correção canônica. Evita decisão ad hoc.",
+    "falhas_e_correcoes": [
+      {
+        "falha": "te_04 / av_04 — metáfora isolada sem recorrência",
+        "diagnostico": "Imagem literária aparece em um ponto e não retorna.",
+        "duas_saidas": {
+          "a_eliminar": "Se a imagem é ornamental (hipérbole, clichê), eliminar e substituir por descrição substantiva.",
+          "b_plantar": "Se a imagem carrega sentido relevante, plantar pelo menos uma reaparição em outro capítulo, com camada nova de sentido. Documentar em eixos[2].metaforas_duraveis_canonizadas."
+        }
+      },
+      {
+        "falha": "te_06 — pergunta retórica sem resposta imediata",
+        "diagnostico": "Pergunta abre parágrafo ou frase e o texto segue para outro assunto.",
+        "correcao": "Inserir resposta imediata no período seguinte OU eliminar a pergunta."
+      },
+      {
+        "falha": "te_08 — preview ordinal sem preparação semântica",
+        "diagnostico": "Abertura de seção entra direto com 'esta seção analisa, em primeiro lugar...'.",
+        "correcao": "Inserir antes do preview pelo menos UM parágrafo de p_17 que contextualize problema e enuncie tensão que justifica a ordem. Modelo: Dissertação p.22-23."
+      },
+      {
+        "falha": "av_01 — sumário neutro de literatura",
+        "diagnostico": "Sequência de paráfrases sem comentário próprio.",
+        "correcao": "Inserir sentença autoral após cada paráfrase OU enxugar para uma única referência com pensamento integrado. Aplicar p_19 + v_02."
+      },
+      {
+        "falha": "av_02 — primeira pessoa disfarçada",
+        "diagnostico": "'Nossa', 'nos', desinências verbais de 1ª pl.",
+        "correcao": "Reescrever em 3ª impessoal com marcador autoral apropriado ('esta pesquisa', 'aqui se', 'cumpre')."
+      },
+      {
+        "falha": "av_05 — marcador autoral excessivo",
+        "diagnostico": "Mais de 1 marcador por parágrafo, ou marcadores em toda seção.",
+        "correcao": "Concentrar marcadores em parágrafo de tomada de posição; reescrever demais sem marcador."
+      },
+      {
+        "falha": "av_06 — recurso literário em zona dogmática",
+        "diagnostico": "Metáfora/aforismo em sustentação técnica.",
+        "correcao": "Remover. Se a imagem é importante, transferir para parágrafo de transição (zona permitida) entre seções."
+      }
+    ]
+  },
+  "eixos": [
+    {
+      "id": "eixo_1_estrutural",
+      "nome": "estrutural_abnt",
+      "regra_mae": "Oração longa e desenvolvida com SVP claro, qualificações internas ricas, citação indireta integrada, último período na voz do autor",
+      "vigencia": "todo o texto",
+      "regras_canon_invocadas": [
+        "p_01",
+        "p_02",
+        "p_05",
+        "p_11",
+        "p_13",
+        "p_19"
+      ],
+      "marcas_obrigatorias": [
+        "Oração com 2 a 4 linhas, pelo menos uma subordinada que refina o sentido",
+        "Voz reflexiva 3ª pessoa, presente do indicativo (p_11)",
+        "Citação SEMPRE indireta, parafraseada, integrada ao fluxo — NUNCA citação direta entre aspas",
+        "Parágrafo entre 100 e 260 palavras com começo-meio-fim",
+        "Último período na voz do autor da tese, nunca citação solta"
+      ],
+      "exemplo_correto": "A mensuração tradicional do desenvolvimento, fundada exclusivamente em indicadores econômicos, como o Produto Interno Bruto, revela-se incapaz de captar a densidade normativa do bem-estar humano.",
+      "exemplo_proibido": "A mensuração tradicional do desenvolvimento é incapaz de captar o bem-estar. Ela se funda em indicadores econômicos. O PIB é um exemplo."
+    },
+    {
+      "id": "eixo_2_pedagogico",
+      "nome": "conducao_do_leitor",
+      "regra_mae": "Explicar ao leitor a razão de cada etapa metodológica antes de executá-la; usar breadcrumbs de localização; narrar decisão de adesão a uma corrente",
+      "vigencia": "aberturas de capítulo/seção, transições maiores, tomadas de posição",
+      "regras_canon_invocadas": [
+        "p_17",
+        "p_18",
+        "p_19"
+      ],
+      "marcas_obrigatorias": [
+        "Anúncio do que a seção investiga, em qual ordem, com qual finalidade",
+        "Breadcrumb de localização no argumento ('no ponto de partida deste percurso', 'fixado este referente', 'delineado o conceito')",
+        "Marcador autoral (p_19) em tomada de posição",
+        "Justificação explícita da decisão metodológica (p_18)"
+      ],
+      "marcadores_autorais_aceitos": [
+        "convém demonstrar",
+        "convém distinguir",
+        "cabe distinguir",
+        "cabe advertir",
+        "importa observar",
+        "interessa precisar",
+        "cumpre esclarecer",
+        "vale ressalvar",
+        "impõe-se reconhecer",
+        "forçoso concluir",
+        "esta pesquisa se alinha à corrente...",
+        "aqui se sustenta...",
+        "nesta análise..."
+      ],
+      "marcadores_proibidos": [
+        "pretende-se humildemente",
+        "busca-se modestamente",
+        "neutralidade evasiva sem tomada de posição"
+      ],
+      "formula_canonica_decisao": "Esta pesquisa se alinha à corrente [X] porque [razão substantiva]. Diverge de [Y] no que concerne a [ponto específico].",
+      "exemplo_correto": "Convém distinguir: esta pesquisa não adota a tese de que o algoritmo substitui o juiz, mas sustenta que ele estrutura a ponderação legislativa preventiva. Alinha-se, pois, à vertente procedimental de Alexy (1986), não à vertente decisória de Dworkin (1978).",
+      "exemplo_proibido": "Há autores que sustentam X e outros que sustentam Y. Ambos contribuem para a análise.",
+      "frequencia_maxima_marcador_autoral": "1 por parágrafo, concentrado em momentos de tomada de posição"
+    },
+    {
+      "id": "eixo_3_literario",
+      "nome": "dostoievsky_subsolo",
+      "regra_mae": "Em zonas estratégicas, admitir metáforas durávels recorrentes, aforismos de abertura, perguntas retóricas como sondagem reflexiva — sem perder rigor dogmático",
+      "vigencia": "títulos de capítulo, parágrafos de abertura de capítulo, transições maiores; nunca em sustentação dogmática, jurisprudência, pré-textuais",
+      "regras_canon_invocadas": [
+        "p_17"
+      ],
+      "marcas_autorizadas": [
+        "Título sentencial com pulso existencial — aforístico, declarativo, tensão interna",
+        "Metáfora durável recorrente — imagem que retorna no texto e adquire sentido cumulativo, sempre vinculada ao conteúdo jurídico-constitucional",
+        "Aforismo curto em abertura ou fechamento de capítulo — exceção controlada à regra 'nunca frase curta'",
+        "Pergunta retórica como sondagem — sempre seguida imediatamente da resposta que avança o raciocínio"
+      ],
+      "metaforas_duraveis_canonizadas": {
+        "sisifo": {
+          "significado": "ciclo absurdo da reforma previdenciária — encargo perpétuo sem alcance do cume",
+          "ocorrencias_dissertacao": [
+            "p.17 (título cap.3)",
+            "p.19 (corpo)",
+            "p.22 (título cap.1)"
+          ],
+          "vinculo_dogmatico": "EC nº 103/2019 + esgotamento atuarial repetido"
+        },
+        "rocha_pedra": {
+          "significado": "encargo previdenciário transformado em peso sem mobilidade",
+          "vinculo_dogmatico": "segurado como contraforte do sistema"
+        },
+        "penumbra": {
+          "significado": "zonas de incerteza normativa",
+          "fonte": "Artigo Pompeu; Pereira (2025)"
+        },
+        "tapecaria_de_liberdades": {
+          "significado": "abordagem das capacidades de Sen",
+          "fonte": "Artigo Pompeu; Pereira (2025)"
+        },
+        "cheques_sem_fundos": {
+          "significado": "direitos positivados sem orçamento",
+          "fonte": "Artigo Pompeu; Pereira (2025)"
+        },
+        "muros_e_masmorras": {
+          "significado": "custo da repressão versus investimento social",
+          "fonte": "Artigo Pompeu; Pereira (2025)"
+        },
+        "seiva_orcamentaria": {
+          "significado": "capacidade fiscal",
+          "fonte": "Artigo Pompeu; Pereira (2025)"
+        }
+      },
+      "metaforas_proibidas": [
+        "Hipérboles vazias ('a maior tragédia da história')",
+        "Clichês acadêmicos ('na esteira de', 'no bojo de')",
+        "Prosopopeias ('a Constituição quis', 'o princípio exige')",
+        "Metáfora isolada sem recorrência — decoração ornamental"
+      ],
+      "exemplo_canonico_titulo": "NENHUM ABSURDO É TÃO PERIGOSO QUANTO O OCULTO: NORMAS INTERNACIONAIS QUE NÃO REVOGAM, MAS DENUNCIAM (Dissertação, cap.3)",
+      "exemplo_canonico_abertura_capitulo": "Da pedra que se ergue, da carne que se enrijece, da rocha que se enraíza no peito do segurado, da carne sustentam o ciclo; reformas que adicionam peso cego, empurram Sísifo para um abismo sem rito nem glória. (Dissertação p.19)",
+      "exemplo_canonico_pergunta_retorica": "De contracanto, por que exatamente os fatores de conversão importam tanto quando se fala em desigualdade? A resposta reside na heterogeneidade tanto humana quanto do próprio sentimento sobre bem-estar. (Artigo Pompeu; Pereira 2025)"
+    }
+  ],
+  "mapa_eixo_zona": {
+    "descricao": "Marcar zona ANTES de escrever. Eixo errado na zona errada = falha no teste de aderência. Valores: 'obrigatorio' | 'permitido' | 'proibido' | 'exclusivo' | 'moderado' | 'n/a'.",
+    "zonas": {
+      "titulo_capitulo": {
+        "eixo_1": "n/a",
+        "eixo_2": "n/a",
+        "eixo_3": "obrigatorio"
+      },
+      "abertura_de_capitulo": {
+        "eixo_1": "obrigatorio",
+        "eixo_2": "obrigatorio",
+        "eixo_3": "permitido"
+      },
+      "preview_ordinal_de_secao": {
+        "eixo_1": "obrigatorio",
+        "eixo_2": "obrigatorio",
+        "eixo_3": "proibido",
+        "regra_hibrida": "ver_canon: p_08.padroes_autorizados.abertura_de_secao"
+      },
+      "sustentacao_dogmatica": {
+        "eixo_1": "obrigatorio",
+        "eixo_2": "n/a",
+        "eixo_3": "proibido"
+      },
+      "analise_jurisprudencial": {
+        "eixo_1": "obrigatorio",
+        "eixo_2": "n/a",
+        "eixo_3": "proibido"
+      },
+      "transicao_maior_entre_secoes": {
+        "eixo_1": "obrigatorio",
+        "eixo_2": "obrigatorio",
+        "eixo_3": "permitido"
+      },
+      "tomada_de_posicao": {
+        "eixo_1": "obrigatorio",
+        "eixo_2": "obrigatorio_marcador_p_19",
+        "eixo_3": "n/a"
+      },
+      "sintese_ou_conclusao_parcial": {
+        "eixo_1": "obrigatorio",
+        "eixo_2": "obrigatorio",
+        "eixo_3": "n/a",
+        "regra_sintese_dedutiva": "ver_canon: p_08.padroes_autorizados.sintese_dedutiva"
+      },
+      "pre_textuais_resumo_abstract": {
+        "eixo_1": "exclusivo",
+        "eixo_2": "proibido",
+        "eixo_3": "proibido"
+      },
+      "conclusao_da_tese": {
+        "eixo_1": "obrigatorio",
+        "eixo_2": "obrigatorio",
+        "eixo_3": "moderado",
+        "observacao": "Conclusão da tese é sem citações (regra PPGD); voz literária moderada permitida na retomada do problema, sem perder rigor"
+      }
+    }
+  },
+  "regras_de_estilo_complementares": {
+    "transicao_entre_autores": {
+      "regra": "Cada autor entra como consequência do anterior. Próximo autor deve ser necessário para resolver questão que o anterior deixou aberta.",
+      "conectivos_repertorio": [
+        "Um passo adiante em seu raciocínio, [Autor] desvenda...",
+        "Surge, em paralelo a [Autor A], o pensamento de [Autor B], a qual adota a mesma moldura, porém...",
+        "Contudo, se [conclusão do autor anterior], surge a questão decisiva...",
+        "De contracanto, por que exatamente [conceito] importa tanto?",
+        "À vista de tal signo, o raciocínio de [Autor] demonstra que...",
+        "Na raiz dessa ideia, quando...",
+        "No dorso desse tema, [Autor] demonstra que...",
+        "Em que pese o ceticismo que classifica..."
+      ],
+      "proibido": [
+        "De modo convergente, Autor B sustenta que... (sem explicar por que B é necessário)",
+        "Em sentido convergente, Autor C observa que... (repetição de padrão)",
+        "Sequência 'Autor A diz X. Autor B também diz X. Autor C corrobora X.' (colagem, não argumento)"
+      ]
+    },
+    "estrutura_de_paragrafo": {
+      "extensao": "100 a 260 palavras",
+      "comeco": "conectivo variado que retoma o fio do parágrafo anterior e posiciona o novo argumento",
+      "meio": "desenvolvimento com qualificações internas, paráfrases integradas, exemplos concretos quando pertinentes",
+      "fim": "consequência que prepara o próximo parágrafo ou fecha argumento parcial — sempre na voz do autor",
+      "proibido": "parágrafo que termina com citação solta"
+    },
+    "construcoes_proibidas_especificas_da_voz": [
+      {
+        "construcao": "Frase curta isolada com ponto final no início de parágrafo",
+        "motivo": "Trunca o raciocínio, sugere superficialidade",
+        "substituicao": "Desenvolver a oração com subordinadas",
+        "excecao": "aforismo de abertura de capítulo (eixo 3, zona autorizada)"
+      },
+      {
+        "construcao": "Precisamente",
+        "motivo": "Advérbio vazio, não acrescenta informação",
+        "substituicao": "Remover ou substituir por qualificação substantiva"
+      },
+      {
+        "construcao": "Se algo... (no início de frase como condicional solta)",
+        "motivo": "Deixa a oração sem ancorar o argumento",
+        "substituicao": "Integrar a condicional à oração principal"
+      },
+      {
+        "construcao": "Adjetivos ornamentais ('contundente', 'paradigmático', 'inédito')",
+        "motivo": "Decoração sem substância",
+        "substituicao": "Demonstrar por que é contundente/paradigmático/inédito"
+      }
+    ]
+  },
+  "checks_de_aderencia": [
+    {
+      "id": "ck_v_01",
+      "regra": "Zona identificada antes de escrever",
+      "ver": "mapa_eixo_zona"
+    },
+    {
+      "id": "ck_v_02",
+      "regra": "Eixo 1 (estrutural) ativo — oração longa SVP, voz reflexiva, citação indireta, fechamento autoral",
+      "ver": "eixos[0]"
+    },
+    {
+      "id": "ck_v_03",
+      "regra": "Eixo 2 (pedagógico) ativo onde a zona exige — breadcrumb de localização + marcador autoral em tomada de posição",
+      "ver": "eixos[1] + mapa_eixo_zona"
+    },
+    {
+      "id": "ck_v_04",
+      "regra": "Eixo 3 (literário Dostoievsky) PRESENTE quando obrigatório (título de capítulo), AUSENTE quando proibido (sustentação dogmática, jurisprudência, pré-textuais)",
+      "ver": "eixos[2] + mapa_eixo_zona"
+    },
+    {
+      "id": "ck_v_05",
+      "regra": "Imagem/metáfora é DURÁVEL (recorre ao longo do texto, adquire sentido cumulativo, vincula-se ao conteúdo jurídico-constitucional), não decoração isolada",
+      "ver": "eixos[2].metaforas_duraveis_canonizadas"
+    },
+    {
+      "id": "ck_v_06",
+      "regra": "Pergunta retórica, se presente, é seguida imediatamente da resposta que avança o raciocínio",
+      "ver": "eixos[2].marcas_autorizadas[3] + exemplo_canonico_pergunta_retorica"
+    },
+    {
+      "id": "ck_v_07",
+      "regra": "Preview ordinal em abertura de seção tem parágrafo de preparação semântica p_17 antes",
+      "ver_canon": "p_08.padroes_autorizados.abertura_de_secao"
+    },
+    {
+      "id": "ck_v_08",
+      "regra": "Síntese ordinal recolhe consequências já argumentadas (não anuncia o que virá)",
+      "ver_canon": "p_08.padroes_autorizados.sintese_dedutiva"
+    }
+  ],
+  "regra_de_ouro": "O leitor deve sentir que lê um ensaio fluido escrito por uma inteligência analítica, e não montagem de citações organizadas por tema. A voz do autor conduz o raciocínio do início ao fim; os autores citados entram como instrumentos desse raciocínio, nunca como protagonistas que sequestram a narrativa. A inspiração declarada é Dostoiévski em Memórias do Subsolo: narrador em terceira pessoa que conduz o leitor para dentro do raciocínio sem entregar a conclusão antes de construir o caminho.",
+  "interacao_com_validador": {
+    "lint_automatico": "lint contra escrita_proibida/*.json continua sendo o primeiro passo; voz_autoral.json roda em segunda passada após zona identificada",
+    "ordem_de_aplicacao": [
+      "1. Identificar zona (mapa_eixo_zona)",
+      "2. Aplicar regras canon (escrita_canonica.json)",
+      "3. Aplicar marcas obrigatórias do eixo ativo (eixos[*].marcas_obrigatorias)",
+      "4. Validar checks_de_aderencia (ck_v_01 a ck_v_08)",
+      "5. Lint regex contra escrita_proibida/"
+    ]
+  },
+  "historico": [
+    {
+      "data": "2026-04-04",
+      "versao": "1.0",
+      "origem": "RAG escrita_academica/11_estilo_kalyl.md, extração analítica do artigo Pompeu; Pereira (2025)"
+    },
+    {
+      "data": "2026-05-12",
+      "versao": "2.0_md",
+      "mudanca": "+Eixo 0 com 3 eixos da voz (estrutural / pedagógico / literário Dostoievsky); +regra híbrida preview ordinal; +marcadores p_19; +justificação p_18"
+    },
+    {
+      "data": "2026-05-12",
+      "versao": "2.0_json",
+      "mudanca": "Conversão de markdown para JSON estruturado; migração de rag_acad/ para biblioteca canônica; campos programaticamente parseáveis para validador automático"
+    },
+    {
+      "data": "2026-05-12",
+      "versao": "2.1_json",
+      "mudanca": "+principio_zero v_00 (condução invisível) com criterio_operacional observável; +principios_estruturantes v_01..v_06 (POR QUÊ, não O QUÊ); +anti_voz com 6 padrões (av_01..av_06); +tom_diacronico (variantes dissertação × artigo × voz-alvo); +exemplos_canonicos_paragrafo_inteiro (2 parágrafos da Dissertação 2025 anotados); +playbook_remediacao; +glossario_operacional com antônimos; +testes_de_estresse observáveis (te_01..te_08 com sinal lexical/sintático)."
+    }
+  ],
+  "testes_de_estresse": {
+    "descricao": "Perguntas-gatilho com SINAL OBSERVÁVEL (lexical, sintático, estrutural). Validador automático aplica. Falha em qualquer uma = revisão.",
+    "perguntas": [
+      {
+        "id": "te_01",
+        "pergunta": "Pronome ou desinência de 1ª pessoa no parágrafo ('eu','me','mim','comigo','nós','nos','conosco','nossa', '-mos' em 1ª pl)?",
+        "sinal_de_falha": "presença de qualquer um",
+        "principio_violado": "v_05, av_02"
+      },
+      {
+        "id": "te_02",
+        "pergunta": "Último período termina em referência '(Autor, ano, p. X)' sem sentença autoral?",
+        "sinal_de_falha": "período termina em referência sem fechamento autoral",
+        "principio_violado": "v_02, p_19"
+      },
+      {
+        "id": "te_03",
+        "pergunta": "Quantos marcadores autorais (eixos[1].marcadores_autorais_aceitos) aparecem?",
+        "sinal_de_falha": "zero em parágrafo de tomada de posição OU 2+ em qualquer parágrafo",
+        "principio_violado": "p_19, av_05"
+      },
+      {
+        "id": "te_04",
+        "pergunta": "Há metáfora literária? Se sim, reaparece em outro ponto do texto?",
+        "sinal_de_falha": "metáfora presente E sem reaparição em outro capítulo/seção",
+        "principio_violado": "v_04, av_04"
+      },
+      {
+        "id": "te_05",
+        "pergunta": "Primeira oração abre com conjunção (catálogo conjuncoes/) E retoma termo do parágrafo anterior?",
+        "sinal_de_falha": "ausência de conjunção de abertura OU ausência de retomada lexical",
+        "principio_violado": "p_08, p_20"
+      },
+      {
+        "id": "te_06",
+        "pergunta": "Pergunta retórica? Se sim, período seguinte responde diretamente?",
+        "sinal_de_falha": "pergunta presente E período seguinte muda de assunto",
+        "principio_violado": "eixos[2].marcas_autorizadas"
+      },
+      {
+        "id": "te_07",
+        "pergunta": "Zona dogmática/jurisprudencial? Há metáfora, aforismo ou pergunta retórica?",
+        "sinal_de_falha": "zona dogmática/jurisprudencial E presença de recurso literário",
+        "principio_violado": "v_06, av_06, mapa_eixo_zona"
+      },
+      {
+        "id": "te_08",
+        "pergunta": "Abertura de seção? Há ao menos um parágrafo de preparação semântica antes do preview ordinal?",
+        "sinal_de_falha": "preview ordinal presente E nenhum parágrafo p_17 antes",
+        "principio_violado": "p_08.padroes_autorizados.abertura_de_secao"
+      }
+    ]
+  },
+  "glossario_operacional": {
+    "eixo": {
+      "definicao": "Camada da voz autoral. Três coexistem: 1 estrutural, 2 pedagógico, 3 literário.",
+      "antonimo": "Subconjunto isolado — eixo não é fragmento; é camada ativada simultaneamente conforme a zona."
+    },
+    "zona": {
+      "definicao": "Região funcional do texto. Ativa um conjunto específico de eixos.",
+      "antonimo": "Estrutura fixa — zona é função, não posição absoluta no documento."
+    },
+    "breadcrumb": {
+      "definicao": "Sintagma de localização que diz ao leitor onde ele está no argumento.",
+      "antonimo": "Roadmap — roadmap anuncia o que virá; breadcrumb sinaliza onde se está."
+    },
+    "marcador_autoral": {
+      "definicao": "Expressão impessoal que carrega tomada de posição da pesquisa.",
+      "antonimo": "Primeira pessoa ('nossa análise') — marcador é 3ª impessoal com pulso; 1ª quebra impessoalidade (av_02)."
+    },
+    "metafora_duravel": {
+      "definicao": "Imagem que retorna, vinculada a conteúdo jurídico-constitucional, e adquire sentido cumulativo.",
+      "antonimo": "Ornamento isolado — uma ocorrência sem retorno é ornamento (av_04)."
+    },
+    "preview_ordinal": {
+      "definicao": "Parágrafo de abertura que anuncia ordem ('em primeiro lugar...'). Autorizado só com preparação semântica prévia.",
+      "antonimo": "Esqueleto sintático ('Ponto 1, premissa A') — proibido sempre (p_08)."
+    },
+    "sintese_dedutiva": {
+      "definicao": "Parágrafo conclusivo onde cada ordinal recolhe consequência já argumentada.",
+      "antonimo": "Roadmap reverso — síntese não anuncia o que virá; recolhe o que já foi."
+    },
+    "conducao_invisivel": {
+      "definicao": "Princípio-mãe v_00. Autor presente em toda decisão mas nunca como sujeito gramatical.",
+      "antonimo": "Sumário automático ou voz emocionada — invisível ≠ ausente."
+    },
+    "pulso_narrativo": {
+      "definicao": "Manifestação da voz via marcadores, conectivos e imagens, mantida a impessoalidade.",
+      "antonimo": "Monotonia descritiva — texto sem pulso é descrição neutra."
+    },
+    "motivo_recorrente": {
+      "definicao": "Sinônimo de metáfora durável.",
+      "antonimo": "Hipérbole isolada — uma vez só, sem retorno."
+    }
+  }
+}

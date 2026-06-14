@@ -1,7 +1,7 @@
 {
   "id": "escrita-canonica",
   "componente": "Escrita canônica do artigo científico",
-  "descricao": "Princípios POSITIVOS da escrita acadêmica deste artigo. Define O QUE ESCREVER. Complementa termos_proibidos/* (que define o que NÃO escrever). Consultado pelo validador para sugerir reescritas; consultado pelo autor durante a redação.",
+  "descricao": "Princípios POSITIVOS da escrita acadêmica deste artigo. Define O QUE ESCREVER. Complementa escrita_proibida/* (que define o que NÃO escrever). Consultado pelo validador para sugerir reescritas; consultado pelo autor durante a redação.",
   "principio_zero": {
     "id": "p_00",
     "nome": "economia_lexico_semantica",
@@ -83,9 +83,10 @@
       "id": "p_06",
       "nome": "contraste_substantivo",
       "regra": "Se opor duas teses ou autores, NOMEAR a divergência. Se não consegue nomear em que divergem e em que convergem, a frase não deve ser escrita.",
+      "subregra_decisao_autoral": "Quando a pesquisa adere a uma das teses em contraste, narrar a adesão explicitamente (ver p_18). Nunca deixar o contraste suspenso sem posição da pesquisa.",
       "exemplo_bom": "Divergem quanto ao fundamento ético; convergem ao sustentar a primazia da consulta livre, prévia e informada.",
       "exemplo_ruim": "Entram em ângulos distintos e complementares, sem que um se reduza ao outro.",
-      "ver_tambem": ["cst_008"]
+      "ver_tambem": ["cst_008", "p_18"]
     },
     {
       "id": "p_07",
@@ -104,21 +105,42 @@
       "regra": "Nunca deixar resíduos do esboço no texto: 'Ponto 1, premissa originária'.",
       "subregras": [
         "Divisão estrutural → subtítulos em nível de seção (### ####), fora do parágrafo",
-        "Continuidade argumentativa → progressão temática: retomar na primeira frase do novo parágrafo um termo da última do anterior"
+        "Continuidade argumentativa → progressão temática: retomar na primeira frase do novo parágrafo um termo da última do anterior",
+        "DISTINÇÃO CRÍTICA: sinalização de esqueleto sintático ('Ponto 1, premissa A, premissa B') é PROIBIDA. Preparação semântica do terreno antes de salto conceitual é OBRIGATÓRIA (ver p_17). P_08 proíbe o esqueleto explícito, NÃO a condução retórica.",
+        "EXCECAO_SINTESE_DEDUTIVA: enumeração ordinal ('em primeiro lugar / em seguida / por fim') é AUTORIZADA em parágrafo de síntese quando cada ordinal representa CONSEQUÊNCIA dedutiva do argumento já desenvolvido, não esboço programático do que virá. Teste: o ordinal colhe (síntese, autorizado) ou anuncia (esboço, proibido)?",
+        "EXCECAO_HIBRIDA_ABERTURA: preview ordinal em abertura de seção/capítulo é AUTORIZADO APENAS quando precedido de ao menos um parágrafo de preparação semântica (p_17) que (a) contextualize o problema, (b) enuncie a tensão que justifica a ordem proposta. O preview chega como resposta à tensão, não como sumário extraído do esboço. Sem preparação prévia → preview proibido."
       ],
-      "ver_tambem": ["cst_010"]
+      "padroes_autorizados": {
+        "abertura_de_secao": {
+          "estrutura_obrigatoria": [
+            "1. Parágrafo(s) de preparação semântica (p_17): problema + tensão",
+            "2. Parágrafo de preview ordinal: 'esta seção analisa, em primeiro lugar... em seguida... por fim...'",
+            "3. Frase-ponte que conduz à primeira subseção"
+          ],
+          "exemplo_dissertacao": "p.22-23 da Dissertação Kalyl Lamarck (2025): dois parágrafos contextualizando DIH + tensão supralegalidade × EC, seguidos do preview ordinal."
+        },
+        "sintese_dedutiva": {
+          "estrutura_obrigatoria": [
+            "1. Argumentação prévia desenvolvida",
+            "2. Parágrafo conclusivo: 'X impõe Y; Z reforça W; por fim, [última consequência]'",
+            "3. Cada ordinal recolhe consequência já estabelecida"
+          ],
+          "exemplo_dissertacao": "p.31, p.64, p.93 da Dissertação Kalyl Lamarck (2025)."
+        }
+      },
+      "ver_tambem": ["cst_010", "p_17", "p_18"]
     },
     {
       "id": "p_09",
       "nome": "conectivos_discretos_funcionais",
-      "regra": "Conectivos breves no MEIO do parágrafo. No INÍCIO do parágrafo, conjunção obrigatória (regra hard).",
+      "regra": "Conectivos breves no MEIO do parágrafo. No INÍCIO do parágrafo, conjunção obrigatória (regra hard). Rotacionar conjunções para evitar repetição (ver p_20).",
       "tensao_resolvida": "P9 (conectivos discretos) NÃO conflita com regra de conjunção obrigatória inicial. Hierarquia: ABERTURA = conjunção obrigatória; MEIO = discreto ou ausente",
       "preferencias": {
-        "preferir": ["porque", "porquanto", "pois", "logo", "ademais", "outrossim"],
+        "preferir": ["porque", "porquanto", "pois", "logo", "ademais"],
         "evitar": ["à luz de", "além disso", "em suma", "em chave de"]
       },
-      "regra_supressao": "Se a relação lógica está clara pelo conteúdo, suprima o conectivo. O leitor completa.",
-      "ver_tambem": ["con_001 a con_005", "escrita/conjuncoes/*"]
+      "regra_supressao": "Se a relação lógica está clara pelo conteúdo, suprimir o conectivo no MEIO do parágrafo. Nunca suprimir a conjunção de abertura.",
+      "ver_tambem": ["con_001 a con_005", "escrita/conjuncoes/*", "p_20"]
     },
     {
       "id": "p_10",
@@ -147,27 +169,42 @@
       "excecoes": [
         "Conclusão pode usar pretérito perfeito para resultados ('demonstrou-se', 'analisou-se')",
         "Citação direta curta preserva tempo do original"
-      ]
+      ],
+      "marcas_autorais_aceitas": [
+        "convém demonstrar",
+        "cabe distinguir",
+        "importa observar",
+        "Esta pesquisa se alinha à corrente...",
+        "Nesta análise...",
+        "Aqui se sustenta...",
+        "Cumpre esclarecer",
+        "Vale ressalvar",
+        "Interessa precisar"
+      ],
+      "nota": "Marcas autorais aceitas mantêm impessoalidade gramatical enquanto posicionam a pesquisa. Frequência moderada: não mais de uma por parágrafo. Ver p_19.",
+      "ver_tambem": ["p_19"]
     },
     {
       "id": "p_12",
       "nome": "coesao_lexical_inter_paragrafo",
       "regra": "Progressão temática entre parágrafos: retomar na primeira frase do novo parágrafo um termo-âncora da última frase do anterior.",
       "operacao": "Identificar termo-âncora (substantivo ou sintagma nominal central) → reaparecer literalmente, por sinônimo, ou por anáfora pronominal no início do próximo parágrafo",
+      "fim_ultimo": "Coesão lexical é o MEIO; condução do leitor de conceito em conceito é o FIM. Cada retomada de termo-âncora deve AVANÇAR a tese, não apenas reiterar o que já foi dito.",
       "exemplo_bom": "[...] o REIDI capitaliza essa renda fiscal.\n\nA capitalização da renda fiscal, descrita no parágrafo anterior, reaparece sob forma diferente em SUDENE...",
       "exemplo_ruim": "[...] o REIDI capitaliza essa renda fiscal.\n\nMudando de assunto, Krenak (2019) discute a invisibilização cultural..."
     },
     {
       "id": "p_13",
       "nome": "densidade_de_citacao_substantiva",
-      "regra": "Regra das entranhas: para cada citação, executar 3 operações obrigatórias.",
+      "regra": "Regra das entranhas: para cada citação, executar 4 operações obrigatórias.",
       "operacoes": [
         "1. EXTRAIR a descoberta específica do autor (mecanismo, tese precisa)",
         "2. APLICAR ao caso concreto do artigo",
-        "3. ARTICULAR autores entre si por ângulos distintos, nunca sobrepostos"
+        "3. ARTICULAR autores entre si por ângulos distintos, nunca sobrepostos",
+        "4. RETOMAR a voz autoral antes do fim do parágrafo: após citação, aplicação e articulação, fechar o parágrafo com sentença da própria pesquisa — nunca encerrar com a voz do autor citado"
       ],
       "teste": "Se remover a citação e o parágrafo perder só decoração (não substância), a citação é superficial e deve ser reescrita ou removida.",
-      "ver_tambem": ["08_citacoes.json"]
+      "ver_tambem": ["08_citacoes.json", "p_19"]
     },
     {
       "id": "p_14",
@@ -203,10 +240,150 @@
       "exemplo_ruim": "A descoberta específica de Raworth (2017, p. e48) reside em traduzir a sustentabilidade em geometria de fronteiras simultâneas.",
       "operacao_canonica": "Suprimir [Sintagma_metarretorico] de + [verbo_estativo] em → conjugar o verbo de conteúdo direto com o autor como sujeito",
       "ver_tambem": ["cst_012", "cst_007"]
+    },
+    {
+      "id": "p_17",
+      "nome": "conducao_retorica",
+      "regra": "Antes de salto conceitual ou filosófico, PREPARAR o terreno semântico no parágrafo anterior (ou na frase inicial do mesmo parágrafo). O leitor nunca deve ser largado diante de um conceito sem ancoragem.",
+      "operacao": [
+        "1. Identificar o conceito ou autor que chegará de surpresa ao leitor médio da área",
+        "2. Na frase que antecede (ou na abertura do parágrafo), enunciar o problema/tensão que CONVOCA aquele conceito",
+        "3. Introduzir o conceito como resposta ao problema enunciado, não como dado solto"
+      ],
+      "antipadrao": "Abrir parágrafo com nome de autor desconhecido ao leitor sem antes situar o problema que esse autor responde. Exemplo ruim: 'Dostoiévski, em Memórias do Subsolo, retrata um narrador que...' sem preparo de por que Dostoiévski entra aqui.",
+      "exemplo_bom": "A tensão entre subjetividade e rigor científico reaparece na forma literária. Dostoiévski (1864) radicaliza essa tensão ao construir um narrador que fala em primeira pessoa mas se desmente a cada parágrafo — modelo de condução retórica que esta pesquisa transpõe para a voz acadêmica impessoal.",
+      "referencia_literaria": "Dostoiévski, Memórias do Subsolo (1864): narrador que conduz o leitor para dentro do raciocínio sem nunca entregar a conclusão antes de construir o caminho.",
+      "nota": "P_17 NÃO viola p_08. P_08 proíbe esqueleto sintático explícito. P_17 exige preparação semântica. São dimensões ortogonais.",
+      "ver_tambem": ["p_08", "p_12", "p_18"]
+    },
+    {
+      "id": "p_18",
+      "nome": "justificacao_explicita_da_decisao",
+      "regra": "Quando a pesquisa adere a uma posição entre duas ou mais correntes, NARRAR a decisão de adesão. Nunca deixar o leitor inferir qual corrente a pesquisa segue — declarar.",
+      "formula_canonica": "Esta pesquisa se alinha à corrente [X] porque [razão substantiva]. Diverge de [Y] no que concerne a [ponto específico].",
+      "operacao": [
+        "1. Nomear as correntes em disputa (ver p_06)",
+        "2. Enunciar o critério de escolha (metodológico, dogmático, epistemológico)",
+        "3. Declarar a adesão em voz autoral impessoal (ver p_11.marcas_autorais_aceitas)",
+        "4. Delimitar o alcance da adesão: a pesquisa adere em X, mas não em Y"
+      ],
+      "exemplo_bom": "Convém distinguir: esta pesquisa não adota a tese de que o algoritmo substitui o juiz, mas sustenta que ele estrutura a ponderação legislativa preventiva. Alinha-se, pois, à vertente procedimental de Alexy (1986), não à vertente decisória de Dworkin (1978).",
+      "exemplo_ruim": "Há autores que sustentam X e outros que sustentam Y. Ambos contribuem para a análise.",
+      "ver_tambem": ["p_06", "p_11", "p_19"]
+    },
+    {
+      "id": "p_19",
+      "nome": "voz_autoral_dentro_da_impessoalidade",
+      "regra": "A pesquisa tem voz e posição. Essa voz se manifesta em terceira pessoa, com marcadores próprios — não como 1ª pessoa disfarçada nem como neutralidade evasiva.",
+      "marcadores_aceitos": [
+        "convém demonstrar",
+        "cabe distinguir",
+        "importa observar",
+        "Esta pesquisa se alinha à corrente...",
+        "Nesta análise...",
+        "Aqui se sustenta...",
+        "Cumpre esclarecer",
+        "Vale ressalvar",
+        "Interessa precisar",
+        "Cabe advertir",
+        "Impõe-se reconhecer",
+        "Forçoso concluir"
+      ],
+      "frequencia": "Moderada: máximo um marcador autoral por parágrafo. Concentrar em momentos de tomada de posição, não em descrição neutra de literatura.",
+      "proibicoes": [
+        "Marcadores que simulam modéstia sem substância: 'pretende-se humildemente', 'busca-se modestamente'",
+        "Neutralidade evasiva: apresentar correntes sem jamais tomar posição",
+        "Excesso: marcadores autorais em todo parágrafo tornam o texto autopromocional"
+      ],
+      "operacao_de_fechamento": "Todo parágrafo que cita autor deve fechar com sentença autoral (ver p_13, operação 4). O leitor sai do parágrafo sabendo o que A PESQUISA pensa, não apenas o que o autor citado pensa.",
+      "ver_tambem": ["p_11", "p_13", "p_18"]
+    },
+    {
+      "id": "p_20",
+      "nome": "rotacao_de_conjuncoes",
+      "regra": "Todo parágrafo começa com conjunção (regra hard de p_09). Essas conjunções devem ser ROTACIONADAS para máxima diversidade — nunca repetir a mesma conjunção em parágrafos consecutivos; evitar a mesma forma mais de duas vezes em qualquer sequência de cinco parágrafos.",
+      "catalogo": {
+        "fonte": "conjuncoes/ (18 subtipos, 802 entradas, schema v2)",
+        "criterio_selecao": "score_academico ≥ 3 E registro = 'formal_academico' ou 'formal_literario'",
+        "subtipos_disponíveis": {
+          "coordenativas": ["aditivas", "adversativas", "alternativas", "conclusivas", "explicativas"],
+          "subordinativas": [
+            "integrantes", "causais", "comparativas", "concessivas", "condicionais",
+            "conformativas", "consecutivas", "finais", "locativas", "modais",
+            "modo_comparativas_hibridas", "proporcionais", "temporais"
+          ]
+        }
+      },
+      "regra_de_matching": "A conjunção de abertura deve corresponder à relação lógica que o parágrafo estabelece com o anterior: adição → aditiva; contraste → adversativa; consequência → conclusiva; razão → causal; ressalva → concessiva; condição → condicional.",
+      "regra_rotacao": [
+        "Nunca abrir dois parágrafos consecutivos com a mesma forma (ex: dois 'ademais' seguidos)",
+        "Dentro de qualquer bloco de 5 parágrafos, não repetir a mesma forma mais de 2 vezes",
+        "Alternar entre subtipos: não usar apenas aditivas em sequência longa",
+        "Privilegiar formas com score_academico = 5 antes de descer para score 3"
+      ],
+      "formas_de_alta_prioridade": [
+        "ademais", "porquanto", "conquanto", "não obstante",
+        "malgrado", "consoante", "consoante isso", "daí que", "donde",
+        "por conseguinte", "em face disso", "nada obstante"
+      ],
+      "formas_proscritas_na_abertura": [
+        "além disso (score baixo, overused)",
+        "em suma (reservado para fechamento de seção)",
+        "à luz de (constrói relação espúria)",
+        "em chave de (artificioso)"
+      ],
+      "ver_tambem": ["p_09", "conjuncoes/INDEX.json"]
     }
   ],
+  "restricoes_ativas": {
+    "descricao": "Restrições negativas ativas. Todo texto da tese deve passar por validação contra os 6 JSONs abaixo ANTES de compilar. Nenhum item listado pode aparecer na versão final.",
+    "arquivos": [
+      {
+        "id": "tp_01",
+        "arquivo": "escrita_proibida/01_termos_lexicais_proibidos.json",
+        "escopo": "Termos lexicais isolados proibidos (14 entradas com regex e substitutos)"
+      },
+      {
+        "id": "tp_02",
+        "arquivo": "escrita_proibida/02_expressoes_conectivas_proibidas.json",
+        "escopo": "Expressões conectivas proibidas (5 entradas)"
+      },
+      {
+        "id": "tp_03",
+        "arquivo": "escrita_proibida/03_colocacoes_semanticas_proibidas.json",
+        "escopo": "Colocações semânticas proibidas (2 entradas)"
+      },
+      {
+        "id": "tp_04",
+        "arquivo": "escrita_proibida/04_construcoes_sintaticas_proibidas.json",
+        "escopo": "Construções sintáticas proibidas cst_001..cst_012 (12 entradas)"
+      },
+      {
+        "id": "tp_05",
+        "arquivo": "escrita_proibida/05_sinais_graficos_proibidos.json",
+        "escopo": "Sinais gráficos proibidos (travessão, dois-pontos em usos específicos)"
+      },
+      {
+        "id": "tp_06",
+        "arquivo": "escrita_proibida/06_regras_coocorrencia.json",
+        "escopo": "Regras de coocorrência — 9 regras de penalização amplificada (combinações duplamente proibidas)"
+      },
+      {
+        "id": "tp_07",
+        "arquivo": "escrita_proibida/07_sintagma_nominal_nu.json",
+        "escopo": "Sintagma nominal nu (bare singular / cst_013): substantivo contável singular sem determinante em objeto direto — gera leitura genérica e quebra a cadeia anafórica"
+      }
+    ],
+    "fluxo_validacao": [
+      "1. Rodar lint de tp_01..tp_06 contra o .md antes de qualquer conversão pandoc",
+      "2. Marcar violações com posição de linha e código de regra (ex: cst_004:linha_32)",
+      "3. Para cada violação: consultar mapeamento cst_XXX → p_YY em interacao_com_validador.mapeamento_cst_to_principio",
+      "4. Propor reescrita baseada em p_YY.exemplo_bom",
+      "5. Autor revisa e aceita/edita"
+    ]
+  },
   "teste_de_estresse_paragrafo": {
-    "descricao": "Aplicar 6 perguntas antes de fechar cada parágrafo. Qualquer NÃO obriga reescrita.",
+    "descricao": "Aplicar 8 perguntas antes de fechar cada parágrafo. Qualquer NÃO obriga reescrita.",
     "perguntas": [
       {
         "id": "q1",
@@ -243,6 +420,18 @@
         "pergunta": "Há termo estrangeiro sem tradução?",
         "criterio": "Termos estrangeiros devem estar traduzidos + original entre parênteses + página",
         "se_falha": "Aplicar p_15"
+      },
+      {
+        "id": "q7",
+        "pergunta": "Este parágrafo prepara o terreno para o próximo?",
+        "criterio": "A última frase do parágrafo deve deixar um termo-âncora ou tensão aberta que o próximo parágrafo resolverá. Leitor não pode ser surpreendido por salto conceitual.",
+        "se_falha": "Adicionar frase de transição que anuncia a tensão ou o conceito que chegará (ver p_17)"
+      },
+      {
+        "id": "q8",
+        "pergunta": "Se a pesquisa tomou posição, há marcador autoral impessoal?",
+        "criterio": "Sempre que o parágrafo aderir a uma corrente, rejeitar outra, ou fazer julgamento de valor, deve haver pelo menos um marcador da lista p_11.marcas_autorais_aceitas ou p_19.marcadores_aceitos",
+        "se_falha": "Inserir marcador autoral antes do encerramento do parágrafo (ver p_18, p_19)"
       }
     ]
   },
@@ -258,12 +447,16 @@
     {
       "tensao": "p_03 (banir gerúndios) vs gerúndio de simultaneidade",
       "resolucao": "Banido como conector argumentativo; permitido em adjunto adverbial de simultaneidade real"
+    },
+    {
+      "tensao": "p_08 (não sinalizar esqueleto) vs p_17 (preparar terreno semântico)",
+      "resolucao": "São dimensões ortogonais. P_08 proíbe esqueleto sintático explícito ('Ponto 1, premissa A'). P_17 exige preparação semântica antes de salto conceitual (enunciar problema que convoca o conceito). Pode-se preparar terreno sem nomear o esqueleto."
     }
   ],
   "interacao_com_validador": {
-    "modo_proativo": "Validador sugere reescritas baseadas em escrita_canonica.principios quando detecta violações em termos_proibidos/*",
+    "modo_proativo": "Validador sugere reescritas baseadas em escrita_canonica.principios quando detecta violações em escrita_proibida/*",
     "fluxo": [
-      "1. termos_proibidos/* detecta violação (regex match)",
+      "1. escrita_proibida/* detecta violação (regex match)",
       "2. validador identifica princípio canônico violado (mapping cst_XXX → p_YY)",
       "3. validador propõe reescrita baseada em p_YY.exemplo_bom",
       "4. autor revisa e aceita/edita"
@@ -280,7 +473,8 @@
       "cst_009": "p_07",
       "cst_010": "p_08",
       "cst_011": "p_04",
-      "cst_012": "p_16"
+      "cst_012": "p_16",
+      "cst_013": "p_04"
     }
   }
 }
