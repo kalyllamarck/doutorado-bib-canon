@@ -168,7 +168,16 @@
           "dentro_da_referencia": "espaço simples",
           "titulo_destaque": "negrito uniforme em todas as referências"
         },
-        "ferramentas_sugeridas": ["Mendeley", "More (UFSC)"]
+        "ferramentas_sugeridas": ["Mendeley", "More (UFSC)"],
+        "criterios_indexacao_qualis": {
+          "proposito": "Critérios operacionais para avaliar aptidão de um periódico, sobretudo ao mirar publicação Qualis A1 (Ponto 6 da auditoria ABNT — antes só havia a orientação genérica 'evitar revistas sem qualificação').",
+          "checagem_indexacao": "Verificar se o periódico está indexado em Scopus e/ou Web of Science (Clarivate/JCR). Periódicos estrangeiros na área Direito são avaliados pela CAPES via Fator de Impacto JCR e SJR (Scimago).",
+          "consulta_estrato_qualis": "Consultar a lista Qualis Referência da área Direito (Plataforma Sucupira) para o estrato do periódico (A1 a C).",
+          "regra_pratica": "Para periódico-alvo A1, preferir referências de fontes indexadas em Scopus/WoS. Fontes presentes apenas em DOAJ/Latindex/Dialnet (sem Scopus/WoS) tendem a estrato B/C e podem ser questionadas por revisores.",
+          "verificar_atividade": "Confirmar se o periódico ainda publica regularmente (não cessou atividade); registrar último volume/ano frente ao ano da referência citada.",
+          "ressalva_interdisciplinar": "Periódicos de altíssimo impacto de outras áreas (ex.: Nature) são aceitos sem restrição como referência interdisciplinar, ainda que não tenham estrato no Qualis Direito — desde que indexados em Scopus/WoS.",
+          "ferramentas": ["Plataforma Sucupira (Qualis)", "Scopus", "Web of Science / JCR", "Scimago (SJR)"]
+        }
       }
     }
   },
