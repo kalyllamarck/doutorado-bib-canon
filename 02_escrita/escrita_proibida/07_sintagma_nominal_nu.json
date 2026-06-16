@@ -6,6 +6,7 @@
       "id": "cst_013",
       "nome": "sintagma_nominal_nu",
       "nomes_alternativos": ["bare singular", "bare noun", "substantivo nu", "elipse de artigo"],
+      "regex_deteccao": "\\b(desenha|revela|configura|estabelece|apresenta|constitui|representa|evidencia|demonstra|documenta|cria|produz|gera|encobre|encobrem|falta|faltam|inexiste|inexistem|carece|carecem|exige|exigem|encontra|encontram|comporta|comportam|suscita|enseja|contem|contém|reclama|requer|ostenta|denota|impõe|impoe|enfrenta|sofre)\\s+(?!a\\b|o\\b|as\\b|os\\b|um\\b|uma\\b|uns\\b|umas\\b|seu|sua|este|esta|esse|essa|aquele|aquela|nenhum|nenhuma|todo|toda|cada|qualquer|dois|duas|três|algum|alguma|graus|partes|que\\b|de\\b|do\\b|da\\b|dos\\b|das\\b|se\\b|para\\b|como\\b|em\\b|no\\b|na\\b|por\\b|com\\b|ao\\b|aos\\b|sem\\b|sob\\b|sobre\\b|entre\\b|contra\\b|ante\\b|após\\b|até\\b|mais\\b|menos\\b|sopesar|estender)[A-ZÀ-Öa-zà-ö][a-zà-ö]+",
       "descricao": "Substantivo comum, contável e singular usado sem determinante em posição de objeto direto (ou sujeito de oração passiva). Em português brasileiro, o padrão default para objeto contável singular é ter determinante ('a linha', 'uma linha'). A supressão produz leitura genérica-qualitativa que aproxima o nome de predicado ou categoria abstrata, em vez de referente individuado.",
       "posicoes_criticas": [
         "objeto direto de verbo de ação: 'desenha linha' (esperado: 'desenha a linha' / 'desenha uma linha')",
@@ -39,6 +40,18 @@
           "proibido": "A norma estabelece critério objetivo de vedação.",
           "reescrito": "A norma estabelece um critério objetivo de vedação.",
           "alternativa": "A norma objetiva o critério de vedação. (economiza o sintagma inteiro)"
+        },
+        {
+          "proibido": "Essa bipartição encobre dificuldade mais precisa.",
+          "problema": "'dificuldade' e contavel singular sem determinante; vira propriedade/estado, perde a individualidade referencial",
+          "reescrito": "Essa bipartição encobre uma dificuldade mais precisa.",
+          "nota": "Inserir 'uma' individualiza a ocorrencia, em vez de tratar 'dificuldade' como mera qualidade."
+        },
+        {
+          "proibido": "Falta criterio que distinga o formalizavel do nao formalizavel.",
+          "problema": "frame 'falta + nome nu': apresenta 'criterio' como requisito abstrato ausente, nao como unidade",
+          "reescrito": "Falta um criterio que distinga o formalizavel do nao formalizavel.",
+          "ou": "Inexiste um criterio que distinga... (mantem o tom sem o nome nu)"
         }
       ],
       "excecoes_legitimas": [
@@ -50,8 +63,8 @@
       ],
       "gatilho_de_deteccao": {
         "metodo": "Heurístico — requer revisão humana ou analisador morfossintático (POS tagger). Regex puro gera falsos positivos.",
-        "regex_heuristico": "\\b(desenha|revela|configura|estabelece|apresenta|constitui|representa|evidencia|demonstra|documenta|forma|cria|produz|gera)\\s+(?!a\\b|o\\b|as\\b|os\\b|um\\b|uma\\b|uns\\b|umas\\b|seu|sua|este|esta|esse|essa|aquele|aquela|nenhum|nenhuma|todo|toda|cada|qualquer|dois|duas|três|algum|alguma)[A-ZÀ-Öa-zà-ö][a-zà-ö]+(?:\\s+[a-zà-ö]+)*",
-        "instrucao_revisao": "Localizar verbo de ação + substantivo singular sem determinante. Verificar: (1) é contável? (2) está no singular? (3) não é expressão fixa? Se SIM às três: corrigir.",
+        "regex_heuristico": "\\b(desenha|revela|configura|estabelece|apresenta|constitui|representa|evidencia|demonstra|documenta|forma|cria|produz|gera|encobre|encobrem|falta|faltam|inexiste|inexistem|carece|carecem|exige|exigem|encontra|encontram|comporta|comportam|suscita|enseja|contem|contém|reclama|requer|ostenta|denota|impõe|impoe|enfrenta|sofre)\\s+(?!a\\b|o\\b|as\\b|os\\b|um\\b|uma\\b|uns\\b|umas\\b|seu|sua|este|esta|esse|essa|aquele|aquela|nenhum|nenhuma|todo|toda|cada|qualquer|dois|duas|três|algum|alguma)[A-ZÀ-Öa-zà-ö][a-zà-ö]+(?:\\s+[a-zà-ö]+)*",
+        "instrucao_revisao": "Localizar verbo de acao + substantivo singular sem determinante (inclui frames sentenciosos como 'falta criterio', 'encobre dificuldade', 'exige cautela', 'encontra resistencia'). Verificar: (1) e contavel? (2) esta no singular? (3) nao e expressao fixa? Se SIM as tres: corrigir. Frames com preposicao ('carece de coerencia', 'ha necessidade de revisao') tambem condensam o texto de modo telegrafico e devem ser revisados, ainda que o regex 'verbo + nome' possa nao capturar a forma 'X de Y'.",
         "falsos_positivos_comuns": [
           "Expressões idiomáticas (ver excecoes_legitimas)",
           "Predicativos ('é referência')",
