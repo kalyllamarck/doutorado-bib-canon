@@ -1,0 +1,20 @@
+{
+  "id": "codd_1970_modelo_relacional",
+  "tipo": "artigo_seminal",
+  "autor": "CODD, Edgar Frank",
+  "titulo": "A relational model of data for large shared data banks",
+  "ano": 1970,
+  "publicacao": "Communications of the ACM, v. 13, n. 6, p. 377-387",
+  "area": "Modelagem de dados — modelo relacional e normalização",
+  "citacao_abnt": "CODD, E. F. A relational model of data for large shared data banks. Communications of the ACM, v. 13, n. 6, p. 377-387, 1970.",
+  "usado_em": {
+    "projeto": "lsa-bib-canon (matriz da verdade)",
+    "decisoes": [
+      "D-44"
+    ],
+    "para_que": "Modelo relacional e normalização (1NF–3NF): um fato, um lugar; chaves; dependências funcionais."
+  },
+  "arquivo_local": null,
+  "status": "referencia_catalogada",
+  "ano_edicao": "confirmado"
+}

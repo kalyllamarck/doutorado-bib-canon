@@ -1,0 +1,23 @@
+{
+  "id": "mintzberg_estrutura_organizacoes",
+  "tipo": "livro",
+  "autor": "MINTZBERG, Henry",
+  "titulo": "Criando organizações eficazes: estruturas em cinco configurações",
+  "titulo_original": "The Structuring of Organizations (1979)",
+  "ano": null,
+  "edicao": "a confirmar",
+  "local": "São Paulo",
+  "editora": "Atlas",
+  "area": "Teoria da organização — configurações estruturais",
+  "citacao_abnt": "MINTZBERG, Henry. Criando organizações eficazes: estruturas em cinco configurações. São Paulo: Atlas, [edição/ano a confirmar].",
+  "usado_em": {
+    "projeto": "lsa-bib-canon (estrutura organizacional)",
+    "decisoes": [
+      "D-44"
+    ],
+    "para_que": "Configurações estruturais; coordenação e linha/assessoria (comando × conselho)."
+  },
+  "arquivo_local": null,
+  "status": "referencia_catalogada",
+  "ano_edicao": "a_confirmar"
+}

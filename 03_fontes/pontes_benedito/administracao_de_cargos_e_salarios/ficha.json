@@ -1,0 +1,23 @@
+{
+  "id": "pontes_cargos_e_salarios",
+  "tipo": "livro",
+  "autor": "PONTES, Benedito Rodrigues",
+  "titulo": "Administração de cargos e salários: carreiras e remuneração",
+  "ano": null,
+  "edicao": "a confirmar",
+  "local": "São Paulo",
+  "editora": "LTr",
+  "area": "Gestão de pessoas — cargos, carreiras e remuneração",
+  "citacao_abnt": "PONTES, Benedito Rodrigues. Administração de cargos e salários: carreiras e remuneração. São Paulo: LTr, [edição/ano a confirmar].",
+  "usado_em": {
+    "projeto": "lsa-bib-canon (plano de cargos e salários, remuneração indexada)",
+    "decisoes": [
+      "D-41",
+      "D-44"
+    ],
+    "para_que": "Plano de cargos e salários; trilhas/carreira em Y; estrutura salarial indexada."
+  },
+  "arquivo_local": null,
+  "status": "referencia_catalogada",
+  "ano_edicao": "a_confirmar"
+}

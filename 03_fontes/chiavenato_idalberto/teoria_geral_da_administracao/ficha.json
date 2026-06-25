@@ -1,0 +1,22 @@
+{
+  "id": "chiavenato_tga",
+  "tipo": "livro",
+  "autor": "CHIAVENATO, Idalberto",
+  "titulo": "Introdução à teoria geral da administração",
+  "ano": null,
+  "edicao": "a confirmar",
+  "local": "a confirmar",
+  "editora": "a confirmar",
+  "area": "Teoria da organização — estrutura, departamentalização",
+  "citacao_abnt": "CHIAVENATO, Idalberto. Introdução à teoria geral da administração. [edição/ano a confirmar].",
+  "usado_em": {
+    "projeto": "lsa-bib-canon (estrutura organizacional)",
+    "decisoes": [
+      "D-44"
+    ],
+    "para_que": "Teoria da organização: áreas/núcleos/subnúcleos, departamentalização, cargos."
+  },
+  "arquivo_local": null,
+  "status": "referencia_catalogada",
+  "ano_edicao": "a_confirmar"
+}

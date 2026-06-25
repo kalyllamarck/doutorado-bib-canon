@@ -1,0 +1,23 @@
+{
+  "id": "date_2004_intro_bancos_de_dados",
+  "tipo": "livro",
+  "autor": "DATE, Christopher J.",
+  "titulo": "Introdução a sistemas de bancos de dados",
+  "titulo_original": "An Introduction to Database Systems (8th ed., 2003)",
+  "ano": 2004,
+  "edicao": "8. ed.",
+  "local": "Rio de Janeiro",
+  "editora": "Elsevier",
+  "area": "Modelagem de dados — teoria relacional, normalização, integridade",
+  "citacao_abnt": "DATE, C. J. Introdução a sistemas de bancos de dados. 8. ed. Rio de Janeiro: Elsevier, 2004.",
+  "usado_em": {
+    "projeto": "lsa-bib-canon (matriz da verdade)",
+    "decisoes": [
+      "D-44"
+    ],
+    "para_que": "Normalização e integridade referencial (FK por chave natural); base do contrato da matriz."
+  },
+  "arquivo_local": null,
+  "status": "referencia_catalogada",
+  "ano_edicao": "a_confirmar"
+}
