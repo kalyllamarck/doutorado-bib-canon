@@ -17,7 +17,7 @@
       "forma_canonica": "marco",
       "sentido_proibido": "marco + qualificador abstrato ou marco de [substantivo abstrato]",
       "gatilhos_contextuais": ["normativo", "legal", "regulatório", "institucional", "teórico", "conceitual", "jurídico", "de"],
-      "regex_composto": "\\bmarco (normativo|legal|regulatório|institucional|teórico|conceitual|jurídico|de [a-zç]+)\\b",
+      "regex_composto": "\\bmarco (normativo|legal|regulatório|institucional|teórico|conceitual|jurídico|de [a-zà-ÿ]+)\\b",
       "substitutos_sugeridos": ["regime jurídico", "ordenamento", "regramento", "disciplina jurídica", "corpo normativo", "estatuto", "balizas normativas", "moldura legal", "plexo normativo"],
       "observacao": "Permitido apenas em sentido literal (marco de fronteira geográfico, marco histórico datado)."
     }

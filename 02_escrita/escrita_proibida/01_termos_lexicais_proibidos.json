@@ -34,14 +34,14 @@
       "id": "lex_005",
       "forma_canonica": "evidenciar",
       "variantes": ["evidencia", "evidenciam", "evidenciou", "evidenciaram", "evidenciando", "evidenciado", "evidenciada", "evidência", "evidências", "evidente", "evidentes", "evidentemente"],
-      "regex": "\\bevidenc\\w*\\b|\\bevident\\w*\\b",
+      "regex": "\\bevid[eê]nc\\w*\\b|\\bevident\\w*\\b",
       "substitutos_sugeridos": ["demonstrar", "patentear", "tornar patente", "expor", "comprovar", "atestar", "manifestar", "desvelar", "descortinar"]
     },
     {
       "id": "lex_006",
       "forma_canonica": "tal",
       "variantes": ["tais"],
-      "regex": "\\btais?\\b",
+      "regex": "\\bta(l|is)\\b",
       "substitutos_sugeridos": ["esse", "este", "aquele", "referido", "mencionado", "aludido", "sobredito", "supramencionado"]
     },
     {

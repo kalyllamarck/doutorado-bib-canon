@@ -20,8 +20,9 @@
       "id": "cst_003",
       "nome": "intercalada_circunstancial",
       "descricao": "Sujeito + oração circunstancial entre vírgulas + verbo principal + consequência",
-      "regex_deteccao": "^[A-ZÀ-Ý][a-zà-ÿ]+,\\s+(ao|ao se|quando|enquanto|sendo)\\s+[^,]+,\\s+[a-zà-ÿ]+",
+      "regex_deteccao": "^[A-ZÀ-Ý][a-zà-ÿ]*(?:\\s+[a-zà-ÿ]+){0,2},\\s+(ao|ao se|quando|enquanto|sendo)\\s+[^,]+,\\s+[a-zà-ÿ]+",
       "exemplo_proibido": "O objeto, ao fazer tal coisa, causa isso.",
+      "observacao": "Heurístico: o sintagma antes da vírgula aceita até 3 palavras e o regex não distingue sujeito de sujeito+verbo ('Ela decidiu, ao final, ...'), gerando falsos positivos. Usar como sinalizador para revisão humana.",
       "alternativas": ["dividir em dois períodos", "trocar ordem: circunstancial antes do sujeito", "incorporar a circunstância ao predicado"]
     },
     {
