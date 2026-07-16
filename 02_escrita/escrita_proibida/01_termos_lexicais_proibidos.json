@@ -5,110 +5,390 @@
     {
       "id": "lex_001",
       "forma_canonica": "consolidar",
-      "variantes": ["consolidação", "consolidado", "consolidada", "consolidados", "consolidadas", "consolidando", "consolida", "consolidam", "consolidou", "consolidaram"],
+      "variantes": [
+        "consolidação",
+        "consolidado",
+        "consolidada",
+        "consolidados",
+        "consolidadas",
+        "consolidando",
+        "consolida",
+        "consolidam",
+        "consolidou",
+        "consolidaram"
+      ],
       "regex": "\\bconsolid\\w*\\b",
-      "substitutos_sugeridos": ["reunir", "congregar", "integrar", "unificar", "aglutinar", "firmar", "assentar", "cimentar", "sedimentar"]
+      "substitutos_sugeridos": [
+        "reunir",
+        "congregar",
+        "integrar",
+        "unificar",
+        "aglutinar",
+        "firmar",
+        "assentar",
+        "cimentar",
+        "sedimentar"
+      ]
     },
     {
       "id": "lex_002",
       "forma_canonica": "significativo",
-      "variantes": ["significativa", "significativos", "significativas", "significativamente", "significância", "significar", "significa", "significado"],
+      "variantes": [
+        "significativa",
+        "significativos",
+        "significativas",
+        "significativamente",
+        "significância",
+        "significar",
+        "significa",
+        "significado"
+      ],
       "regex": "\\bsignific\\w*\\b",
-      "substitutos_sugeridos": ["relevante", "expressivo", "ponderável", "notável", "apreciável", "considerável", "sensível", "destacado", "de vulto"]
+      "substitutos_sugeridos": [
+        "relevante",
+        "expressivo",
+        "ponderável",
+        "notável",
+        "apreciável",
+        "considerável",
+        "sensível",
+        "destacado",
+        "de vulto"
+      ]
     },
     {
       "id": "lex_003",
       "forma_canonica": "crucial",
-      "variantes": ["cruciais", "crucialmente"],
+      "variantes": [
+        "cruciais",
+        "crucialmente"
+      ],
       "regex": "\\bcrucia\\w*\\b|\\bcrucialmente\\b",
-      "substitutos_sugeridos": ["decisivo", "determinante", "medular", "nevrálgico", "cardeal", "vital", "axial", "capital"]
+      "substitutos_sugeridos": [
+        "decisivo",
+        "determinante",
+        "medular",
+        "nevrálgico",
+        "cardeal",
+        "vital",
+        "axial",
+        "capital"
+      ]
     },
     {
       "id": "lex_004",
       "forma_canonica": "arcabouço",
-      "variantes": ["arcabouços"],
+      "variantes": [
+        "arcabouços"
+      ],
       "regex": "\\barcabouç\\w*\\b",
-      "substitutos_sugeridos": ["estrutura", "edifício teórico", "armação conceitual", "esqueleto", "ossatura", "moldura teórica", "trama", "tessitura", "urdidura"]
+      "substitutos_sugeridos": [
+        "estrutura",
+        "edifício teórico",
+        "armação conceitual",
+        "esqueleto",
+        "ossatura",
+        "moldura teórica",
+        "trama",
+        "tessitura",
+        "urdidura"
+      ]
     },
     {
       "id": "lex_005",
       "forma_canonica": "evidenciar",
-      "variantes": ["evidencia", "evidenciam", "evidenciou", "evidenciaram", "evidenciando", "evidenciado", "evidenciada", "evidência", "evidências", "evidente", "evidentes", "evidentemente"],
+      "variantes": [
+        "evidencia",
+        "evidenciam",
+        "evidenciou",
+        "evidenciaram",
+        "evidenciando",
+        "evidenciado",
+        "evidenciada",
+        "evidência",
+        "evidências",
+        "evidente",
+        "evidentes",
+        "evidentemente"
+      ],
       "regex": "\\bevid[eê]nc\\w*\\b|\\bevident\\w*\\b",
-      "substitutos_sugeridos": ["demonstrar", "patentear", "tornar patente", "expor", "comprovar", "atestar", "manifestar", "desvelar", "descortinar"]
+      "substitutos_sugeridos": [
+        "demonstrar",
+        "patentear",
+        "tornar patente",
+        "expor",
+        "comprovar",
+        "atestar",
+        "manifestar",
+        "desvelar",
+        "descortinar"
+      ]
     },
     {
       "id": "lex_006",
       "forma_canonica": "tal",
-      "variantes": ["tais"],
+      "variantes": [
+        "tais"
+      ],
       "regex": "\\bta(l|is)\\b",
-      "substitutos_sugeridos": ["esse", "este", "aquele", "referido", "mencionado", "aludido", "sobredito", "supramencionado"]
+      "substitutos_sugeridos": [
+        "esse",
+        "este",
+        "aquele",
+        "referido",
+        "mencionado",
+        "aludido",
+        "sobredito",
+        "supramencionado"
+      ]
     },
     {
       "id": "lex_007",
       "forma_canonica": "revelar",
-      "variantes": ["revela", "revelam", "revelou", "revelaram", "revelando", "revelado", "revelada", "revelação"],
+      "variantes": [
+        "revela",
+        "revelam",
+        "revelou",
+        "revelaram",
+        "revelando",
+        "revelado",
+        "revelada",
+        "revelação"
+      ],
       "regex": "\\brevel\\w*\\b",
-      "substitutos_sugeridos": ["mostrar", "indicar", "apontar", "denotar", "expor", "descortinar", "desvelar", "patentear", "trazer à tona"]
+      "substitutos_sugeridos": [
+        "mostrar",
+        "indicar",
+        "apontar",
+        "denotar",
+        "expor",
+        "descortinar",
+        "desvelar",
+        "patentear",
+        "trazer à tona"
+      ]
     },
     {
       "id": "lex_008",
       "forma_canonica": "articular",
-      "variantes": ["articula", "articulam", "articulou", "articularam", "articulando", "articulado", "articulada", "articulação", "articulações"],
+      "variantes": [
+        "articula",
+        "articulam",
+        "articulou",
+        "articularam",
+        "articulando",
+        "articulado",
+        "articulada",
+        "articulação",
+        "articulações"
+      ],
       "regex": "\\barticul\\w*\\b",
-      "substitutos_sugeridos": ["enlaçar", "entrelaçar", "trançar", "conjugar", "amarrar", "tecer", "urdir", "concatenar", "encadear"]
+      "substitutos_sugeridos": [
+        "enlaçar",
+        "entrelaçar",
+        "trançar",
+        "conjugar",
+        "amarrar",
+        "tecer",
+        "urdir",
+        "concatenar",
+        "encadear"
+      ]
     },
     {
       "id": "lex_009",
       "forma_canonica": "gap",
-      "variantes": ["gaps"],
+      "variantes": [
+        "gaps"
+      ],
       "regex": "\\bgaps?\\b",
-      "substitutos_sugeridos": ["lacuna", "hiato", "vazio", "fosso", "intervalo", "brecha", "vácuo", "descompasso", "defasagem"]
+      "substitutos_sugeridos": [
+        "lacuna",
+        "hiato",
+        "vazio",
+        "fosso",
+        "intervalo",
+        "brecha",
+        "vácuo",
+        "descompasso",
+        "defasagem"
+      ]
     },
     {
       "id": "lex_010",
       "forma_canonica": "deslocar",
-      "variantes": ["desloca", "deslocam", "deslocou", "deslocaram", "deslocando", "deslocado", "deslocada", "deslocamento", "deslocamentos"],
+      "variantes": [
+        "desloca",
+        "deslocam",
+        "deslocou",
+        "deslocaram",
+        "deslocando",
+        "deslocado",
+        "deslocada",
+        "deslocamento",
+        "deslocamentos"
+      ],
       "regex": "\\bdesloc\\w*\\b",
-      "substitutos_sugeridos": ["transpor", "remover", "transferir", "mover", "realocar", "reposicionar", "reorientar", "fazer migrar"]
+      "substitutos_sugeridos": [
+        "transpor",
+        "remover",
+        "transferir",
+        "mover",
+        "realocar",
+        "reposicionar",
+        "reorientar",
+        "fazer migrar"
+      ]
     },
     {
       "id": "lex_011",
       "forma_canonica": "inflexão",
-      "variantes": ["inflexões", "inflectir", "inflecte", "inflectido"],
+      "variantes": [
+        "inflexões",
+        "inflectir",
+        "inflecte",
+        "inflectido"
+      ],
       "regex": "\\binflex\\w*\\b|\\binflect\\w*\\b",
-      "substitutos_sugeridos": ["virada", "guinada", "mudança de rumo", "reviravolta", "ponto de curva", "ponto de torção", "ruptura", "dobra"]
+      "substitutos_sugeridos": [
+        "virada",
+        "guinada",
+        "mudança de rumo",
+        "reviravolta",
+        "ponto de curva",
+        "ponto de torção",
+        "ruptura",
+        "dobra"
+      ]
     },
     {
       "id": "lex_012",
       "forma_canonica": "emergir",
-      "variantes": ["emerge", "emergem", "emergiu", "emergiram", "emergindo", "emergente", "emergentes", "emergência"],
+      "variantes": [
+        "emerge",
+        "emergem",
+        "emergiu",
+        "emergiram",
+        "emergindo",
+        "emergente",
+        "emergentes",
+        "emergência"
+      ],
       "regex": "\\bemerg\\w*\\b",
-      "substitutos_sugeridos": ["surgir", "brotar", "vir à tona", "despontar", "aflorar", "manifestar-se", "irromper", "aparecer", "vir a lume"]
+      "substitutos_sugeridos": [
+        "surgir",
+        "brotar",
+        "vir à tona",
+        "despontar",
+        "aflorar",
+        "manifestar-se",
+        "irromper",
+        "aparecer",
+        "vir a lume"
+      ]
     },
     {
       "id": "lex_013",
       "forma_canonica": "chave",
-      "variantes": ["chaves"],
+      "variantes": [
+        "chaves"
+      ],
       "regex": "\\bchaves?\\b",
-      "substitutos_sugeridos": ["eixo", "matriz", "registro", "clave", "viés", "perspectiva", "enquadramento", "ângulo", "vertente"],
+      "substitutos_sugeridos": [
+        "eixo",
+        "matriz",
+        "registro",
+        "clave",
+        "viés",
+        "perspectiva",
+        "enquadramento",
+        "ângulo",
+        "vertente"
+      ],
       "observacao": "Uso metafórico vedado. Permitido apenas sentido literal (chave mecânica, chave criptográfica)."
     },
     {
       "id": "lex_014",
       "forma_canonica": "marco",
-      "variantes": ["marcos"],
+      "variantes": [
+        "marcos"
+      ],
       "regex": "\\bmarcos?\\b",
-      "substitutos_sugeridos": ["baliza", "parâmetro", "referência", "esteio", "alicerce", "fundamento"],
+      "substitutos_sugeridos": [
+        "baliza",
+        "parâmetro",
+        "referência",
+        "esteio",
+        "alicerce",
+        "fundamento"
+      ],
       "observacao": "Uso metafórico/abstrato vedado. Permitido sentido literal (marco de fronteira, marco histórico datado com ano)."
     },
     {
       "id": "lex_015",
       "forma_canonica": "operar",
-      "variantes": ["opera", "operam", "operar", "operou", "operaram", "operando", "operada", "operado", "operadas", "operados", "opere", "operem", "operação", "operações", "operante", "operantes"],
+      "variantes": [
+        "opera",
+        "operam",
+        "operar",
+        "operou",
+        "operaram",
+        "operando",
+        "operada",
+        "operado",
+        "operadas",
+        "operados",
+        "opere",
+        "operem",
+        "operação",
+        "operações",
+        "operante",
+        "operantes"
+      ],
       "regex": "\\boper(a|am|ar|ou|aram|ando|ad[ao]s?|e|em|ação|ações|antes?)\\b",
-      "substitutos_sugeridos": ["atuar", "incidir", "funcionar", "agir", "vigorar", "produzir efeitos", "dar-se", "processar-se", "realizar-se"],
+      "substitutos_sugeridos": [
+        "atuar",
+        "incidir",
+        "funcionar",
+        "agir",
+        "vigorar",
+        "produzir efeitos",
+        "dar-se",
+        "processar-se",
+        "realizar-se"
+      ],
       "observacao": "Veda o verbo 'operar' e suas formas/derivações. Permitidos 'operacional' e 'operário' (sentidos distintos, não capturados pelo regex)."
+    },
+    {
+      "id": "lex_016",
+      "forma_canonica": "outrossim",
+      "variantes": [],
+      "regex": "\\boutrossim\\b",
+      "substitutos_sugeridos": [
+        "ademais",
+        "a par disso",
+        "soma-se a isso",
+        "acrescente-se",
+        "de igual modo",
+        "na mesma esteira"
+      ],
+      "observacao": "Arcaísmo pedante; removido das listas recomendadas e vetado em qualquer registro (decisão 2026-07-16)."
+    },
+    {
+      "id": "lex_017",
+      "forma_canonica": "ad hoc",
+      "variantes": [
+        "ad-hoc"
+      ],
+      "regex": "\\bad[ -]hoc\\b",
+      "substitutos_sugeridos": [
+        "específico",
+        "casuístico",
+        "pontual",
+        "para o caso concreto",
+        "criado para esse fim"
+      ],
+      "observacao": "Latinismo vetado por inteiro (não basta itálico); preferir o equivalente vernáculo (decisão 2026-07-16)."
     }
   ]
 }

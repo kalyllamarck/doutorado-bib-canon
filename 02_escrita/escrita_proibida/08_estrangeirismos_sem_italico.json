@@ -5,55 +5,91 @@
   "regra_fonte": "ABNT NBR 6022:2018 item 5; NBR 14724:2011 item 5.1",
   "severidade": "alta",
   "nota": "Estrangeirismos já dicionarizados e correntes em PT-BR (online, software, internet, site) NÃO exigem itálico e NÃO devem constar desta lista. Apenas termos não incorporados ao léxico normativo.",
-
   "estrangeirismos_nao_incorporados": [
     {
       "id": "est_001",
       "forma": "deepfake",
-      "variantes": ["deepfakes"],
+      "variantes": [
+        "deepfakes"
+      ],
       "regex_ausencia_italico": "(?<![*_])\\bdeepfakes?\\b(?![*_])",
       "regra": "Termo em inglês não dicionarizado em PT-BR: obrigatório em itálico (*deepfake*) ou substituído por equivalente em português (vídeo falsificado por IA, falsificação sintética).",
-      "substitutos_sugeridos": ["falsificação sintética", "vídeo falsificado por IA", "manipulação audiovisual sintética"]
+      "substitutos_sugeridos": [
+        "falsificação sintética",
+        "vídeo falsificado por IA",
+        "manipulação audiovisual sintética"
+      ]
     },
     {
       "id": "est_002",
       "forma": "microtargeting",
-      "variantes": ["micro-targeting", "micro targeting"],
+      "variantes": [
+        "micro-targeting",
+        "micro targeting"
+      ],
       "regex_ausencia_italico": "(?<![*_])\\bmicro[-\\s]?targeting\\b(?![*_])",
       "regra": "Termo em inglês não dicionarizado em PT-BR: obrigatório em itálico (*microtargeting*) ou substituído por equivalente em português.",
-      "substitutos_sugeridos": ["segmentação hiperpersonalizada", "microsegmentação eleitoral", "direcionamento ultrassegmentado"]
+      "substitutos_sugeridos": [
+        "segmentação hiperpersonalizada",
+        "microsegmentação eleitoral",
+        "direcionamento ultrassegmentado"
+      ]
     },
     {
       "id": "est_003",
       "forma": "neurofeedback",
-      "variantes": ["neuro-feedback"],
+      "variantes": [
+        "neuro-feedback"
+      ],
       "regex_ausencia_italico": "(?<![*_])\\bneuro[-]?feedback\\b(?![*_])",
       "regra": "Termo técnico em inglês sem equivalente dicionarizado em PT-BR: obrigatório em itálico (*neurofeedback*) na primeira ocorrência; nas demais, manter itálico por convenção da área.",
-      "substitutos_sugeridos": ["neurorretroalimentação", "biorretroalimentação neurofisiológica"]
+      "substitutos_sugeridos": [
+        "neurorretroalimentação",
+        "biorretroalimentação neurofisiológica"
+      ]
     },
     {
       "id": "est_004",
       "forma": "fake news",
-      "variantes": ["fakenews", "fake-news"],
+      "variantes": [
+        "fakenews",
+        "fake-news"
+      ],
       "regex_ausencia_italico": "(?<![*_])\\bfake[-\\s]?news\\b(?![*_])",
       "regra": "Expressão em inglês não incorporada como unidade lexical ao PT-BR normativo: obrigatório em itálico (*fake news*) ou substituído por equivalente.",
-      "substitutos_sugeridos": ["desinformação", "notícia falsa", "informação fabricada"]
+      "substitutos_sugeridos": [
+        "desinformação",
+        "notícia falsa",
+        "informação fabricada"
+      ]
     },
     {
       "id": "est_005",
       "forma": "hate speech",
-      "variantes": ["hate-speech"],
+      "variantes": [
+        "hate-speech"
+      ],
       "regex_ausencia_italico": "(?<![*_])\\bhate[-\\s]?speech\\b(?![*_])",
       "regra": "Expressão em inglês sem incorporação plena ao PT-BR normativo: obrigatório em itálico (*hate speech*) ou substituído por equivalente.",
-      "substitutos_sugeridos": ["discurso de ódio", "discurso odioso"]
+      "substitutos_sugeridos": [
+        "discurso de ódio",
+        "discurso odioso"
+      ]
     },
     {
       "id": "est_006",
       "forma": "benchmarking",
-      "variantes": ["benchmark", "benchmarks"],
+      "variantes": [
+        "benchmark",
+        "benchmarks"
+      ],
       "regex_ausencia_italico": "(?<![*_])\\bbenchmark(?:ing|s)?\\b(?![*_])",
       "regra": "Termo técnico em inglês não dicionarizado em PT-BR: obrigatório em itálico (*benchmarking*) na primeira ocorrência.",
-      "substitutos_sugeridos": ["cotejo de desempenho", "referenciação comparativa", "padrão de referência"]
+      "substitutos_sugeridos": [
+        "cotejo de desempenho",
+        "referenciação comparativa",
+        "padrão de referência"
+      ]
     },
     {
       "id": "est_007",
@@ -61,15 +97,25 @@
       "variantes": [],
       "regex_ausencia_italico": "(?<![*_])\\bcompliance\\b(?![*_])",
       "regra": "Termo em inglês de uso crescente no Direito brasileiro, ainda não dicionarizado: obrigatório em itálico (*compliance*) ou substituído por equivalente em PT-BR.",
-      "substitutos_sugeridos": ["conformidade normativa", "conformidade regulatória", "programa de integridade"]
+      "substitutos_sugeridos": [
+        "conformidade normativa",
+        "conformidade regulatória",
+        "programa de integridade"
+      ]
     },
     {
       "id": "est_008",
       "forma": "stakeholder",
-      "variantes": ["stakeholders"],
+      "variantes": [
+        "stakeholders"
+      ],
       "regex_ausencia_italico": "(?<![*_])\\bstakeholders?\\b(?![*_])",
       "regra": "Termo em inglês não dicionarizado em PT-BR: obrigatório em itálico (*stakeholders*) ou substituído por equivalente.",
-      "substitutos_sugeridos": ["parte interessada", "partes interessadas", "atores relevantes"]
+      "substitutos_sugeridos": [
+        "parte interessada",
+        "partes interessadas",
+        "atores relevantes"
+      ]
     },
     {
       "id": "est_009",
@@ -77,7 +123,11 @@
       "variantes": [],
       "regex_ausencia_italico": "(?<![*_])\\bfeedback\\b(?![*_])",
       "regra": "Termo em inglês: preferir equivalente em PT-BR; se mantido, obrigatório em itálico (*feedback*).",
-      "substitutos_sugeridos": ["retroalimentação", "retorno", "resposta avaliativa"]
+      "substitutos_sugeridos": [
+        "retroalimentação",
+        "retorno",
+        "resposta avaliativa"
+      ]
     },
     {
       "id": "est_010",
@@ -85,10 +135,33 @@
       "variantes": [],
       "regex_ausencia_italico": "(?<![*_])\\boversight\\b(?![*_])",
       "regra": "Termo técnico em inglês (governança de IA): obrigatório em itálico (*oversight*) na primeira ocorrência ou substituído por equivalente.",
-      "substitutos_sugeridos": ["supervisão", "fiscalização", "controle externo"]
+      "substitutos_sugeridos": [
+        "supervisão",
+        "fiscalização",
+        "controle externo"
+      ]
+    },
+    {
+      "id": "est_011",
+      "forma": "aposto 'no original' sem itálico",
+      "variantes": [],
+      "regex_ausencia_italico": "(?<![*_])\\((?![*_])[^()]*?,\\s*no original\\)",
+      "regra": "Todo termo estrangeiro citado em aposto '(termo, no original)' deve vir em itálico: '(*termo*, no original)'. Regra genérica: cobre qualquer estrangeirismo, além da lista enumerada.",
+      "substitutos_sugeridos": [
+        "(*termo estrangeiro*, no original)"
+      ],
+      "exemplos_proibidos": [
+        "(res extensa, no original)",
+        "(guardian ad litem, no original)",
+        "qualifica de percepção especista psicótica (psychotic speciesist perception, no original) a suposição"
+      ],
+      "exemplos_reescritos": [
+        "(*res extensa*, no original)",
+        "(*guardian ad litem*, no original)",
+        "qualifica de percepção especista psicótica (*psychotic speciesist perception*, no original) a suposição"
+      ]
     }
   ],
-
   "siglas_estrangeiras_tecnicas": [
     {
       "id": "sig_001",

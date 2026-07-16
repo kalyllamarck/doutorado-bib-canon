@@ -174,7 +174,7 @@
     ]
   },
   "playbook_remediacao": {
-    "descricao": "Para cada falha detectada nos checks ou anti-padrões, a correção canônica. Evita decisão ad hoc.",
+    "descricao": "Para cada falha detectada nos checks ou anti-padrões, a correção canônica. Evita decisão improvisada.",
     "falhas_e_correcoes": [
       {
         "falha": "te_04 / av_04 — metáfora isolada sem recorrência",
