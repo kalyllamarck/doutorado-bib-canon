@@ -13,133 +13,153 @@
       "registro": "formal_academico",
       "score_academico": 3,
       "polissemica": false,
-      "metaforico": true
+      "metaforico": true,
+      "grupo": "percurso"
     },
     {
       "forma": "nesse prumo",
       "registro": "formal_academico",
       "score_academico": 3,
       "polissemica": false,
-      "metaforico": true
+      "metaforico": true,
+      "grupo": "medida_prumo"
     },
     {
       "forma": "no mesmo prumo",
       "registro": "formal_academico",
       "score_academico": 3,
       "polissemica": false,
-      "metaforico": true
+      "metaforico": true,
+      "grupo": "medida_prumo"
     },
     {
       "forma": "nesse horizonte",
       "registro": "formal_academico",
       "score_academico": 3,
       "polissemica": false,
-      "metaforico": true
+      "metaforico": true,
+      "grupo": "visao_luz"
     },
     {
       "forma": "nesse ritmo",
       "registro": "formal_academico",
       "score_academico": 3,
       "polissemica": false,
-      "metaforico": true
+      "metaforico": true,
+      "grupo": "percurso"
     },
     {
       "forma": "à sombra disso",
       "registro": "formal_academico",
       "score_academico": 3,
       "polissemica": false,
-      "metaforico": true
+      "metaforico": true,
+      "grupo": "visao_luz"
     },
     {
       "forma": "com suporte nesse traçado",
       "registro": "formal_academico",
       "score_academico": 3,
       "polissemica": false,
-      "metaforico": true
+      "metaforico": true,
+      "grupo": "percurso"
     },
     {
       "forma": "nessa senda",
       "registro": "formal_academico",
       "score_academico": 3,
       "polissemica": false,
-      "metaforico": true
+      "metaforico": true,
+      "grupo": "percurso"
     },
     {
       "forma": "nessa quadra",
       "registro": "formal_academico",
       "score_academico": 3,
       "polissemica": false,
-      "metaforico": true
+      "metaforico": true,
+      "grupo": "medida_prumo"
     },
     {
       "forma": "sob essa lente",
       "registro": "formal_academico",
       "score_academico": 3,
       "polissemica": false,
-      "metaforico": true
+      "metaforico": true,
+      "grupo": "visao_luz"
     },
     {
       "forma": "por esse prisma",
       "registro": "formal_academico",
       "score_academico": 3,
       "polissemica": false,
-      "metaforico": true
+      "metaforico": true,
+      "grupo": "visao_luz"
     },
     {
       "forma": "na outra margem",
       "registro": "formal_academico",
       "score_academico": 3,
       "polissemica": false,
-      "metaforico": true
+      "metaforico": true,
+      "grupo": "territorio"
     },
     {
       "forma": "aberto esse caminho",
       "registro": "formal_academico",
       "score_academico": 3,
       "polissemica": false,
-      "metaforico": true
+      "metaforico": true,
+      "grupo": "percurso"
     },
     {
       "forma": "pavimentado o caminho",
       "registro": "formal_academico",
       "score_academico": 3,
       "polissemica": false,
-      "metaforico": true
+      "metaforico": true,
+      "grupo": "percurso"
     },
     {
       "forma": "nesse terreno",
       "registro": "formal_academico",
       "score_academico": 3,
       "polissemica": false,
-      "metaforico": true
+      "metaforico": true,
+      "grupo": "territorio"
     },
     {
       "forma": "a meio caminho",
       "registro": "formal_academico",
       "score_academico": 3,
       "polissemica": false,
-      "metaforico": true
+      "metaforico": true,
+      "grupo": "percurso"
     },
     {
       "forma": "nessa tessitura",
       "registro": "formal_academico",
       "score_academico": 3,
       "polissemica": false,
-      "metaforico": true
+      "metaforico": true,
+      "grupo": "tecido"
     },
     {
       "forma": "em vista desse repto",
       "registro": "formal_academico",
       "score_academico": 3,
       "polissemica": false,
-      "metaforico": true
+      "metaforico": true,
+      "grupo": "desafio"
     },
     {
       "forma": "nessa condução",
       "registro": "formal_academico",
       "score_academico": 3,
       "polissemica": false,
-      "metaforico": true
+      "metaforico": true,
+      "grupo": "percurso"
     }
-  ]
+  ],
+  "nota_proximidade": "Cada item tem um 'grupo' semântico. Distância entre conectores: d0 = mesma forma; d1 = mesmo grupo (quase-sinônimos); d2 = mesma família; d3 = famílias distintas. Regra de rotação: aberturas de parágrafos consecutivos exigem distância mínima d2 (nem mesma forma, nem mesmo grupo). O sorteio busca a máxima distância do último conector usado no documento."
 }

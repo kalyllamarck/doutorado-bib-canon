@@ -12,329 +12,385 @@
       "forma": "de partida",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "abertura_inicio"
     },
     {
       "forma": "dessa sorte",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "avaliacao"
     },
     {
       "forma": "desta sorte",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "avaliacao"
     },
     {
       "forma": "por derradeiro",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "fecho_sintese"
     },
     {
       "forma": "de logo",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "abertura_inicio"
     },
     {
       "forma": "bem assim",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "adicao_reforco"
     },
     {
       "forma": "de mais a mais",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "adicao_reforco"
     },
     {
       "forma": "ato contínuo",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "progressao_etapa"
     },
     {
       "forma": "desta feita",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "progressao_etapa"
     },
     {
       "forma": "dessa conformidade",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "avaliacao"
     },
     {
       "forma": "em traços gerais",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "reformulacao"
     },
     {
       "forma": "em outras letras",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "reformulacao"
     },
     {
       "forma": "dito de outra forma",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "reformulacao"
     },
     {
       "forma": "dito de outro modo",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "reformulacao"
     },
     {
       "forma": "a esse respeito",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "avaliacao"
     },
     {
       "forma": "por sinal",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "avaliacao"
     },
     {
       "forma": "em contraposição",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "contraste"
     },
     {
       "forma": "em continuidade",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "progressao_etapa"
     },
     {
       "forma": "como desdobramento",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "progressao_etapa"
     },
     {
       "forma": "em complemento",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "adicao_reforco"
     },
     {
       "forma": "harmonicamente",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "adicao_reforco"
     },
     {
       "forma": "ao revés",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "contraste"
     },
     {
       "forma": "com isso assentado",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "progressao_etapa"
     },
     {
       "forma": "ainda desta banda",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "adicao_reforco"
     },
     {
       "forma": "no mesmo âmbito",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "adicao_reforco"
     },
     {
       "forma": "quando menos",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "avaliacao"
     },
     {
       "forma": "quando muito",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "avaliacao"
     },
     {
       "forma": "a rigor",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "avaliacao"
     },
     {
       "forma": "a bem ver",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "avaliacao"
     },
     {
       "forma": "em boa verdade",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "avaliacao"
     },
     {
       "forma": "bem vistas as coisas",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "avaliacao"
     },
     {
       "forma": "ao fim e ao cabo",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "fecho_sintese"
     },
     {
       "forma": "em última análise",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "fecho_sintese"
     },
     {
       "forma": "no limite",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "fecho_sintese"
     },
     {
       "forma": "em arremate",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "fecho_sintese"
     },
     {
       "forma": "a esta altura",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "progressao_etapa"
     },
     {
       "forma": "antes de tudo",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "abertura_inicio"
     },
     {
       "forma": "acima de tudo",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "avaliacao"
     },
     {
       "forma": "desde logo",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "abertura_inicio"
     },
     {
       "forma": "de resto",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "fecho_sintese"
     },
     {
       "forma": "por assim dizer",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "reformulacao"
     },
     {
       "forma": "de saída",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "abertura_inicio"
     },
     {
       "forma": "vencida essa etapa",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "progressao_etapa"
     },
     {
       "forma": "firmado esse ponto",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "progressao_etapa"
     },
     {
       "forma": "assentada a premissa",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "progressao_etapa"
     },
     {
       "forma": "chegado esse ponto",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "progressao_etapa"
     },
     {
       "forma": "esgotado esse exame",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "progressao_etapa"
     },
     {
       "forma": "cumprida essa etapa",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "progressao_etapa"
     },
     {
       "forma": "posta a questão",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "progressao_etapa"
     },
     {
       "forma": "fixada a premissa",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "progressao_etapa"
     },
     {
       "forma": "superadas essas questões",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "progressao_etapa"
     }
   ],
   "padroes_produtivos": [
     {
       "id": "participio_absoluto",
       "regex": "^(?:vencid|superad|firmad|assentad|fixad|demonstrad|estabelecid|descartad|afastad|percorrid|esgotad|cumprid|delinead|ultrapassad|post|chegad|abert|pavimentad|vist)[oa]s?\\s+[^,]{1,60},",
-      "exemplo": "Superadas as questões de abertura sobre o método, avança-se ao escrutínio."
+      "exemplo": "Superadas as questões de abertura sobre o método, avança-se ao escrutínio.",
+      "grupo": "participio_absoluto"
     },
     {
       "id": "com_apoio_nesse",
       "regex": "^com\\s+(?:base|respaldo|suporte|apoio|esteio)\\s+(?:ness[ea]s?|nisso)\\s*[^,]{0,40},",
-      "exemplo": "Com suporte nesse traçado, percebe-se que a decisão foi decisiva."
+      "exemplo": "Com suporte nesse traçado, percebe-se que a decisão foi decisiva.",
+      "grupo": "com_apoio_nesse"
     },
     {
       "id": "no_que_concerne",
       "regex": "^no\\s+que\\s+(?:concerne|tange|toca|respeita)\\s+[^,]{1,40},",
-      "exemplo": "No que concerne à qualificação do benefício, a regra é estrita."
+      "exemplo": "No que concerne à qualificação do benefício, a regra é estrita.",
+      "grupo": "no_que_concerne"
     },
     {
       "id": "em_razao_vista_virtude",
       "regex": "^em\\s+(?:vista|razão|virtude)\\s+d[^,]{1,40},",
-      "exemplo": "Em vista desse repto, a condição deve ser detectável."
+      "exemplo": "Em vista desse repto, a condição deve ser detectável.",
+      "grupo": "em_razao_vista_virtude"
     }
-  ]
+  ],
+  "nota_proximidade": "Cada item tem um 'grupo' semântico. Distância entre conectores: d0 = mesma forma; d1 = mesmo grupo (quase-sinônimos); d2 = mesma família; d3 = famílias distintas. Regra de rotação: aberturas de parágrafos consecutivos exigem distância mínima d2 (nem mesma forma, nem mesmo grupo). O sorteio busca a máxima distância do último conector usado no documento."
 }

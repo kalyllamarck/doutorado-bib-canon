@@ -207,3 +207,33 @@ for paragrafo in texto:
 ---
 
 *Guia revisado em 2026-05-12. Versão 2.0: anatomia explícita do parágrafo (oração = unidade entre pontos finais; toda oração abre com conjunção), tabelas de substituição rápida, checks operacionais, interface para validador.*
+
+---
+
+## Proximidade semântica e distância entre conectores (v2.1)
+
+Cada conector das famílias de conectores (anafóricos, elegantes,
+metafóricos) carrega um **grupo semântico** (`grupo` no JSON) — o
+conjunto dos seus quase-sinônimos ("nesse prumo" e "no mesmo prumo";
+"de partida" e "de saída"). Os padrões produtivos usam o próprio
+template como grupo ("Nesse retorno," e "Nessa construção," são o
+mesmo molde com substantivo trocado).
+
+**Escala de distância** entre dois conectores:
+
+| d | Relação | Exemplo |
+|---|---------|---------|
+| d0 | mesma forma | "nessa toada" ↔ "nessa toada" |
+| d1 | mesmo grupo (quase-sinônimos) | "nesse prumo" ↔ "no mesmo prumo" |
+| d2 | mesma família, grupos distintos | "nessa toada" ↔ "sob essa lente" |
+| d3 | famílias distintas | "nessa toada" ↔ "porquanto" |
+
+**Regra de rotação (complementa a janela de frequência):** aberturas
+de parágrafos consecutivos exigem **distância mínima d2** — vedada a
+mesma forma (regra clássica) e vedado o mesmo grupo (quase-repetição,
+que o leitor sente como eco: "Nesse retorno, … / Nessa construção, …").
+
+**Regra de escolha (sorteio):** ao escolher um conector novo, buscar a
+**máxima distância** disponível em relação ao último conector usado no
+documento — preferir outra família; dentro da mesma família, outro
+grupo; nunca o mesmo grupo do conector imediatamente anterior.

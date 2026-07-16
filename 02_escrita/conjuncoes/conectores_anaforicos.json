@@ -11,132 +11,156 @@
       "forma": "nesse sentido",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "continuidade"
     },
     {
       "forma": "nessa medida",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "continuidade"
     },
     {
       "forma": "nesse compasso",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "movimento"
     },
     {
       "forma": "nesse movimento",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "movimento"
     },
     {
       "forma": "nesse cenário",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "quadro"
     },
     {
       "forma": "nessa esteira",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "movimento"
     },
     {
       "forma": "no mesmo sentido",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "continuidade"
     },
     {
       "forma": "em paralelo",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "paralelo"
     },
     {
       "forma": "em sintonia",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "continuidade"
     },
     {
       "forma": "de um lado",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "paralelo"
     },
     {
       "forma": "de outro lado",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "paralelo"
     },
     {
       "forma": "por sua vez",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "paralelo"
     },
     {
       "forma": "a seu turno",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "paralelo"
     },
     {
       "forma": "dito isso",
       "registro": "formal_academico",
       "score_academico": 4,
-      "polissemica": false
+      "polissemica": false,
+      "grupo": "fecho"
     }
   ],
   "padroes_produtivos": [
     {
       "id": "nesse_substantivo",
       "regex": "^ness[ea]s?\\s+(?:mesm[oa]s?\\s+)?[a-zà-ÿ]+(?:\\s+[a-zà-ÿ]+)?,",
-      "exemplo": "Nesse movimento, os legisladores ampliam o rol."
+      "exemplo": "Nesse movimento, os legisladores ampliam o rol.",
+      "grupo": "nesse_substantivo"
     },
     {
       "id": "neste_substantivo",
       "regex": "^nest[ea]s?\\s+[a-zà-ÿ]+(?:\\s+[a-zà-ÿ]+)?,",
-      "exemplo": "Neste ponto, a objeção perde o objeto."
+      "exemplo": "Neste ponto, a objeção perde o objeto.",
+      "grupo": "neste_substantivo"
     },
     {
       "id": "diante_desse_substantivo",
       "regex": "^diante\\s+(?:de\\s+tal|dess[ea]s?)\\s+[a-zà-ÿ]+(?:\\s+[a-zà-ÿ]+)?,",
-      "exemplo": "Diante desse quadro, delimita-se o problema."
+      "exemplo": "Diante desse quadro, delimita-se o problema.",
+      "grupo": "diante_desse_substantivo"
     },
     {
       "id": "sob_esse_substantivo",
       "regex": "^sob\\s+(?:ess[ea]|est[ea])\\s+[a-zà-ÿ]+(?:\\s+[a-zà-ÿ]+)?,",
-      "exemplo": "Sob essa lente, um rio ganha delimitabilidade."
+      "exemplo": "Sob essa lente, um rio ganha delimitabilidade.",
+      "grupo": "sob_esse_substantivo"
     },
     {
       "id": "em_face_desse_substantivo",
       "regex": "^em\\s+face\\s+dess[ea]s?\\s+[a-zà-ÿ]+(?:\\s+[a-zà-ÿ]+)?,",
-      "exemplo": "Em face desse quadro teórico, a qualificação cede."
+      "exemplo": "Em face desse quadro teórico, a qualificação cede.",
+      "grupo": "em_face_desse_substantivo"
     },
     {
       "id": "quanto_a_substantivo",
       "regex": "^quanto\\s+(?:a|à|ao|às|aos)\\s+[a-zà-ÿ]+(?:\\s+[a-zà-ÿ]+)?,",
-      "exemplo": "Quanto à justificativa, a pesquisa se sustenta em dupla frente."
+      "exemplo": "Quanto à justificativa, a pesquisa se sustenta em dupla frente.",
+      "grupo": "quanto_a_substantivo"
     },
     {
       "id": "no_plano_de",
       "regex": "^n[oa]\\s+(?:plano|tocante|âmbito|campo|seara)\\s+[^,]{1,40},",
-      "exemplo": "No plano social, a crise climática impõe perdas."
+      "exemplo": "No plano social, a crise climática impõe perdas.",
+      "grupo": "no_plano_de"
     },
     {
       "id": "em_resposta_a",
       "regex": "^em\\s+resposta\\s+a\\s+[^,]{1,40},",
-      "exemplo": "Em resposta a essa pergunta, deduzem-se critérios."
+      "exemplo": "Em resposta a essa pergunta, deduzem-se critérios.",
+      "grupo": "em_resposta_a"
     },
     {
       "id": "ao_cabo_de",
       "regex": "^ao\\s+cabo\\s+d[^,]{1,40},",
-      "exemplo": "Ao cabo desta seção, o objetivo resta cumprido."
+      "exemplo": "Ao cabo desta seção, o objetivo resta cumprido.",
+      "grupo": "ao_cabo_de"
     }
-  ]
+  ],
+  "nota_proximidade": "Cada item tem um 'grupo' semântico. Distância entre conectores: d0 = mesma forma; d1 = mesmo grupo (quase-sinônimos); d2 = mesma família; d3 = famílias distintas. Regra de rotação: aberturas de parágrafos consecutivos exigem distância mínima d2 (nem mesma forma, nem mesmo grupo). O sorteio busca a máxima distância do último conector usado no documento."
 }
