@@ -1,0 +1,145 @@
+{
+  "subtipo": "metaforicos",
+  "categoria": "conectores_metaforicos",
+  "definicao": "Conectores anafóricos com toque metafórico leve (percurso, horizonte, prumo, lente, margem), minerados dos artigos publicados do autor. USO CONDICIONADO: no acadêmico, com parcimônia e de preferência em abertura/transição de seção (eixo 3 por zona; metáfora durável te_04); VETADOS em peça jurídica (zero recurso literário).",
+  "fonte_calibragem": "corpus de artigos publicados do autor (2026-07-16)",
+  "total": 19,
+  "formais": 19,
+  "informais": 0,
+  "polissemicas": 0,
+  "itens": [
+    {
+      "forma": "nessa toada",
+      "registro": "formal_academico",
+      "score_academico": 3,
+      "polissemica": false,
+      "metaforico": true
+    },
+    {
+      "forma": "nesse prumo",
+      "registro": "formal_academico",
+      "score_academico": 3,
+      "polissemica": false,
+      "metaforico": true
+    },
+    {
+      "forma": "no mesmo prumo",
+      "registro": "formal_academico",
+      "score_academico": 3,
+      "polissemica": false,
+      "metaforico": true
+    },
+    {
+      "forma": "nesse horizonte",
+      "registro": "formal_academico",
+      "score_academico": 3,
+      "polissemica": false,
+      "metaforico": true
+    },
+    {
+      "forma": "nesse ritmo",
+      "registro": "formal_academico",
+      "score_academico": 3,
+      "polissemica": false,
+      "metaforico": true
+    },
+    {
+      "forma": "à sombra disso",
+      "registro": "formal_academico",
+      "score_academico": 3,
+      "polissemica": false,
+      "metaforico": true
+    },
+    {
+      "forma": "com suporte nesse traçado",
+      "registro": "formal_academico",
+      "score_academico": 3,
+      "polissemica": false,
+      "metaforico": true
+    },
+    {
+      "forma": "nessa senda",
+      "registro": "formal_academico",
+      "score_academico": 3,
+      "polissemica": false,
+      "metaforico": true
+    },
+    {
+      "forma": "nessa quadra",
+      "registro": "formal_academico",
+      "score_academico": 3,
+      "polissemica": false,
+      "metaforico": true
+    },
+    {
+      "forma": "sob essa lente",
+      "registro": "formal_academico",
+      "score_academico": 3,
+      "polissemica": false,
+      "metaforico": true
+    },
+    {
+      "forma": "por esse prisma",
+      "registro": "formal_academico",
+      "score_academico": 3,
+      "polissemica": false,
+      "metaforico": true
+    },
+    {
+      "forma": "na outra margem",
+      "registro": "formal_academico",
+      "score_academico": 3,
+      "polissemica": false,
+      "metaforico": true
+    },
+    {
+      "forma": "aberto esse caminho",
+      "registro": "formal_academico",
+      "score_academico": 3,
+      "polissemica": false,
+      "metaforico": true
+    },
+    {
+      "forma": "pavimentado o caminho",
+      "registro": "formal_academico",
+      "score_academico": 3,
+      "polissemica": false,
+      "metaforico": true
+    },
+    {
+      "forma": "nesse terreno",
+      "registro": "formal_academico",
+      "score_academico": 3,
+      "polissemica": false,
+      "metaforico": true
+    },
+    {
+      "forma": "a meio caminho",
+      "registro": "formal_academico",
+      "score_academico": 3,
+      "polissemica": false,
+      "metaforico": true
+    },
+    {
+      "forma": "nessa tessitura",
+      "registro": "formal_academico",
+      "score_academico": 3,
+      "polissemica": false,
+      "metaforico": true
+    },
+    {
+      "forma": "em vista desse repto",
+      "registro": "formal_academico",
+      "score_academico": 3,
+      "polissemica": false,
+      "metaforico": true
+    },
+    {
+      "forma": "nessa condução",
+      "registro": "formal_academico",
+      "score_academico": 3,
+      "polissemica": false,
+      "metaforico": true
+    }
+  ]
+}
