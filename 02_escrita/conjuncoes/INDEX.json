@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
-  "descricao": "Conjunções da língua portuguesa em uso acadêmico. 18 subtipos (5 coordenativas + 13 subordinativas).",
-  "total_unicos": 802,
+  "descricao": "Conjunções da língua portuguesa em uso acadêmico. 18 subtipos (5 coordenativas + 13 subordinativas) + conectores anafóricos de abertura (formas fixas e padrões produtivos).",
+  "total_unicos": 816,
   "subtipos": {
     "coordenativas/aditivas": {
       "arquivo": "coordenativas/aditivas.json",
@@ -109,6 +109,12 @@
       "arquivo": "subordinativas/modo_comparativas_hibridas.json",
       "total": 47,
       "formais": 47,
+      "informais": 0
+    },
+    "conectores/anaforicos": {
+      "arquivo": "conectores_anaforicos.json",
+      "total": 14,
+      "formais": 14,
       "informais": 0
     }
   },

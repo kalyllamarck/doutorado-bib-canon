@@ -1,0 +1,142 @@
+{
+  "subtipo": "anaforicos",
+  "categoria": "conectores_anaforicos",
+  "definicao": "Conectores de abertura que retomam anaforicamente o parágrafo anterior (demonstrativo + substantivo-âncora, ou locução fixada). Satisfazem a conjunção obrigatória de abertura (p_09) e entram na rotação (p_20) pela forma plena — 'nesse compasso' e 'nessa medida' contam como formas distintas.",
+  "total": 14,
+  "formais": 14,
+  "informais": 0,
+  "polissemicas": 0,
+  "itens": [
+    {
+      "forma": "nesse sentido",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "nessa medida",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "nesse compasso",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "nesse movimento",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "nesse cenário",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "nessa esteira",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "no mesmo sentido",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em paralelo",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "em sintonia",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "de um lado",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "de outro lado",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "por sua vez",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "a seu turno",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    },
+    {
+      "forma": "dito isso",
+      "registro": "formal_academico",
+      "score_academico": 4,
+      "polissemica": false
+    }
+  ],
+  "padroes_produtivos": [
+    {
+      "id": "nesse_substantivo",
+      "regex": "^ness[ea]s?\\s+(?:mesm[oa]s?\\s+)?[a-zà-ÿ]+(?:\\s+[a-zà-ÿ]+)?,",
+      "exemplo": "Nesse movimento, os legisladores ampliam o rol."
+    },
+    {
+      "id": "neste_substantivo",
+      "regex": "^nest[ea]s?\\s+[a-zà-ÿ]+(?:\\s+[a-zà-ÿ]+)?,",
+      "exemplo": "Neste ponto, a objeção perde o objeto."
+    },
+    {
+      "id": "diante_desse_substantivo",
+      "regex": "^diante\\s+(?:de\\s+tal|dess[ea]s?)\\s+[a-zà-ÿ]+(?:\\s+[a-zà-ÿ]+)?,",
+      "exemplo": "Diante desse quadro, delimita-se o problema."
+    },
+    {
+      "id": "sob_esse_substantivo",
+      "regex": "^sob\\s+(?:ess[ea]|est[ea])\\s+[a-zà-ÿ]+(?:\\s+[a-zà-ÿ]+)?,",
+      "exemplo": "Sob essa lente, um rio ganha delimitabilidade."
+    },
+    {
+      "id": "em_face_desse_substantivo",
+      "regex": "^em\\s+face\\s+dess[ea]s?\\s+[a-zà-ÿ]+(?:\\s+[a-zà-ÿ]+)?,",
+      "exemplo": "Em face desse quadro teórico, a qualificação cede."
+    },
+    {
+      "id": "quanto_a_substantivo",
+      "regex": "^quanto\\s+(?:a|à|ao|às|aos)\\s+[a-zà-ÿ]+(?:\\s+[a-zà-ÿ]+)?,",
+      "exemplo": "Quanto à justificativa, a pesquisa se sustenta em dupla frente."
+    },
+    {
+      "id": "no_plano_de",
+      "regex": "^n[oa]\\s+(?:plano|tocante|âmbito|campo|seara)\\s+[^,]{1,40},",
+      "exemplo": "No plano social, a crise climática impõe perdas."
+    },
+    {
+      "id": "em_resposta_a",
+      "regex": "^em\\s+resposta\\s+a\\s+[^,]{1,40},",
+      "exemplo": "Em resposta a essa pergunta, deduzem-se critérios."
+    },
+    {
+      "id": "ao_cabo_de",
+      "regex": "^ao\\s+cabo\\s+d[^,]{1,40},",
+      "exemplo": "Ao cabo desta seção, o objetivo resta cumprido."
+    }
+  ]
+}
