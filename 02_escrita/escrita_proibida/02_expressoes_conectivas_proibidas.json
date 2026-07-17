@@ -38,9 +38,19 @@
         "à luz do",
         "à luz da",
         "à luz dos",
-        "à luz das"
+        "à luz das",
+        "à luz disso",
+        "à luz disto",
+        "à luz daquilo",
+        "à luz desse",
+        "à luz dessa",
+        "à luz deste",
+        "à luz desta",
+        "à luz daquele",
+        "à luz daquela"
       ],
-      "regex": "\\bà luz d[aeo]s?\\b",
+      "regex": "\\bà luz (?:d[aeo]s?|dest[ae]s?|dess[ae]s?|daquel[ae]s?|disso|disto|daquilo)\\b",
+      "observacao": "Inclui as contrações pronominais ('à luz disso/desse quadro') — lacuna achada pelo fuzzer e fechada em 2026-07-17.",
       "substitutos_sugeridos": [
         "sob a ótica de",
         "sob o prisma de",
@@ -85,7 +95,7 @@
         "marco teórico",
         "marco conceitual"
       ],
-      "regex": "\\bmarco (normativo|legal|regulatório|jurídico|institucional|teórico|conceitual)\\b",
+      "regex": "\\bmarcos? (normativos?|lega(l|is)|regulatórios?|jurídicos?|instituciona(l|is)|teóricos?|conceitua(l|is))\\b",
       "substitutos_sugeridos": [
         "regime jurídico",
         "ordenamento",

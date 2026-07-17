@@ -2,8 +2,8 @@
   "subtipo": "conformativas",
   "categoria": "subordinativas",
   "definicao": "Indicam conformidade ou acordo",
-  "total": 44,
-  "formais": 44,
+  "total": 43,
+  "formais": 43,
   "informais": 0,
   "polissemicas": 16,
   "itens": [
@@ -53,12 +53,6 @@
     },
     {
       "forma": "em conformidade com",
-      "registro": "formal_academico",
-      "score_academico": 4,
-      "polissemica": false
-    },
-    {
-      "forma": "à luz de que",
       "registro": "formal_academico",
       "score_academico": 4,
       "polissemica": false

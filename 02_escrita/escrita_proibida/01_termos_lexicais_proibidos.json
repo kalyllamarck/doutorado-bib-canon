@@ -130,7 +130,8 @@
       "variantes": [
         "tais"
       ],
-      "regex": "\\bta(l|is)\\b",
+      "regex": "\\bta(l|is)\\b(?!\\s+(?:e\\s+)?(?:qual|como|que|modo|forma|maneira|sorte|grau|ponto|extremo|intensidade)\\b)",
+      "observacao": "O veto alcança o 'tal' anafórico ('tal entendimento'). Locuções conjuntivas fixas do catálogo são lícitas e poupadas pelo lookahead: tal qual, tal como, tal (e qual) que, de tal modo/forma/maneira/sorte que, a tal ponto/extremo que, em tal grau que, com tal intensidade que (decisão 2026-07-17).",
       "substitutos_sugeridos": [
         "esse",
         "este",
@@ -155,7 +156,8 @@
         "revelada",
         "revelação"
       ],
-      "regex": "\\brevel\\w*\\b",
+      "regex": "\\brevel(?!ias?\\b)\\w*\\b",
+      "observacao": "'Revelia' é termo técnico processual lícito e distinto de 'revelar' — excluída do radical pelo lookahead (decisão 2026-07-17).",
       "substitutos_sugeridos": [
         "mostrar",
         "indicar",

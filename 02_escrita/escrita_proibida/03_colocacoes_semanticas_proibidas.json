@@ -8,7 +8,7 @@
       "sentido_proibido": "papel como sinônimo de função ou atribuição",
       "gatilhos_contextuais": ["desempenha", "exerce", "cumpre", "tem", "ocupa", "assume", "faz", "detém", "representa", "joga"],
       "qualificadores_suspeitos": ["central", "fundamental", "decisivo", "crucial", "importante", "relevante", "essencial", "protagonista", "de destaque", "preponderante", "primordial"],
-      "regex_composto": "\\b(desempenha|exerce|cumpre|tem|ocupa|assume|faz|detém|representa|joga) (um |o )?papel\\b|\\bpapel (central|fundamental|decisivo|crucial|importante|relevante|essencial|protagonista|de destaque|preponderante|primordial)\\b",
+      "regex_composto": "\\b(desempenham?|exercem?|cumprem?|t[eê]m|ocupam?|assumem?|faz(em)?|det[éê]m|representam?|jogam?) (um |uns |o |os )?pap(el|éis)\\b|\\bpap(el|éis) (centra(l|is)|fundamenta(l|is)|decisivos?|crucia(l|is)|importantes?|relevantes?|essencia(l|is)|protagonistas?|de destaque|preponderantes?|primordia(l|is))\\b",
       "substitutos_sugeridos": ["função", "ofício", "encargo", "missão", "incumbência", "atribuição", "tarefa", "mister"],
       "observacao": "Permitido em sentido literal (folha de papel) ou teatral explícito (papel de Hamlet)."
     },
@@ -17,7 +17,7 @@
       "forma_canonica": "marco",
       "sentido_proibido": "marco + qualificador abstrato ou marco de [substantivo abstrato]",
       "gatilhos_contextuais": ["normativo", "legal", "regulatório", "institucional", "teórico", "conceitual", "jurídico", "de"],
-      "regex_composto": "\\bmarco (normativo|legal|regulatório|institucional|teórico|conceitual|jurídico|de [a-zà-ÿ]+)\\b",
+      "regex_composto": "\\bmarcos? (normativos?|lega(l|is)|regulatórios?|instituciona(l|is)|teóricos?|conceitua(l|is)|jurídicos?|de [a-zà-ÿ]+)\\b",
       "substitutos_sugeridos": ["regime jurídico", "ordenamento", "regramento", "disciplina jurídica", "corpo normativo", "estatuto", "balizas normativas", "moldura legal", "plexo normativo"],
       "observacao": "Permitido apenas em sentido literal (marco de fronteira geográfico, marco histórico datado)."
     }
