@@ -237,3 +237,32 @@ que o leitor sente como eco: "Nesse retorno, … / Nessa construção, …").
 **máxima distância** disponível em relação ao último conector usado no
 documento — preferir outra família; dentro da mesma família, outro
 grupo; nunca o mesmo grupo do conector imediatamente anterior.
+
+---
+
+## Posição do conector: inicial × medial (v2.2)
+
+A coesão não vive só na abertura do parágrafo. Conectores adverbiais
+móveis podem — e devem, com parcimônia — ser **intercalados** no meio
+da frase, entre vírgulas, depois do sujeito ou do primeiro sintagma:
+
+> A norma, **contudo**, veda a extensão analógica.
+> O acórdão reconheceu, **ainda**, que decisões judiciais divergiam.
+> Essa afirmação se fortalece, **pois**, segundo o autor, …
+
+O inventário canônico está em `posicoes.json`: regra padrão é a
+posição **inicial**; as listas `mediais_atestados` (minerados dos
+artigos publicados do autor) e `mediais_gramaticais` marcam os que
+também flutuam. **Nunca intercalar**: particípios absolutos,
+anafóricos de abertura e subordinativas que introduzem oração.
+
+**Regra de variação posicional:** uma sequência longa de parágrafos em
+que todo conector aparece apenas na posição inicial produz monotonia
+de ritmo — o leitor sente a fôrma. Convém intercalar um conector a
+cada poucos parágrafos; o detector avisa quando **8 parágrafos
+elegíveis (≥2 frases) se acumulam sem nenhum conector medial** —
+limiar calibrado na cadência real dos artigos publicados do autor. Não confundir com o veto cst_003:
+o que se veda ali é a **circunstancial extensa** entre sujeito e verbo
+("O tribunal, em decisão proferida no ano passado, entendeu…"), não o
+conector adverbial curto entre vírgulas ("O tribunal, contudo,
+entendeu…" é lícito e elegante).

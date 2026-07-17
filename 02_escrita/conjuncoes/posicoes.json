@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "descricao": "Posições sintáticas admitidas pelos conectores do catálogo. Regra padrão: forma sem anotação aqui admite APENAS posição inicial (abre período/parágrafo). As listas abaixo marcam os conectores que também podem ser INTERCALADOS no meio da frase, entre vírgulas, após o sujeito ou o primeiro sintagma ('A norma, contudo, veda…'; 'O acórdão reconheceu, ainda, que…').",
+  "posicao_padrao": "inicial",
+  "mediais_atestados": {
+    "fonte": "minerados dos 4 artigos publicados do autor (Veredas 2768, REDP 90910, Unifafibe 1714, cap. BPC Iberojur) em 2026-07-17 — padrão [,;(] forma , com inicial minúscula",
+    "formas": [
+      "portanto",
+      "ainda",
+      "assim",
+      "contudo",
+      "ou seja",
+      "porém",
+      "consequentemente",
+      "por sua vez",
+      "no entanto",
+      "então",
+      "pois",
+      "isto é",
+      "também",
+      "ao contrário",
+      "em última análise",
+      "todavia",
+      "por outro lado",
+      "dessa forma",
+      "ainda assim",
+      "de um lado",
+      "simultaneamente"
+    ]
+  },
+  "mediais_gramaticais": {
+    "fonte": "advérbios conjuntivos plenamente móveis na norma culta, ainda não atestados em posição medial no corpus do autor",
+    "formas": [
+      "entretanto",
+      "ademais",
+      "aliás",
+      "sobretudo",
+      "inclusive",
+      "com efeito",
+      "de fato",
+      "por conseguinte",
+      "desse modo",
+      "afinal",
+      "enfim"
+    ]
+  },
+  "apenas_iniciais": {
+    "nota": "Nunca intercalar: particípios absolutos ('Assentada essa premissa,'), anafóricos de abertura ('Nesse quadro,', 'Diante desse cenário,') e subordinativas que introduzem oração ('porque', 'embora', 'quando') — estas abrem a própria oração, não flutuam entre vírgulas."
+  }
+}

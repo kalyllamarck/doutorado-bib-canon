@@ -2,6 +2,10 @@
   "schema_version": "2.0",
   "descricao": "Conjunções da língua portuguesa em uso acadêmico. 18 subtipos (5 coordenativas + 13 subordinativas) + conectores anafóricos de abertura (formas fixas e padrões produtivos).",
   "total_unicos": 886,
+  "posicoes": {
+    "arquivo": "posicoes.json",
+    "descricao": "Posições sintáticas por conector: padrão inicial; listas de mediais (atestados no corpus do autor + gramaticais). Ver guia, seção 'Posição do conector'."
+  },
   "subtipos": {
     "coordenativas/aditivas": {
       "arquivo": "coordenativas/aditivas.json",
