@@ -1,4 +1,12 @@
 <!-- GSD:project-start source:PROJECT.md -->
+## Escrita canônica — skill `escrever` obrigatória
+
+Toda prosa PT-BR produzida a partir deste repo usa a skill global
+`escrever` (`~/.claude/skills/escrever/SKILL.md`). Este repo é a FONTE
+das regras (`02_escrita/`): depois de qualquer mudança ali, rodar
+`bun ~/.claude/skills/escrever/scripts/sync-canon.ts` e `bun test` em
+`~/Applications/projetos/skills-kalyl/escrever/harness/`.
+
 ## Project
 
 **Validador & Fixer Acadêmico — Biblioteca Canônica do Doutorado**
