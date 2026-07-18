@@ -281,6 +281,27 @@
         "ressalva": "Conjugar o verbo de conteúdo na 3ª pessoa singular do presente do indicativo (traduzir → traduz, demonstrar → demonstra, sustentar → sustenta) — operação a cargo do humano após match"
       },
       "coocorrencia_frequente": ["cst_007 (abertura lacônica com reancoragem nominal)", "cst_010 (tópico numerado com rótulo nominal)"]
+    },
+    {
+      "id": "cst_014",
+      "nome": "abridor_metadiscursivo",
+      "descricao": "Parágrafo ou período que abre com fórmula metadiscursiva de cartório (Conclui-se que, Verifica-se que, Cumpre destacar, Insta salientar, Nesse diapasão, No que tange) — o texto fala de si em vez de dizer a proposição. Irmão do cst_012 no nível do parágrafo: a peça não fala de si = o artigo não fala de si.",
+      "regex_deteccao": "(^|\\n)\\s*(Conclui-se|Verifica-se|Observa-se|Registre-se|Frise-se|Destaque-se|Saliente-se|Ressalte-se|Cumpre (destacar|salientar|ressaltar|observar|registrar|mencionar)|Insta (salientar|destacar|mencionar)|Impende (destacar|ressaltar)|Vale (destacar|ressaltar|salientar|mencionar)|É de se (destacar|ressaltar|notar)|Passa-se a|Mister se faz|Nesse (diapasão|norte)|Neste (diapasão|norte)|No que (tange|toca|pertine))\\b",
+      "exemplo_proibido": "Conclui-se que a decisão comporta revisão pela via estreita eleita.",
+      "exemplo_reescrito": "A decisão comporta revisão pela via estreita eleita, porquanto o vício apontado é de ordem pública.",
+      "outros_exemplos": [
+        {
+          "proibido": "No que tange à formulação precisa, a norma silencia.",
+          "reescrito": "Quanto à formulação precisa, a norma silencia."
+        }
+      ],
+      "alternativas_recomendadas": [
+        "Abrir com a proposição substantiva (sujeito + verbo de conteúdo)",
+        "Se a função é conclusiva, usar marcador autoral aceito ('forçoso concluir') ou conector conclusivo do catálogo",
+        "Se a função é delimitar tema, usar 'quanto a' ou reformular com o tema como sujeito"
+      ],
+      "motivo_proibicao": "Fórmula de cartório que anuncia o ato de dizer em vez de dizer. Não sinaliza o esqueleto (p_08); reprovação expressa do autor ('Conclui-se'). Absorvida do lsa-escriba (R-ESCRITA-ESCRIBA_ABRIDOR_METADISCURSIVO) na Fase 2 da unificação, 2026-07-18.",
+      "observacao": "Case-sensitive: só a forma capitalizada em abertura de parágrafo/período viola. Os marcadores autorais aceitos do voz_autoral.json (convém demonstrar, cumpre esclarecer, vale ressalvar, forçoso concluir) NÃO colidem — a lista vedada é fechada e não os contém."
     }
   ]
 }

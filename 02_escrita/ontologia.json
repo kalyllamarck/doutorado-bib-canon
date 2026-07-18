@@ -98,6 +98,15 @@
     }
   },
   "excecoes_por_regra": {
+    "cst_014": {
+      "dimensao": "pragmatica",
+      "nivel": "paragrafo",
+      "classe": "validador",
+      "tipo": "vedacao_conteudo",
+      "deriva_de": "p_08",
+      "fonte_doutrina": "lsa-escriba R-ESCRITA-ESCRIBA_ABRIDOR_METADISCURSIVO (reprovação Kalyl: 'Conclui-se'); p_08 não sinalize o esqueleto",
+      "nivel_adequacao": "explicativa"
+    },
     "msg_002": {
       "dimensao": "pragmatica",
       "nivel": "sintagma",

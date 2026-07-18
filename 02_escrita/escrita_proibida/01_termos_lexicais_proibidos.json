@@ -276,7 +276,7 @@
         "emergentes",
         "emergência"
       ],
-      "regex": "\\bemerg\\w*\\b",
+      "regex": "(?<!danos\\s)(?<!dano\\s)\\bemerg\\w*\\b",
       "substitutos_sugeridos": [
         "surgir",
         "brotar",
@@ -287,7 +287,8 @@
         "irromper",
         "aparecer",
         "vir a lume"
-      ]
+      ],
+      "observacao": "2026-07-18 (Fase 2 da unificação, absorvido do lsa-escriba, calibração 05/07): 'dano(s) emergente(s)' é espécie do art. 402 do CC — termo técnico lícito, poupado por lookbehind; o uso metadiscursivo de 'emergir' segue vedado."
     },
     {
       "id": "lex_013",
@@ -315,7 +316,7 @@
       "variantes": [
         "marcos"
       ],
-      "regex": "\\bmarcos?\\b",
+      "regex": "\\bmarcos?\\b(?!\\s+(?:inicia(?:l|is)|tempora(?:l|is))\\b)",
       "substitutos_sugeridos": [
         "baliza",
         "parâmetro",
@@ -324,7 +325,7 @@
         "alicerce",
         "fundamento"
       ],
-      "observacao": "Uso metafórico/abstrato vedado. Permitido sentido literal (marco de fronteira, marco histórico datado com ano)."
+      "observacao": "Uso metafórico/abstrato vedado. Permitido sentido literal (marco de fronteira, marco histórico datado com ano). 2026-07-18 (Fase 2 da unificação, absorvido do lsa-escriba): 'marco inicial' e 'marco temporal' são termos técnicos (DIB, prescrição, tese do marco temporal) — poupados por lookahead."
     },
     {
       "id": "lex_015",
