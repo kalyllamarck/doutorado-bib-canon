@@ -1,0 +1,153 @@
+{
+  "_meta": {
+    "entidade": "Ontologia unificada das regras de escrita — Fase 1 da unificação dos canons (D-CD-21)",
+    "fonte_do_esquema": "lsa-bib-canon/08_templates_documentos_oficiais/lsa_componentes_documentos/_proposta_sistema_linguistico.json (Morris 1938 × Chomsky 1965)",
+    "vocabulario_tipo": "lsa-bib-canon/08_templates_documentos_oficiais/lsa_componentes_documentos/00_validadores_transformadores.json",
+    "regra": "Classifica cada regra do 02_escrita na matriz dimensão × nível × classe. O sync da skill escrever faz o join com os regex/exemplos e emite harness/export_unificado.json — consumidores (lsa-escriba, Appwrite) leem o EXPORT, nunca este arquivo cru. Regra nova sem célula aqui quebra o gate ontologia.test.ts da skill.",
+    "resolucao": "célula de uma regra = excecoes_por_regra[id] ?? padrao_por_categoria[prefixo do id]",
+    "criada_em": "2026-07-18",
+    "classificacao_fonte": "Fase 0 do inventário (lsa-bib-canon f1ef339, Anexo A)"
+  },
+  "vocabularios": {
+    "dimensao": ["sintaxe", "semantica", "pragmatica"],
+    "nivel": ["documento", "secao", "paragrafo", "periodo", "oracao", "sintagma", "palavra", "grafema"],
+    "classe": ["validador", "transformador", "principio"],
+    "nivel_adequacao": ["observacional", "descritiva", "explicativa"]
+  },
+  "padrao_por_categoria": {
+    "lex": {
+      "dimensao": "semantica",
+      "nivel": "palavra",
+      "classe": "validador",
+      "tipo": "vedacao_conteudo",
+      "deriva_de": "p_05",
+      "fonte_doutrina": "Canon 02_escrita (PPGD/Unifor, 2026); p_05 nomeie-não-qualifique",
+      "nivel_adequacao": "descritiva"
+    },
+    "con": {
+      "dimensao": "semantica",
+      "nivel": "sintagma",
+      "classe": "validador",
+      "tipo": "vedacao_conteudo",
+      "deriva_de": "p_09",
+      "fonte_doutrina": "Canon 02_escrita; p_09 conectivos discretos funcionais",
+      "nivel_adequacao": "descritiva"
+    },
+    "col": {
+      "dimensao": "semantica",
+      "nivel": "sintagma",
+      "classe": "validador",
+      "tipo": "vedacao_conteudo",
+      "deriva_de": "p_00",
+      "fonte_doutrina": "Canon 02_escrita; p_00 economia léxico-semântica",
+      "nivel_adequacao": "descritiva"
+    },
+    "cst": {
+      "dimensao": "sintaxe",
+      "nivel": "periodo",
+      "classe": "validador",
+      "tipo": "vedacao_conteudo",
+      "deriva_de": null,
+      "fonte_doutrina": "Canon 02_escrita; Cunha & Cintra (2017)",
+      "nivel_adequacao": "descritiva"
+    },
+    "sig": {
+      "dimensao": "sintaxe",
+      "nivel": "grafema",
+      "classe": "validador",
+      "tipo": "vedacao_conteudo",
+      "deriva_de": "p_10",
+      "fonte_doutrina": "Canon 02_escrita; p_10 pontuação enxuta",
+      "nivel_adequacao": "descritiva"
+    },
+    "est": {
+      "dimensao": "sintaxe",
+      "nivel": "grafema",
+      "classe": "validador",
+      "tipo": "formato",
+      "deriva_de": "p_15",
+      "fonte_doutrina": "Canon 02_escrita; p_15 tradução obrigatória de estrangeirismos; ABNT NBR 14724",
+      "nivel_adequacao": "descritiva"
+    },
+    "sigla": {
+      "dimensao": "pragmatica",
+      "nivel": "palavra",
+      "classe": "validador",
+      "tipo": "formato",
+      "deriva_de": "p_15",
+      "fonte_doutrina": "Canon 02_escrita; ABNT (extensão na 1ª ocorrência)",
+      "nivel_adequacao": "descritiva"
+    },
+    "msg": {
+      "dimensao": "pragmatica",
+      "nivel": "sintagma",
+      "classe": "validador",
+      "tipo": "vedacao_conteudo",
+      "deriva_de": null,
+      "fonte_doutrina": "Perfil mensagem da skill escrever; Grice (1975)",
+      "nivel_adequacao": "descritiva"
+    },
+    "coc": {
+      "dimensao": "semantica",
+      "nivel": "paragrafo",
+      "classe": "validador",
+      "tipo": "coerencia",
+      "deriva_de": "p_00",
+      "fonte_doutrina": "Canon 06_regras_coocorrencia; p_00 economia léxico-semântica",
+      "nivel_adequacao": "descritiva"
+    }
+  },
+  "excecoes_por_regra": {
+    "msg_002": {
+      "dimensao": "pragmatica",
+      "nivel": "sintagma",
+      "classe": "validador",
+      "tipo": "vedacao_conteudo",
+      "deriva_de": null,
+      "fonte_doutrina": "D-01 (lsa-bib-canon/09_whatsapp): nunca artigo definido antes de nome de pessoa",
+      "nivel_adequacao": "explicativa"
+    }
+  },
+  "estruturais": {
+    "_regra": "Checagens do detector da skill que não nascem de regex do canon; ids devem coincidir com os emitidos por detectar.ts.",
+    "str_paragrafo": { "dimensao": "sintaxe", "nivel": "paragrafo", "classe": "validador", "tipo": "intervalo", "deriva_de": null, "fonte_doutrina": "MANUAL_DE_ESCRITA (100–260 palavras; mensagem: máx. ~60)", "nivel_adequacao": "descritiva" },
+    "str_periodo": { "dimensao": "sintaxe", "nivel": "periodo", "classe": "validador", "tipo": "max_palavras", "deriva_de": "p_02", "fonte_doutrina": "p_02 um período, uma ideia (≤35 palavras, ≤3 vírgulas)", "nivel_adequacao": "explicativa" },
+    "str_diversidade": { "dimensao": "semantica", "nivel": "paragrafo", "classe": "validador", "tipo": "frequencia_maxima", "deriva_de": "p_00", "fonte_doutrina": "p_00 economia léxico-semântica (lexema ≥4×/parágrafo)", "nivel_adequacao": "descritiva" },
+    "voz_1p": { "dimensao": "pragmatica", "nivel": "oracao", "classe": "validador", "tipo": "vedacao_conteudo", "deriva_de": "p_19", "fonte_doutrina": "voz_autoral.json te_01; p_19 voz autoral dentro da impessoalidade", "nivel_adequacao": "explicativa" },
+    "voz_1p_desinencia": { "dimensao": "pragmatica", "nivel": "palavra", "classe": "validador", "tipo": "vedacao_conteudo", "deriva_de": "p_19", "fonte_doutrina": "voz_autoral.json av_02", "nivel_adequacao": "observacional" },
+    "voz_fecho_ref": { "dimensao": "pragmatica", "nivel": "paragrafo", "classe": "validador", "tipo": "vedacao_conteudo", "deriva_de": "p_16", "fonte_doutrina": "voz_autoral.json te_02; p_16 autor como interlocutor", "nivel_adequacao": "explicativa" },
+    "voz_marcador": { "dimensao": "pragmatica", "nivel": "paragrafo", "classe": "validador", "tipo": "frequencia_maxima", "deriva_de": "p_19", "fonte_doutrina": "voz_autoral.json te_03/av_05", "nivel_adequacao": "descritiva" },
+    "voz_ancora": { "dimensao": "pragmatica", "nivel": "paragrafo", "classe": "validador", "tipo": "obrigatorio", "deriva_de": "p_13", "fonte_doutrina": "p_13 densidade de citação substantiva (âncora autor-data)", "nivel_adequacao": "explicativa" },
+    "conj_abertura": { "dimensao": "sintaxe", "nivel": "paragrafo", "classe": "validador", "tipo": "obrigatorio", "deriva_de": "p_09", "fonte_doutrina": "p_09 conectivos discretos funcionais; conjuncoes/guia.md", "nivel_adequacao": "explicativa" },
+    "conj_consecutiva": { "dimensao": "sintaxe", "nivel": "secao", "classe": "validador", "tipo": "frequencia_maxima", "deriva_de": "p_20", "fonte_doutrina": "p_20 rotação de conjunções (distância d0)", "nivel_adequacao": "explicativa" },
+    "conj_rotacao_grupo": { "dimensao": "sintaxe", "nivel": "secao", "classe": "validador", "tipo": "frequencia_maxima", "deriva_de": "p_20", "fonte_doutrina": "p_20; conjuncoes/guia.md v2.1 (distância d1)", "nivel_adequacao": "explicativa" },
+    "conj_janela": { "dimensao": "sintaxe", "nivel": "secao", "classe": "validador", "tipo": "frequencia_maxima", "deriva_de": "p_20", "fonte_doutrina": "p_20 rotação de conjunções (janela)", "nivel_adequacao": "descritiva" },
+    "conj_posicao_monotona": { "dimensao": "sintaxe", "nivel": "secao", "classe": "validador", "tipo": "frequencia_maxima", "deriva_de": "p_09", "fonte_doutrina": "conjuncoes/posicoes.json; guia.md v2.2 (limiar calibrado no corpus)", "nivel_adequacao": "observacional" },
+    "conj_informal": { "dimensao": "pragmatica", "nivel": "sintagma", "classe": "validador", "tipo": "vedacao_conteudo", "deriva_de": "p_09", "fonte_doutrina": "conjuncoes/INDEX.json informais_filtradas; Halliday (1978) registro", "nivel_adequacao": "descritiva" },
+    "conj_metaforica": { "dimensao": "pragmatica", "nivel": "sintagma", "classe": "validador", "tipo": "vedacao_conteudo", "deriva_de": null, "fonte_doutrina": "Perfil jurídico da skill (peça não admite recurso literário)", "nivel_adequacao": "descritiva" }
+  },
+  "principios": {
+    "_regra": "Camada C do canon (escrita_canonica.json). classe=principio; alimentam o campo deriva_de das regras.",
+    "p_00": { "dimensao": "semantica", "nivel": "palavra" },
+    "p_01": { "dimensao": "sintaxe", "nivel": "oracao" },
+    "p_02": { "dimensao": "sintaxe", "nivel": "periodo" },
+    "p_03": { "dimensao": "sintaxe", "nivel": "oracao" },
+    "p_04": { "dimensao": "sintaxe", "nivel": "sintagma" },
+    "p_05": { "dimensao": "semantica", "nivel": "palavra" },
+    "p_06": { "dimensao": "semantica", "nivel": "periodo" },
+    "p_07": { "dimensao": "pragmatica", "nivel": "paragrafo" },
+    "p_08": { "dimensao": "pragmatica", "nivel": "secao" },
+    "p_09": { "dimensao": "sintaxe", "nivel": "paragrafo" },
+    "p_10": { "dimensao": "sintaxe", "nivel": "grafema" },
+    "p_11": { "dimensao": "pragmatica", "nivel": "oracao" },
+    "p_12": { "dimensao": "semantica", "nivel": "secao" },
+    "p_13": { "dimensao": "pragmatica", "nivel": "paragrafo" },
+    "p_14": { "dimensao": "sintaxe", "nivel": "periodo" },
+    "p_15": { "dimensao": "semantica", "nivel": "palavra" },
+    "p_16": { "dimensao": "pragmatica", "nivel": "paragrafo" },
+    "p_17": { "dimensao": "pragmatica", "nivel": "secao" },
+    "p_18": { "dimensao": "pragmatica", "nivel": "paragrafo" },
+    "p_19": { "dimensao": "pragmatica", "nivel": "oracao" },
+    "p_20": { "dimensao": "sintaxe", "nivel": "paragrafo" }
+  }
+}
