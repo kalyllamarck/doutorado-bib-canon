@@ -5,8 +5,13 @@
     {
       "id": "cst_013",
       "nome": "sintagma_nominal_nu",
-      "nomes_alternativos": ["bare singular", "bare noun", "substantivo nu", "elipse de artigo"],
-      "regex_deteccao": "\\b(desenha|revela|configura|estabelece|apresenta|constitui|representa|evidencia|demonstra|documenta|cria|produz|gera|encobre|encobrem|falta|faltam|inexiste|inexistem|carece|carecem|exige|exigem|encontra|encontram|comporta|comportam|suscita|enseja|contem|contém|reclama|requer|ostenta|denota|impõe|impoe|enfrenta|sofre)\\s+(?!a\\b|o\\b|as\\b|os\\b|um\\b|uma\\b|uns\\b|umas\\b|seu|sua|este|esta|esse|essa|aquele|aquela|nenhum|nenhuma|todo|toda|cada|qualquer|dois|duas|três|algum|alguma|graus|partes|que\\b|de\\b|do\\b|da\\b|dos\\b|das\\b|se\\b|para\\b|como\\b|em\\b|no\\b|na\\b|por\\b|com\\b|ao\\b|aos\\b|sem\\b|sob\\b|sobre\\b|entre\\b|contra\\b|ante\\b|após\\b|até\\b|mais\\b|menos\\b|sopesar|estender)[A-ZÀ-Öa-zà-ö][a-zà-ö]+",
+      "nomes_alternativos": [
+        "bare singular",
+        "bare noun",
+        "substantivo nu",
+        "elipse de artigo"
+      ],
+      "regex_deteccao": "\\b(possui|tem|devolve|assume|adota|desenha|revela|configura|estabelece|apresenta|constitui|representa|evidencia|demonstra|documenta|cria|produz|gera|encobre|encobrem|falta|faltam|inexiste|inexistem|carece|carecem|exige|exigem|encontra|encontram|comporta|comportam|suscita|enseja|contem|contém|reclama|requer|ostenta|denota|impõe|impoe|enfrenta|sofre)\\s+(?!a\\b|o\\b|as\\b|os\\b|um\\b|uma\\b|uns\\b|umas\\b|seu|sua|este|esta|esse|essa|aquele|aquela|nenhum|nenhuma|todo|toda|cada|qualquer|dois|duas|três|algum|alguma|graus|partes|que\\b|de\\b|do\\b|da\\b|dos\\b|das\\b|se\\b|para\\b|como\\b|em\\b|no\\b|na\\b|por\\b|com\\b|ao\\b|aos\\b|sem\\b|sob\\b|sobre\\b|entre\\b|contra\\b|ante\\b|após\\b|até\\b|mais\\b|menos\\b|sopesar|estender)[A-ZÀ-Öa-zà-ö][a-zà-ö]+",
       "descricao": "Substantivo comum, contável e singular usado sem determinante em posição de objeto direto (ou sujeito de oração passiva). Em português brasileiro, o padrão default para objeto contável singular é ter determinante ('a linha', 'uma linha'). A supressão produz leitura genérica-qualitativa que aproxima o nome de predicado ou categoria abstrata, em vez de referente individuado.",
       "posicoes_criticas": [
         "objeto direto de verbo de ação: 'desenha linha' (esperado: 'desenha a linha' / 'desenha uma linha')",
@@ -89,7 +94,10 @@
         "termo_estilístico": "Elipse de artigo / estilo nominal telegráfico / assíndeto determinativo",
         "fenomeno_gramatical": "Variação paramétrica do PB quanto à obrigatoriedade do artigo; estudado em linguística formal como 'bare singular' em contraste com línguas como o inglês (onde é mais frequente) e o espanhol (onde também é restrito)"
       },
-      "principio_canonico_violado": "p_04 (determinantes_e_preposicoes_obrigatorios)"
+      "principio_canonico_violado": "p_04 (determinantes_e_preposicoes_obrigatorios)",
+      "notas_calibragem": [
+        "2026-07-20 (Kalyl): acrescentados possui|tem|devolve|assume|adota. 'possui' constava das posicoes_criticas desta mesma entrada ('possui caracter') e nao estava no regex — a regra escapava do proprio exemplo. Os demais vieram de varredura em 46k palavras de prosa real da casa (textos-modelo dos dominios + pecas geradas + corpus de regressao). NAO se adotou guarda de participio para o 'tem' auxiliar ('tem sido', 'tem ocupado'): qualquer regex que exclua -ado/-ido tambem exclui SUBSTANTIVOS homografos ('tem advogado', 'tem resultado'), que sao justamente o alvo. Como cst_013 e AVISO heuristico (nivel B, triagem humana), preferiu-se falso positivo a falso negativo."
+      ]
     }
   ]
 }
